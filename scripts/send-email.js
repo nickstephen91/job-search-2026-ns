@@ -144,6 +144,7 @@ function buildEmailHTML(data) {
   const applyNow = (jobs || []).filter(j => j.atsScore >= 85);
   const applyStrong = (jobs || []).filter(j => j.atsScore >= 70 && j.atsScore < 85);
   const network = (jobs || []).filter(j => j.atsScore >= 55 && j.atsScore < 70);
+  const review = (jobs || []).filter(j => j.atsScore >= 40 && j.atsScore < 55);
 
   function tierSection(tierJobs, emoji, label, color) {
     if (!tierJobs.length) return '';
@@ -197,6 +198,7 @@ function buildEmailHTML(data) {
   ${tierSection(applyNow, '🔥', 'APPLY IMMEDIATELY', '#00c853')}
   ${tierSection(applyStrong, '⭐', 'APPLY — STRONG FIT', '#64dd17')}
   ${tierSection(network, '🤝', 'NETWORK / WARM INTRO', '#ffc400')}
+  ${tierSection(review, '👀', 'WORTH REVIEWING', '#ff9100')}
   `}
 
   <!-- Footer -->
