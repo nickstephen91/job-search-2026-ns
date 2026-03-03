@@ -6,7 +6,7 @@ const RESULTS_DIR = path.join(__dirname, '..', 'results');
 const SEEN_URLS_PATH = path.join(RESULTS_DIR, 'seen_urls.json');
 const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
 const TOP_PICKS_PATH = path.join(RESULTS_DIR, 'top_picks.json');
-const { rankJob } = require('./rank-engine');
+const { rankJob } = require(path.join(__dirname, 'rank-engine'));
 
 // ── PERSISTENCE ──────────────────────────────────────────────────────────────
 function loadSeenUrls() {
