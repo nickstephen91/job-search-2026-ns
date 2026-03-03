@@ -45,11 +45,49 @@ const NICK_INDUSTRIES = [
 ];
 
 function meetsRequirements(job) {
-  const text = `${job.title} ${job.snippet || ''} ${job.company || ''}`.toLowerCase();
-  const titleMatch = NICK_TITLES.some(t => text.includes(t));
+  const title = (job.title || '').toLowerCase();
+  const text = `${job.title} ${job.snippet || ''} ${job.company || ''} ${job.industry || ''}`.toLowerCase();
+
+  // HARD FILTER 1: Must be Director+ or VP+ level (no Managers, Coordinators, etc.)
+  const seniorTitles = ['director', 'vp', 'vice president', 'head of', 'senior director', 'svp', 'chief', 'principal'];
+  const juniorTitles = ['manager', 'coordinator', 'specialist', 'analyst', 'associate', 'junior', 'intern', 'assistant', 'lead'];
+  const isSenior = seniorTitles.some(t => title.includes(t));
+  const isJunior = juniorTitles.some(t => title.includes(t)) && !isSenior;
+  if (!isSenior || isJunior) {
+    console.log(`   ⬇️  Level filter: "${job.title}" not Director+`);
+    return false;
+  }
+
+  // HARD FILTER 2: Salary floor — reject if max salary clearly under $100K
+  if (job.salary && job.salary !== 'Not Listed' && job.salary !== '') {
+    const nums = job.salary.replace(/[^0-9]/g, ' ').trim().split(/\s+/)
+      .map(Number).filter(n => n > 10000 && n < 2000000);
+    if (nums.length > 0 && Math.max(...nums) < 100000) {
+      console.log(`   ⬇️  Salary filter: "${job.title}" max pay too low`);
+      return false;
+    }
+  }
+
+  // HARD FILTER 3: Must be in target function
+  const targetFunctions = ['partner', 'alliance', 'channel', 'reseller', 'ecosystem',
+    'customer success', 'client success', 'revenue operations', 'revops', 'sales operations',
+    'business development', 'account management', 'enablement', 'go-to-market', 'gtm',
+    'strategic account', 'sales enablement', 'partner success'];
+  const hasFunction = targetFunctions.some(f => title.includes(f));
+  if (!hasFunction) {
+    console.log(`   ⬇️  Function filter: "${job.title}" not a target function`);
+    return false;
+  }
+
+  // 50% SKILLS MATCH
   const skillMatches = NICK_SKILLS.filter(s => text.includes(s)).length;
   const industryMatch = NICK_INDUSTRIES.some(i => text.includes(i));
-  return (titleMatch && skillMatches >= 1) || (titleMatch && industryMatch) || skillMatches >= 4;
+  if (skillMatches < 1 && !industryMatch) {
+    console.log(`   ⬇️  Skills filter: "${job.title}" — 0 skill matches`);
+    return false;
+  }
+
+  return true;
 }
 
 // ── SOURCE 1: Indeed RSS Feeds ─────────────────────────────────────────────
@@ -227,6 +265,33 @@ async function fetchViaClaudeSearch(query) {
   } catch { return []; }
 }
 
+
+// Verify job URL is still active before sending
+async function isJobActive(url) {
+  try {
+    const controller = new AbortController();
+    setTimeout(() => controller.abort(), 6000);
+    const res = await fetch(url, {
+      method: 'GET',
+      redirect: 'follow',
+      signal: controller.signal,
+      headers: { 'User-Agent': 'Mozilla/5.0' }
+    });
+    if (res.status === 404 || res.status === 410) return false;
+    const finalUrl = res.url.toLowerCase();
+    const deadPatterns = ['no-longer', 'expired', 'filled', 'closed', 'not-found', 'job-closed', 'position-filled'];
+    if (deadPatterns.some(p => finalUrl.includes(p))) return false;
+    // Check page content for "no longer" signals
+    const text = (await res.text()).toLowerCase().substring(0, 2000);
+    const deadText = ['no longer available', 'no longer open', 'position has been filled', 
+                      'job has expired', 'this job is no longer', 'posting has expired'];
+    if (deadText.some(p => text.includes(p))) return false;
+    return true;
+  } catch {
+    return true; // assume active if can't check
+  }
+}
+
 async function main() {
   const dateStr = new Date().toLocaleDateString('en-US', {
     timeZone: 'America/New_York',
@@ -355,7 +420,21 @@ async function main() {
     .filter(j => !seenUrls.has(j.url))
     .map(j => ({ ...j, foundDate: new Date().toISOString() }));
 
-  console.log(`🆕 New jobs: ${newJobs.length}`);
+  console.log(`🆕 New (unseen): ${newJobs.length}`);
+
+  // Verify each job URL is still active
+  console.log('\n🔍 Verifying job links are still active...');
+  const verifiedJobs = [];
+  for (const job of newJobs) {
+    const active = await isJobActive(job.url);
+    if (active) {
+      verifiedJobs.push(job);
+    } else {
+      console.log(`   ❌ Stale/filled: ${job.title} @ ${job.company}`);
+    }
+    await new Promise(r => setTimeout(r, 300));
+  }
+  console.log(`✅ Verified active: ${verifiedJobs.length} / ${newJobs.length}`);
 
   // Update seen URLs
   deduped.forEach(j => seenUrls.add(j.url));
@@ -363,11 +442,11 @@ async function main() {
 
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
     date: dateStr,
-    count: newJobs.length,
-    jobs: newJobs
+    count: verifiedJobs.length,
+    jobs: verifiedJobs
   }, null, 2));
 
-  console.log(`\n✅ Done! ${newJobs.length} new jobs to send.`);
+  console.log(`\n✅ Done! ${verifiedJobs.length} verified active jobs to send.`);
 }
 
 main().catch(err => {
