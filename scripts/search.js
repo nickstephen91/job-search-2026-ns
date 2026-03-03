@@ -343,32 +343,43 @@ function scoreTitle(job) {
 }
 
 function scoreResumeKeywords(job) {
-  const text = `${job.title} ${job.snippet || ''} ${job.industry || ''}`.toLowerCase();
+  // Use full description if available, fall back to snippet
+  const text = `${job.title} ${job.fullDescription || job.snippet || ''} ${job.industry || ''}`.toLowerCase();
   const hits = { core: [], domain: [], tools: [], leadership: [] };
 
-  hits.core = NICK_RESUME.coreSkills.filter(k => text.includes(k));
-  hits.domain = NICK_RESUME.domain.filter(k => text.includes(k));
-  hits.tools = NICK_RESUME.tools.filter(k => text.includes(k));
+  hits.core     = NICK_RESUME.coreSkills.filter(k => text.includes(k));
+  hits.domain   = NICK_RESUME.domain.filter(k => text.includes(k));
+  hits.tools    = NICK_RESUME.tools.filter(k => text.includes(k));
   hits.leadership = NICK_RESUME.leadership.filter(k => text.includes(k));
 
-  // Score: core=2pts each, domain=1pt, tools=1pt, leadership=1.5pts
+  const totalKeywords = NICK_RESUME.coreSkills.length + NICK_RESUME.domain.length +
+                        NICK_RESUME.tools.length + NICK_RESUME.leadership.length;
+  const totalHits = hits.core.length + hits.domain.length + hits.tools.length + hits.leadership.length;
+
+  // Match rate as percentage of all resume keywords found in job
+  const matchRate = Math.round((totalHits / totalKeywords) * 100);
+
+  // Weighted score: core=2pts each, domain=1pt, tools=1pt, leadership=1.5pts
   const raw = (hits.core.length * 2) + (hits.domain.length * 1) +
               (hits.tools.length * 1) + (hits.leadership.length * 1.5);
-
-  // Scale to max 20 pts (cap at 10 raw points = 20 pts)
   const score = Math.min(Math.round((raw / 10) * WEIGHTS.resumeKeywords), WEIGHTS.resumeKeywords);
 
+  // Top matched keywords to display on card
   const topMatches = [
-    ...hits.core.slice(0, 3),
-    ...hits.leadership.slice(0, 1),
-    ...hits.tools.slice(0, 1)
-  ].slice(0, 4);
+    ...hits.core.slice(0, 4),
+    ...hits.leadership.slice(0, 2),
+    ...hits.tools.slice(0, 2),
+    ...hits.domain.slice(0, 2)
+  ].slice(0, 8);
 
   return {
     score,
-    totalHits: hits.core.length + hits.domain.length + hits.tools.length + hits.leadership.length,
+    matchRate,
+    totalHits,
+    totalKeywords,
     topMatches,
-    breakdown: hits
+    breakdown: hits,
+    usedFullDesc: !!job.fullDescription
   };
 }
 
@@ -451,6 +462,33 @@ function rankJob(job) {
       workType:   { score: workType.score,  max: WEIGHTS.workType,       note: workType.note }
     }
   };
+}
+
+
+// ── FETCH FULL JOB DESCRIPTION ────────────────────────────────────────────────
+// Fetches the actual requirements/qualifications from the job posting page
+async function fetchFullDescription(url) {
+  try {
+    const controller = new AbortController();
+    setTimeout(() => controller.abort(), 8000);
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36' }
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+    // Strip HTML tags and collapse whitespace
+    const text = html
+      .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+      .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ')
+      .replace(/\s+/g, ' ').trim();
+    // Focus on requirements section if possible
+    const reqIdx = text.search(/requirements|qualifications|what you.ll need|what we.re looking for|you have|you bring|must have/i);
+    if (reqIdx > -1) return text.substring(reqIdx, reqIdx + 3000);
+    return text.substring(0, 3000);
+  } catch { return null; }
 }
 
 // ── MAIN ──────────────────────────────────────────────────────────────────────
@@ -574,6 +612,20 @@ async function main() {
     console.log(`   ⭐ Strong Fit (65-79): ${newJobs.filter(j => j.score >= 65 && j.score < 80).length}`);
     console.log(`   👍 Good Fit (50-64): ${newJobs.filter(j => j.score >= 50 && j.score < 65).length}`);
     console.log(`   👀 Worth a Look (35-49): ${newJobs.filter(j => j.score >= 35 && j.score < 50).length}`);
+  }
+
+  // Fetch full descriptions for keyword matching (batch, with delays)
+  console.log('\n📄 Fetching full job descriptions for keyword analysis...');
+  for (let i = 0; i < newJobs.length; i++) {
+    const job = newJobs[i];
+    const desc = await fetchFullDescription(job.url);
+    if (desc) {
+      job.fullDescription = desc;
+      console.log(`   ✅ [${i+1}/${newJobs.length}] Got description: ${job.title.substring(0,40)}`);
+    } else {
+      console.log(`   ⚠️  [${i+1}/${newJobs.length}] No description: ${job.title.substring(0,40)}`);
+    }
+    if (i < newJobs.length - 1) await new Promise(r => setTimeout(r, 400));
   }
 
   // Rank all new jobs
