@@ -67,16 +67,64 @@ const TARGET_FUNCTIONS = ['partner', 'alliance', 'channel', 'reseller', 'ecosyst
   'strategic account', 'sales enablement', 'partner success', 'growth',
   'commercial', 'revenue', 'sales', 'relationship', 'enterprise', 'market'];
 
+// Cities within ~60 miles of Stuart FL 34997
+const IN_RADIUS = [
+  'stuart', 'port st. lucie', 'port saint lucie', 'fort pierce', 'vero beach',
+  'jupiter', 'palm beach gardens', 'west palm beach', 'lake worth', 'boynton beach',
+  'okeechobee', 'hobe sound', 'jensen beach', 'palm city', 'indiantown',
+  'sebastian', 'boca raton', 'delray beach', 'florida', ', fl', ', fl '
+];
+
+// Cities that are too far — reject unless remote
+const TOO_FAR = [
+  'miami', 'fort lauderdale', 'orlando', 'tampa', 'jacksonville',
+  'california', ' ca,', ', ca ', 'new york', ' ny,', ', ny ',
+  'texas', ' tx,', ', tx ', 'chicago', 'illinois', ' il,',
+  'seattle', 'washington', ' wa,', 'boston', 'massachusetts',
+  'colorado', ' co,', 'denver', 'atlanta', 'georgia', ' ga,',
+  'redwood city', 'san francisco', 'los angeles', 'austin', 'dallas',
+  'houston', 'phoenix', 'arizona', 'ohio', 'michigan', 'minnesota',
+  'virginia', 'north carolina', 'tennessee', 'nevada', 'las vegas'
+];
+
+function isLocationOk(job) {
+  const loc = (job.location || '').toLowerCase();
+  const workType = (job.workType || '').toLowerCase();
+
+  // Always allow remote
+  if (workType === 'remote' || loc.includes('remote')) return true;
+
+  // Allow if in radius
+  if (IN_RADIUS.some(c => loc.includes(c))) return true;
+
+  // Reject if clearly too far
+  if (TOO_FAR.some(c => loc.includes(c))) return false;
+
+  // If location is vague (e.g. "United States", "USA", blank) — allow it
+  return true;
+}
+
 function meetsRequirements(job) {
+  // FILTER 1: Location
+  if (!isLocationOk(job)) {
+    console.log(`   📍 Location reject: "${job.title}" @ ${job.location}`);
+    return false;
+  }
+
+  // FILTER 2: Seniority
   const title = (job.title || '').toLowerCase();
   const isSenior = SENIOR_TITLES.some(t => title.includes(t));
   const isHardJunior = HARD_JUNIOR.some(t => title.includes(t)) && !isSenior;
   if (!isSenior || isHardJunior) return false;
+
+  // FILTER 3: Salary floor
   if (job.salary && job.salary !== 'Not Listed') {
     const nums = job.salary.replace(/[^0-9]/g, ' ').trim().split(/\s+/)
       .map(Number).filter(n => n > 10000 && n < 2000000);
     if (nums.length > 0 && Math.max(...nums) < 100000) return false;
   }
+
+  // FILTER 4: Target function
   return TARGET_FUNCTIONS.some(f => title.includes(f));
 }
 
