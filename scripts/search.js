@@ -6,6 +6,7 @@ const path = require('path');
 const RESULTS_DIR = path.join(__dirname, '..', 'results');
 const SEEN_URLS_PATH = path.join(RESULTS_DIR, 'seen_urls.json');
 const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
+const TOP_PICKS_PATH = path.join(RESULTS_DIR, 'top_picks.json');
 
 function loadSeenUrls() {
   try {
@@ -292,6 +293,51 @@ async function isJobActive(url) {
   }
 }
 
+
+// Load previous top picks to show in email
+function loadTopPicks() {
+  try {
+    if (!fs.existsSync(TOP_PICKS_PATH)) return [];
+    return JSON.parse(fs.readFileSync(TOP_PICKS_PATH, 'utf8')).picks || [];
+  } catch { return []; }
+}
+
+// Save top 5 jobs from today as next run's "top picks"
+function saveTopPicks(jobs) {
+  // Sort by: HR Tech/PEO/Compliance first, then by title seniority, then remote
+  const ranked = [...jobs].sort((a, b) => {
+    const aText = `${a.title} ${a.industry || ''}`.toLowerCase();
+    const bText = `${b.title} ${b.industry || ''}`.toLowerCase();
+    const priority = ['hr tech', 'hcm', 'peo', 'payroll', 'compliance', 'saas'];
+    const aScore = priority.filter(p => aText.includes(p)).length +
+                   (aText.includes('vp') || aText.includes('vice president') ? 2 : 0) +
+                   (aText.includes('director') ? 1 : 0) +
+                   (a.workType === 'Remote' ? 1 : 0);
+    const bScore = priority.filter(p => bText.includes(p)).length +
+                   (bText.includes('vp') || bText.includes('vice president') ? 2 : 0) +
+                   (bText.includes('director') ? 1 : 0) +
+                   (b.workType === 'Remote' ? 1 : 0);
+    return bScore - aScore;
+  });
+
+  const top5 = ranked.slice(0, 5).map(j => ({
+    title: j.title,
+    company: j.company,
+    location: j.location,
+    workType: j.workType,
+    salary: j.salary,
+    url: j.url,
+    source: j.source,
+    industry: j.industry,
+    foundDate: j.foundDate
+  }));
+
+  fs.writeFileSync(TOP_PICKS_PATH, JSON.stringify({
+    savedAt: new Date().toISOString(),
+    picks: top5
+  }, null, 2));
+}
+
 async function main() {
   const dateStr = new Date().toLocaleDateString('en-US', {
     timeZone: 'America/New_York',
@@ -306,7 +352,9 @@ async function main() {
   if (!fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
 
   const seenUrls = loadSeenUrls();
-  console.log(`Previously seen: ${seenUrls.size} jobs\n`);
+  const previousTopPicks = loadTopPicks();
+  console.log(`Previously seen: ${seenUrls.size} jobs`);
+  console.log(`Previous top picks loaded: ${previousTopPicks.length}\n`);
 
   let allJobs = [];
 
@@ -440,10 +488,14 @@ async function main() {
   deduped.forEach(j => seenUrls.add(j.url));
   saveSeenUrls(seenUrls);
 
+  // Save today's top picks for tomorrow's email
+  if (verifiedJobs.length > 0) saveTopPicks(verifiedJobs);
+
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
     date: dateStr,
     count: verifiedJobs.length,
-    jobs: verifiedJobs
+    jobs: verifiedJobs,
+    topPicks: previousTopPicks
   }, null, 2));
 
   console.log(`\n✅ Done! ${verifiedJobs.length} verified active jobs to send.`);
