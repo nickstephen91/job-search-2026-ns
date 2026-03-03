@@ -49,42 +49,36 @@ function meetsRequirements(job) {
   const title = (job.title || '').toLowerCase();
   const text = `${job.title} ${job.snippet || ''} ${job.company || ''} ${job.industry || ''}`.toLowerCase();
 
-  // HARD FILTER 1: Must be Director+ or VP+ level (no Managers, Coordinators, etc.)
-  const seniorTitles = ['director', 'vp', 'vice president', 'head of', 'senior director', 'svp', 'chief', 'principal'];
-  const juniorTitles = ['manager', 'coordinator', 'specialist', 'analyst', 'associate', 'junior', 'intern', 'assistant', 'lead'];
+  // FILTER 1: Must be Director+ or VP+ level — but be generous, "Senior Manager" still passes
+  const seniorTitles = ['director', 'vp', 'vice president', 'head of', 'senior director', 
+                        'svp', 'chief', 'principal', 'senior manager', 'sr. manager', 'sr manager'];
+  const hardJunior = ['coordinator', 'specialist', 'analyst', 'junior', 'intern', 'assistant'];
   const isSenior = seniorTitles.some(t => title.includes(t));
-  const isJunior = juniorTitles.some(t => title.includes(t)) && !isSenior;
-  if (!isSenior || isJunior) {
-    console.log(`   ⬇️  Level filter: "${job.title}" not Director+`);
+  const isHardJunior = hardJunior.some(t => title.includes(t)) && !isSenior;
+  if (!isSenior || isHardJunior) {
+    console.log(`   ⬇️  Level: "${job.title}"`);
     return false;
   }
 
-  // HARD FILTER 2: Salary floor — reject if max salary clearly under $100K
+  // FILTER 2: Salary — only reject if explicitly listed AND max is under $100K
   if (job.salary && job.salary !== 'Not Listed' && job.salary !== '') {
     const nums = job.salary.replace(/[^0-9]/g, ' ').trim().split(/\s+/)
       .map(Number).filter(n => n > 10000 && n < 2000000);
     if (nums.length > 0 && Math.max(...nums) < 100000) {
-      console.log(`   ⬇️  Salary filter: "${job.title}" max pay too low`);
+      console.log(`   ⬇️  Salary: "${job.title}"`);
       return false;
     }
   }
 
-  // HARD FILTER 3: Must be in target function
+  // FILTER 3: Must relate to Nick's target functions — broad list so we don't miss things
   const targetFunctions = ['partner', 'alliance', 'channel', 'reseller', 'ecosystem',
-    'customer success', 'client success', 'revenue operations', 'revops', 'sales operations',
-    'business development', 'account management', 'enablement', 'go-to-market', 'gtm',
-    'strategic account', 'sales enablement', 'partner success'];
+    'customer success', 'client success', 'revenue oper', 'revops', 'sales oper',
+    'business development', 'account manag', 'enablement', 'go-to-market', 'gtm',
+    'strategic account', 'sales enablement', 'partner success', 'market', 'growth',
+    'commercial', 'revenue', 'sales', 'relationship', 'enterprise'];
   const hasFunction = targetFunctions.some(f => title.includes(f));
   if (!hasFunction) {
-    console.log(`   ⬇️  Function filter: "${job.title}" not a target function`);
-    return false;
-  }
-
-  // 50% SKILLS MATCH
-  const skillMatches = NICK_SKILLS.filter(s => text.includes(s)).length;
-  const industryMatch = NICK_INDUSTRIES.some(i => text.includes(i));
-  if (skillMatches < 1 && !industryMatch) {
-    console.log(`   ⬇️  Skills filter: "${job.title}" — 0 skill matches`);
+    console.log(`   ⬇️  Function: "${job.title}"`);
     return false;
   }
 
