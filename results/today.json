@@ -1,7 +1,1083 @@
 {
   "date": "Tuesday, March 3, 2026",
-  "count": 18,
+  "count": 12,
   "jobs": [
+    {
+      "title": "VP of Partnerships, Alliances & Business Development",
+      "company": "Lever",
+      "url": "https://startup.jobs/vp-of-partnerships-alliances-business-development-lever-2657309",
+      "level": "VP",
+      "function": "Partnerships",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 43,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ]
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 43,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 6,
+            "max": 20,
+            "note": "2 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "alliances"
+            ]
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Revenue Operations",
+      "company": "SpryPoint",
+      "url": "https://jobs.lever.co/sprypointservices/0d678a99-0f67-4f6b-a35c-eb4e6c609ed0",
+      "level": "Director",
+      "function": "Revenue Operations",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ]
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "SpryPoint - VP, Revenue Operations VP, Revenue Operations Atlanta, GA / USA / Canada Sales – Revenue Operations / Full-Time / Remote Apply for this job The Company 2025 Deloitte Technology Fast 50 Canada Recipient & Fast 500 North America Recipient 🏆 SpryPoint is modernizing how utilities serve their communities. As a high-growth software company, we're shaking up the status quo in the utility industry with the first and only truly cloud-native customer service and operations platform purpose-built for modern utilities. Founded by industry veterans in 2011, we've grown from a profitable startup to a rapidly scaling company of 300+ employees serving 100+ utility clients across North America and the Caribbean. Our mission is simple: utility leaders should expect more from their technology providers. Utilities face urgent demand to replace inefficient legacy systems while managing increasing operational complexity, and evolving customer expectations. With more than a decade of experience, and a track record of successful implementations spanning water, electric, and gas utilities, SpryPoint has built a reputation as a trusted and mission-critical partner to utilities across North America. We deliver comprehensive solutions including SpryCIS, SpryEngage, SpryMobile, and SpryWallet that modernize the entire meter-to-cash process. What sets us apart? Our \"updates, not upgrades\" approach, user-centric design, and unwavering focus on customer success. Backed by strategic investment from Norwest Venture Partners since 2023, and an exciting new investment partnership from Insight Partners announced in 2026, we're accelerating our growth while staying true to our core values: lead with kindness, vision with impact, radical honesty, bold disruption, keep it simple, and execute with excellence. Join our award-winning team in transforming an essential industry that powers communities across the Americas. If you thrive in a fast-paced environment, have a passion for developing data-driven strategies to accelerate business growth, and enjoy working collaboratively with a team of game changers, you may be a perfect fit for our Revenue Operations leader. We’re looking for a VP of Revenue Operations to serve as a strategic partner to the CRO and executive leadership team, owning the systems, processes, and analytics that underpin revenue predictability and performance. This role is accountable for forecast integrity, capacity and coverage modeling, Go To Market (GTM) efficiency, and cross-functional alignment across Sales, Marketing, Alliances, Client Success, and Finance. In this role you will be responsible for overseeing our GTM through data and analytics initiatives, managing Sales Operations, as well as the Proposal and Solution Engineer teams, maximizing the lead generation process, providing metric visibility, and informing business decisions and strategy driving revenue and growth. What You'll Do Revenue Forecasting & Predictability: Own the end-to-end rev",
+      "rank": {
+        "total": 40,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "8 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "gtm",
+              "revenue operations",
+              "cross-functional",
+              "own",
+              "executive",
+              "alliances",
+              "api"
+            ]
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Business Development and Partnerships",
+      "company": "Rover.com",
+      "url": "https://jobs.lever.co/rover/6987d7fb-46f2-4a82-8611-cb0832552277",
+      "level": "Director",
+      "function": "Business Development",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 34,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 22,
+          "max": 25,
+          "note": "Strong title match"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 34,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 22,
+            "max": 25,
+            "note": "Strong title match"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Cloud Partner Business Development",
+      "company": "Cognite",
+      "url": "https://jobs.lever.co/cognite/d586d093-65c5-4c3a-a78b-5c0279399b06",
+      "level": "Director",
+      "function": "Business Development",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 27,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 7,
+          "max": 30,
+          "note": "B2B/SaaS signal"
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 7,
+            "max": 30,
+            "note": "B2B/SaaS signal"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Channel Partnerships",
+      "company": "ASAPP",
+      "url": "https://jobs.lever.co/asapp-2/7a96083b-287f-47bb-89e1-1d44d833a0a0",
+      "level": "Director",
+      "function": "Partnerships",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 24,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Key Account Director - Channel",
+      "company": "MeridianLink",
+      "url": "https://jobs.lever.co/meridianlink/2d283dbc-c386-4cd3-8b68-a364bded86e4",
+      "level": "Director",
+      "function": "Channel",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 24,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Channel Partnerships",
+      "company": "Trustly",
+      "url": "https://jobs.lever.co/trustly/a3822155-34c0-4d60-b6e3-e8994e805c2d",
+      "level": "Director",
+      "function": "Channel",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 24,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Channel Operations and Strategy Director",
+      "company": "1Password",
+      "url": "https://jobs.lever.co/1password/a3535976-1c65-4239-b389-050a753464b8",
+      "level": "Director",
+      "function": "Channel",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 24,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP - Business Development",
+      "company": "Nium",
+      "url": "https://jobs.lever.co/nium/bfa2f280-5143-46a9-9503-5ec4f11cd6e9",
+      "level": "VP",
+      "function": "Business Development",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 20,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP, Business Development",
+      "company": "Enveda",
+      "url": "https://jobs.lever.co/envedabio/b3382a34-c662-4baf-8f2a-8409e342910d",
+      "level": "VP",
+      "function": "Business Development",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 20,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Vice President, Business Development",
+      "company": "TuneIn",
+      "url": "https://jobs.lever.co/tunein/4bb7b2a7-57a0-4fe8-b3f3-e84c12d5fc04",
+      "level": "VP",
+      "function": "Business Development",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 20,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Partner Development Director",
+      "company": "TTEC Digital",
+      "url": "https://jobs.lever.co/ttecdigital/f991f88a-1530-40b6-b4ea-4a83d5f41f0a",
+      "level": "Director",
+      "function": "Partnerships",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 20,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    }
+  ],
+  "topPicks": [
     {
       "title": "Director of Alliances Partnerships (Cloud)",
       "company": "GitLab",
@@ -483,1668 +1559,6 @@
             "score": 2,
             "max": 5,
             "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP, Partnerships",
-      "company": "Tunnl",
-      "url": "https://jobs.lever.co/tunnl-data/c0248aa6-9615-429b-8ff4-caf2da8ab14e/apply",
-      "level": "VP",
-      "department": "Partnerships",
-      "foundDate": "2026-03-03T23:29:44.138Z",
-      "total": 37,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 37,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": []
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP of Partnerships",
-      "company": "Terminus",
-      "url": "https://jobs.lever.co/terminus/da79890e-34d9-4603-8b22-bbf4dc3c69e7",
-      "level": "VP",
-      "department": "Partnerships",
-      "foundDate": "2026-03-03T23:29:44.138Z",
-      "total": 37,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 37,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": []
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Senior Director of Partnerships, Data",
-      "company": "Smart AdServer",
-      "url": "https://jobs.lever.co/smartadserver/99e8c54a-4ec2-44e2-a855-33997b4b3ada",
-      "level": "Director",
-      "department": "Partnerships",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 37,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 37,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": []
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP Business Development - Healthcare SaaS",
-      "company": "Jagger",
-      "url": "https://jobs.lever.co/hellojagger/950465a3-006c-459b-bdc5-06d573a539b6",
-      "level": "VP",
-      "department": "Business Development",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 12,
-          "max": 30,
-          "note": "Adjacent: saas"
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 2,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "saas"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 34,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 12,
-            "max": 30,
-            "note": "Adjacent: saas"
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 2,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "saas"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP Revenue Operations",
-      "company": "Brevo",
-      "url": "https://jobs.lever.co/brevo/839a76d3-02bd-4941-b6f3-27392cb2d1c3",
-      "level": "VP",
-      "department": "Revenue Operations",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 34,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Revenue Operations",
-      "company": "Proof",
-      "url": "https://jobs.lever.co/proof/cb4e56ae-6c9b-422f-8a5a-f0c2e7012cd4",
-      "level": "Director",
-      "department": "Revenue Operations",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 34,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Revenue Operations",
-      "company": "Peek",
-      "url": "https://jobs.lever.co/peek/35010200-6326-4df6-a639-38964e9c9979",
-      "level": "Director",
-      "department": "Revenue Operations",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 34,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Revenue Operations",
-      "company": "Mattermost",
-      "url": "https://jobs.lever.co/mattermost/a20f3209-c16c-4e42-be1b-a9f358d15850",
-      "level": "Director",
-      "department": "Revenue Operations",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 34,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Revenue Operations",
-      "company": "Curri",
-      "url": "https://jobs.lever.co/curri/e0be7fa4-431a-43d2-8590-4c5fbfdda461",
-      "level": "Director",
-      "department": "Revenue Operations",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 34,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Revenue Operations",
-      "company": "Authentic8",
-      "url": "https://jobs.lever.co/authentic8/91f79728-bb9b-408e-a4c1-7dae39b27bea",
-      "level": "Director",
-      "department": "Revenue Operations",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 34,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Partnership Development",
-      "company": "Headspace",
-      "url": "https://jobs.lever.co/headspace/638e1813-ec3d-4d87-9fee-eea530019068",
-      "level": "Director",
-      "department": "Partnerships",
-      "foundDate": "2026-03-03T23:29:44.138Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 24,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": []
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director, Revenue Operations",
-      "company": "Protolabs",
-      "url": "https://jobs.lever.co/protolabs/bd4a2b91-a46f-4671-b672-b7d4875d29ec",
-      "level": "Director",
-      "department": "Revenue Operations",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 24,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Lead VP Business Development (Remote)",
-      "company": "Jobgether",
-      "url": "https://jobs.lever.co/jobgether/5b4bdb8c-7bff-47de-92cc-5fc7f016614b",
-      "level": "VP",
-      "department": "Business Development",
-      "foundDate": "2026-03-03T23:29:44.138Z",
-      "total": 20,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 20,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": []
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    }
-  ],
-  "topPicks": [
-    {
-      "title": "VP Partnerships",
-      "company": "PagerDuty",
-      "location": "Not Specified",
-      "workType": "Not Specified",
-      "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://boards.greenhouse.io/pagerduty/jobs/4243072004",
-      "source": "Greenhouse",
-      "snippet": "Lead team of channel experts responsible for indirect go-to-market strategy, sales and programs. Manage team providing solutions to ISV, GSI, Cloud and reseller partners.",
-      "industry": "Technology/SaaS",
-      "companyStage": "Public",
-      "foundDate": "2026-03-03T23:20:56.529Z",
-      "total": 44,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 12,
-          "max": 30,
-          "note": "Adjacent: saas"
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 6,
-          "max": 20,
-          "note": "2 resume keywords matched",
-          "topMatches": [
-            "go-to-market"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 6,
-          "max": 8,
-          "note": "Public/Enterprise"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 44,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 12,
-            "max": 30,
-            "note": "Adjacent: saas"
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 6,
-            "max": 20,
-            "note": "2 resume keywords matched",
-            "topMatches": [
-              "go-to-market"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 6,
-            "max": 8,
-            "note": "Public/Enterprise"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Technology Alliances",
-      "company": "Tray.io",
-      "location": "Not Specified",
-      "workType": "Not Specified",
-      "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://boards.greenhouse.io/trayio/jobs/5415138002",
-      "source": "Greenhouse",
-      "snippet": "Work with the VP, Global Partnerships to develop the Technology Alliance strategy, goals and objectives. Drive identification, structuring, and nurturing of all Technology partner relationships.",
-      "industry": "Technology/SaaS",
-      "companyStage": "Growth",
-      "foundDate": "2026-03-03T23:20:56.529Z",
-      "total": 47,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 12,
-          "max": 30,
-          "note": "Adjacent: saas"
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 8,
-          "max": 20,
-          "note": "3 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "alliances"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 7,
-          "max": 8,
-          "note": "Late stage: Growth"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "rank": {
-        "total": 47,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 12,
-            "max": 30,
-            "note": "Adjacent: saas"
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 8,
-            "max": 20,
-            "note": "3 resume keywords matched",
-            "topMatches": [
-              "alliance",
-              "alliances"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 7,
-            "max": 8,
-            "note": "Late stage: Growth"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP, Customer Success",
-      "company": "ConnectWise",
-      "location": "Tampa, FL or Seattle, WA",
-      "workType": "Hybrid/Office",
-      "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://job-boards.greenhouse.io/connectwise/jobs/4553128005",
-      "source": "Greenhouse",
-      "snippet": "VP role at industry-leading software company serving technology solution providers with suite helping over 45,000 partners manage businesses better.",
-      "industry": "Technology/SaaS",
-      "companyStage": "Established",
-      "foundDate": "2026-03-03T23:20:56.529Z",
-      "total": 35,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 12,
-          "max": 30,
-          "note": "Adjacent: saas"
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 2,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 3,
-          "max": 5,
-          "note": "Hybrid"
-        }
-      },
-      "rank": {
-        "total": 35,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 12,
-            "max": 30,
-            "note": "Adjacent: saas"
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 2,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": []
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 3,
-            "max": 5,
-            "note": "Hybrid"
-          }
-        }
-      }
-    },
-    {
-      "title": "Customer Success Director",
-      "company": "Maven Clinic",
-      "location": "Not Specified",
-      "workType": "Remote with Travel",
-      "salary": "$153,000 - $180,000 + 20% bonus",
-      "posted": "Not Specified",
-      "url": "https://job-boards.greenhouse.io/mavenclinic/jobs/8173967002",
-      "source": "Greenhouse",
-      "snippet": "Senior individual contributor role acting as trusted advisor to VP-level Benefits leaders, owning global account strategy and driving measurable business outcomes.",
-      "industry": "Healthcare/Digital Health",
-      "companyStage": "Growth",
-      "foundDate": "2026-03-03T23:20:56.530Z",
-      "total": 43,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 12,
-          "max": 30,
-          "note": "Adjacent: benefits"
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 5,
-          "max": 20,
-          "note": "2 resume keywords matched",
-          "topMatches": [
-            "own"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary unclear"
-        },
-        "stage": {
-          "score": 7,
-          "max": 8,
-          "note": "Late stage: Growth"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "rank": {
-        "total": 43,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 12,
-            "max": 30,
-            "note": "Adjacent: benefits"
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 5,
-            "max": 20,
-            "note": "2 resume keywords matched",
-            "topMatches": [
-              "own"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary unclear"
-          },
-          "stage": {
-            "score": 7,
-            "max": 8,
-            "note": "Late stage: Growth"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Customer Success Management, Americas",
-      "company": "GitLab",
-      "location": "Not Specified",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://boards.greenhouse.io/gitlab/jobs/7493322002",
-      "source": "Greenhouse",
-      "snippet": "Set vision and strategic plan for Enterprise Customer Success Account Management organization, focusing on driving product adoption and customer outcomes.",
-      "industry": "Technology/DevOps",
-      "companyStage": "Public",
-      "foundDate": "2026-03-03T23:20:56.530Z",
-      "total": 39,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 20,
-          "max": 25,
-          "note": "CS leadership match"
-        },
-        "keywords": {
-          "score": 2,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 6,
-          "max": 8,
-          "note": "Public/Enterprise"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "rank": {
-        "total": 39,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 20,
-            "max": 25,
-            "note": "CS leadership match"
-          },
-          "keywords": {
-            "score": 2,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": []
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 6,
-            "max": 8,
-            "note": "Public/Enterprise"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
           }
         }
       }

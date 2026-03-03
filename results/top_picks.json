@@ -1,30 +1,24 @@
 {
-  "savedAt": "2026-03-03T23:29:58.718Z",
+  "savedAt": "2026-03-03T23:42:40.435Z",
   "picks": [
     {
-      "title": "Director of Alliances Partnerships (Cloud)",
-      "company": "GitLab",
-      "location": "Remote, United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not Available",
-      "url": "https://boards.greenhouse.io/gitlab/jobs/6753059002",
-      "source": "Greenhouse",
-      "snippet": "Develop and Execute annual partner plans including: collaboration plans, product adoption and customer success plans. Act as a liaison between internal teams at GitLab and cloud partners.",
-      "industry": "DevOps Platform",
-      "companyStage": "Public",
-      "foundDate": "2026-03-03T23:29:44.138Z",
-      "total": 55,
+      "title": "VP of Partnerships, Alliances & Business Development",
+      "company": "Lever",
+      "url": "https://startup.jobs/vp-of-partnerships-alliances-business-development-lever-2657309",
+      "level": "VP",
+      "function": "Partnerships",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 43,
       "tier": {
-        "label": "👀 Worth Reviewing",
-        "color": "#ffb020",
-        "min": 50
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
       },
       "breakdown": {
         "industry": {
-          "score": 7,
+          "score": 0,
           "max": 30,
-          "note": "B2B/SaaS signal"
+          "note": ""
         },
         "title": {
           "score": 25,
@@ -46,208 +40,6 @@
           "note": "Salary not listed"
         },
         "stage": {
-          "score": 6,
-          "max": 8,
-          "note": "Public/Enterprise"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "page_title Current openings at GitLab Search Department Select... 160 jobs Engineering Customer Support Job Associate Support Engineer (AMER - PST / MST) Remote, US Intermediate Support Engineer (AMER - PST / MST) Remote, Canada; Remote, US Support Engineer, U.S. Government Support Remote, US Engineering Data Engineering Job Principal Database Engineer, Data Engineering Remote, EMEA; Remote, North America Senior Site Reliability Engineer, Database Excellence tags.new Remote, Canada; Remote, US Engineering DevOps Engineering Job Engineering Manager, Create:Source Code Remote, Americas Intermediate Backend Engineer, Verify: Runner Core Remote, Canada Engineering Office of the CTO Job Technical Chief of Staff to the CTO Remote, US VP of Engineering, Architecture and Transformation Remote, US Engineering Platforms Engineering Job Engineering Manager, Infrastructure Platforms Remote, Canada; Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom; Remote, US Intermediate Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Canada; Remote, EMEA Intermediate Site Reliability Engineer, Environment Automation Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom Intermediate Site Reliability Engineer, Tenant Scale: Tenant Services Remote, Americas; Remote, EMEA Principal Engineer, Infrastructure Platforms Remote, Australia; Remote, Canada; Remote, France; Remote, Germany; Remote, India; Remote, Ireland; Remote, Israel; Remote, Japan; Remote, Netherlands; Remote, Singapore; Remote, South Korea; Remote, Spain; Remote, United Kingdom; Remote, US Senior Backend Engineer (Ruby and/or Go), Tenant Scale; Cells Infrastructure tags.new Remote, Americas; Remote, APAC; Remote, EMEA Senior Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Americas; Remote, EMEA Staff Backend Engineer, Developer Experience (Ruby) Remote, APAC; Remote, Canada; Remote, EMEA; Remote, Netherlands; Remote, United Kingdom; Remote, US Engineering Sec Engineering Job Engineering Manager, Software Supply Chain Security: Pipeline Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Principal Engineer, Software Supply Chain Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Senior Backend Engineer(Golang),Software Supply Chain Security: Auth Infrastructure Remote, Americas; Remote, APAC; Remote, Canada Software Engineering Manager, Application Security Testing: Composition Analysis & Dynamic Analysis Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US G&A / CIO Data Job Senior Director, Data Analytics tags.new Remote, US G&A / CIO Enterprise Applications Job Business Systems Analyst, Marketing Remote, EMEA CPQ Developer Remote, US IT Administrator, CLM Ironclad Remote, North America Salesforce Admin/Release Engineer, CRM Syst",
-      "rank": {
-        "total": 69,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 7,
-            "max": 30,
-            "note": "B2B/SaaS signal"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "7 resume keywords matched",
-            "topMatches": [
-              "alliance",
-              "pipeline",
-              "crm",
-              "architect",
-              "salesforce",
-              "alliances",
-              "enterprise"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 6,
-            "max": 8,
-            "note": "Public/Enterprise"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP, Partnerships",
-      "company": "Checkr",
-      "location": "Remote, United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not Available",
-      "url": "https://boards.greenhouse.io/checkr/jobs/5161258",
-      "source": "Greenhouse",
-      "snippet": "Reporting to the SVP, Customer Success and Partnerships you will manage our business plans for alliances and channel, develop close partner relationships, orchestrate cross-functional execution, and drive business success while managing the BD team.",
-      "industry": "Background Check Services",
-      "companyStage": "Scale-up",
-      "foundDate": "2026-03-03T23:29:44.138Z",
-      "total": 54,
-      "tier": {
-        "label": "👀 Worth Reviewing",
-        "color": "#ffb020",
-        "min": 50
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 14,
-          "max": 20,
-          "note": "4 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "cross-functional",
-            "reporting",
-            "alliances"
-          ]
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Jobs at Checkr Current openings at Checkr About Checkr Checkr builds people infrastructure for the future of work. We've designed a faster—and fairer—way to screen job seekers. Established in 2014, Checkr puts modern technology powered by machine learning in the hands of hiring teams, helping to hire great new people with an experience that’s fast, smooth, and safe. Checkr has over 100,000 customers including DoorDash, Coinbase, Lyft, Instacart, and Airtable. A career at Checkr means collaborating with brilliant minds, disrupting an industry, and opening channels of employment to often overlooked candidates. Checkr has been recognized as one of BuiltIn's 2023 Best Places to Work in the US and is a Y Combinator 2023 Breakthrough Company. Create a Job Alert Level-up your career by having opportunities at Checkr sent directly to your inbox. Create alert Search 42 jobs Customer Success Job Associate Customer Success Manager Nashville, Tennessee, United States Enterprise Customer Success Manager San Francisco, California, United States Sr. Principal Customer Success Manager Denver, Colorado, United States; San Francisco, California, United States Engineering Job Backend Software Engineer II San Francisco, California, United States Director of Platform Engineering Denver, Colorado, United States; San Francisco, California, United States Engineering Manager Santiago, Región Metropolitana, Chile Engineering Manager, Growth Denver, Colorado, United States; San Francisco, California, United States Engineering Manager, Truework San Francisco, California, United States Python Engineer, Truework New San Francisco, California, United States Security Engineer Denver, Colorado, United States; San Francisco, California, United States Senior Python Engineer, Truework New San Francisco, California, United States Senior Software Engineer New Santiago, Región Metropolitana, Chile Senior Software Engineer New San Francisco, California, United States Senior Software Engineer, Verifications Denver, Colorado, United States; San Francisco, California, United States Software Engineer II San Francisco, California, United States Sr. Software Engineer New Santiago, Región Metropolitana, Chile Staff Software Engineer Santiago, Región Metropolitana, Chile Finance Job Senior FP&S Analyst San Francisco, California, United States Technical Revenue Accounting Lead San Francisco, California, United States Legal & Compliance Job Director, Legal Product & Privacy San Francisco, California, United States Marketing Job Partner Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Growth Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Product Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Operations Job Quality Assurance Specialist Nashville, Tennessee, United States Senior Manager, Enterprise & Strategic Support Denver, Colorado, United States; Nashville",
-      "rank": {
-        "total": 52,
-        "tier": {
-          "label": "👀 Worth Reviewing",
-          "color": "#ffb020",
-          "min": 50
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 12,
-            "max": 20,
-            "note": "4 resume keywords matched",
-            "topMatches": [
-              "peo",
-              "compliance",
-              "aca",
-              "enterprise"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Partnerships",
-      "company": "Creator Deck",
-      "url": "https://jobs.lever.co/creatordeck/4350161b-39af-472b-8c91-63c048b8229b",
-      "level": "Director",
-      "department": "Partnerships",
-      "foundDate": "2026-03-03T23:29:44.138Z",
-      "total": 37,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
           "score": 4,
           "max": 8,
           "note": "Stage unknown"
@@ -258,100 +50,6 @@
           "note": "Onsite in radius"
         }
       },
-      "fullDescription": "You bring a strong foundation of agency and client relationships, understand how brands invest across social, and know how to translate creative, social-first ideas into revenue. You thrive in fast-moving, creative environments and bring an analytical, solutions-oriented mindset to everything you touch. Ideal candidates are curious, collaborative, deeply immersed in culture and creator trends, and excited to help brands innovate across social. This role reports into the Head of Growth and collaborates directly with Brand Partnerships, Finance, and the CEO. You’ll play a crucial role in delivering work that is on-time, on-budget, and best-in-class. Responsibilities: -Develop a thorough understanding of Creator Deck’s position in the marketplace, including but not limited to; partners, capabilities, past successes (and failures) and vision from a commercial perspective -Develop and grow rapport with day-to-day brands and AORs that have been approved by CEO / Head of Growth. Ultimately leading to meetings and/or consideration for Brand Partnerships. These responsibilities include but not limited to: -Lead creation of meeting materials including decks + agendaDevelopment of partnership strategies in collaboration with the Director of Brand Partnerships, Head of Growth, Head of Finance & CEO -Participate in/schedule brainstorms as needed in an efficient manner, ensuring that all deadlines are met -Post-meeting follow-up with internal stakeholders and external clients -Owning the day-to-day follow-up across all RFIs, RFPs and Proactive Proposals -Work closely with BP / CS teams to initiate incremental investments and/or renewals to existing deals -Attend weekly sales / internal meetingsTrack all activity in CRM and consistently hit weekly and monthly outreach/meeting targets Preferred Career Experience : -7–10+ years of tenured Sales experience in Advertising, Media & Marketing Sales and/or Business Development -Preferred experience at a digital / social publisher, talent or influencer agency -Existing relationships among brand and agency clients -Preferred experience and existing relationships within one or more of the following categories: Beauty, Fashion, Retail, QSR / Restaurants, Wellness, Media, Tech Skills: -Thorough understanding of the influencer landscape, latest technologies and emerging trends -Excitement around talent-led and tastemaker innovation with success in talent-led programs -Polished verbal and written communication skills, with internal colleagues and external clients -Highly organized, with the ability to manage and prioritize multiple tasks simultaneously -Strong problem-solving skills with strict attention to detail -Proven ability to consistently and positively contribute in a fast-paced environment -Ability to effectively communicate with client leaders of all levels -Multi-Tasker and Self-Motivated -Proficiency in Google Suite -Ability to lead deck creation end to end without outside supportAbility to drive clarity in ambig",
-      "rank": {
-        "total": 46,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 9,
-            "max": 20,
-            "note": "3 resume keywords matched",
-            "topMatches": [
-              "crm",
-              "own",
-              "outreach"
-            ]
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Sr. Director of Partnerships",
-      "company": "Sword Health",
-      "url": "https://jobs.lever.co/swordhealth/45c5e3d9-c067-409d-8796-df9cbf44cfa0",
-      "level": "Director",
-      "department": "Partnerships",
-      "foundDate": "2026-03-03T23:29:44.139Z",
-      "total": 37,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": []
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "fullDescription": "qualifications, experience, location, market demand, and other factors. Compensation details listed in this posting reflect the base salary and any potential variable, bonus or sales incentives, and the Company’s estimation of the value of private company stock options, if applicable. The pay range is subject to change, future value of company stock options is not guaranteed, and compensation may be modified in the future. In addition to our total compensation, Sword offers a number of benefits as listed below. US - Sword Benefits & Perks: • Comprehensive health, dental and vision insurance* • Life and AD&D Insurance* • Financial advisory services* • Supplemental Insurance Benefits (Accident, Hospital and Critical Illness)* • Health Savings Account* • Equity shares* • Discretionary PTO plan* • Parental leave* • 401(k) • Flexible working hours • Remote-first company • Paid company holidays • Free digital therapist for you and your family *Eligibility: Full-time employees regularly working 25+ hours per week Note: Applicants must have a legal right to work in the United States, and immigration or work visa sponsorship will not be provided. SWORD Health, which includes SWORD Health, Inc. and Sword Health Professionals (consisting of Sword Health Care Providers, P.A., SWORD Health Care Providers of NJ, P.C., SWORD Health Care Physical Therapy Providers of CA, P.C.*) complies with applicable Federal and State civil rights laws and does not discriminate on the basis of Age, Ancestry, Color, Citizenship, Gender, Gender expression, Gender identity, Gender information, Marital status, Medical condition, National origin, Physical or mental disability, Pregnancy, Race, Religion, Caste, Sexual orientation, and Veteran status. Apply for this job Sword Health Home Page Jobs powered by",
       "rank": {
         "total": 43,
         "tier": {
@@ -373,11 +71,10 @@
           "keywords": {
             "score": 6,
             "max": 20,
-            "note": "3 resume keywords matched",
+            "note": "2 resume keywords matched",
             "topMatches": [
-              "api",
-              "benefits",
-              "var"
+              "alliance",
+              "alliances"
             ]
           },
           "comp": {
@@ -399,13 +96,13 @@
       }
     },
     {
-      "title": "Director of Partnerships",
-      "company": "Secureframe",
-      "url": "https://jobs.lever.co/secureframe/89f79a98-cc12-4f57-bc5f-55607c5e8e44",
+      "title": "Director of Business Development and Partnerships",
+      "company": "Rover.com",
+      "url": "https://jobs.lever.co/rover/6987d7fb-46f2-4a82-8611-cb0832552277",
       "level": "Director",
-      "department": "Partnerships",
-      "foundDate": "2026-03-03T23:29:44.138Z",
-      "total": 37,
+      "function": "Business Development",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 34,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -418,9 +115,9 @@
           "note": ""
         },
         "title": {
-          "score": 25,
+          "score": 22,
           "max": 25,
-          "note": "Exact target title"
+          "note": "Strong title match"
         },
         "keywords": {
           "score": 0,
@@ -445,7 +142,7 @@
         }
       },
       "rank": {
-        "total": 37,
+        "total": 34,
         "tier": {
           "label": "📋 Low Match",
           "color": "#4a4f66",
@@ -458,9 +155,285 @@
             "note": ""
           },
           "title": {
-            "score": 25,
+            "score": 22,
             "max": 25,
-            "note": "Exact target title"
+            "note": "Strong title match"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Channel Partnerships",
+      "company": "ASAPP",
+      "url": "https://jobs.lever.co/asapp-2/7a96083b-287f-47bb-89e1-1d44d833a0a0",
+      "level": "Director",
+      "function": "Partnerships",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 24,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Revenue Operations",
+      "company": "SpryPoint",
+      "url": "https://jobs.lever.co/sprypointservices/0d678a99-0f67-4f6b-a35c-eb4e6c609ed0",
+      "level": "Director",
+      "function": "Revenue Operations",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ]
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "SpryPoint - VP, Revenue Operations VP, Revenue Operations Atlanta, GA / USA / Canada Sales – Revenue Operations / Full-Time / Remote Apply for this job The Company 2025 Deloitte Technology Fast 50 Canada Recipient & Fast 500 North America Recipient 🏆 SpryPoint is modernizing how utilities serve their communities. As a high-growth software company, we're shaking up the status quo in the utility industry with the first and only truly cloud-native customer service and operations platform purpose-built for modern utilities. Founded by industry veterans in 2011, we've grown from a profitable startup to a rapidly scaling company of 300+ employees serving 100+ utility clients across North America and the Caribbean. Our mission is simple: utility leaders should expect more from their technology providers. Utilities face urgent demand to replace inefficient legacy systems while managing increasing operational complexity, and evolving customer expectations. With more than a decade of experience, and a track record of successful implementations spanning water, electric, and gas utilities, SpryPoint has built a reputation as a trusted and mission-critical partner to utilities across North America. We deliver comprehensive solutions including SpryCIS, SpryEngage, SpryMobile, and SpryWallet that modernize the entire meter-to-cash process. What sets us apart? Our \"updates, not upgrades\" approach, user-centric design, and unwavering focus on customer success. Backed by strategic investment from Norwest Venture Partners since 2023, and an exciting new investment partnership from Insight Partners announced in 2026, we're accelerating our growth while staying true to our core values: lead with kindness, vision with impact, radical honesty, bold disruption, keep it simple, and execute with excellence. Join our award-winning team in transforming an essential industry that powers communities across the Americas. If you thrive in a fast-paced environment, have a passion for developing data-driven strategies to accelerate business growth, and enjoy working collaboratively with a team of game changers, you may be a perfect fit for our Revenue Operations leader. We’re looking for a VP of Revenue Operations to serve as a strategic partner to the CRO and executive leadership team, owning the systems, processes, and analytics that underpin revenue predictability and performance. This role is accountable for forecast integrity, capacity and coverage modeling, Go To Market (GTM) efficiency, and cross-functional alignment across Sales, Marketing, Alliances, Client Success, and Finance. In this role you will be responsible for overseeing our GTM through data and analytics initiatives, managing Sales Operations, as well as the Proposal and Solution Engineer teams, maximizing the lead generation process, providing metric visibility, and informing business decisions and strategy driving revenue and growth. What You'll Do Revenue Forecasting & Predictability: Own the end-to-end rev",
+      "rank": {
+        "total": 40,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "8 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "gtm",
+              "revenue operations",
+              "cross-functional",
+              "own",
+              "executive",
+              "alliances",
+              "api"
+            ]
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Cloud Partner Business Development",
+      "company": "Cognite",
+      "url": "https://jobs.lever.co/cognite/d586d093-65c5-4c3a-a78b-5c0279399b06",
+      "level": "Director",
+      "function": "Business Development",
+      "foundDate": "2026-03-03T23:42:17.846Z",
+      "total": 27,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 7,
+          "max": 30,
+          "note": "B2B/SaaS signal"
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 7,
+            "max": 30,
+            "note": "B2B/SaaS signal"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
           },
           "keywords": {
             "score": 0,
