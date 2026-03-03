@@ -15,6 +15,48 @@ function workTypePill(workType) {
   return `<span style="${s}padding:2px 10px;border-radius:20px;font-size:11px;font-weight:700;">${workType || 'Remote'}</span>`;
 }
 
+function buildTopPicksCard(topPicks) {
+  if (!topPicks || topPicks.length === 0) return '';
+
+  const rows = topPicks.map(job => {
+    const salaryBadge = job.salary && job.salary !== 'Not Listed'
+      ? `<span style="color:#2e7d32;font-size:11px;font-weight:600;">💰 ${job.salary}</span> · ` : '';
+    const workBadge = job.workType === 'Remote'
+      ? `<span style="background:#e8f5e9;color:#1b5e20;border:1px solid #a5d6a7;padding:1px 7px;border-radius:20px;font-size:10px;font-weight:700;">Remote</span>`
+      : `<span style="background:#e3f2fd;color:#0d47a1;border:1px solid #90caf9;padding:1px 7px;border-radius:20px;font-size:10px;font-weight:700;">${job.workType || 'Hybrid'}</span>`;
+
+    return `
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #f5f5f5;vertical-align:top;">
+        <div style="font-size:13px;font-weight:700;color:#111;margin-bottom:2px;">${job.title}</div>
+        <div style="font-size:12px;color:#666;margin-bottom:4px;">${job.company} · ${job.location}</div>
+        <div style="line-height:2;">${workBadge} &nbsp;${salaryBadge}</div>
+      </td>
+      <td style="padding:10px 12px;border-bottom:1px solid #f5f5f5;vertical-align:middle;text-align:right;white-space:nowrap;">
+        <a href="${job.url}" style="background:#f0f4ff;color:#1a73e8;padding:6px 14px;border-radius:6px;
+           text-decoration:none;font-size:12px;font-weight:700;border:1px solid #d0d9ff;">
+          View →
+        </a>
+      </td>
+    </tr>`;
+  }).join('');
+
+  return `
+  <div style="background:white;border-radius:12px;border:1px solid #e8e8e8;margin-bottom:20px;overflow:hidden;">
+    <div style="background:linear-gradient(90deg,#1a237e,#283593);padding:14px 18px;">
+      <div style="font-size:10px;letter-spacing:2px;color:#90caf9;font-weight:800;margin-bottom:2px;">REVISIT FROM LAST DIGEST</div>
+      <div style="font-size:15px;font-weight:800;color:white;">⭐ Your Previous Top Picks</div>
+    </div>
+    <table width="100%" cellpadding="0" cellspacing="0">
+      ${rows}
+    </table>
+    <div style="padding:10px 14px;background:#fafafa;font-size:10px;color:#aaa;text-align:center;">
+      These were the strongest matches from your last digest · Click to revisit before they expire
+    </div>
+  </div>`;
+}
+
+
 function buildJobCard(job, index) {
   const salary = job.salary && job.salary !== 'Not Listed' 
     ? `<span style="color:#2e7d32;font-weight:700;">💰 ${job.salary}</span> &nbsp;·&nbsp; ` : '';
@@ -93,6 +135,8 @@ function buildHTML(data) {
       </td>
     </tr></table>
   </div>
+
+  ${buildTopPicksCard(data.topPicks)}
 
   ${count === 0 ? `
   <div style="background:white;border-radius:12px;padding:40px;text-align:center;border:1px solid #e8e8e8;">
