@@ -247,15 +247,27 @@ async function main() {
 
   // Indeed RSS - multiple searches
   const indeedQueries = [
-    { q: 'Director Partnerships', l: 'remote' },
-    { q: 'VP Partnerships Alliances', l: 'remote' },
-    { q: 'Director Customer Success', l: 'remote' },
-    { q: 'Director Revenue Operations', l: 'remote' },
-    { q: 'Director Channel Sales', l: 'remote' },
-    { q: 'Director Alliances', l: 'remote' },
-    { q: 'VP Customer Success', l: 'remote' },
+    { q: 'Director of Partnerships', l: 'remote' },
+    { q: 'VP of Partnerships', l: 'remote' },
+    { q: 'Director of Alliances', l: 'remote' },
+    { q: 'VP of Alliances', l: 'remote' },
+    { q: 'Director of Customer Success', l: 'remote' },
+    { q: 'VP of Customer Success', l: 'remote' },
+    { q: 'Director of Revenue Operations', l: 'remote' },
+    { q: 'Director of Sales Operations', l: 'remote' },
+    { q: 'Director of Channel Sales', l: 'remote' },
+    { q: 'Director of Business Development', l: 'remote' },
+    { q: 'Director of Account Management', l: 'remote' },
+    { q: 'Director of Strategic Accounts', l: 'remote' },
+    { q: 'Director of Sales Enablement', l: 'remote' },
+    { q: 'Head of Partnerships', l: 'remote' },
+    { q: 'Director of Ecosystem', l: 'remote' },
+    { q: 'Director of Partner Success', l: 'remote' },
+    { q: 'VP of Business Development', l: 'remote' },
+    { q: 'Senior Director of Partnerships', l: 'remote' },
     { q: 'Director Partnerships', l: 'West Palm Beach, FL' },
-    { q: 'Director Business Development', l: 'remote' },
+    { q: 'Director Customer Success', l: 'West Palm Beach, FL' },
+    { q: 'Director Business Development', l: 'West Palm Beach, FL' },
   ];
 
   console.log('📋 Indeed RSS Feeds:');
@@ -272,7 +284,7 @@ async function main() {
 
   // Remotive - remote jobs API
   console.log('\n📋 Remotive API:');
-  const remotiveQueries = ['partnerships', 'alliances', 'customer success', 'revenue operations', 'channel sales'];
+  const remotiveQueries = ['partnerships', 'alliances', 'customer success', 'revenue operations', 'channel sales', 'business development', 'account management', 'sales enablement', 'ecosystem'];
   for (const q of remotiveQueries) {
     try {
       const jobs = await fetchRemotive(q);
@@ -307,15 +319,17 @@ async function main() {
   // Claude web search for HR Tech companies directly
   console.log('\n📋 Claude Web Search (HR Tech companies):');
   const claudeQueries = [
-    'Director VP Partnerships Alliances HR Tech SaaS jobs 2026 site:greenhouse.io OR site:lever.co',
-    'Director Customer Success Partnerships remote jobs Rippling Gusto Justworks Deel 2026'
+    'Director VP Partnerships Alliances remote jobs 2026 site:greenhouse.io',
+    'Director VP Partnerships Alliances remote jobs 2026 site:lever.co',
+    'Director Customer Success remote SaaS jobs 2026 site:greenhouse.io',
+    'Director Revenue Operations RevOps remote jobs 2026 site:lever.co OR site:greenhouse.io'
   ];
   for (const q of claudeQueries) {
     try {
       const jobs = await fetchViaClaudeSearch(q);
       console.log(`   ✅ ${jobs.length} results`);
       allJobs = allJobs.concat(jobs);
-      await new Promise(r => setTimeout(r, 15000));
+      await new Promise(r => setTimeout(r, 10000));
     } catch (err) {
       console.log(`   ❌ ${err.message}`);
     }
