@@ -1,0 +1,14 @@
+{
+  "name": "nick-job-search-2026",
+  "version": "1.0.0",
+  "description": "Daily automated job search agent for Nick Stephen",
+  "main": "scripts/search.js",
+  "scripts": {
+    "search": "node scripts/search.js",
+    "email": "node scripts/send-email.js",
+    "run-all": "node scripts/search.js && node scripts/send-email.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.9"
+  }
+}
