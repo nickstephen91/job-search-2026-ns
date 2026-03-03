@@ -49,40 +49,112 @@ function industryPill(industry) {
 }
 
 function jobCard(job) {
-  const salary = job.salary && job.salary !== 'Not Listed'
-    ? `<div style="font-size:12px;color:${D.green};font-weight:700;margin-top:6px;">💰 ${job.salary}</div>` : '';
+  const rank = job.rank || {};
+  const total = rank.total || 0;
+  const bd = rank.breakdown || {};
+  const kw = bd.keywords || {};
+  const matchRate = kw.matchRate || 0;
+
+  const scoreColor = total >= 80 ? '#059669' : total >= 65 ? '#2563eb' : total >= 50 ? '#d97706' : '#98a2b3';
+  const scoreBg    = total >= 80 ? '#ecfdf5'  : total >= 65 ? '#eff6ff'  : total >= 50 ? '#fffbeb'  : '#f7f8fa';
+  const tierLabel  = total >= 80 ? '🔥 Must Apply' : total >= 65 ? '⭐ Strong Match' : total >= 50 ? '👀 Review' : '📋 Low Match';
+  const matchColor = matchRate >= 60 ? '#059669' : matchRate >= 35 ? '#2563eb' : matchRate >= 20 ? '#d97706' : '#98a2b3';
+
+  const salary = job.salary && job.salary !== 'Not Listed' ? job.salary : null;
+  const wtIcon = job.workType === 'Remote' ? '🌎' : job.workType === 'Hybrid' ? '🏢' : '📍';
+  const sourceLabel = job.source || 'Job Board';
+
+  const kwTagsHtml = (kw.topMatches || []).slice(0, 5).map(k =>
+    `<span style="background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe;padding:2px 7px;border-radius:4px;font-size:9px;font-weight:700;margin-right:4px;display:inline-block;">${k}</span>`
+  ).join('');
+
+  const bdRows = [
+    { l: 'Industry', k: 'industry', m: 30 },
+    { l: 'Title',    k: 'title',    m: 25 },
+    { l: 'Keywords', k: 'keywords', m: 20 },
+    { l: 'Comp',     k: 'comp',     m: 12 },
+  ].map(r => {
+    const pts = (bd[r.k] || {}).score || 0;
+    const pct = Math.round((pts / r.m) * 100);
+    const c = pct >= 75 ? '#059669' : pct >= 45 ? '#2563eb' : '#98a2b3';
+    return `<tr>
+      <td style="padding:2px 0;width:58px;font-size:10px;color:#667085;white-space:nowrap;">${r.l}</td>
+      <td style="padding:2px 8px;">
+        <div style="background:#e4e7ec;border-radius:3px;height:4px;overflow:hidden;">
+          <div style="background:${c};width:${Math.max(pct,2)}%;height:4px;border-radius:3px;"></div>
+        </div>
+      </td>
+      <td style="padding:2px 0;width:36px;font-size:10px;color:${c};text-align:right;font-weight:700;">${pts}/${r.m}</td>
+    </tr>`;
+  }).join('');
 
   return `
-  <div style="background:${D.card};border:1px solid ${D.cardBorder};border-radius:10px;
-              margin-bottom:8px;overflow:hidden;">
-    <div style="height:3px;background:${D.accent};"></div>
-    <div style="padding:18px 20px;">
+  <div style="background:#ffffff;border:1px solid #e4e7ec;border-radius:12px;margin-bottom:10px;overflow:hidden;font-family:'DM Sans',Arial,sans-serif;">
+
+    <!-- Tier strip -->
+    <div style="background:${scoreBg};border-bottom:1px solid #e4e7ec;padding:6px 18px;display:table;width:100%;box-sizing:border-box;">
+      <span style="font-size:10px;font-weight:800;color:${scoreColor};letter-spacing:0.5px;">${tierLabel}</span>
+      <span style="font-size:10px;color:${scoreColor};font-weight:700;float:right;">${total}/100</span>
+    </div>
+
+    <div style="padding:16px 18px;">
       <table width="100%" cellpadding="0" cellspacing="0"><tr>
         <td style="vertical-align:top;">
-          <div style="font-size:15px;font-weight:800;color:${D.textPrimary};
-                      margin-bottom:4px;letter-spacing:-0.2px;line-height:1.3;">${job.title}</div>
-          <div style="font-size:13px;color:${D.textSecondary};margin-bottom:10px;">
-            <strong>${job.company}</strong>
-            <span style="color:${D.textMuted};margin:0 5px;">·</span>
-            ${job.location}
+
+          <!-- Title -->
+          <div style="font-size:16px;font-weight:800;color:#101828;letter-spacing:-0.3px;line-height:1.3;margin-bottom:5px;">${job.title}</div>
+
+          <!-- Company — blue, prominent -->
+          <div style="font-size:14px;font-weight:700;color:#2563eb;margin-bottom:4px;">${job.company}</div>
+
+          <!-- Location & work type -->
+          <div style="font-size:12px;color:#667085;margin-bottom:10px;">
+            ${wtIcon} <strong style="color:#344054;">${job.workType}</strong>
+            &nbsp;·&nbsp; ${job.location || 'United States'}
+            ${salary ? `&nbsp;·&nbsp; <span style="color:#059669;font-weight:700;">💰 ${salary}</span>` : ''}
           </div>
-          <div style="line-height:2.3;">
-            ${workPill(job.workType)}
-            &nbsp;${sourcePill(job.source)}
-            ${industryPill(job.industry)}
+
+          <!-- Source / industry pills -->
+          <div style="margin-bottom:12px;line-height:2.2;">
+            <span style="background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe;padding:2px 9px;border-radius:4px;font-size:10px;font-weight:700;">via ${sourceLabel}</span>
+            ${job.industry ? `&nbsp;<span style="background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe;padding:2px 9px;border-radius:4px;font-size:10px;font-weight:700;">${job.industry}</span>` : ''}
+            ${job.posted ? `&nbsp;<span style="background:#f7f8fa;color:#98a2b3;border:1px solid #e4e7ec;padding:2px 9px;border-radius:4px;font-size:10px;font-weight:600;">📅 ${job.posted}</span>` : ''}
           </div>
-          ${salary}
-          <div style="font-size:11px;color:${D.textMuted};margin-top:8px;">
-            Posted ${job.posted || 'Recently'}
+
+          <!-- Keyword match block -->
+          <div style="background:#f7f8fa;border:1px solid #e4e7ec;border-radius:8px;padding:10px 12px;margin-bottom:10px;">
+            <table width="100%" cellpadding="0" cellspacing="0"><tr>
+              <td style="vertical-align:middle;">
+                <div style="font-size:9px;font-weight:700;color:#98a2b3;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:5px;">🔑 Resume Keyword Match</div>
+                <div style="background:#e4e7ec;border-radius:3px;height:5px;overflow:hidden;margin-bottom:5px;">
+                  <div style="background:${matchColor};width:${Math.max(matchRate,2)}%;height:5px;border-radius:3px;"></div>
+                </div>
+                <div style="font-size:10px;color:#667085;">${kw.totalHits||0}/${kw.totalKeywords||0} resume keywords · ${kw.usedFullDesc ? '<span style="color:#059669;font-weight:600;">full description</span>' : 'snippet only'}</div>
+                ${kwTagsHtml ? `<div style="margin-top:6px;">${kwTagsHtml}</div>` : ''}
+              </td>
+              <td style="vertical-align:middle;text-align:right;padding-left:12px;width:52px;white-space:nowrap;">
+                <div style="font-size:22px;font-weight:800;color:${matchColor};line-height:1;">${matchRate}%</div>
+                <div style="font-size:9px;color:#98a2b3;text-align:center;">match</div>
+              </td>
+            </tr></table>
           </div>
+
+          <!-- Score breakdown mini bars -->
+          <table width="100%" cellpadding="0" cellspacing="2">${bdRows}</table>
+
         </td>
-        <td style="vertical-align:middle;padding-left:20px;text-align:right;white-space:nowrap;width:110px;">
-          <a href="${job.url}" style="display:inline-block;background:${D.accent};
-             color:#ffffff;padding:10px 18px;border-radius:8px;text-decoration:none;
-             font-size:12px;font-weight:800;letter-spacing:0.3px;">
-            View →
+
+        <!-- Score + CTA -->
+        <td style="vertical-align:top;text-align:center;padding-left:14px;width:72px;">
+          <div style="width:56px;height:56px;border-radius:50%;border:2px solid ${scoreColor};background:${scoreBg};display:inline-flex;align-items:center;justify-content:center;flex-direction:column;margin-bottom:10px;">
+            <div style="font-size:17px;font-weight:900;color:${scoreColor};line-height:1;">${total}</div>
+            <div style="font-size:9px;color:#98a2b3;">/100</div>
+          </div>
+          <a href="${job.url}" style="display:block;background:#2563eb;color:#fff;text-decoration:none;padding:8px 0;border-radius:7px;font-size:11px;font-weight:700;text-align:center;">
+            View Job →
           </a>
         </td>
+
       </tr></table>
     </div>
   </div>`;
