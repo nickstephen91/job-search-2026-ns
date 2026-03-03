@@ -1,5 +1,4 @@
-// Nick Stephen Job Search Agent - RSS/API SOURCE VERSION
-// Uses real accessible job feeds instead of scraping blocked sites
+// Nick Stephen Job Search Agent - search.js CLEAN v11
 const fs = require('fs');
 const path = require('path');
 
@@ -8,287 +7,35 @@ const SEEN_URLS_PATH = path.join(RESULTS_DIR, 'seen_urls.json');
 const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
 const TOP_PICKS_PATH = path.join(RESULTS_DIR, 'top_picks.json');
 
+// ── PERSISTENCE ──────────────────────────────────────────────────────────────
 function loadSeenUrls() {
   try {
     if (!fs.existsSync(SEEN_URLS_PATH)) return new Set();
-    return new Set(JSON.parse(fs.readFileSync(SEEN_URLS_PATH, 'utf8')).urls || []);
+    const data = JSON.parse(fs.readFileSync(SEEN_URLS_PATH, 'utf8'));
+    // Only keep URLs from the last 14 days to prevent seen list from growing forever
+    const cutoff = Date.now() - (14 * 24 * 60 * 60 * 1000);
+    const recent = (data.entries || []).filter(e => e.ts > cutoff);
+    return new Set(recent.map(e => e.url));
   } catch { return new Set(); }
 }
 
-function saveSeenUrls(seenUrls) {
+function saveSeenUrls(seenUrls, newUrls) {
+  let existing = [];
+  try {
+    if (fs.existsSync(SEEN_URLS_PATH)) {
+      existing = JSON.parse(fs.readFileSync(SEEN_URLS_PATH, 'utf8')).entries || [];
+    }
+  } catch {}
+  const cutoff = Date.now() - (14 * 24 * 60 * 60 * 1000);
+  const kept = existing.filter(e => e.ts > cutoff && !newUrls.has(e.url));
+  const added = Array.from(newUrls).map(url => ({ url, ts: Date.now() }));
   fs.writeFileSync(SEEN_URLS_PATH, JSON.stringify({
     lastUpdated: new Date().toISOString(),
-    totalSeen: seenUrls.size,
-    urls: Array.from(seenUrls)
+    totalTracked: kept.length + added.length,
+    entries: [...kept, ...added]
   }, null, 2));
 }
 
-// Nick's resume keywords for 50% match filter
-const NICK_SKILLS = [
-  'partner', 'alliance', 'channel', 'reseller', 'ecosystem', 'crm', 'pipeline',
-  'go-to-market', 'gtm', 'enablement', 'revenue', 'saas', 'b2b', 'peo',
-  'hr tech', 'hrtech', 'hcm', 'payroll', 'compliance', 'workforce', 'integration',
-  'kpi', 'reporting', 'cross-functional', 'leadership', 'strategy', 'operations',
-  'account', 'client', 'customer', 'relationship', 'negotiation', 'contract',
-  'pricing', 'quota', 'arr', 'qbr', 'sop', 'business development'
-];
-
-const NICK_TITLES = [
-  'director', 'vp', 'vice president', 'head of', 'senior director', 'svp',
-  'partnership', 'alliance', 'channel', 'customer success', 'client success',
-  'revenue operations', 'revops', 'sales operations', 'business development',
-  'account management', 'enablement', 'ecosystem'
-];
-
-const NICK_INDUSTRIES = [
-  'saas', 'software', 'tech', 'hr', 'payroll', 'compliance', 'peo',
-  'workforce', 'hcm', 'benefits', 'staffing', 'fintech', 'b2b', 'cloud'
-];
-
-function meetsRequirements(job) {
-  const title = (job.title || '').toLowerCase();
-  const text = `${job.title} ${job.snippet || ''} ${job.company || ''} ${job.industry || ''}`.toLowerCase();
-
-  // FILTER 1: Must be Director+ or VP+ level — but be generous, "Senior Manager" still passes
-  const seniorTitles = ['director', 'vp', 'vice president', 'head of', 'senior director', 
-                        'svp', 'chief', 'principal', 'senior manager', 'sr. manager', 'sr manager'];
-  const hardJunior = ['coordinator', 'specialist', 'analyst', 'junior', 'intern', 'assistant'];
-  const isSenior = seniorTitles.some(t => title.includes(t));
-  const isHardJunior = hardJunior.some(t => title.includes(t)) && !isSenior;
-  if (!isSenior || isHardJunior) {
-    console.log(`   ⬇️  Level: "${job.title}"`);
-    return false;
-  }
-
-  // FILTER 2: Salary — only reject if explicitly listed AND max is under $100K
-  if (job.salary && job.salary !== 'Not Listed' && job.salary !== '') {
-    const nums = job.salary.replace(/[^0-9]/g, ' ').trim().split(/\s+/)
-      .map(Number).filter(n => n > 10000 && n < 2000000);
-    if (nums.length > 0 && Math.max(...nums) < 100000) {
-      console.log(`   ⬇️  Salary: "${job.title}"`);
-      return false;
-    }
-  }
-
-  // FILTER 3: Must relate to Nick's target functions — broad list so we don't miss things
-  const targetFunctions = ['partner', 'alliance', 'channel', 'reseller', 'ecosystem',
-    'customer success', 'client success', 'revenue oper', 'revops', 'sales oper',
-    'business development', 'account manag', 'enablement', 'go-to-market', 'gtm',
-    'strategic account', 'sales enablement', 'partner success', 'market', 'growth',
-    'commercial', 'revenue', 'sales', 'relationship', 'enterprise'];
-  const hasFunction = targetFunctions.some(f => title.includes(f));
-  if (!hasFunction) {
-    console.log(`   ⬇️  Function: "${job.title}"`);
-    return false;
-  }
-
-  return true;
-}
-
-// ── SOURCE 1: Indeed RSS Feeds ─────────────────────────────────────────────
-// Indeed has public RSS feeds that are freely accessible
-async function fetchIndeedRSS(query, location) {
-  const q = encodeURIComponent(query);
-  const l = encodeURIComponent(location);
-  const url = `https://www.indeed.com/rss?q=${q}&l=${l}&sort=date&fromage=7`;
-
-  console.log(`   📡 Indeed RSS: ${query} in ${location}`);
-
-  const res = await fetch(url, {
-    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RSS reader)' }
-  });
-
-  if (!res.ok) throw new Error(`Indeed RSS returned ${res.status}`);
-
-  const xml = await res.text();
-
-  // Parse RSS XML manually
-  const items = [];
-  const itemMatches = xml.matchAll(/<item>([\s\S]*?)<\/item>/g);
-
-  for (const match of itemMatches) {
-    const item = match[1];
-    const title = (item.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/) || item.match(/<title>(.*?)<\/title>/))?.[1] || '';
-    const link = (item.match(/<link>(.*?)<\/link>/) || [])[1] || '';
-    const description = (item.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/) || item.match(/<description>(.*?)<\/description>/))?.[1] || '';
-    const pubDate = (item.match(/<pubDate>(.*?)<\/pubDate>/) || [])[1] || '';
-    const source = (item.match(/<source.*?>(.*?)<\/source>/) || [])[1] || 'Indeed';
-
-    // Extract company from description
-    const companyMatch = description.match(/([A-Z][a-zA-Z\s]+(?:Inc|LLC|Corp|Co|Ltd|Group|Solutions|Services|Technologies|Software|Platform)?)/);
-
-    if (title && link) {
-      items.push({
-        title: title.replace(/<[^>]+>/g, '').trim(),
-        company: companyMatch?.[1]?.trim() || 'See posting',
-        location: location,
-        workType: description.toLowerCase().includes('remote') ? 'Remote' : 'See posting',
-        salary: 'Not Listed',
-        posted: pubDate ? new Date(pubDate).toLocaleDateString() : 'Recent',
-        url: link,
-        source: 'Indeed',
-        snippet: description.replace(/<[^>]+>/g, '').substring(0, 300),
-        industry: '',
-        companyStage: ''
-      });
-    }
-  }
-
-  return items;
-}
-
-// ── SOURCE 2: Remotive API ─────────────────────────────────────────────────
-// Remotive has a free public API for remote jobs
-async function fetchRemotive(query) {
-  console.log(`   📡 Remotive API: ${query}`);
-  const q = encodeURIComponent(query);
-  const url = `https://remotive.com/api/remote-jobs?search=${q}&limit=20`;
-
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Remotive returned ${res.status}`);
-
-  const data = await res.json();
-  const jobs = data.jobs || [];
-
-  return jobs.map(j => ({
-    title: j.title || '',
-    company: j.company_name || '',
-    location: 'Remote',
-    workType: 'Remote',
-    salary: j.salary || 'Not Listed',
-    posted: j.publication_date ? new Date(j.publication_date).toLocaleDateString() : 'Recent',
-    url: j.url || '',
-    source: 'Remotive',
-    snippet: (j.description || '').replace(/<[^>]+>/g, '').substring(0, 300),
-    industry: j.category || '',
-    companyStage: ''
-  }));
-}
-
-// ── SOURCE 3: The Muse API ─────────────────────────────────────────────────
-// The Muse has a free public jobs API
-async function fetchTheMuse(query) {
-  console.log(`   📡 The Muse API: ${query}`);
-  const q = encodeURIComponent(query);
-  const url = `https://www.themuse.com/api/public/jobs?descending=true&page=1&query=${q}`;
-
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`The Muse returned ${res.status}`);
-
-  const data = await res.json();
-  const results = data.results || [];
-
-  return results.map(j => ({
-    title: j.name || '',
-    company: j.company?.name || '',
-    location: j.locations?.[0]?.name || 'Remote',
-    workType: j.locations?.[0]?.name?.toLowerCase().includes('remote') ? 'Remote' : 'Hybrid',
-    salary: 'Not Listed',
-    posted: j.publication_date ? new Date(j.publication_date).toLocaleDateString() : 'Recent',
-    url: j.refs?.landing_page || '',
-    source: 'The Muse',
-    snippet: (j.contents || '').replace(/<[^>]+>/g, '').substring(0, 300),
-    industry: j.categories?.[0]?.name || '',
-    companyStage: ''
-  }));
-}
-
-// ── SOURCE 4: Arbeitnow API ────────────────────────────────────────────────
-// Free job board API with remote jobs
-async function fetchArbeitnow(query) {
-  console.log(`   📡 Arbeitnow API: ${query}`);
-  const q = encodeURIComponent(query);
-  const url = `https://www.arbeitnow.com/api/job-board-api?search=${q}`;
-
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Arbeitnow returned ${res.status}`);
-
-  const data = await res.json();
-  const jobs = data.data || [];
-
-  return jobs.filter(j => j.remote).map(j => ({
-    title: j.title || '',
-    company: j.company_name || '',
-    location: 'Remote',
-    workType: 'Remote',
-    salary: j.salary || 'Not Listed',
-    posted: j.created_at ? new Date(j.created_at * 1000).toLocaleDateString() : 'Recent',
-    url: j.url || '',
-    source: 'Arbeitnow',
-    snippet: (j.description || '').replace(/<[^>]+>/g, '').substring(0, 300),
-    industry: j.tags?.[0] || '',
-    companyStage: ''
-  }));
-}
-
-// ── SOURCE 5: Claude web search as fallback ────────────────────────────────
-// Use Claude to search specific company career pages directly
-async function fetchViaClaudeSearch(query) {
-  console.log(`   📡 Claude search: ${query}`);
-
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': process.env.ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01'
-    },
-    body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 3000,
-      tools: [{ type: 'web_search_20250305', name: 'web_search' }],
-      messages: [{
-        role: 'user',
-        content: `Search for "${query}" on job boards. Return ONLY a JSON array of job listings found, with no other text:
-[{"title":"","company":"","location":"","workType":"Remote or Hybrid or Onsite","salary":"","posted":"","url":"","source":"","snippet":"","industry":"","companyStage":""}]`
-      }]
-    })
-  });
-
-  if (!res.ok) throw new Error(`API ${res.status}`);
-  const data = await res.json();
-  if (data.error) throw new Error(data.error.message);
-
-  const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
-  const start = text.indexOf('[');
-  const end = text.lastIndexOf(']');
-  if (start === -1) return [];
-
-  try {
-    const jobs = JSON.parse(text.substring(start, end + 1));
-    return jobs.filter(j => j.title && j.url);
-  } catch { return []; }
-}
-
-
-// Verify job URL is still active before sending
-async function isJobActive(url) {
-  try {
-    const controller = new AbortController();
-    setTimeout(() => controller.abort(), 6000);
-    const res = await fetch(url, {
-      method: 'GET',
-      redirect: 'follow',
-      signal: controller.signal,
-      headers: { 'User-Agent': 'Mozilla/5.0' }
-    });
-    if (res.status === 404 || res.status === 410) return false;
-    const finalUrl = res.url.toLowerCase();
-    const deadPatterns = ['no-longer', 'expired', 'filled', 'closed', 'not-found', 'job-closed', 'position-filled'];
-    if (deadPatterns.some(p => finalUrl.includes(p))) return false;
-    // Check page content for "no longer" signals
-    const text = (await res.text()).toLowerCase().substring(0, 2000);
-    const deadText = ['no longer available', 'no longer open', 'position has been filled', 
-                      'job has expired', 'this job is no longer', 'posting has expired'];
-    if (deadText.some(p => text.includes(p))) return false;
-    return true;
-  } catch {
-    return true; // assume active if can't check
-  }
-}
-
-
-// Load previous top picks to show in email
 function loadTopPicks() {
   try {
     if (!fs.existsSync(TOP_PICKS_PATH)) return [];
@@ -296,50 +43,131 @@ function loadTopPicks() {
   } catch { return []; }
 }
 
-// Save top 5 jobs from today as next run's "top picks"
 function saveTopPicks(jobs) {
-  // Sort by: HR Tech/PEO/Compliance first, then by title seniority, then remote
+  if (!jobs || jobs.length === 0) return;
+  const priority = ['vp', 'vice president', 'hr tech', 'hcm', 'peo', 'payroll', 'compliance', 'saas', 'partnership', 'alliance'];
   const ranked = [...jobs].sort((a, b) => {
-    const aText = `${a.title} ${a.industry || ''}`.toLowerCase();
-    const bText = `${b.title} ${b.industry || ''}`.toLowerCase();
-    const priority = ['hr tech', 'hcm', 'peo', 'payroll', 'compliance', 'saas'];
-    const aScore = priority.filter(p => aText.includes(p)).length +
-                   (aText.includes('vp') || aText.includes('vice president') ? 2 : 0) +
-                   (aText.includes('director') ? 1 : 0) +
-                   (a.workType === 'Remote' ? 1 : 0);
-    const bScore = priority.filter(p => bText.includes(p)).length +
-                   (bText.includes('vp') || bText.includes('vice president') ? 2 : 0) +
-                   (bText.includes('director') ? 1 : 0) +
-                   (b.workType === 'Remote' ? 1 : 0);
-    return bScore - aScore;
+    const at = `${a.title} ${a.industry || ''}`.toLowerCase();
+    const bt = `${b.title} ${b.industry || ''}`.toLowerCase();
+    return priority.filter(p => bt.includes(p)).length - priority.filter(p => at.includes(p)).length;
   });
-
-  const top5 = ranked.slice(0, 5).map(j => ({
-    title: j.title,
-    company: j.company,
-    location: j.location,
-    workType: j.workType,
-    salary: j.salary,
-    url: j.url,
-    source: j.source,
-    industry: j.industry,
-    foundDate: j.foundDate
-  }));
-
   fs.writeFileSync(TOP_PICKS_PATH, JSON.stringify({
     savedAt: new Date().toISOString(),
-    picks: top5
+    picks: ranked.slice(0, 5)
   }, null, 2));
 }
 
+// ── FILTERS ───────────────────────────────────────────────────────────────────
+const SENIOR_TITLES = ['director', 'vp', 'vice president', 'head of', 'senior director',
+  'svp', 'chief', 'principal', 'senior manager', 'sr. manager', 'sr manager'];
+const HARD_JUNIOR = ['coordinator', 'specialist', 'analyst', 'junior', 'intern', 'assistant'];
+const TARGET_FUNCTIONS = ['partner', 'alliance', 'channel', 'reseller', 'ecosystem',
+  'customer success', 'client success', 'revenue oper', 'revops', 'sales oper',
+  'business development', 'account manag', 'enablement', 'go-to-market', 'gtm',
+  'strategic account', 'sales enablement', 'partner success', 'growth',
+  'commercial', 'revenue', 'sales', 'relationship', 'enterprise', 'market'];
+
+function meetsRequirements(job) {
+  const title = (job.title || '').toLowerCase();
+  const isSenior = SENIOR_TITLES.some(t => title.includes(t));
+  const isHardJunior = HARD_JUNIOR.some(t => title.includes(t)) && !isSenior;
+  if (!isSenior || isHardJunior) return false;
+  if (job.salary && job.salary !== 'Not Listed') {
+    const nums = job.salary.replace(/[^0-9]/g, ' ').trim().split(/\s+/)
+      .map(Number).filter(n => n > 10000 && n < 2000000);
+    if (nums.length > 0 && Math.max(...nums) < 100000) return false;
+  }
+  return TARGET_FUNCTIONS.some(f => title.includes(f));
+}
+
+// ── SOURCES ───────────────────────────────────────────────────────────────────
+async function fetchIndeedRSS(q, l) {
+  const url = `https://www.indeed.com/rss?q=${encodeURIComponent(q)}&l=${encodeURIComponent(l)}&sort=date&fromage=14`;
+  const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RSS/2.0)' } });
+  if (!res.ok) throw new Error(`Indeed ${res.status}`);
+  const xml = await res.text();
+  const items = [];
+  for (const match of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+    const x = match[1];
+    const get = (tag) => (x.match(new RegExp(`<${tag}[^>]*>(?:<!\\[CDATA\\[)?(.*?)(?:\\]\\]>)?<\\/${tag}>`, 's')) || [])[1]?.trim() || '';
+    const title = get('title'); const link = get('link'); const desc = get('description');
+    if (title && link) items.push({
+      title, company: 'See posting', location: l, workType: desc.toLowerCase().includes('remote') ? 'Remote' : 'See posting',
+      salary: 'Not Listed', posted: 'Recent', url: link, source: 'Indeed', snippet: desc.replace(/<[^>]+>/g, '').substring(0, 200), industry: '', companyStage: ''
+    });
+  }
+  return items;
+}
+
+async function fetchRemotive(q) {
+  const res = await fetch(`https://remotive.com/api/remote-jobs?search=${encodeURIComponent(q)}&limit=20`);
+  if (!res.ok) throw new Error(`Remotive ${res.status}`);
+  const { jobs = [] } = await res.json();
+  return jobs.map(j => ({
+    title: j.title, company: j.company_name, location: 'Remote', workType: 'Remote',
+    salary: j.salary || 'Not Listed', posted: j.publication_date ? new Date(j.publication_date).toLocaleDateString() : 'Recent',
+    url: j.url, source: 'Remotive', snippet: (j.description || '').replace(/<[^>]+>/g, '').substring(0, 200),
+    industry: j.category || '', companyStage: ''
+  }));
+}
+
+async function fetchTheMuse(q) {
+  const res = await fetch(`https://www.themuse.com/api/public/jobs?descending=true&page=1&query=${encodeURIComponent(q)}`);
+  if (!res.ok) throw new Error(`Muse ${res.status}`);
+  const { results = [] } = await res.json();
+  return results.map(j => ({
+    title: j.name, company: j.company?.name || '', location: j.locations?.[0]?.name || 'Remote',
+    workType: (j.locations?.[0]?.name || '').toLowerCase().includes('remote') ? 'Remote' : 'Hybrid',
+    salary: 'Not Listed', posted: j.publication_date ? new Date(j.publication_date).toLocaleDateString() : 'Recent',
+    url: j.refs?.landing_page || '', source: 'The Muse',
+    snippet: (j.contents || '').replace(/<[^>]+>/g, '').substring(0, 200),
+    industry: j.categories?.[0]?.name || '', companyStage: ''
+  }));
+}
+
+async function fetchArbeitnow(q) {
+  const res = await fetch(`https://www.arbeitnow.com/api/job-board-api?search=${encodeURIComponent(q)}`);
+  if (!res.ok) throw new Error(`Arbeitnow ${res.status}`);
+  const { data = [] } = await res.json();
+  return data.filter(j => j.remote).map(j => ({
+    title: j.title, company: j.company_name, location: 'Remote', workType: 'Remote',
+    salary: j.salary || 'Not Listed',
+    posted: j.created_at ? new Date(j.created_at * 1000).toLocaleDateString() : 'Recent',
+    url: j.url, source: 'Arbeitnow',
+    snippet: (j.description || '').replace(/<[^>]+>/g, '').substring(0, 200),
+    industry: j.tags?.[0] || '', companyStage: ''
+  }));
+}
+
+async function fetchViaClaudeSearch(prompt) {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-api-key': process.env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-20250514', max_tokens: 4000,
+      tools: [{ type: 'web_search_20250305', name: 'web_search' }],
+      messages: [{ role: 'user', content: prompt }]
+    })
+  });
+  if (!res.ok) throw new Error(`API ${res.status}`);
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
+  const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
+  const start = text.indexOf('['); const end = text.lastIndexOf(']');
+  if (start === -1) return [];
+  try {
+    const jobs = JSON.parse(text.substring(start, end + 1));
+    return jobs.filter(j => j.title && j.url);
+  } catch { return []; }
+}
+
+// ── MAIN ──────────────────────────────────────────────────────────────────────
 async function main() {
   const dateStr = new Date().toLocaleDateString('en-US', {
-    timeZone: 'America/New_York',
-    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    timeZone: 'America/New_York', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
   });
-
   console.log('='.repeat(60));
-  console.log('NICK STEPHEN JOB SEARCH - RSS/API MODE');
+  console.log('NICK STEPHEN JOB SEARCH AGENT');
   console.log(`DATE: ${dateStr}`);
   console.log('='.repeat(60));
 
@@ -347,13 +175,13 @@ async function main() {
 
   const seenUrls = loadSeenUrls();
   const previousTopPicks = loadTopPicks();
-  console.log(`Previously seen: ${seenUrls.size} jobs`);
-  console.log(`Previous top picks loaded: ${previousTopPicks.length}\n`);
+  console.log(`\nPreviously seen (last 14 days): ${seenUrls.size}`);
+  console.log(`Previous top picks: ${previousTopPicks.length}\n`);
 
   let allJobs = [];
 
-  // Indeed RSS - multiple searches
-  const indeedQueries = [
+  // Indeed RSS
+  const indeedSearches = [
     { q: 'Director of Partnerships', l: 'remote' },
     { q: 'VP of Partnerships', l: 'remote' },
     { q: 'Director of Alliances', l: 'remote' },
@@ -361,134 +189,104 @@ async function main() {
     { q: 'Director of Customer Success', l: 'remote' },
     { q: 'VP of Customer Success', l: 'remote' },
     { q: 'Director of Revenue Operations', l: 'remote' },
-    { q: 'Director of Sales Operations', l: 'remote' },
     { q: 'Director of Channel Sales', l: 'remote' },
     { q: 'Director of Business Development', l: 'remote' },
-    { q: 'Director of Account Management', l: 'remote' },
-    { q: 'Director of Strategic Accounts', l: 'remote' },
-    { q: 'Director of Sales Enablement', l: 'remote' },
     { q: 'Head of Partnerships', l: 'remote' },
-    { q: 'Director of Ecosystem', l: 'remote' },
-    { q: 'Director of Partner Success', l: 'remote' },
-    { q: 'VP of Business Development', l: 'remote' },
-    { q: 'Senior Director of Partnerships', l: 'remote' },
+    { q: 'Senior Director Partnerships', l: 'remote' },
+    { q: 'Director of Sales Operations', l: 'remote' },
+    { q: 'Director of Account Management', l: 'remote' },
+    { q: 'VP Business Development', l: 'remote' },
     { q: 'Director Partnerships', l: 'West Palm Beach, FL' },
     { q: 'Director Customer Success', l: 'West Palm Beach, FL' },
     { q: 'Director Business Development', l: 'West Palm Beach, FL' },
   ];
 
-  console.log('📋 Indeed RSS Feeds:');
-  for (const { q, l } of indeedQueries) {
+  console.log('📡 Indeed RSS...');
+  for (const { q, l } of indeedSearches) {
     try {
       const jobs = await fetchIndeedRSS(q, l);
-      console.log(`   ✅ "${q}" → ${jobs.length} results`);
-      allJobs = allJobs.concat(jobs);
-      await new Promise(r => setTimeout(r, 1000));
-    } catch (err) {
-      console.log(`   ❌ "${q}": ${err.message}`);
-    }
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 800));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
   }
 
-  // Remotive - remote jobs API
-  console.log('\n📋 Remotive API:');
-  const remotiveQueries = ['partnerships', 'alliances', 'customer success', 'revenue operations', 'channel sales', 'business development', 'account management', 'sales enablement', 'ecosystem'];
-  for (const q of remotiveQueries) {
+  // Remotive
+  console.log('\n📡 Remotive API...');
+  for (const q of ['partnerships', 'alliances', 'customer success', 'revenue operations', 'channel sales', 'business development', 'account management', 'sales enablement', 'ecosystem']) {
     try {
       const jobs = await fetchRemotive(q);
-      console.log(`   ✅ "${q}" → ${jobs.length} results`);
-      allJobs = allJobs.concat(jobs);
-      await new Promise(r => setTimeout(r, 500));
-    } catch (err) {
-      console.log(`   ❌ "${q}": ${err.message}`);
-    }
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 400));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
   }
 
-  // The Muse API
-  console.log('\n📋 The Muse API:');
+  // The Muse
+  console.log('\n📡 The Muse...');
   try {
-    const jobs = await fetchTheMuse('director partnerships alliances');
-    console.log(`   ✅ ${jobs.length} results`);
-    allJobs = allJobs.concat(jobs);
-  } catch (err) {
-    console.log(`   ❌ ${err.message}`);
-  }
+    const jobs = await fetchTheMuse('director partnerships alliances customer success');
+    console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs);
+  } catch (e) { console.log(`   ❌ ${e.message}`); }
 
-  // Arbeitnow API
-  console.log('\n📋 Arbeitnow API:');
+  // Arbeitnow
+  console.log('\n📡 Arbeitnow...');
   try {
     const jobs = await fetchArbeitnow('director partnerships');
-    console.log(`   ✅ ${jobs.length} results`);
-    allJobs = allJobs.concat(jobs);
-  } catch (err) {
-    console.log(`   ❌ ${err.message}`);
-  }
+    console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs);
+  } catch (e) { console.log(`   ❌ ${e.message}`); }
 
-  // Claude web search for HR Tech companies directly
-  console.log('\n📋 Claude Web Search (HR Tech companies):');
-  const claudeQueries = [
-    'Director VP Partnerships Alliances remote jobs 2026 site:greenhouse.io',
-    'Director VP Partnerships Alliances remote jobs 2026 site:lever.co',
-    'Director Customer Success remote SaaS jobs 2026 site:greenhouse.io',
-    'Director Revenue Operations RevOps remote jobs 2026 site:lever.co OR site:greenhouse.io'
+  // Claude ATS search
+  console.log('\n📡 Claude ATS search...');
+  const atsPrompts = [
+    `Search greenhouse.io job board for active Director and VP level Partnerships, Alliances, Customer Success roles posted in the last 30 days. Return as JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Greenhouse","snippet":"","industry":"","companyStage":""}]`,
+    `Search lever.co job board for active Director and VP level Partnerships, Channel, Revenue Operations, Business Development roles. Return as JSON array only.`
   ];
-  for (const q of claudeQueries) {
+  for (const prompt of atsPrompts) {
     try {
-      const jobs = await fetchViaClaudeSearch(q);
-      console.log(`   ✅ ${jobs.length} results`);
-      allJobs = allJobs.concat(jobs);
+      const jobs = await fetchViaClaudeSearch(prompt);
+      console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs);
       await new Promise(r => setTimeout(r, 10000));
-    } catch (err) {
-      console.log(`   ❌ ${err.message}`);
-    }
+    } catch (e) { console.log(`   ❌ ${e.message}`); }
   }
 
-  console.log(`\n📥 Total raw: ${allJobs.length}`);
-
-  // Deduplicate by URL
-  const seen = new Set();
+  // Dedup
+  const urlSet = new Set();
   const deduped = allJobs.filter(j => {
-    if (!j.url || seen.has(j.url)) return false;
-    seen.add(j.url);
-    return true;
+    if (!j.url || urlSet.has(j.url)) return false;
+    urlSet.add(j.url); return true;
   });
-  console.log(`📊 After dedup: ${deduped.length}`);
+  console.log(`\n📊 Total unique: ${deduped.length}`);
 
-  // 50% requirements match filter
+  // Filter
   const qualified = deduped.filter(meetsRequirements);
-  console.log(`✅ After 50% match filter: ${qualified.length}`);
+  console.log(`✅ After filters: ${qualified.length}`);
 
   // New only
   const newJobs = qualified
     .filter(j => !seenUrls.has(j.url))
     .map(j => ({ ...j, foundDate: new Date().toISOString() }));
+  console.log(`🆕 New this run: ${newJobs.length}`);
 
-  console.log(`🆕 New (unseen): ${newJobs.length}`);
+  // Save top picks for next email
+  if (newJobs.length > 0) saveTopPicks(newJobs);
 
-  // Verify each job URL is still active
-  const verifiedJobs = newJobs; // Skipping URL verification for reliability
+  // Update seen URLs — only add the new qualified ones
+  const newUrlSet = new Set(newJobs.map(j => j.url));
+  saveSeenUrls(seenUrls, newUrlSet);
 
-  // Update seen URLs
-  deduped.forEach(j => seenUrls.add(j.url));
-  saveSeenUrls(seenUrls);
-
-  // Save today's top picks for tomorrow's email
-  if (verifiedJobs.length > 0) saveTopPicks(verifiedJobs);
-
+  // Save today
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
-    date: dateStr,
-    count: verifiedJobs.length,
-    jobs: verifiedJobs,
-    topPicks: previousTopPicks
+    date: dateStr, count: newJobs.length,
+    jobs: newJobs, topPicks: previousTopPicks
   }, null, 2));
 
-  console.log(`\n✅ Done! ${verifiedJobs.length} verified active jobs to send.`);
+  console.log(`\n✅ Done! ${newJobs.length} new jobs queued for email.`);
 }
 
 main().catch(err => {
   console.error('Fatal:', err.message);
   if (!fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
-    date: new Date().toLocaleDateString(), count: 0, jobs: [], error: err.message
+    date: new Date().toLocaleDateString(), count: 0, jobs: [], topPicks: [], error: err.message
   }, null, 2));
   process.exit(1);
 });
