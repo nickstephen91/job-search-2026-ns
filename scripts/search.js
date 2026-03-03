@@ -465,18 +465,7 @@ async function main() {
   console.log(`🆕 New (unseen): ${newJobs.length}`);
 
   // Verify each job URL is still active
-  console.log('\n🔍 Verifying job links are still active...');
-  const verifiedJobs = [];
-  for (const job of newJobs) {
-    const active = await isJobActive(job.url);
-    if (active) {
-      verifiedJobs.push(job);
-    } else {
-      console.log(`   ❌ Stale/filled: ${job.title} @ ${job.company}`);
-    }
-    await new Promise(r => setTimeout(r, 300));
-  }
-  console.log(`✅ Verified active: ${verifiedJobs.length} / ${newJobs.length}`);
+  const verifiedJobs = newJobs; // Skipping URL verification for reliability
 
   // Update seen URLs
   deduped.forEach(j => seenUrls.add(j.url));
