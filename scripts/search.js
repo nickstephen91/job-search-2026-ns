@@ -1,53 +1,11 @@
-// Nick Stephen Job Search Agent - search.js v3
-// Strategy: Cast WIDE net first, get raw results, then score locally via score-engine
+// Nick Stephen Job Search Agent - SIMPLE VERSION
+// No scoring, no filtering. Just find jobs and send them all.
 const fs = require('fs');
 const path = require('path');
-const { scoreJob } = require('./score-engine');
 
 const RESULTS_DIR = path.join(__dirname, '..', 'results');
 const SEEN_URLS_PATH = path.join(RESULTS_DIR, 'seen_urls.json');
 const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
-const JOBS_PATH = path.join(RESULTS_DIR, 'jobs.json');
-
-// Simple system prompt — just find jobs, no scoring pressure on Claude
-const SYSTEM_PROMPT = `You are a job search assistant. Search the web for real, active job postings and return them as a JSON array.
-
-CRITICAL: Return ONLY a valid JSON array. No markdown. No explanation. No text before or after the array.
-
-Each job object must have these exact fields:
-{
-  "title": "job title",
-  "company": "company name",
-  "location": "city state or Remote",
-  "workType": "Remote or Hybrid or Onsite",
-  "salary": "salary range or Not Listed",
-  "posted": "date posted or days ago",
-  "url": "direct link to job posting",
-  "source": "LinkedIn or Indeed or etc",
-  "description": "job description and requirements text",
-  "companyStage": "Startup or Series A or Series B or Series C or Enterprise or Public",
-  "industry": "HR Tech or SaaS or Compliance or PEO or Payroll or other",
-  "recruiterListing": false
-}
-
-If you cannot find real jobs, return an empty array: []
-Never return null. Never return text. Only return a JSON array.`;
-
-// 6 focused searches — simple and broad
-const SEARCHES = [
-  {
-    name: 'Partnerships, Alliances, Channel & BD Roles',
-    prompt: `Search LinkedIn Jobs and Indeed for currently active job postings matching ANY of these titles: "Director of Partnerships", "VP of Partnerships", "Director of Alliances", "VP of Alliances", "Director of Channel Sales", "Head of Partnerships", "Director of Business Development", "Director of Ecosystem", "Director of Reseller Programs". Jobs must be remote OR located in Florida. Return up to 15 real results as a JSON array only.`
-  },
-  {
-    name: 'Customer Success, RevOps & Account Management',
-    prompt: `Search LinkedIn Jobs and Indeed for currently active job postings matching ANY of these titles: "Director of Customer Success", "VP of Customer Success", "Director of Revenue Operations", "Director of Sales Operations", "Director RevOps", "Director of Strategic Accounts", "Director of Account Management", "Director of Sales Enablement". Remote or Florida. $130k+. Return up to 15 real results as a JSON array only.`
-  },
-  {
-    name: 'HR Tech, PEO & Compliance Leadership Roles',
-    prompt: `Search LinkedIn Jobs and Indeed for Director and VP level roles at HR technology, payroll, PEO, or workforce compliance companies including: TriNet, Insperity, Rippling, Gusto, Justworks, Paychex, ADP, Deel, BambooHR, Paylocity, UKG, Ceridian, HiBob, Lattice, Workday. Any partnership, customer success, business development, revenue operations, or account management role. Remote or Florida. Return up to 15 real results as a JSON array only.`
-  }
-];
 
 function loadSeenUrls() {
   try {
@@ -64,30 +22,9 @@ function saveSeenUrls(seenUrls) {
   }, null, 2));
 }
 
-function parseJobs(text) {
-  try {
-    // Try to extract JSON array from response
-    const cleaned = text.replace(/```json|```/gi, '').trim();
+async function searchJobs(query) {
+  console.log(`\n🔎 Searching: ${query}`);
 
-    // Find the array
-    const start = cleaned.indexOf('[');
-    const end = cleaned.lastIndexOf(']');
-    if (start === -1 || end === -1) return [];
-
-    const jsonStr = cleaned.substring(start, end + 1);
-    const parsed = JSON.parse(jsonStr);
-
-    if (!Array.isArray(parsed)) return [];
-
-    // Filter out any entries missing required fields
-    return parsed.filter(j => j && j.title && j.company && j.url);
-  } catch (err) {
-    console.log(`   ⚠️  JSON parse failed: ${err.message}`);
-    return [];
-  }
-}
-
-async function runSearch(search) {
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
@@ -97,37 +34,93 @@ async function runSearch(search) {
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-20250514',
-      max_tokens: 8000,
-      system: SYSTEM_PROMPT,
+      max_tokens: 5000,
       tools: [{ type: 'web_search_20250305', name: 'web_search' }],
-      messages: [{ role: 'user', content: search.prompt }]
+      messages: [{
+        role: 'user',
+        content: `Search for job postings: "${query}". 
+
+Find real active listings on LinkedIn Jobs or Indeed. For each job found return a JSON array. Return ONLY the JSON array, nothing else.
+
+[
+  {
+    "title": "job title here",
+    "company": "company name",
+    "location": "city state or Remote",
+    "workType": "Remote or Hybrid or Onsite",
+    "salary": "salary if listed or Not Listed",
+    "posted": "when posted",
+    "url": "link to job posting",
+    "source": "LinkedIn or Indeed",
+    "industry": "industry type",
+    "companyStage": "company stage"
+  }
+]
+
+Find as many real listings as you can (up to 10). Only return the JSON array.`
+      }]
     })
   });
 
-  if (!res.ok) {
-    throw new Error(`HTTP ${res.status}: ${res.statusText}`);
-  }
-
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
 
-  if (data.error) {
-    throw new Error(`API: ${data.error.message}`);
-  }
+  const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
+  console.log(`   Response: ${text.length} chars, stop_reason: ${data.stop_reason}`);
 
-  // Collect all text blocks
-  const textBlocks = (data.content || []).filter(b => b.type === 'text');
-  if (textBlocks.length === 0) {
-    console.log(`   ⚠️  No text in response. Stop reason: ${data.stop_reason}`);
-    console.log(`   Content types: ${(data.content || []).map(b => b.type).join(', ')}`);
+  const start = text.indexOf('[');
+  const end = text.lastIndexOf(']');
+  if (start === -1) {
+    console.log(`   ⚠️ No JSON found. Sample: ${text.substring(0, 200)}`);
     return [];
   }
 
-  const fullText = textBlocks.map(b => b.text).join('');
-  console.log(`   📝 Response length: ${fullText.length} chars`);
+  try {
+    const jobs = JSON.parse(text.substring(start, end + 1));
+    console.log(`   ✅ Found ${jobs.length} jobs`);
+    return jobs.filter(j => j.title && j.company && j.url);
+  } catch (e) {
+    console.log(`   ❌ Parse error: ${e.message}`);
+    return [];
+  }
+}
 
-  const jobs = parseJobs(fullText);
-  console.log(`   📋 Parsed ${jobs.length} jobs`);
-  return jobs;
+
+// Nick's resume qualifications for 50% match check
+const NICK_RESUME = {
+  titles: ['vp', 'vice president', 'director', 'alliance', 'partner', 'channel', 'reseller',
+           'customer success', 'client success', 'revenue operations', 'revops', 'sales operations',
+           'business development', 'account management', 'enablement', 'go-to-market', 'gtm',
+           'ecosystem', 'strategic'],
+  skills: ['partner', 'alliance', 'channel', 'reseller', 'ecosystem', 'crm', 'pipeline',
+           'go-to-market', 'gtm', 'co-marketing', 'enablement', 'revenue', 'saas', 'b2b',
+           'peo', 'hr tech', 'hrtech', 'hcm', 'payroll', 'compliance', 'workforce',
+           'onboarding', 'integration', 'api', 'kpi', 'dashboard', 'reporting',
+           'cross-functional', 'stakeholder', 'leadership', 'strategy', 'operations',
+           'account', 'client', 'customer', 'relationship', 'negotiation', 'contract',
+           'pricing', 'quota', 'arr', 'pipeline', 'qbr', 'sop', 'process'],
+  industries: ['saas', 'software', 'tech', 'hr', 'payroll', 'compliance', 'peo', 'workforce',
+               'hcm', 'benefits', 'staffing', 'recruiting', 'fintech', 'insurtech', 'b2b',
+               'data', 'analytics', 'cloud', 'platform']
+};
+
+function meetsHalfRequirements(job) {
+  const text = `${job.title} ${job.description || ''} ${job.industry || ''}`.toLowerCase();
+  
+  // Count how many of Nick's skills/keywords appear in the job text
+  const skillMatches = NICK_RESUME.skills.filter(s => text.includes(s)).length;
+  const industryMatch = NICK_RESUME.industries.some(i => text.includes(i));
+  const titleMatch = NICK_RESUME.titles.some(t => (job.title || '').toLowerCase().includes(t));
+
+  // Title match alone is a strong signal - if title matches he likely meets 50%+
+  if (titleMatch && skillMatches >= 2) return true;
+  if (titleMatch && industryMatch) return true;
+  if (skillMatches >= 5) return true;
+  if (skillMatches >= 3 && industryMatch) return true;
+
+  console.log(`   ⬇️  Filtered out (low match): ${job.title} @ ${job.company} — ${skillMatches} skill matches`);
+  return false;
 }
 
 async function main() {
@@ -137,149 +130,81 @@ async function main() {
   });
 
   console.log('='.repeat(60));
-  console.log('NICK STEPHEN JOB SEARCH AGENT v3');
+  console.log('NICK STEPHEN JOB SEARCH - SIMPLE MODE');
   console.log(`DATE: ${dateStr}`);
-  console.log('MODE: Wide net → local ATS scoring');
   console.log('='.repeat(60));
 
-  if (!fs.existsSync(RESULTS_DIR)) {
-    fs.mkdirSync(RESULTS_DIR, { recursive: true });
-  }
+  if (!fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
 
   const seenUrls = loadSeenUrls();
-  console.log(`\n📚 Previously seen: ${seenUrls.size} jobs\n`);
+  console.log(`Previously seen: ${seenUrls.size} jobs`);
 
-  // Run all searches
-  let allRaw = [];
-  for (const search of SEARCHES) {
-    console.log(`\n🔎 ${search.name}`);
-    try {
-      const jobs = await runSearch(search);
-      allRaw = allRaw.concat(jobs);
-      // Delay between searches
-      // Wait 30 seconds between searches to avoid rate limiting
-      console.log(`   ⏳ Waiting 30s before next search...`);
-      await new Promise(r => setTimeout(r, 30000));
-    } catch (err) {
-      console.error(`   ❌ Error: ${err.message}`);
-    }
-  }
-
-  console.log(`\n📥 Total raw results: ${allRaw.length}`);
-
-  // Deduplicate by URL
-  const urlSet = new Set();
-  const deduped = allRaw.filter(job => {
-    if (!job.url || urlSet.has(job.url)) return false;
-    urlSet.add(job.url);
-    return true;
-  });
-  console.log(`📊 After dedup: ${deduped.length} unique jobs`);
-
-  // Run ATS scoring on everything
-  console.log('\n🏆 Running ATS scoring...');
-  let hardRejects = 0;
-  let belowThreshold = 0;
-  const scoredJobs = [];
-
-  for (const job of deduped) {
-    try {
-      const result = scoreJob(job);
-      if (!result.passed) {
-        if (result.hardFilterReason) {
-          hardRejects++;
-        } else {
-          belowThreshold++;
-        }
-        continue;
-      }
-      scoredJobs.push({
-        ...job,
-        atsScore: result.atsScore,
-        atsTier: result.tier,
-        atsBreakdown: result.breakdown
-      });
-    } catch (err) {
-      console.log(`   ⚠️  Scoring error for ${job.title}: ${err.message}`);
-    }
-  }
-
-  scoredJobs.sort((a, b) => b.atsScore - a.atsScore);
-
-  console.log(`\n   🚫 Hard rejected: ${hardRejects}`);
-  console.log(`   ⬇️  Below threshold: ${belowThreshold}`);
-  console.log(`   ✅ Passed ATS (55+): ${scoredJobs.length}`);
-
-  const tierBreakdown = {
-    applyNow: scoredJobs.filter(j => j.atsScore >= 85).length,
-    applyStrong: scoredJobs.filter(j => j.atsScore >= 70 && j.atsScore < 85).length,
-    network: scoredJobs.filter(j => j.atsScore >= 55 && j.atsScore < 70).length
-  };
-
-  console.log(`\n   🔥 Apply Now (85+): ${tierBreakdown.applyNow}`);
-  console.log(`   ⭐ Apply Strong (70-84): ${tierBreakdown.applyStrong}`);
-  console.log(`   🤝 Network (55-69): ${tierBreakdown.network}`);
-
-  // Filter to NEW only
-  const newJobs = scoredJobs
-    .filter(j => !seenUrls.has(j.url))
-    .map(j => ({ ...j, foundDate: new Date().toISOString(), isNew: true }));
-
-  const newTiers = {
-    applyNow: newJobs.filter(j => j.atsScore >= 85).length,
-    applyStrong: newJobs.filter(j => j.atsScore >= 70 && j.atsScore < 85).length,
-    network: newJobs.filter(j => j.atsScore >= 55 && j.atsScore < 70).length
-  };
-
-  console.log(`\n🆕 NEW jobs never sent before: ${newJobs.length}`);
-
-  // Update seen URLs
-  deduped.forEach(j => j.url && seenUrls.add(j.url));
-  saveSeenUrls(seenUrls);
-
-  // Update jobs.json
-  let existingJobs = [];
-  try {
-    if (fs.existsSync(JOBS_PATH)) {
-      existingJobs = JSON.parse(fs.readFileSync(JOBS_PATH, 'utf8')).all || [];
-    }
-  } catch { existingJobs = []; }
-
-  const newUrls = new Set(newJobs.map(j => j.url));
-  const merged = [
-    ...newJobs,
-    ...existingJobs.filter(j => !newUrls.has(j.url)).map(j => ({ ...j, isNew: false })).slice(0, 300)
+  const queries = [
+    'Director of Partnerships remote 2026',
+    'VP of Partnerships remote 2026',
+    'Director of Customer Success remote SaaS 2026',
+    'Director of Alliances remote 2026',
+    'Director Revenue Operations remote 2026'
   ];
 
-  fs.writeFileSync(JOBS_PATH, JSON.stringify({
-    lastUpdated: new Date().toISOString(),
-    newToday: newJobs.length,
-    totalTracked: merged.length,
-    tierBreakdownToday: newTiers,
-    all: merged
-  }, null, 2));
+  let allJobs = [];
 
-  // Save today.json for email
+  for (let i = 0; i < queries.length; i++) {
+    try {
+      const jobs = await searchJobs(queries[i]);
+      allJobs = allJobs.concat(jobs);
+    } catch (err) {
+      console.log(`   ❌ Failed: ${err.message}`);
+    }
+    // Wait 20 seconds between each search
+    if (i < queries.length - 1) {
+      console.log('   ⏳ Waiting 20s...');
+      await new Promise(r => setTimeout(r, 20000));
+    }
+  }
+
+  // Deduplicate
+  const seen = new Set();
+  const deduped = allJobs.filter(j => {
+    if (!j.url || seen.has(j.url)) return false;
+    seen.add(j.url);
+    return true;
+  });
+
+  // Apply 50% requirements match filter
+  const qualified = deduped.filter(meetsHalfRequirements);
+  console.log(`📊 Total unique jobs found: ${deduped.length}`);
+  console.log(`✅ After 50% match filter: ${qualified.length}`);
+
+
+
+  // Only keep NEW ones
+  const newJobs = qualified
+    .filter(j => !seenUrls.has(j.url))
+    .map(j => ({ ...j, foundDate: new Date().toISOString() }));
+
+  console.log(`🆕 New jobs: ${newJobs.length}`);
+
+  // Update seen URLs
+  deduped.forEach(j => seenUrls.add(j.url));
+  saveSeenUrls(seenUrls);
+
+  // Save today.json
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
     date: dateStr,
     count: newJobs.length,
-    totalFound: scoredJobs.length,
-    hardRejects,
-    belowThreshold,
-    tierBreakdown: newTiers,
     jobs: newJobs
   }, null, 2));
 
-  console.log(`\n✅ Complete! ${newJobs.length} new jobs ready to email.`);
+  console.log(`\n✅ Done! ${newJobs.length} new jobs to send.`);
 }
 
 main().catch(err => {
-  console.error('\n💥 Fatal error:', err.message);
-  console.error(err.stack);
+  console.error('Fatal:', err.message);
   if (!fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
-    date: new Date().toLocaleDateString('en-US', { timeZone: 'America/New_York' }),
-    count: 0, jobs: [], error: err.message
+    date: new Date().toLocaleDateString(), count: 0, jobs: [], error: err.message
   }, null, 2));
   process.exit(1);
 });
+// Note: filter function added below main - see filterByResume
