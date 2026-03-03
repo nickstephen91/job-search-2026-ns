@@ -1,0 +1,489 @@
+{
+  "savedAt": "2026-03-03T23:20:56.532Z",
+  "picks": [
+    {
+      "title": "VP Partnerships",
+      "company": "PagerDuty",
+      "location": "Not Specified",
+      "workType": "Not Specified",
+      "salary": "Not Listed",
+      "posted": "Not Specified",
+      "url": "https://boards.greenhouse.io/pagerduty/jobs/4243072004",
+      "source": "Greenhouse",
+      "snippet": "Lead team of channel experts responsible for indirect go-to-market strategy, sales and programs. Manage team providing solutions to ISV, GSI, Cloud and reseller partners.",
+      "industry": "Technology/SaaS",
+      "companyStage": "Public",
+      "foundDate": "2026-03-03T23:20:56.529Z",
+      "total": 44,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: saas"
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "go-to-market"
+          ]
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 6,
+          "max": 8,
+          "note": "Public/Enterprise"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 44,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 6,
+            "max": 20,
+            "note": "2 resume keywords matched",
+            "topMatches": [
+              "go-to-market"
+            ]
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 6,
+            "max": 8,
+            "note": "Public/Enterprise"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Technology Alliances",
+      "company": "Tray.io",
+      "location": "Not Specified",
+      "workType": "Not Specified",
+      "salary": "Not Listed",
+      "posted": "Not Specified",
+      "url": "https://boards.greenhouse.io/trayio/jobs/5415138002",
+      "source": "Greenhouse",
+      "snippet": "Work with the VP, Global Partnerships to develop the Technology Alliance strategy, goals and objectives. Drive identification, structuring, and nurturing of all Technology partner relationships.",
+      "industry": "Technology/SaaS",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-03T23:20:56.529Z",
+      "total": 47,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: saas"
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 8,
+          "max": 20,
+          "note": "3 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ]
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 47,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 8,
+            "max": 20,
+            "note": "3 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "alliances"
+            ]
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP, Customer Success",
+      "company": "ConnectWise",
+      "location": "Tampa, FL or Seattle, WA",
+      "workType": "Hybrid/Office",
+      "salary": "Not Listed",
+      "posted": "Not Specified",
+      "url": "https://job-boards.greenhouse.io/connectwise/jobs/4553128005",
+      "source": "Greenhouse",
+      "snippet": "VP role at industry-leading software company serving technology solution providers with suite helping over 45,000 partners manage businesses better.",
+      "industry": "Technology/SaaS",
+      "companyStage": "Established",
+      "foundDate": "2026-03-03T23:20:56.529Z",
+      "total": 35,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: saas"
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 2,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 3,
+          "max": 5,
+          "note": "Hybrid"
+        }
+      },
+      "rank": {
+        "total": 35,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 2,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 3,
+            "max": 5,
+            "note": "Hybrid"
+          }
+        }
+      }
+    },
+    {
+      "title": "Customer Success Director",
+      "company": "Maven Clinic",
+      "location": "Not Specified",
+      "workType": "Remote with Travel",
+      "salary": "$153,000 - $180,000 + 20% bonus",
+      "posted": "Not Specified",
+      "url": "https://job-boards.greenhouse.io/mavenclinic/jobs/8173967002",
+      "source": "Greenhouse",
+      "snippet": "Senior individual contributor role acting as trusted advisor to VP-level Benefits leaders, owning global account strategy and driving measurable business outcomes.",
+      "industry": "Healthcare/Digital Health",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-03T23:20:56.530Z",
+      "total": 43,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: benefits"
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 5,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "own"
+          ]
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary unclear"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 43,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: benefits"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 5,
+            "max": 20,
+            "note": "2 resume keywords matched",
+            "topMatches": [
+              "own"
+            ]
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary unclear"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Customer Success Management, Americas",
+      "company": "GitLab",
+      "location": "Not Specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Specified",
+      "url": "https://boards.greenhouse.io/gitlab/jobs/7493322002",
+      "source": "Greenhouse",
+      "snippet": "Set vision and strategic plan for Enterprise Customer Success Account Management organization, focusing on driving product adoption and customer outcomes.",
+      "industry": "Technology/DevOps",
+      "companyStage": "Public",
+      "foundDate": "2026-03-03T23:20:56.530Z",
+      "total": 39,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 20,
+          "max": 25,
+          "note": "CS leadership match"
+        },
+        "keywords": {
+          "score": 2,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": []
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 6,
+          "max": 8,
+          "note": "Public/Enterprise"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 39,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 20,
+            "max": 25,
+            "note": "CS leadership match"
+          },
+          "keywords": {
+            "score": 2,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": []
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 6,
+            "max": 8,
+            "note": "Public/Enterprise"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    }
+  ]
+}
