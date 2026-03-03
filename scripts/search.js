@@ -36,28 +36,16 @@ Never return null. Never return text. Only return a JSON array.`;
 // 6 focused searches — simple and broad
 const SEARCHES = [
   {
-    name: 'Director VP Partnerships Alliances Remote',
-    prompt: `Search LinkedIn Jobs and Indeed right now for active job postings with these titles: "Director of Partnerships", "VP of Partnerships", "Director of Alliances", "VP of Alliances", "Director of Channel Sales", "Head of Partnerships". Filter for: remote jobs OR jobs in Florida. Posted in the last 30 days. Return up to 10 results as a JSON array.`
+    name: 'Partnerships, Alliances, Channel & BD Roles',
+    prompt: `Search LinkedIn Jobs and Indeed for currently active job postings matching ANY of these titles: "Director of Partnerships", "VP of Partnerships", "Director of Alliances", "VP of Alliances", "Director of Channel Sales", "Head of Partnerships", "Director of Business Development", "Director of Ecosystem", "Director of Reseller Programs". Jobs must be remote OR located in Florida. Return up to 15 real results as a JSON array only.`
   },
   {
-    name: 'Director VP Customer Success Remote SaaS',
-    prompt: `Search LinkedIn Jobs and Indeed right now for active job postings: "Director of Customer Success", "VP of Customer Success", "Director of Client Success" at SaaS, HR Tech, or software companies. Remote preferred or Florida. Posted in last 30 days. Return up to 10 results as a JSON array.`
+    name: 'Customer Success, RevOps & Account Management',
+    prompt: `Search LinkedIn Jobs and Indeed for currently active job postings matching ANY of these titles: "Director of Customer Success", "VP of Customer Success", "Director of Revenue Operations", "Director of Sales Operations", "Director RevOps", "Director of Strategic Accounts", "Director of Account Management", "Director of Sales Enablement". Remote or Florida. $130k+. Return up to 15 real results as a JSON array only.`
   },
   {
-    name: 'Director Revenue Operations Sales Operations Remote',
-    prompt: `Search LinkedIn Jobs, Indeed, and Glassdoor right now for active job postings: "Director of Revenue Operations", "VP Revenue Operations", "Director of Sales Operations", "Director RevOps". Remote positions. Posted in last 30 days. Return up to 10 results as a JSON array.`
-  },
-  {
-    name: 'HR Tech PEO Partnerships Leadership Jobs',
-    prompt: `Search LinkedIn Jobs and Indeed right now for Director and VP level partnership, alliance, business development, or customer success roles at HR technology companies, payroll companies, or PEO companies like: TriNet, Insperity, Rippling, Gusto, Justworks, Paychex, ADP, Deel, BambooHR, Paylocity, UKG, Ceridian, HiBob. Remote or Florida. Return up to 10 results as a JSON array.`
-  },
-  {
-    name: 'Director Business Development Alliances SaaS Remote',
-    prompt: `Search LinkedIn Jobs, Indeed, and ZipRecruiter right now for active postings: "Director of Business Development", "VP of Business Development", "Director of Strategic Partnerships", "Senior Director Partnerships" at B2B SaaS companies. Remote. $130k or higher. Posted last 30 days. Return up to 10 results as a JSON array.`
-  },
-  {
-    name: 'South Florida Director VP Jobs',
-    prompt: `Search LinkedIn Jobs and Indeed right now for Director or VP level jobs located in: West Palm Beach FL, Palm Beach Gardens FL, Jupiter FL, Port St Lucie FL, Fort Pierce FL, Boca Raton FL, Stuart FL. Any of these functions: partnerships, alliances, business development, customer success, revenue operations, account management, channel sales. Return up to 10 results as a JSON array.`
+    name: 'HR Tech, PEO & Compliance Leadership Roles',
+    prompt: `Search LinkedIn Jobs and Indeed for Director and VP level roles at HR technology, payroll, PEO, or workforce compliance companies including: TriNet, Insperity, Rippling, Gusto, Justworks, Paychex, ADP, Deel, BambooHR, Paylocity, UKG, Ceridian, HiBob, Lattice, Workday. Any partnership, customer success, business development, revenue operations, or account management role. Remote or Florida. Return up to 15 real results as a JSON array only.`
   }
 ];
 
@@ -169,7 +157,9 @@ async function main() {
       const jobs = await runSearch(search);
       allRaw = allRaw.concat(jobs);
       // Delay between searches
-      await new Promise(r => setTimeout(r, 3000));
+      // Wait 30 seconds between searches to avoid rate limiting
+      console.log(`   ⏳ Waiting 30s before next search...`);
+      await new Promise(r => setTimeout(r, 30000));
     } catch (err) {
       console.error(`   ❌ Error: ${err.message}`);
     }
