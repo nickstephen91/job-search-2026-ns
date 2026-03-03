@@ -491,6 +491,81 @@ async function fetchFullDescription(url) {
   } catch { return null; }
 }
 
+
+// ── JOB NORMALIZER ────────────────────────────────────────────────────────────
+// Cleans and enriches raw job data before scoring
+function normalizeJob(job) {
+  // Fix company
+  if (!job.company || job.company === 'See posting' || job.company === 'undefined') {
+    job.company = 'Company Not Listed';
+  }
+
+  // Fix location — infer from snippet/title if blank
+  const snip = (job.snippet || '').toLowerCase();
+  if (!job.location || job.location === 'undefined' || job.location === '') {
+    if (snip.includes('remote')) job.location = 'Remote';
+    else if (snip.includes('new york')) job.location = 'New York, NY';
+    else if (snip.includes('san francisco')) job.location = 'San Francisco, CA';
+    else if (snip.includes('austin')) job.location = 'Austin, TX';
+    else job.location = 'United States';
+  }
+
+  // Fix workType — infer from location + snippet
+  if (!job.workType || job.workType === 'See posting' || job.workType === 'undefined') {
+    const loc = (job.location || '').toLowerCase();
+    if (loc.includes('remote') || snip.includes('fully remote') || snip.includes('100% remote') || snip.includes('work from anywhere')) {
+      job.workType = 'Remote';
+    } else if (snip.includes('hybrid')) {
+      job.workType = 'Hybrid';
+    } else if (loc && !loc.includes('remote') && !loc.includes('united states')) {
+      job.workType = 'Onsite';
+    } else {
+      job.workType = 'Remote'; // default assumption for director+ roles
+    }
+  }
+
+  // Normalize workType casing
+  const wt = job.workType.toLowerCase();
+  if (wt.includes('remote')) job.workType = 'Remote';
+  else if (wt.includes('hybrid')) job.workType = 'Hybrid';
+  else job.workType = 'Onsite';
+
+  // Fix source label
+  const srcMap = {
+    'indeed': 'Indeed', 'remotive': 'Remotive', 'the muse': 'The Muse',
+    'arbeitnow': 'Arbeitnow', 'greenhouse': 'Greenhouse', 'lever': 'Lever',
+    'via job board': 'Job Board'
+  };
+  const srcLower = (job.source || '').toLowerCase();
+  for (const [k, v] of Object.entries(srcMap)) {
+    if (srcLower.includes(k)) { job.source = v; break; }
+  }
+  if (!job.source) job.source = 'Job Board';
+
+  // Infer industry from snippet + title if blank
+  if (!job.industry || job.industry === 'undefined' || job.industry === '') {
+    const text = `${job.title} ${job.snippet || ''}`.toLowerCase();
+    if (text.match(/\bpeo\b|professional employer|hr tech|hrtech|workforce compliance|wotc|i-9|e-verify/))
+      job.industry = 'HR Tech / PEO';
+    else if (text.match(/payroll|hris|hcm|human capital/))
+      job.industry = 'HR Technology';
+    else if (text.match(/compliance|regulatory|legal/))
+      job.industry = 'Compliance';
+    else if (text.match(/fintech|financial|payments|banking/))
+      job.industry = 'FinTech';
+    else if (text.match(/cybersecurity|security|identity/))
+      job.industry = 'Cybersecurity';
+    else if (text.match(/saas|software|platform|cloud/))
+      job.industry = 'SaaS';
+    else if (text.match(/staffing|recruiting|talent/))
+      job.industry = 'Staffing / HR';
+    else
+      job.industry = '';
+  }
+
+  return job;
+}
+
 // ── MAIN ──────────────────────────────────────────────────────────────────────
 
 // ── RANKING SYSTEM ────────────────────────────────────────────────────────────
@@ -630,6 +705,7 @@ async function main() {
 
   // Rank all new jobs
   const rankedJobs = newJobs
+    .map(j => normalizeJob(j))
     .map(j => ({ ...j, rank: rankJob(j) }))
     .sort((a, b) => b.rank.total - a.rank.total);
 
