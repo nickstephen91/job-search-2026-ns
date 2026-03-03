@@ -6,6 +6,7 @@ const RESULTS_DIR = path.join(__dirname, '..', 'results');
 const SEEN_URLS_PATH = path.join(RESULTS_DIR, 'seen_urls.json');
 const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
 const TOP_PICKS_PATH = path.join(RESULTS_DIR, 'top_picks.json');
+const { rankJob } = require('./rank-engine');
 
 // ── PERSISTENCE ──────────────────────────────────────────────────────────────
 function loadSeenUrls() {
@@ -210,6 +211,95 @@ async function fetchViaClaudeSearch(prompt) {
 }
 
 // ── MAIN ──────────────────────────────────────────────────────────────────────
+
+// ── RANKING SYSTEM ────────────────────────────────────────────────────────────
+// 0-100 score. Nick's priority order:
+// 1. Compensation (30pts)  2. Industry (25pts)  3. Remote (20pts)
+// 4. Title match (15pts)   5. Company stage (10pts)  -5 unlisted salary penalty
+
+function rankJob(job) {
+  const title = (job.title || '').toLowerCase();
+  const text = `${job.title} ${job.snippet || ''} ${job.industry || ''} ${job.companyStage || ''}`.toLowerCase();
+  const workType = (job.workType || '').toLowerCase();
+  const location = (job.location || '').toLowerCase();
+  let score = 0;
+  const reasons = [];
+
+  // ── 1. COMPENSATION (30pts) ───────────────────────────────────────────────
+  const salaryRaw = job.salary || '';
+  const hasSalary = salaryRaw && salaryRaw !== 'Not Listed' && salaryRaw !== '';
+  if (hasSalary) {
+    const nums = salaryRaw.replace(/[^0-9]/g, ' ').trim().split(/\s+/)
+      .map(Number).filter(n => n > 10000 && n < 2000000);
+    if (nums.length > 0) {
+      const maxSal = Math.max(...nums);
+      if (maxSal >= 200000)      { score += 30; reasons.push('💰 $200K+ comp (+30)'); }
+      else if (maxSal >= 160000) { score += 25; reasons.push('💰 $160K+ comp (+25)'); }
+      else if (maxSal >= 130000) { score += 20; reasons.push('💰 $130K+ comp (+20)'); }
+      else if (maxSal >= 100000) { score += 12; reasons.push('💰 $100K+ comp (+12)'); }
+      else                       { score += 5;  reasons.push('💰 Comp listed (+5)'); }
+    }
+    // Salary transparency bonus (no penalty since it IS listed)
+  } else {
+    // Small penalty for unlisted salary
+    score -= 5;
+    reasons.push('⚠️ Salary not listed (-5)');
+  }
+
+  // ── 2. INDUSTRY MATCH (25pts) ─────────────────────────────────────────────
+  const topIndustry = ['hr tech', 'hrtech', 'hcm', 'peo', 'professional employer',
+    'payroll', 'compliance', 'i-9', 'i9', 'e-verify', 'wotc', 'unemployment',
+    'workforce', 'employer services', 'background check', 'background screening'];
+  const midIndustry = ['saas', 'b2b', 'fintech', 'insurtech', 'benefits', 'staffing',
+    'recruiting', 'talent', 'legaltech', 'identity', 'risk'];
+
+  const topHits = topIndustry.filter(k => text.includes(k));
+  const midHits = midIndustry.filter(k => text.includes(k));
+
+  if (topHits.length >= 2)      { score += 25; reasons.push(`🏢 Core industry (${topHits.slice(0,2).join(', ')}) (+25)`); }
+  else if (topHits.length === 1) { score += 18; reasons.push(`🏢 Target industry (${topHits[0]}) (+18)`); }
+  else if (midHits.length >= 2)  { score += 12; reasons.push(`🏢 Adjacent SaaS/B2B (+12)`); }
+  else if (midHits.length === 1) { score += 7;  reasons.push(`🏢 B2B signal (+7)`); }
+  else                           { score += 0; }
+
+  // ── 3. REMOTE WORK TYPE (20pts) ───────────────────────────────────────────
+  const isRemote = workType.includes('remote') || location.includes('remote');
+  const isHybrid = workType.includes('hybrid');
+  if (isRemote)      { score += 20; reasons.push('🌎 Fully remote (+20)'); }
+  else if (isHybrid) { score += 10; reasons.push('🏢 Hybrid (+10)'); }
+  else               { score += 3;  reasons.push('📍 Onsite in radius (+3)'); }
+
+  // ── 4. ROLE TITLE MATCH (15pts) ───────────────────────────────────────────
+  const tier1Titles = ['partnership', 'alliance', 'channel', 'reseller', 'ecosystem'];
+  const tier2Titles = ['customer success', 'client success', 'revenue oper', 'revops'];
+  const tier3Titles = ['business development', 'account manag', 'sales oper', 'enablement', 'gtm', 'go-to-market'];
+
+  if (tier1Titles.some(t => title.includes(t)))      { score += 15; reasons.push('🎯 Partnerships/Alliances title (+15)'); }
+  else if (tier2Titles.some(t => title.includes(t))) { score += 11; reasons.push('🎯 CS/RevOps title (+11)'); }
+  else if (tier3Titles.some(t => title.includes(t))) { score += 7;  reasons.push('🎯 BD/Account Mgmt title (+7)'); }
+  else                                               { score += 3;  reasons.push('🎯 Adjacent title (+3)'); }
+
+  // ── 5. COMPANY STAGE (10pts) ──────────────────────────────────────────────
+  const stage = (job.companyStage || '').toLowerCase();
+  if (['series b', 'series c'].some(s => stage.includes(s)))           { score += 10; reasons.push('🚀 Series B/C sweet spot (+10)'); }
+  else if (['series a', 'seed', 'series d', 'pre-ipo'].some(s => stage.includes(s))) { score += 7; reasons.push(`🚀 ${job.companyStage} stage (+7)`); }
+  else if (['public', 'enterprise'].some(s => stage.includes(s)))      { score += 7;  reasons.push('🚀 Public/Enterprise (+7)'); }
+  else                                                                  { score += 2;  reasons.push('🚀 Stage unknown (+2)'); }
+
+  // Clamp to 0-100
+  score = Math.max(0, Math.min(100, score));
+
+  // Tier label
+  let tier, tierColor, tierEmoji;
+  if (score >= 80)      { tier = 'PRIME MATCH';    tierColor = '#00e5a0'; tierEmoji = '🔥'; }
+  else if (score >= 65) { tier = 'STRONG FIT';     tierColor = '#6c63ff'; tierEmoji = '⭐'; }
+  else if (score >= 50) { tier = 'GOOD FIT';       tierColor = '#4da6ff'; tierEmoji = '👍'; }
+  else if (score >= 35) { tier = 'WORTH A LOOK';   tierColor = '#ffb020'; tierEmoji = '👀'; }
+  else                  { tier = 'LOW MATCH';      tierColor = '#8b90a7'; tierEmoji = '➖'; }
+
+  return { score, tier, tierColor, tierEmoji, reasons };
+}
+
 async function main() {
   const dateStr = new Date().toLocaleDateString('en-US', {
     timeZone: 'America/New_York', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
@@ -311,11 +401,32 @@ async function main() {
   // New only
   const newJobs = qualified
     .filter(j => !seenUrls.has(j.url))
-    .map(j => ({ ...j, foundDate: new Date().toISOString() }));
-  console.log(`🆕 New this run: ${newJobs.length}`);
+    .map(j => {
+      const ranking = rankJob(j);
+      return { ...j, foundDate: new Date().toISOString(), ...ranking };
+    })
+    .sort((a, b) => b.score - a.score);
 
-  // Save top picks for next email
-  if (newJobs.length > 0) saveTopPicks(newJobs);
+  console.log(`🆕 New this run: ${newJobs.length}`);
+  if (newJobs.length > 0) {
+    console.log(`   🔥 Prime Match (80+): ${newJobs.filter(j => j.score >= 80).length}`);
+    console.log(`   ⭐ Strong Fit (65-79): ${newJobs.filter(j => j.score >= 65 && j.score < 80).length}`);
+    console.log(`   👍 Good Fit (50-64): ${newJobs.filter(j => j.score >= 50 && j.score < 65).length}`);
+    console.log(`   👀 Worth a Look (35-49): ${newJobs.filter(j => j.score >= 35 && j.score < 50).length}`);
+  }
+
+  // Rank all new jobs
+  const rankedJobs = newJobs
+    .map(j => ({ ...j, rank: rankJob(j) }))
+    .sort((a, b) => b.rank.total - a.rank.total);
+
+  console.log(`\n🏆 Top 3 ranked jobs:`);
+  rankedJobs.slice(0, 3).forEach((j, i) => {
+    console.log(`   ${i+1}. [${j.rank.total}/100] ${j.title} @ ${j.company}`);
+  });
+
+  // Save top picks for next email (top 5 by rank)
+  if (rankedJobs.length > 0) saveTopPicks(rankedJobs.slice(0, 5));
 
   // Update seen URLs — only add the new qualified ones
   const newUrlSet = new Set(newJobs.map(j => j.url));
@@ -323,11 +434,11 @@ async function main() {
 
   // Save today
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
-    date: dateStr, count: newJobs.length,
-    jobs: newJobs, topPicks: previousTopPicks
+    date: dateStr, count: rankedJobs.length,
+    jobs: rankedJobs, topPicks: previousTopPicks
   }, null, 2));
 
-  console.log(`\n✅ Done! ${newJobs.length} new jobs queued for email.`);
+  console.log(`\n✅ Done! ${rankedJobs.length} ranked jobs queued for email.`);
 }
 
 main().catch(err => {
