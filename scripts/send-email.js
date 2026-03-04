@@ -89,9 +89,10 @@ function jobCard(job) {
       <td style="vertical-align:top;">
         <div style="font-size:15px;font-weight:700;color:${C.bright};letter-spacing:-0.3px;line-height:1.35;margin-bottom:3px;">${job.title}</div>
         <div style="font-size:12px;font-weight:600;color:${C.soft};margin-bottom:6px;">${job.company}</div>
-        <div style="font-size:11px;color:${C.body};margin-bottom:10px;">
-          ${wtIcon}&nbsp;${job.workType}<span style="color:${C.dim};margin:0 5px;">·</span>${job.location||'United States'}${sal?`<span style="color:${C.dim};margin:0 5px;">·</span><span style="color:${C.greenText};font-weight:600;">${sal}</span>`:''}
+        <div style="font-size:11px;color:${C.body};margin-bottom:8px;">
+          ${wtIcon}&nbsp;${job.workType}<span style="color:${C.dim};margin:0 5px;">·</span>${job.location||'United States'}<span style="color:${C.dim};margin:0 5px;">·</span><span style="color:${sal?C.greenText:C.dim};font-weight:${sal?'600':'400'};">${sal||'Salary not listed'}</span>
         </div>
+        ${(job.snippet||job.fullDescription)?`<div style="font-size:11px;color:${C.muted};line-height:1.6;margin-bottom:10px;padding:8px 10px;background:${C.bg};border-left:2px solid ${C.border2};border-radius:0 4px 4px 0;">${(job.snippet||job.fullDescription).replace(/<[^>]*>/g,'').substring(0,200).trim()}${(job.snippet||'').length>200?'…':''}</div>`:''}
         <div style="margin-bottom:12px;line-height:2.2;">
           ${pill('via '+src)}${job.industry?'&nbsp;'+pill(job.industry):''}${job.posted?'&nbsp;'+pill(job.posted,C.dim):''}
         </div>
