@@ -139,9 +139,11 @@ async function fetchIndeedRSS(q, l) {
     const x = match[1];
     const get = (tag) => (x.match(new RegExp(`<${tag}[^>]*>(?:<!\\[CDATA\\[)?(.*?)(?:\\]\\]>)?<\\/${tag}>`, 's')) || [])[1]?.trim() || '';
     const title = get('title'); const link = get('link'); const desc = get('description');
-    if (title && link) items.push({
+    // guid is the direct job page URL; link is a redirect — prefer guid
+    const guid = get('guid') || link;
+    if (title && guid) items.push({
       title, company: 'See posting', location: l, workType: desc.toLowerCase().includes('remote') ? 'Remote' : 'See posting',
-      salary: 'Not Listed', posted: 'Recent', url: link, source: 'Indeed', snippet: desc.replace(/<[^>]+>/g, '').substring(0, 200), industry: '', companyStage: ''
+      salary: 'Not Listed', posted: 'Recent', url: guid, source: 'Indeed', snippet: desc.replace(/<[^>]+>/g, '').substring(0, 200), industry: '', companyStage: ''
     });
   }
   return items;
@@ -465,6 +467,79 @@ function rankJob(job) {
 }
 
 
+
+// ── URL RESOLVER + CLOSED JOB DETECTOR ───────────────────────────────────────
+// Resolves redirect URLs to final destination and checks if job is still open
+
+const CLOSED_SIGNALS = [
+  // Generic
+  'this job is no longer available',
+  'this job has expired',
+  'job listing is no longer active',
+  'position has been filled',
+  'no longer accepting applications',
+  'this posting has been closed',
+  'job posting has expired',
+  'this position has been closed',
+  'application is closed',
+  'posting is no longer available',
+  'this role has been filled',
+  'job is closed',
+  'expired job',
+  'this listing has expired',
+  'job has been filled',
+  'this vacancy has been filled',
+  // Indeed specific
+  'indeedjobs.com/error',
+  'page not found',
+  'the job you requested is no longer available',
+  // Greenhouse
+  'this job is not accepting applications',
+  'job has closed',
+  'the job you are looking for is no longer open',
+  'this job is no longer open',
+  // Lever
+  'this posting has been closed',
+  'no longer accepting job applications',
+  // Workday
+  'this requisition is no longer available',
+  'position is no longer available',
+  // SmartRecruiters / Ashby
+  'position is no longer open',
+  'job is no longer open',
+  'this job is no longer open',
+  // LinkedIn
+  'job is no longer accepting applications',
+  'application window has closed',
+  // 404/error pages
+  '404 not found',
+  'page does not exist',
+  'page cannot be found',
+];
+
+async function resolveUrl(url) {
+  try {
+    const controller = new AbortController();
+    setTimeout(() => controller.abort(), 6000);
+    const res = await fetch(url, {
+      method: 'GET',
+      redirect: 'follow',
+      signal: controller.signal,
+      headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' }
+    });
+    const finalUrl = res.url || url;
+    const html = await res.text();
+    const textLower = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').toLowerCase();
+    
+    // Check if job is closed
+    const isClosed = CLOSED_SIGNALS.some(signal => textLower.includes(signal));
+    
+    return { finalUrl, isClosed, ok: res.ok };
+  } catch {
+    return { finalUrl: url, isClosed: false, ok: true }; // assume open if fetch fails
+  }
+}
+
 // ── FETCH FULL JOB DESCRIPTION ────────────────────────────────────────────────
 // Fetches the actual requirements/qualifications from the job posting page
 async function fetchFullDescription(url) {
@@ -692,19 +767,44 @@ async function main() {
     console.log(`   👀 Worth a Look (35-49): ${newJobs.filter(j => j.score >= 35 && j.score < 50).length}`);
   }
 
-  // Fetch full descriptions for keyword matching (batch, with delays)
-  console.log('\n📄 Fetching full job descriptions for keyword analysis...');
+  // Resolve URLs + check closed + fetch descriptions (batch, with delays)
+  console.log('\n🔗 Resolving URLs and checking job status...');
+  const validJobs = [];
   for (let i = 0; i < newJobs.length; i++) {
     const job = newJobs[i];
+    
+    // Step 1: Resolve redirect URL and check if job is closed
+    const { finalUrl, isClosed } = await resolveUrl(job.url);
+    
+    if (isClosed) {
+      console.log(`   ❌ [${i+1}/${newJobs.length}] CLOSED — removing: ${job.title.substring(0,40)}`);
+      // Add to seen URLs so it never resurfaces
+      seenUrls.add(job.url);
+      seenUrls.add(finalUrl);
+      continue;
+    }
+    
+    // Store original URL as seen too (pre-redirect), update job URL to final destination
+    seenUrls.add(job.url);
+    job.url = finalUrl;
+    console.log(`   🔗 [${i+1}/${newJobs.length}] Active → ${finalUrl.substring(0,60)}`);
+    
+    // Step 2: Fetch full description for keyword matching
     const desc = await fetchFullDescription(job.url);
     if (desc) {
       job.fullDescription = desc;
-      console.log(`   ✅ [${i+1}/${newJobs.length}] Got description: ${job.title.substring(0,40)}`);
-    } else {
-      console.log(`   ⚠️  [${i+1}/${newJobs.length}] No description: ${job.title.substring(0,40)}`);
+      console.log(`      📄 Got description`);
     }
-    if (i < newJobs.length - 1) await new Promise(r => setTimeout(r, 400));
+    
+    validJobs.push(job);
+    if (i < newJobs.length - 1) await new Promise(r => setTimeout(r, 500));
   }
+  
+  const activeJobs = validJobs;
+  console.log(`\n✅ ${activeJobs.length} active jobs (${newJobs.length - activeJobs.length} closed/removed)`);
+  // Replace newJobs reference for ranking
+  newJobs.length = 0;
+  activeJobs.forEach(j => newJobs.push(j));
 
   // Rank all new jobs
   const rankedJobs = newJobs
