@@ -1,0 +1,566 @@
+{
+  "savedAt": "2026-03-04T01:05:01.944Z",
+  "picks": [
+    {
+      "title": "VP, Partnerships",
+      "company": "Checkr",
+      "location": "Remote, United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://boards.greenhouse.io/checkr/jobs/5161258",
+      "source": "Greenhouse",
+      "snippet": "Reporting to the SVP, Customer Success and Partnerships you will manage our business plans for alliances and channel, develop close partner relationships, orchestrate cross-functional execution, and drive business success while managing the BD team.",
+      "industry": "Background Check Technology",
+      "companyStage": "Scaling",
+      "foundDate": "2026-03-04T01:04:40.341Z",
+      "total": 54,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 14,
+          "max": 20,
+          "note": "4 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "cross-functional",
+            "reporting",
+            "alliances"
+          ],
+          "matchRate": 4,
+          "totalHits": 4,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "page_title Current openings at Checkr About Checkr Checkr builds people infrastructure for the future of work. We've designed a faster—and fairer—way to screen job seekers. Established in 2014, Checkr puts modern technology powered by machine learning in the hands of hiring teams, helping to hire great new people with an experience that’s fast, smooth, and safe. Checkr has over 100,000 customers including DoorDash, Coinbase, Lyft, Instacart, and Airtable. A career at Checkr means collaborating with brilliant minds, disrupting an industry, and opening channels of employment to often overlooked candidates. Checkr has been recognized as one of BuiltIn's 2023 Best Places to Work in the US and is a Y Combinator 2023 Breakthrough Company. Create a Job Alert Level-up your career by having opportunities at Checkr sent directly to your inbox. Create alert Search 42 jobs Customer Success Job Associate Customer Success Manager Nashville, Tennessee, United States Enterprise Customer Success Manager San Francisco, California, United States Sr. Principal Customer Success Manager Denver, Colorado, United States; San Francisco, California, United States Engineering Job Backend Software Engineer II San Francisco, California, United States Director of Platform Engineering Denver, Colorado, United States; San Francisco, California, United States Engineering Manager Santiago, Región Metropolitana, Chile Engineering Manager, Growth Denver, Colorado, United States; San Francisco, California, United States Engineering Manager, Truework San Francisco, California, United States Python Engineer, Truework tags.new San Francisco, California, United States Security Engineer Denver, Colorado, United States; San Francisco, California, United States Senior Python Engineer, Truework tags.new San Francisco, California, United States Senior Software Engineer tags.new Santiago, Región Metropolitana, Chile Senior Software Engineer tags.new San Francisco, California, United States Senior Software Engineer, Verifications Denver, Colorado, United States; San Francisco, California, United States Software Engineer II San Francisco, California, United States Sr. Software Engineer tags.new Santiago, Región Metropolitana, Chile Staff Software Engineer Santiago, Región Metropolitana, Chile Finance Job Senior FP&S Analyst San Francisco, California, United States Technical Revenue Accounting Lead San Francisco, California, United States Legal & Compliance Job Director, Legal Product & Privacy San Francisco, California, United States Marketing Job Partner Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Growth Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Product Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Operations Job Quality Assurance Specialist Nashville, Tennessee, United States Senior Manager, Enterprise & Strategic Support Denver, Colorado, Uni",
+      "rank": {
+        "total": 52,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 12,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "peo",
+              "compliance",
+              "aca",
+              "enterprise"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Strategic Partnerships Director",
+      "company": "AvidXchange, Inc.",
+      "location": "Not Listed",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://job-boards.greenhouse.io/avidxchangeinc/jobs/5063201007",
+      "source": "Greenhouse",
+      "snippet": "Own the ERP Strategy: Build and execute strategic plans for over 300 potential ERP partnerships while constantly scouting the market for new prospects.",
+      "industry": "Fintech",
+      "companyStage": "Public",
+      "foundDate": "2026-03-04T01:04:40.341Z",
+      "total": 41,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: fintech"
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 3,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "own"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 6,
+          "max": 8,
+          "note": "Public/Enterprise"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "What we’re looking for: The \"Hunter\" Mentality: A strong sense of urgency, a bias for action, and at least 7+ years of experience in enterprise sales, partner development, or alliance management. Fintech & Financial Acumen: Deep experience developing complex financial models, including net interchange share, transaction/software fees, and customer acquisition models. Relationship Mastery: A natural ability to build trust with C-suite decision-makers and bridge the gap between business needs and technical solutions. Cross-Functional Leadership: Proven success leading business reviews and coordinating across Product, Marketing, Legal, and Onboarding teams. Strategic Problem Solving: Expert at interpreting business challenges and translating them into optimal process recommendations that scale. Persuasive Communication: Ability to present complex concepts clearly and convincingly to any audience. Market Expertise: Skilled at assessing channel opportunities and building strategies that expand leadership presence in the market. Technical Credibility: Technically capable of demonstrating AvidXchange solutions and understanding how they integrate with potential partners’ pain points. Educational Background: University degree or equivalent experience; an MBA is preferred. About AvidXchange AvidXchange is a leading provider of accounts payable (“AP”) automation software and payment solutions for middle-market businesses and their suppliers. By trade, we are a technology company, but if you ask anyone who works here, they’ll tell you our people are at the core of who we are. At AvidXchange, mindset is everything . We are Connected as People , Growth Minded , and Customer Obsessed . These three mindsets represent our culture – who we are, who we’ve always been, and they guide us to improve every day. Since our founding in 2000 in Charlotte, NC, we’ve created a company of over 1,500 teammates working across the U.S., or remotely. AvidXchange is proud to be Certified™ as a Great Place to Work ®. The prestigious recognition is based on anonymous data from our teammates and makes official what our teammates have known for years – that AvidXchange is a Great Place to Work®. Who you are: A go-getter with an entrepreneurial mindset – that means you are not afraid of taking risks, winning big or facing the unknown. Someone who understands that business is people centric. Connecting with others as humans first allows you to develop mutually beneficial working relationships. Focused on making a difference for our customers. AvidXchange exists to help solve complex problems for our customers so we can all realize our potential. What you’ll get: AvidXchange teammates (we call them AvidXers) get the perks and prestige of a growing tech company paired with the flexibility of a founder-led startup. We help our AvidXers develop as professionals and as human beings, providing work/life balance, development programs, and competitive benefits. At AvidXchange, we are building ",
+      "rank": {
+        "total": 58,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: fintech"
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "7 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "cross-functional",
+              "peo",
+              "own",
+              "benefits",
+              "onboarding"
+            ],
+            "matchRate": 7,
+            "totalHits": 7,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 6,
+            "max": 8,
+            "note": "Public/Enterprise"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Technology Alliances",
+      "company": "Tray.io",
+      "location": "Not Listed",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://boards.greenhouse.io/trayio/jobs/5415138002",
+      "source": "Greenhouse",
+      "snippet": "Work with the VP, Global Partnerships to develop the Technology Alliance strategy, goals and objectives. Collaboratively and cross-functionally drive the identification, structuring, and nurturing of all Technology partner relationships to achieve and exceed assigned SQO and Pipeline targets.",
+      "industry": "Integration Platform as a Service",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-04T01:04:40.341Z",
+      "total": 45,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 18,
+          "max": 20,
+          "note": "5 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "pipeline",
+            "cross-functional",
+            "integration",
+            "alliances"
+          ],
+          "matchRate": 5,
+          "totalHits": 5,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 45,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 18,
+            "max": 20,
+            "note": "5 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "pipeline",
+              "cross-functional",
+              "integration",
+              "alliances"
+            ],
+            "matchRate": 5,
+            "totalHits": 5,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Customer Success Director",
+      "company": "Maven Clinic",
+      "location": "Not Listed",
+      "workType": "Onsite",
+      "salary": "$153,000 - $180,000 + 20% bonus",
+      "posted": "Not Listed",
+      "url": "https://job-boards.greenhouse.io/mavenclinic/jobs/8173967002",
+      "source": "Greenhouse",
+      "snippet": "Maven is seeking a Customer Success Director to lead our most strategic and complex client partnerships. This is a senior individual contributor role where you will act as a trusted advisor to VP-level Benefits leaders and senior stakeholders.",
+      "industry": "Healthcare Technology",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-04T01:04:40.341Z",
+      "total": 37,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: benefits"
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 2,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "benefits"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary unclear"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "Jobs at Maven Clinic Current openings at Maven Clinic Thank you for your interest in Maven Clinic! Please note that Maven Clinic interview requests and job offers only originate from an @mavenclinic.com email address (e.g jsmith@mavenclinic.com ). Maven Clinic will also never ask for bank account information (routing, account numbers), social security numbers, passwords or any other sensitive information to be delivered over email, or phone. If you want to report a scam by someone impersonating Maven Clinic or a security issue involving Maven Clinic, please notify us at: security@mavenclinic.com . For general and additional inquiries, please contact us at careers@mavenclinic.com . If you're interested in joining our provider network, please see here for more information. Create a Job Alert Level-up your career by having opportunities at Maven Clinic sent directly to your inbox. Create alert Search Department Select... 33 jobs Benefits Support Delivery Job Member Services Senior Associate Remote Care Delivery Job Care Advocate (Japanese Fluency) - Arizona, Nevada, or Oregon Remote Care Advocate (Japanese Fluency) - Hawaii Remote International Care Advocate (Japanese Fluency) - Australia, New Zealand, Hong Kong, or Singapore Remote Client Success Job Client Success Director - SMB New New York, NY; Remote, US (Hub cities) Senior Client Success Manager Remote Clinical Outcomes Job Clinical Outcomes Analyst New Remote Senior Manager, Clinical Outcomes New York, NY; Remote, US (Hub cities) Core Engineering Job Senior Data Engineer New York, NY; Remote, US (Hub cities) Senior Software Engineer, Android New York, NY; Remote, US (Hub cities) Senior Software Engineer, Backend Engineering New York, NY; Remote, US (Hub cities) Senior Software Engineer, Frontend Engineering New York, NY; Remote, US (Hub cities) Senior Software Engineer, iOS New York, NY; Remote, US (Hub cities) Staff Security Engineer New York, NY; Remote, US (Hub cities) Staff Software Engineer, AI/ML New York, NY; Remote, US (Hub cities) Staff Software Engineer, Backend Engineering New York, NY; Remote, US (Hub cities) Core Operations Job Associate, Workforce Planning New York, New York, United States Creative Design Job Senior Brand Designer New York, NY; Remote, US (Hub cities) Finance Job Strategic Finance Associate New York, New York, United States Growth Marketing Job Director, Growth Marketing Remote Senior Associate, Consumer Content New York, NY; Remote, US (Hub cities) Technical Product Marketing Manager (Contract) Remote Information Technology Job Enterprise Systems Architect, Enterprise Technology New York, NY; Remote, US (Hub cities) Senior Integrations Engineer New York, NY; Remote, US (Hub cities) Payer Growth Job Strategic Growth Executive, Payer Channel Sales Remote Payments Delivery Job Manager, Payments Integrity & QA New York, New York, United States; Remote Senior Analyst, Payments Integrity & QA New York, New York, United States; Remote Senior Benefit Design Associate (",
+      "rank": {
+        "total": 53,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: benefits"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 18,
+            "max": 20,
+            "note": "7 resume keywords matched",
+            "topMatches": [
+              "integration",
+              "architect",
+              "executive",
+              "benefits",
+              "enterprise"
+            ],
+            "matchRate": 7,
+            "totalHits": 7,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary unclear"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Sr. Director, Channel Programs",
+      "company": "HighLevel",
+      "url": "https://jobs.lever.co/gohighlevel/8e0e35fe-3d6b-4ca5-b95b-dd6cd70e3d68",
+      "level": "Senior Director",
+      "department": "Channel",
+      "foundDate": "2026-03-04T01:04:40.342Z",
+      "total": 28,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "channel program"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "You bring a balance of strategic vision and operational discipline, with a track record of scaling programs that drive measurable business impact. Leveraging your sales-minded, entrepreneurial spirit, you will oversee the rollout and growth of HighLevel’s channel, affiliate, or strategic account programs, ensuring they become a core engine of customer acquisition and retention. You are a strong communicator and relationship builder, with the ability to inspire teams and partners while navigating challenging situations with confidence. This includes not only tough business decisions but also people-related situations, where your leadership maturity and judgment set the tone for the team. You thrive in high-growth environments and know how to translate strategy into execution while empowering and holding your team accountable for success. What You’ll Be Doing Own Strategy & Growth – Develop and lead HighLevel’s channel, affiliate, and/or strategic account programs to drive adoption, retention, and revenue growth. Partner/ Account Acquisition & Management – Identify, recruit, and cultivate high-value partners or accounts, ensuring long-term, mutually beneficial relationships. Independent Leadership – Serve as the senior escalation point, independently handling complex partner/account challenges and people-related situations with sound judgment. Team Leadership & Development – Lead and develop a global organization of directors, managers, and specialists, ensuring alignment, scalability, and leadership readiness across the Affiliate teams. Program Design & Optimization – Develop and manage incentive structures, gamification, commission frameworks, or account growth strategies that maximize engagement and success. Cross-Functional Alignment – Collaborate with Sales, Marketing, Product, and Revenue Operations to deliver seamless partner and account initiatives and go-to-market strategies. Governance & Compliance – Oversee contract compliance, program budget tracking, and partner/account reporting, ensuring transparency and alignment with business goals. Performance & Analytics – Track KPIs, monitor program health, and provide regular reporting to senior leadership, with clear data-driven recommendations for improvement. Industry Engagement – Represent HighLevel at industry events, partner conferences, and trade shows to strengthen brand presence and recruit new partners or accounts. Continuous Improvement – Stay ahead of industry and competitor trends, proactively adapting strategies to keep HighLevel competitive. Serve as the executive representative for all strategic partner relationships, industry alliances, and high-level negotiations. Represent the organization at global events and forums to strengthen market credibility and expand the partnership ecosystem. What You’ll Bring 15 + years of progressive experience in Channel, Partnerships, or Business Development, including 7+ years leading large, global teams. Proven success in driving multi-region",
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 47,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "13 resume keywords matched",
+            "topMatches": [
+              "channel program",
+              "alliance",
+              "go-to-market",
+              "revenue operations",
+              "own",
+              "executive",
+              "alliances"
+            ],
+            "matchRate": 13,
+            "totalHits": 13,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    }
+  ]
+}
