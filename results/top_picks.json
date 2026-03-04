@@ -1,24 +1,24 @@
 {
-  "savedAt": "2026-03-04T01:46:26.672Z",
+  "savedAt": "2026-03-04T02:00:48.323Z",
   "picks": [
     {
-      "title": "VP Partnerships",
-      "company": "PagerDuty",
-      "location": "Not Specified",
-      "workType": "Onsite",
+      "title": "Finance Director, Worldwide Channel (Partner & Alliances)",
+      "company": "Zscaler",
+      "location": "Remote - USA",
+      "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://job-boards.greenhouse.io/pagerduty?error=true",
+      "posted": "Recently Posted",
+      "url": "https://job-boards.greenhouse.io/zscaler/jobs/5062338007",
       "source": "Greenhouse",
-      "snippet": "Lead a team of channel experts responsible for our indirect go to market strategy, sales and programs.",
-      "industry": "SaaS/Incident Response",
+      "snippet": "10+ years of progressive finance, sales operations, or strategy experience, with at least 5 years in high-growth Enterprise SaaS, Cloud Infrastructure, or ISV companies",
+      "industry": "Cybersecurity/Enterprise SaaS",
       "companyStage": "Public",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 40,
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 52,
       "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
       },
       "breakdown": {
         "industry": {
@@ -32,14 +32,17 @@
           "note": "Partnerships/Alliances signal"
         },
         "keywords": {
-          "score": 2,
+          "score": 10,
           "max": 20,
-          "note": "1 resume keyword matched",
+          "note": "4 resume keywords matched",
           "topMatches": [
-            "saas"
+            "alliance",
+            "alliances",
+            "saas",
+            "enterprise"
           ],
-          "matchRate": 1,
-          "totalHits": 1,
+          "matchRate": 4,
+          "totalHits": 4,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
@@ -49,19 +52,19 @@
           "note": "Salary not listed"
         },
         "stage": {
-          "score": 6,
+          "score": 7,
           "max": 8,
-          "note": "Public/Enterprise"
+          "note": "Late stage: Public"
         },
         "workType": {
-          "score": 2,
+          "score": 5,
           "max": 5,
-          "note": "Onsite in radius"
+          "note": "Fully remote ✅"
         }
       },
-      "fullDescription": "Jobs at PagerDuty Current openings at PagerDuty Search Department Select... Office Select... 36 jobs Business Operations Job Program Manager Atlanta Program Manager Toronto Customer Success Job Account Manager New Remote (USA - Boston, MA) Account Manager (UK) New London Account Manager (US) New Remote (USA) Customer Success Manager Lisbon Customer Success Professional Services Job Senior Professional Services Consultant Sydney Legal Job Senior Corporate Counsel San Francisco Senior Director & Associate General Counsel (Product & Privacy) San Francisco Marketing Field Marketing Job Digital Programs Marketing Specialist — Regional (EMEA) — Lisbon Metro Area Lisbon People & Places Talent Acquisition Job Senior Technical Recruiter San Francisco Product Development Engineering Leadership Job Engineering Manager - Platform Integrations New Lisbon Product Development Product Management Job Principal Product Manager - Developer Platform Remote (Canada) Principal Product Manager - Developer Platform Remote (USA) Principal Product Manager, Growth Remote (USA) Principal Product Manager, Growth Remote (Canada) Product Manager - App Platform Remote (USA) Product Manager - App Platform Remote (Canada) Senior Product Manager Remote (Canada) Senior Product Manager Remote (USA) Senior Product Manager, AIOps Remote (USA) Senior Product Manager, AIOps Remote (Canada) Product Development Software Engineers Job Site Reliability Engineer II Toronto Software Engineer 2 - Team Incident Analysis New Toronto Product Development UX & Design Job Principal Product Designer Remote (USA) Sales Job Account Executive - New York New Remote (USA - New York City, NY) Account Executive (Sydney) Sydney Account Executive (UK) London Account Executive (US) Remote (USA) Enterprise Account Executive - San Francisco San Francisco Senior Solutions Consultant II New Atlanta Senior Solutions Consultant II- New York New Remote (USA - New York City, NY) Territory Executive (UK) London Territory Executive (US) Remote (USA) Sales Strategic Alliances Job Strategic Alliances Director London Social Impact Job Director, Global Social Impact San Francisco Powered by Greenhouse",
+      "fullDescription": "You have a true growth mindset and are obsessed with your own development, actively seeking feedback to become a better partner and a stronger teammate. You love what you do and you do it with purpose. What We’re Looking for (Minimum Qualifications) 10+ years of progressive finance, sales operations, or strategy experience, with at least 5 years in high-growth Enterprise SaaS, Cloud Infrastructure, or ISV companies Direct experience partnering with Channel, Partnerships, or Alliances business leaders including an understanding of deal registration and partner pricing Proven track record of driving annual planning and monthly forecasting processes in large enterprises while managing competing priorities Excellent written and verbal communication skills with the ability to influence SVP and C-level decision makers through data-driven insights Process architect mindset with a demonstrated ability to design and implement scalable workflows in support of growth What Will Make You Stand Out (Preferred Qualifications) Experience navigating matrixed organizations and influencing decisions without relying on formal authority Proven record of establishing rapport with all levels within a customer or partner organization including C-suites Expertise in building succession depth and coaching finance team members on Channel-related domain knowledge #LI-Remote #LI-RL2 Zscaler’s salary ranges are benchmarked and are determined by role and level. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations and could be higher or lower based on a multitude of factors, including job-related skills, experience, and relevant education or training. The base salary range listed for this full-time position excludes commission/ bonus/ equity (if applicable) + benefits. Base Pay Range $168,000 - $240,000 USD At Zscaler, we are committed to building a team that reflects the communities we serve and the customers we work with. We foster an inclusive environment that values all backgrounds and perspectives, emphasizing collaboration and belonging. Join us in our mission to make doing business seamless and secure. Our Benefits program is one of the most important ways we support our employees. Zscaler proudly offers comprehensive and inclusive benefits to meet the diverse needs of our employees and their families throughout their life stages, including: Various health plans Time off plans for vacation and sick time Parental leave options Retirement options Education reimbursement In-office perks, and more! Learn more about Zscaler’s Future of Work strategy, hybrid working model, and benefits here . By applying for this role, you adhere to applicable laws, regulations, and Zscaler policies, including those related to security and privacy standards and guidelines. Zscaler is committed to providing equal employment opportunities to all individuals. We strive to create a workplace where employees a",
       "rank": {
-        "total": 58,
+        "total": 62,
         "tier": {
           "label": "👀 Worth Reviewing",
           "color": "#ffb020",
@@ -81,18 +84,17 @@
           "keywords": {
             "score": 20,
             "max": 20,
-            "note": "7 resume keywords matched",
+            "note": "9 resume keywords matched",
             "topMatches": [
               "alliance",
-              "peo",
-              "integration",
-              "executive",
+              "architect",
+              "own",
               "alliances",
               "saas",
-              "enterprise"
+              "benefits"
             ],
-            "matchRate": 7,
-            "totalHits": 7,
+            "matchRate": 9,
+            "totalHits": 9,
             "totalKeywords": 98,
             "usedFullDesc": true
           },
@@ -102,25 +104,32 @@
             "note": "Salary not listed"
           },
           "stage": {
-            "score": 6,
+            "score": 7,
             "max": 8,
-            "note": "Public/Enterprise"
+            "note": "Late stage: Public"
           },
           "workType": {
-            "score": 2,
+            "score": 5,
             "max": 5,
-            "note": "Onsite in radius"
+            "note": "Fully remote ✅"
           }
         }
       }
     },
     {
-      "title": "Vice President, Revenue Operations and Enablement",
-      "company": "Wpromote",
-      "url": "https://jobs.lever.co/wpromote/9c67b1fc-0a3c-417e-bb26-6d3d4ecfd611",
-      "function": "Revenue Operations",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 24,
+      "title": "VP of Customer Success",
+      "company": "WorkWave",
+      "location": "Global (US, UK, Australia)",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.lever.co/workwave/139d8c11-30c8-4103-8403-6c912a6b6435",
+      "source": "Lever",
+      "snippet": "Build and lead a world-class global Customer Success organization from the ground up.",
+      "industry": "SaaS/Business Management Software",
+      "companyStage": "Not specified",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 49,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -128,21 +137,21 @@
       },
       "breakdown": {
         "industry": {
-          "score": 0,
+          "score": 12,
           "max": 30,
-          "note": ""
+          "note": "Adjacent: saas"
         },
         "title": {
-          "score": 8,
+          "score": 20,
           "max": 25,
-          "note": "Senior level signal"
+          "note": "CS leadership match"
         },
         "keywords": {
-          "score": 4,
+          "score": 2,
           "max": 20,
           "note": "1 resume keyword matched",
           "topMatches": [
-            "revenue operations"
+            "saas"
           ],
           "matchRate": 1,
           "totalHits": 1,
@@ -160,22 +169,122 @@
           "note": "Stage unknown"
         },
         "workType": {
-          "score": 2,
+          "score": 5,
           "max": 5,
-          "note": "Onsite in radius"
+          "note": "Fully remote ✅"
         }
       },
-      "fullDescription": "Must Have 12+ years of experience in Revenue Operations, Sales Operations, or GTM Strategy, ideally within a tech-enabled services or agency environment. 4+ years of experience people management experience, including guiding and mentoring managers to enable a high-performing team and culture Deep expertise in Salesforce administration, analytics, and process design—paired with strong understanding of the GTM tech stack (Gong, Chili Piper, Seismic, etc.). Proven success leading revenue operations transformation and scaling systems, forecasting, and insights in high-growth environments. Experience designing and executing enablement programs that drive adoption, consistency, and measurable improvements in performance. Exceptional analytical, communication, and stakeholder management skills with the ability to influence across executive and functional teams. A “builder” mindset—comfortable balancing strategic vision with hands-on execution and iterative improvement. Strong alignment with Wpromote’s values of collaboration, accountability, and growth mindset. Wpromote is committed to bringing together individuals from different backgrounds and perspectives, providing employees with a safe and welcoming environment free of discrimination and harassment. We strive to create a diverse & inclusive environment where everyone can thrive, feel a sense of belonging, and do impactful work together. As an equal opportunity employer, we prohibit any unlawful discrimination against a job applicant on the basis of their race, color, religion, gender, gender identity, gender expression, sexual orientation, national origin, family or parental status, disability*, age, veteran status, or any other status protected by the laws or regulations in the locations where we operate. We respect the laws enforced by the EEOC and are dedicated to going above and beyond in fostering diversity across our workplace. Applicants with disabilities may be entitled to reasonable accommodation under the terms of the Americans with Disabilities Act and certain state or local laws. A reasonable accommodation is a change in the way things are normally done which will ensure an equal employment opportunity without imposing undue hardship on Wpromote. This employer participates in E-Verify and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S. If E-Verify cannot confirm that you are authorized to work, this employer is required to give you written instructions and an opportunity to contact Department of Homeland Security (DHS) or Social Security Administration (SSA) so you can begin to resolve the issue before the employer can take any action against you, including terminating your employment. Employers can only use E-Verify once you have accepted a job offer and completed the Form I-9. For more information on E Verify, or if you believe that your employer has violated its E-Verify responsibilities, please contact DHS. We",
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
       "rank": {
-        "total": 43,
+        "total": 49,
         "tier": {
           "label": "📋 Low Match",
           "color": "#4a4f66",
           "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 20,
+            "max": 25,
+            "note": "CS leadership match"
+          },
+          "keywords": {
+            "score": 2,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "saas"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Partnerships",
+      "company": "Imubit",
+      "location": "Remote (North America/Europe)",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recently Posted",
+      "url": "https://imubit.com/careers/",
+      "source": "Greenhouse",
+      "snippet": "Your mission: build, scale, and weaponize a network of partners to dominate industrial AI adoption.",
+      "industry": "Industrial AI",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 43,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Careers - Imubit Our Customers Product Industries Process Industries Cement &#038; Building Materials Chemicals, Petrochemicals &#038; Polymers Mining, Minerals &#038; Metals Oil &#038; Gas Sustainability Company Company Overview Leadership & Advisory Board Careers Resources News &#038; Awards Events &#038; Webinars Blog Get AIO Assessment Build your future here Careers at Imubit We are mission-driven to invent new technologies that help our clients transcend beyond the limits of what they considered possible. Our team includes globally-renowned Google-endorsed machine learning scientists, world-class hydrocarbon processing experts, and enterprise software seasoned professionals. Build the Future of Digital Innovation at Imubit We are an energetic group of engineers and professionals, all looking to use our talents and experience to innovate the future of technology and energy. What started out as a team of engineers with a dream to change the way AI transcends refineries has turned into a global team of engineers, scientists, and industry experts at the cutting edge of the AI industry. The impact of our work can be seen both in the growth of the company and through the millions of dollars we are saving refineries all over the world. Our company culture is collaborative, inclusive, and supportive. We work through challenges and overcome obstacles together. Here at Imubit, we work hard and we play hard. We share a belief in Imubit’s mission to invent new technologies that help our clients transcend beyond the limits of what they considered possible. We accomplish this with creativity, innovation, dedication, safety, and integrity. We are guided by our principles Our cultural principles enable us to build a company that builds inventions and uses them to transcend people, businesses, and industries. Teamwork Teamwork based on orchestration, trust and support. Passion Passion to collaborate, learn and create. Humility Continuous evolution through humility and iteration. Ownership Ownership over personal and company missions. Purpose Purpose-driven, globally-motivated, empowering leadership. Interested in working at Imubit? Send Us Your Resume See Our Benefits Kickstart Your AI Journey Prove the value of AI optimization at your plant—at no cost. Uncover AI’s potential, based on your unit and your site-specific economics, in this free assessment. Get Started Want to get in touch? Please use the form below! This field is hidden when viewing the form Next Steps: Sync an Email Add-On To get the most out of your form, we suggest that you sync this form with an email add-on. To learn more about your email add-on options, visit the following page (https://www.gravityforms.com/the-8-best-email-plugins-for-wordpress-in-2020/). Important: Delete this tip before you publish the form. About You Your Name (Required) First Last Title (Required) Company (Required) How Can We Reach You? We would love to chat with you. How can we get in touch? Preferred Method of Con",
+      "rank": {
+        "total": 54,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
         },
         "breakdown": {
           "industry": {
@@ -184,26 +293,129 @@
             "note": ""
           },
           "title": {
-            "score": 8,
+            "score": 25,
             "max": 25,
-            "note": "Senior level signal"
+            "note": "Exact target title"
           },
           "keywords": {
-            "score": 20,
+            "score": 11,
             "max": 20,
-            "note": "9 resume keywords matched",
+            "note": "4 resume keywords matched",
             "topMatches": [
-              "gtm",
-              "revenue operations",
               "peo",
-              "i-9",
-              "executive",
-              "salesforce",
-              "gong",
-              "employer"
+              "own",
+              "benefits",
+              "enterprise"
             ],
-            "matchRate": 9,
-            "totalHits": 9,
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Customer Success (Government)",
+      "company": "Propelus",
+      "location": "Not specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.ashbyhq.com/propelus/b6330393-7bc0-4dd1-a573-952b34ab4118",
+      "source": "Ashby",
+      "snippet": "We are seeking a dynamic and experienced leader to join our team as the Director of Customer Success for Government Excellence.",
+      "industry": "Healthcare Compliance",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 51,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: compliance"
+        },
+        "title": {
+          "score": 20,
+          "max": 25,
+          "note": "CS leadership match"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "compliance"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 51,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: compliance"
+          },
+          "title": {
+            "score": 20,
+            "max": 25,
+            "note": "CS leadership match"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "compliance"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
             "totalKeywords": 98,
             "usedFullDesc": true
           },
@@ -226,19 +438,19 @@
       }
     },
     {
-      "title": "VP, Customer Success",
-      "company": "ConnectWise",
-      "location": "Tampa, FL or Seattle, WA",
-      "workType": "Hybrid",
+      "title": "Financial Services and Trading Growth Marketing Director",
+      "company": "Wood Mackenzie",
+      "location": "California",
+      "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://job-boards.greenhouse.io/connectwise?error=true",
-      "source": "Greenhouse",
-      "snippet": "Community-driven software company dedicated to the success of technology solution providers.",
-      "industry": "Software/Technology Solutions",
-      "companyStage": "Established",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 21,
+      "posted": "Recent",
+      "url": "https://weworkremotely.com/remote-jobs/wood-mackenzie-financial-services-and-trading-growth-marketing-director",
+      "source": "Job Board",
+      "snippet": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/4193/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt",
+      "industry": "FinTech",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 23,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -276,127 +488,14 @@
           "note": "Stage unknown"
         },
         "workType": {
-          "score": 3,
-          "max": 5,
-          "note": "Hybrid"
-        }
-      },
-      "fullDescription": "Jobs at ‎ConnectWise Current openings at ‎ConnectWise Create a Job Alert Level-up your career by having opportunities at ‎ConnectWise sent directly to your inbox. Create alert Search Department Select... Office Select... 59 jobs Finance Business Applications Job Senior Boomi Developer IND Remote Senior Salesforce Administrator IND Remote Senior Salesforce Developer Pune / Mumbai / Bangalore / Philippines Technical Business Analyst Tampa, FL And US Remote Finance Controllership Job Payroll Specialist Mumbai, IND Finance FP&A Job Senior Financial Analyst Tampa, FL Sr, Manager, FP&A Tampa, FL Finance Information Security Job Senior Product Security Engineer Bangalore, IND Global Marketing Demand Generation Job Digital Marketing Manager New US-Remote Digital Marketing Specialist New US-Remote Marketing Operations Manager New USA Remote Global Marketing Experiential Marketing Job Field Marketing Manager USA Remote - FL Operations Migrations/Quote Desk Job Modernization Manager US Remote and Tampa, FL Operations Partner Enablement Job Associate Partner Success Manager Clark, PHL Manager, Customer Success Remote, US Partner Success Analyst Clark, PHL Product Adoption Specialist US-remote Sr. Manager, Partner Success Clark, PHL Operations Partner Success- Migrations Job Software Consultant Specialist- Modernization Tampa, FL and US- Remote Software Consultant Specialist- Modernization London, UKD and Remote Operations Product Services Job Security Analyst II Mumbai, IND Operations Product Support Job Software Support Specialist I Mumbai, IND Operations Professional Services Job Project Manager Australia Scale Project Manager New Clark, PHL Technical Services Specialist - UMM Pune, IND Technical Support Engineer Mumbai, Pune, Bangalore Technical Support Specialist II Mumbai, Pune, Bangalore Product- Platform Product Management Job Technical Communicator I Bangalore, IND R&D Cloud Operations & Hosting Job Principal Storage Cloud Engineer I ARM Remote OR EU R&D Product Engineering Job Manager, Software Engineering Bangalore, IND Principal Software Engineer I Pune, IND Principal Software Engineer I Bangalore, IND Senior Full Stack Engineer I Bangalore, IND Senior Software Engineer New Pune Senior Software Engineer I Bangalore, IND Senior Sofware Test Engineer I Mumbai, Pune, Bangalore, IND Software Engineer II Bangalore, IND Sales Acquisition Sales - EMEA Job Account Executive - Dutch, Nederlands Speaking Amsterdam, NLD VACATURE – ACCOUNT EXECUTIVE (NEW BUSINESS) New Amsterdam, Netherlands Sales Acquisition Sales - NAM Job Account Executive USA Sales Expansion Sales - NAM Job Regional Sales Manager USA Sales Growth Sales - APAC Job Account Executive Sydney, AUS Account Executive Sydney, AUS Alliances & Distribution Director - APAC Sydney, AUS Sales Growth Sales - EMEA Job Regional Sales Manager London, UKD Sales Renewals Job Renewal Manager Pasig, PHL Sales Sales Development Job Sales Development Representative Tampa, FL Sales Development Representative Lond",
-      "rank": {
-        "total": 41,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "8 resume keywords matched",
-            "topMatches": [
-              "partner enablement",
-              "alliance",
-              "executive",
-              "salesforce",
-              "alliances",
-              "payroll",
-              "aca"
-            ],
-            "matchRate": 8,
-            "totalHits": 8,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 3,
-            "max": 5,
-            "note": "Hybrid"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Customer Success Management, Americas",
-      "company": "GitLab",
-      "location": "Not Specified",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://job-boards.greenhouse.io/gitlab?error=true",
-      "source": "Greenhouse",
-      "snippet": "Set the overall vision and strategic plan for the Enterprise Customer Success Account Management organization.",
-      "industry": "DevOps/Software Development",
-      "companyStage": "Public",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 39,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 20,
-          "max": 25,
-          "note": "CS leadership match"
-        },
-        "keywords": {
-          "score": 2,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "enterprise"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 6,
-          "max": 8,
-          "note": "Public/Enterprise"
-        },
-        "workType": {
           "score": 5,
           "max": 5,
           "note": "Fully remote ✅"
         }
       },
-      "fullDescription": "Jobs at GitLab Current openings at GitLab Search Department Select... 160 jobs Engineering Customer Support Job Associate Support Engineer (AMER - PST / MST) Remote, US Intermediate Support Engineer (AMER - PST / MST) Remote, Canada; Remote, US Support Engineer, U.S. Government Support Remote, US Engineering Data Engineering Job Principal Database Engineer, Data Engineering Remote, EMEA; Remote, North America Senior Site Reliability Engineer, Database Excellence New Remote, Canada; Remote, US Engineering DevOps Engineering Job Engineering Manager, Create:Source Code Remote, Americas Intermediate Backend Engineer, Verify: Runner Core Remote, Canada Engineering Office of the CTO Job Technical Chief of Staff to the CTO Remote, US VP of Engineering, Architecture and Transformation Remote, US Engineering Platforms Engineering Job Engineering Manager, Infrastructure Platforms Remote, Canada; Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom; Remote, US Intermediate Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Canada; Remote, EMEA Intermediate Site Reliability Engineer, Environment Automation Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom Intermediate Site Reliability Engineer, Tenant Scale: Tenant Services Remote, Americas; Remote, EMEA Principal Engineer, Infrastructure Platforms Remote, Australia; Remote, Canada; Remote, France; Remote, Germany; Remote, India; Remote, Ireland; Remote, Israel; Remote, Japan; Remote, Netherlands; Remote, Singapore; Remote, South Korea; Remote, Spain; Remote, United Kingdom; Remote, US Senior Backend Engineer (Ruby and/or Go), Tenant Scale; Cells Infrastructure New Remote, Americas; Remote, APAC; Remote, EMEA Senior Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Americas; Remote, EMEA Staff Backend Engineer, Developer Experience (Ruby) Remote, APAC; Remote, Canada; Remote, EMEA; Remote, Netherlands; Remote, United Kingdom; Remote, US Engineering Sec Engineering Job Engineering Manager, Software Supply Chain Security: Pipeline Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Principal Engineer, Software Supply Chain Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Senior Backend Engineer(Golang),Software Supply Chain Security: Auth Infrastructure Remote, Americas; Remote, APAC; Remote, Canada Software Engineering Manager, Application Security Testing: Composition Analysis & Dynamic Analysis Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US G&A / CIO Data Job Senior Director, Data Analytics Remote, US G&A / CIO Enterprise Applications Job Business Systems Analyst, Marketing Remote, EMEA CPQ Developer Remote, US IT Administrator, CLM Ironclad Remote, North America Salesforce Admin/Release Engineer, CRM Systems Remote, APA",
+      "fullDescription": "Requirements Extensive B2B marketing experience, including in a global growth, demand gen, customer marketing or performance marketing leadership role. Proven success driving measurable pipeline and revenue growth in a B2B verticalized go-to-market model. Strong understanding of the full marketing funnel, buyer journeys, and lead lifecycle management. Experience managing integrated campaigns across multiple regions and all channels (digital and events). Deep familiarity with marketing analytics and automation platforms (e.g. Salesforce, Pardot, Dreamdata, Supermetrics,, etc.). Experience in adopting AI, leveraging intent data, to enable pipeline creation and progression through identification of buying groups and signals (Bombora, 6sense etc) Exceptional analytical and problem-solving skills with a test-and-learn mindset. Excellent communication, data storytelling and cross-functional collaboration skills. Experience working in a global, matrixed organization is a must, to effectively manage stakeholders, leading through ambiguity and change. Preferred Experience and Qualifications Industry knowledge in Finance Services and Trading Account-Based Marketing experience and tools expertise (e.g. Bombora, 6sense, salesforce). Experience scaling marketing in a high-growth or SaaS company. Bachelor’s degree in marketing, Business, or related field. What Success Looks Like A high-performance team culture, with a team focussed on driving the insights and actions to exceed our marketing goals (OKRs) Exceeding YoY performance benchmarks. Driving improvements in ARR, NRR and GRR as part of the wider GTM team. Increased marketing-sourced pipeline and closed-won revenue for new customer acquisition (based on ARR goals). Increased marketing engaged pipeline, to increase velocity and won-revenue conversion rates. Increasing Marketing-influenced pipeline and won-revenue conversion rates for customer expansion (based on ARR goals). Improved product usage and retention rates for target accounts. Shorter sales cycles and improved lead-to-opportunity conversion rates (spanning all customer growth types). Strong alignment between GTM teams through integrated planning (marketing, sales, customer and segment commercial teams). Equal Opportunities We are an equal opportunities employer. This means we are committed to recruiting the best people regardless of their race, colour, religion, age, sex, national origin, disability or protected veteran status. You can find out more about your rights under the law at www.eeoc.gov If you are applying for a role and have a physical or mental disability, we will support you with your application or through the hiring process. Apply Now Let's start your dream job Apply now Meet JobCopilot: Your Personal AI Job Hunter Automatically Apply to Remote Sales and Marketing Jobs Just set your preferences and Job Copilot will do the rest-finding, filtering, and applying while you focus on what matters. Activate JobCopilot Wood Mackenzie View ",
       "rank": {
-        "total": 52,
+        "total": 55,
         "tier": {
           "label": "👀 Worth Reviewing",
           "color": "#ffb020",
@@ -404,117 +503,9 @@
         },
         "breakdown": {
           "industry": {
-            "score": 0,
+            "score": 12,
             "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 20,
-            "max": 25,
-            "note": "CS leadership match"
-          },
-          "keywords": {
-            "score": 15,
-            "max": 20,
-            "note": "5 resume keywords matched",
-            "topMatches": [
-              "pipeline",
-              "crm",
-              "architect",
-              "salesforce",
-              "enterprise"
-            ],
-            "matchRate": 5,
-            "totalHits": 5,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 6,
-            "max": 8,
-            "note": "Public/Enterprise"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director - Revenue Operations",
-      "company": "Hevo Data",
-      "url": "https://jobs.lever.co/hevodata/c0184460-5f3a-46ef-a873-d6a3c77d1620",
-      "function": "Revenue Operations",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "fullDescription": "Requirements 8+ years of experience in Sales Ops / RevOps with at least 2 years in a leadership role Strong understanding of SaaS GTM models including inbound, outbound, and partner motions Hands-on expertise with HubSpot (preferred) or Salesforce and sales tech ecosystems Proven experience in quota planning, compensation design, and forecasting accuracy Strong analytical skills with comfort in Excel/Sheets and BI tools Ability to influence cross-functional stakeholders with data and clarity Builder mindset with experience scaling processes in high-growth environments Balance of operational rigor and empathy for sales teams We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us. Apply for this job Hevo Data Home Page Jobs powered by",
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 43,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
+            "note": "Adjacent: fintech"
           },
           "title": {
             "score": 8,
@@ -524,18 +515,18 @@
           "keywords": {
             "score": 20,
             "max": 20,
-            "note": "7 resume keywords matched",
+            "note": "11 resume keywords matched",
             "topMatches": [
+              "go-to-market",
               "gtm",
-              "revenue operations",
+              "pipeline",
               "cross-functional",
-              "quota",
               "salesforce",
-              "hubspot",
-              "saas"
+              "saas",
+              "b2b"
             ],
-            "matchRate": 7,
-            "totalHits": 7,
+            "matchRate": 11,
+            "totalHits": 11,
             "totalKeywords": 98,
             "usedFullDesc": true
           },

@@ -1,7 +1,2693 @@
 {
   "date": "Tuesday, March 3, 2026",
-  "count": 12,
+  "count": 25,
   "jobs": [
+    {
+      "title": "Finance Director, Worldwide Channel (Partner & Alliances)",
+      "company": "Zscaler",
+      "location": "Remote - USA",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recently Posted",
+      "url": "https://job-boards.greenhouse.io/zscaler/jobs/5062338007",
+      "source": "Greenhouse",
+      "snippet": "10+ years of progressive finance, sales operations, or strategy experience, with at least 5 years in high-growth Enterprise SaaS, Cloud Infrastructure, or ISV companies",
+      "industry": "Cybersecurity/Enterprise SaaS",
+      "companyStage": "Public",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 52,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: saas"
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 10,
+          "max": 20,
+          "note": "4 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances",
+            "saas",
+            "enterprise"
+          ],
+          "matchRate": 4,
+          "totalHits": 4,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Public"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "You have a true growth mindset and are obsessed with your own development, actively seeking feedback to become a better partner and a stronger teammate. You love what you do and you do it with purpose. What We’re Looking for (Minimum Qualifications) 10+ years of progressive finance, sales operations, or strategy experience, with at least 5 years in high-growth Enterprise SaaS, Cloud Infrastructure, or ISV companies Direct experience partnering with Channel, Partnerships, or Alliances business leaders including an understanding of deal registration and partner pricing Proven track record of driving annual planning and monthly forecasting processes in large enterprises while managing competing priorities Excellent written and verbal communication skills with the ability to influence SVP and C-level decision makers through data-driven insights Process architect mindset with a demonstrated ability to design and implement scalable workflows in support of growth What Will Make You Stand Out (Preferred Qualifications) Experience navigating matrixed organizations and influencing decisions without relying on formal authority Proven record of establishing rapport with all levels within a customer or partner organization including C-suites Expertise in building succession depth and coaching finance team members on Channel-related domain knowledge #LI-Remote #LI-RL2 Zscaler’s salary ranges are benchmarked and are determined by role and level. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations and could be higher or lower based on a multitude of factors, including job-related skills, experience, and relevant education or training. The base salary range listed for this full-time position excludes commission/ bonus/ equity (if applicable) + benefits. Base Pay Range $168,000 - $240,000 USD At Zscaler, we are committed to building a team that reflects the communities we serve and the customers we work with. We foster an inclusive environment that values all backgrounds and perspectives, emphasizing collaboration and belonging. Join us in our mission to make doing business seamless and secure. Our Benefits program is one of the most important ways we support our employees. Zscaler proudly offers comprehensive and inclusive benefits to meet the diverse needs of our employees and their families throughout their life stages, including: Various health plans Time off plans for vacation and sick time Parental leave options Retirement options Education reimbursement In-office perks, and more! Learn more about Zscaler’s Future of Work strategy, hybrid working model, and benefits here . By applying for this role, you adhere to applicable laws, regulations, and Zscaler policies, including those related to security and privacy standards and guidelines. Zscaler is committed to providing equal employment opportunities to all individuals. We strive to create a workplace where employees a",
+      "rank": {
+        "total": 62,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "9 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "architect",
+              "own",
+              "alliances",
+              "saas",
+              "benefits"
+            ],
+            "matchRate": 9,
+            "totalHits": 9,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Public"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Financial Services and Trading Growth Marketing Director",
+      "company": "Wood Mackenzie",
+      "location": "California",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://weworkremotely.com/remote-jobs/wood-mackenzie-financial-services-and-trading-growth-marketing-director",
+      "source": "Job Board",
+      "snippet": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/4193/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt",
+      "industry": "FinTech",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 23,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Requirements Extensive B2B marketing experience, including in a global growth, demand gen, customer marketing or performance marketing leadership role. Proven success driving measurable pipeline and revenue growth in a B2B verticalized go-to-market model. Strong understanding of the full marketing funnel, buyer journeys, and lead lifecycle management. Experience managing integrated campaigns across multiple regions and all channels (digital and events). Deep familiarity with marketing analytics and automation platforms (e.g. Salesforce, Pardot, Dreamdata, Supermetrics,, etc.). Experience in adopting AI, leveraging intent data, to enable pipeline creation and progression through identification of buying groups and signals (Bombora, 6sense etc) Exceptional analytical and problem-solving skills with a test-and-learn mindset. Excellent communication, data storytelling and cross-functional collaboration skills. Experience working in a global, matrixed organization is a must, to effectively manage stakeholders, leading through ambiguity and change. Preferred Experience and Qualifications Industry knowledge in Finance Services and Trading Account-Based Marketing experience and tools expertise (e.g. Bombora, 6sense, salesforce). Experience scaling marketing in a high-growth or SaaS company. Bachelor’s degree in marketing, Business, or related field. What Success Looks Like A high-performance team culture, with a team focussed on driving the insights and actions to exceed our marketing goals (OKRs) Exceeding YoY performance benchmarks. Driving improvements in ARR, NRR and GRR as part of the wider GTM team. Increased marketing-sourced pipeline and closed-won revenue for new customer acquisition (based on ARR goals). Increased marketing engaged pipeline, to increase velocity and won-revenue conversion rates. Increasing Marketing-influenced pipeline and won-revenue conversion rates for customer expansion (based on ARR goals). Improved product usage and retention rates for target accounts. Shorter sales cycles and improved lead-to-opportunity conversion rates (spanning all customer growth types). Strong alignment between GTM teams through integrated planning (marketing, sales, customer and segment commercial teams). Equal Opportunities We are an equal opportunities employer. This means we are committed to recruiting the best people regardless of their race, colour, religion, age, sex, national origin, disability or protected veteran status. You can find out more about your rights under the law at www.eeoc.gov If you are applying for a role and have a physical or mental disability, we will support you with your application or through the hiring process. Apply Now Let's start your dream job Apply now Meet JobCopilot: Your Personal AI Job Hunter Automatically Apply to Remote Sales and Marketing Jobs Just set your preferences and Job Copilot will do the rest-finding, filtering, and applying while you focus on what matters. Activate JobCopilot Wood Mackenzie View ",
+      "rank": {
+        "total": 55,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: fintech"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "11 resume keywords matched",
+            "topMatches": [
+              "go-to-market",
+              "gtm",
+              "pipeline",
+              "cross-functional",
+              "salesforce",
+              "saas",
+              "b2b"
+            ],
+            "matchRate": 11,
+            "totalHits": 11,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Partnerships",
+      "company": "Imubit",
+      "location": "Remote (North America/Europe)",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recently Posted",
+      "url": "https://imubit.com/careers/",
+      "source": "Greenhouse",
+      "snippet": "Your mission: build, scale, and weaponize a network of partners to dominate industrial AI adoption.",
+      "industry": "Industrial AI",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 43,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Careers - Imubit Our Customers Product Industries Process Industries Cement &#038; Building Materials Chemicals, Petrochemicals &#038; Polymers Mining, Minerals &#038; Metals Oil &#038; Gas Sustainability Company Company Overview Leadership & Advisory Board Careers Resources News &#038; Awards Events &#038; Webinars Blog Get AIO Assessment Build your future here Careers at Imubit We are mission-driven to invent new technologies that help our clients transcend beyond the limits of what they considered possible. Our team includes globally-renowned Google-endorsed machine learning scientists, world-class hydrocarbon processing experts, and enterprise software seasoned professionals. Build the Future of Digital Innovation at Imubit We are an energetic group of engineers and professionals, all looking to use our talents and experience to innovate the future of technology and energy. What started out as a team of engineers with a dream to change the way AI transcends refineries has turned into a global team of engineers, scientists, and industry experts at the cutting edge of the AI industry. The impact of our work can be seen both in the growth of the company and through the millions of dollars we are saving refineries all over the world. Our company culture is collaborative, inclusive, and supportive. We work through challenges and overcome obstacles together. Here at Imubit, we work hard and we play hard. We share a belief in Imubit’s mission to invent new technologies that help our clients transcend beyond the limits of what they considered possible. We accomplish this with creativity, innovation, dedication, safety, and integrity. We are guided by our principles Our cultural principles enable us to build a company that builds inventions and uses them to transcend people, businesses, and industries. Teamwork Teamwork based on orchestration, trust and support. Passion Passion to collaborate, learn and create. Humility Continuous evolution through humility and iteration. Ownership Ownership over personal and company missions. Purpose Purpose-driven, globally-motivated, empowering leadership. Interested in working at Imubit? Send Us Your Resume See Our Benefits Kickstart Your AI Journey Prove the value of AI optimization at your plant—at no cost. Uncover AI’s potential, based on your unit and your site-specific economics, in this free assessment. Get Started Want to get in touch? Please use the form below! This field is hidden when viewing the form Next Steps: Sync an Email Add-On To get the most out of your form, we suggest that you sync this form with an email add-on. To learn more about your email add-on options, visit the following page (https://www.gravityforms.com/the-8-best-email-plugins-for-wordpress-in-2020/). Important: Delete this tip before you publish the form. About You Your Name (Required) First Last Title (Required) Company (Required) How Can We Reach You? We would love to chat with you. How can we get in touch? Preferred Method of Con",
+      "rank": {
+        "total": 54,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 11,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "peo",
+              "own",
+              "benefits",
+              "enterprise"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Customer Success (Government)",
+      "company": "Propelus",
+      "location": "Not specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.ashbyhq.com/propelus/b6330393-7bc0-4dd1-a573-952b34ab4118",
+      "source": "Ashby",
+      "snippet": "We are seeking a dynamic and experienced leader to join our team as the Director of Customer Success for Government Excellence.",
+      "industry": "Healthcare Compliance",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 51,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: compliance"
+        },
+        "title": {
+          "score": 20,
+          "max": 25,
+          "note": "CS leadership match"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "compliance"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 51,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: compliance"
+          },
+          "title": {
+            "score": 20,
+            "max": 25,
+            "note": "CS leadership match"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "compliance"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP of Customer Success",
+      "company": "WorkWave",
+      "location": "Global (US, UK, Australia)",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.lever.co/workwave/139d8c11-30c8-4103-8403-6c912a6b6435",
+      "source": "Lever",
+      "snippet": "Build and lead a world-class global Customer Success organization from the ground up.",
+      "industry": "SaaS/Business Management Software",
+      "companyStage": "Not specified",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 49,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: saas"
+        },
+        "title": {
+          "score": 20,
+          "max": 25,
+          "note": "CS leadership match"
+        },
+        "keywords": {
+          "score": 2,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "saas"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 49,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 20,
+            "max": 25,
+            "note": "CS leadership match"
+          },
+          "keywords": {
+            "score": 2,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "saas"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Partner Operations",
+      "company": "Nebius",
+      "location": "Remote - United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recently Posted",
+      "url": "https://careers.nebius.com/",
+      "source": "Greenhouse",
+      "snippet": "Lead annual and quarterly planning for the Channel & Alliances organization, including territory design, quota setting, and compensation alignment.",
+      "industry": "Cloud/B2B SaaS",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 52,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: saas"
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 14,
+          "max": 20,
+          "note": "5 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "quota",
+            "alliances",
+            "saas",
+            "b2b"
+          ],
+          "matchRate": 5,
+          "totalHits": 5,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Find your role: Open positions at Nebius Contact sales Log in to Token Factory Log in to AI Cloud AI Cloud Token Factory Solutions Why Nebius Pricing Docs Resources Company For investors Find your place at Nebius 269 open roles All departments All locations All work formats Role Department Location Account Executive - APJ Sales Remote · Singapore Account Executive - Benelux Customer Experience Amsterdam Account Executive - DACH Sales Germany · Remote Account Executive - France Sales France · Paris Account Executive - Middle East Sales Abu Dhabi · Dubai Advanced IT Data Center Technician Hardware Infrastructure Mäntsälä AI Governance Specialist Legal Amsterdam · London · Remote - Europe AI/ML Specialist Solutions Architect Customer Experience Canada · Remote - United States AI/ML Specialist Solutions Architect Customer Experience Amsterdam · Remote - Europe Application Security Engineer Technology Amsterdam · Berlin · Prague · Remote - Europe BDR Manager Sales United States Business Development Representative Sales New York City, New York · San Francisco Bay Area, California · United States Business Development Representative Sales Dubai Business Development Representative - Israel Sales Tel Aviv Business Development Representative - Nebius Token Factory Sales Remote - United States Business Development Representative - Singapore Sales Singapore Business Development Representative - UKI Sales London Campaigns & Events Manager Communications Amsterdam Channel Partner Manager, Middle East Sales Abu Dhabi · Remote Communications Business Partner Communications Amsterdam Communications Designer - Social Media Marketing United States Construction Project Manager, Data Centers Hardware Infrastructure United States Content & Channels Manager Communications Amsterdam Corporate Development Associate Finance London Customer Engineer Customer Experience United States Customer Support Engineer Customer Experience United States Data Center Design Lead Hardware Infrastructure Remote - United States Data Center Facilities Manager Hardware Infrastructure United States Data Center Infrastructure Engineer Hardware Infrastructure New Jersey Data Center IT Infrastructure Engineer Hardware Infrastructure Béthune, Pas-de-Calais Data Center IT Manager Hardware Infrastructure Mäntsälä Data Center IT Manager Hardware Infrastructure Béthune, Pas-de-Calais Data Center IT Manager Hardware Infrastructure Minnesota Data Center IT Manager Hardware Infrastructure Oklahoma Data Center IT Support Manager Hardware Infrastructure Mäntsälä Data Center IT Support Manager (Longcross) Hardware Infrastructure London Data Center IT Technician Hardware Infrastructure London Data Center IT Technician Hardware Infrastructure Béthune, Pas-de-Calais Datacenter IT Technician (Longcross) Hardware Infrastructure London Data Center L1 IT Technician Hardware Infrastructure Finland Data Center Logistics Specialist Hardware Infrastructure United States Data Center Logistics Specialist Hardware Infras",
+      "rank": {
+        "total": 48,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 10,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "architect",
+              "executive",
+              "saas",
+              "b2b"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Head of Revenue Operations (Director or VP)",
+      "company": "Hightouch",
+      "location": "Remote (North America)",
+      "workType": "Remote",
+      "salary": "$240,000 - $325,000",
+      "posted": "Recently Posted",
+      "url": "https://job-boards.greenhouse.io/hightouch?error=true",
+      "source": "Greenhouse",
+      "snippet": "The salary range for this position is $240,000 to $325,000 per year, which is location independent in accordance with our remote-first policy.",
+      "industry": "Technology/Data",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 30,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary unclear"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at Hightouch Current openings at Hightouch Create a Job Alert Level-up your career by having opportunities at Hightouch sent directly to your inbox. Create alert Search Department Select... 52 jobs AI Job AI Strategy Consultant Remote (North America) Customer Success Job Customer Success Engineer Remote (Europe) Implementation Manager, EMEA Remote (Europe) Manager, Implementation Management Remote (US) Manager, Technical Account Management New York City, New York Technical Account Manager Remote (North America) Design Job Senior Product Designer, Agents Remote (North America) Senior Product Designer, Customer Studio Remote (North America) Engineering Job Backend Engineer, AI Content Agents Remote (North America) Developer Productivity Engineer Remote (North America) Forward Deployed Marketing Data Scientist Remote (North America) Full Stack Product Engineer Remote (North America) Head of Machine Learning Remote (North America) IT Manager Remote (North America) Machine Learning Engineer, AI Decisioning Remote (North America) Principal Engineer, Streaming Systems Remote (North America) Software Engineer, AI Agents Remote (North America) Software Engineer, Control Plane Remote (North America) Software Engineer, Customer Studio Backend Remote (North America) Software Engineer, Distributed Systems Remote (North America) Software Engineer, Journeys Remote (North America) Software Engineer, Streaming Systems Remote (North America) Staff Engineer - AI Productivity Remote (North America) Web Engineer Remote (North America) Finance / Data / Operations Job Analytics Engineer Remote (North America) Marketing & SDR Operations Manager Remote (North America) Legal Job Commercial Counsel New York City, New York Marketing Job Product Marketing Manager, AdTech Remote (North America) Product Marketing Manager, Partnerships Remote (North America) Senior Content Manager Remote (North America) Partnerships Job Cloud Alliance Lead- Google Cloud Platform Remote (North America) Partner Solutions Engineer Remote (North America) People Job GTM Recruiter (Contract) New York, New York People Partner, GTM New York City, New York Sales Job Account Executive (APAC) Remote (APAC) Account Executive, Enterprise West Remote (West Coast) Enterprise Account Executive -Mountain West Remote (Mountain West) Enterprise Account Executive- Northeast Region Northeast, U.S. Enterprise Account Executive, North EMEA Remote (Europe) Enterprise Account Executive- Southeast Region Southeast, U.S. Enterprise Solutions Engineer, West West and Mountain Timezones (North America) Head of Mid-Market Sales, North America New York, NY/ San Francisco, CA Manager, Solutions Engineering New York, NY or San Francisco, CA Mid-Market Account Executive San Francisco, CA Mid-Market Account Executive, East Region Remote (East Coast) Mid-Market Account Executive, EMEA London, United Kingdom Mid-Market Solutions Engineer Remote (North America) Regional VP of Enterprise Sales New York, New York/ Boston, Massach",
+      "rank": {
+        "total": 46,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "7 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "gtm",
+              "revenue operations",
+              "peo",
+              "executive",
+              "enterprise",
+              "mid-market"
+            ],
+            "matchRate": 7,
+            "totalHits": 7,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary unclear"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP,  Field Marketing",
+      "company": "AutoStore System",
+      "location": "California",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://weworkremotely.com/remote-jobs/autostore-system-vp-field-marketing",
+      "source": "Job Board",
+      "snippet": "&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; US CA San Jose - River Oaks Pkwy\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://automationanywhere.com\"&gt;http://automatio",
+      "industry": "",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 23,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "you have: Bachelor's degree in marketing, business, or a related field; MBA preferred 15+ years in B2B marketing, with at least 5+ years in a senior leadership role overseeing field marketing in a high-growth SaaS environment Exceptional ability to build, inspire, and lead high-performing teams across geographies Demonstrated success in driving double-digit growth in pipeline and bookings through field marketing initiatives Proven ability to partner with sales teams and build a culture of winning together and mutual accountability for results Strong data-driven mindset with experience in marketing analytics and ROI measurement Skilled at engaging with enterprise customers to understand needs and deliver tailored solutions Background in solutions product marketing strongly preferred You excel in these key competencies: Excellent analytical abilities and a data-driven mindset Excellent verbal and written communication skills Proven ability to work in a fast-paced environment and to juggle and prioritize across many simultaneous projects Collaborative team player with a “can do” attitude Decisive, agile, and iterative; easily able to shift gears between thinking and doing Professional, friendly, enthusiastic personality with excellent communication and presentation skills Organized and programmatic thinker; ability to develop campaign recommendations and plans An ability to analyze data and present results to a group in a clear, digestible manner The base salary range for this position is $ 290,000 – $320,000 a year. The base salary ultimately offered is determined through a review of education, industry experience, training, knowledge, skills, abilities of the applicant in alignment with market data and other factors. This position is also eligible for a discretionary bonus, equity and a full range of medical and other benefits. Ready to Revolutionize Work? Join Us. This is an opportunity to work with a global, passionate team pioneering technology that’s redefining the way people work, everywhere. Join us and discover the many ways that you can have an impact, achieve your potential, and go be great. Job Segment OR Key Words: SaaS, Field Marketing, Demand Generation, Leadership, B2B Software Solutions, APA, AI, Agentic Process Automation #LI-JS1 #LI-REMOTE Benefits and perks you’ll appreciate: Flexible work schedule / remote roles Unlimited Personal Time Off 12 holidays off per year 4 days volunteer time off per year Eligible for 4 company Achievement days off per year Variety of health care and well-being benefits Paid family/parental leave We are a designated “Best Place to Work” for 2 years in a row! Learn more here Newsweek’s Top 100 Most Loved Workplaces in America 2023 – Learn more here Automation Anywhere is an Affirmative Action and Equal Opportunity Employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, gender, sexual orientation, national origin, genetic information, age, ",
+      "rank": {
+        "total": 43,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "8 resume keywords matched",
+            "topMatches": [
+              "pipeline",
+              "peo",
+              "saas",
+              "b2b"
+            ],
+            "matchRate": 8,
+            "totalHits": 8,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Revenue Operations",
+      "company": "Viral Nation Inc.",
+      "location": "Not Listed",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Recently Posted",
+      "url": "https://job-boards.greenhouse.io/viralnation/jobs/5004042007",
+      "source": "Greenhouse",
+      "snippet": "At Viral Nation, we specialize in building social-first ecosystems for brands to connect with the modern consumer journey.",
+      "industry": "Marketing/Social Media",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 27,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "Qualifications and Skills: 7+ years in Revenue Operations, Sales Operations, or Business Operations, with hands-on ownership of CRM systems and GTM processes. 4+ years of leadership experience, with a demonstrated ability to coach teams, set high standards, and maximize performance. Expert-level HubSpot proficiency, including workflow automation, reporting, dashboard creation, and data governance. Strong analytical capability with the ability to interpret data, surface insights, and inform executive-level decisions. Proven experience running accurate sales and revenue forecasts and partnering cross-functionally to manage pipeline and pacing. High technical aptitude with the ability to evaluate tools, design integrations, and translate business needs into scalable system solutions. Excellent communication and problem-solving skills, with a curious, proactive mindset and the ability to navigate complex, multi-department workflows. This role has an annual salary range of $115,000 to $150,000 . This range reflects the full scope and progression of the role, from building capability to operating with sustained impact at a higher level. In addition to base salary, we offer a comprehensive benefits and total rewards package designed to support our team as they grow with us. Where an offer falls within this range is determined through the interview process. Candidates are benchmarked by the hiring team based on role scope, relevant experience, skill alignment, and expected impact, using consistent and objective criteria. Compensation Philosophy: At Viral Nation, compensation is structured, performance-led, and market-aligned. Pay decisions are intentional, based on role requirements, performance, and market alignment by country, and are set to maintain internal pay equity across comparable roles and levels. Compensation progression is tied to demonstrated performance, expanded scope, and sustained contribution over time, not tenure alone. Employee compensation is reviewed regularly through formal performance reviews and check-ins to ensure alignment with role expectations and impact. AI in Recruitment: Viral Nation does not use AI-enabled tools to screen, assess, rank, or select candidates in our recruitment process. Our hiring teams make all hiring decisions. DEI Commitment: Viral Nation is committed to diversity, equity and inclusion in our agency. Viral Nation welcomes applications from people with visible and non-visible disabilities. Accommodations are available on request for candidates taking part in all aspects of the recruiting and selection process. Create a Job Alert Interested in building your career at Viral Nation Inc.? Get future opportunities sent straight to your email. Create alert Apply for this job * indicates a required field Autofill with MyGreenhouse First Name * Last Name * Preferred First Name Email * Phone Country * Phone * Resume/CV * Attach Attach Dropbox Google Drive Enter manually Enter manually Accepted file types: pdf, doc",
+      "rank": {
+        "total": 43,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "16 resume keywords matched",
+            "topMatches": [
+              "gtm",
+              "revenue operations",
+              "pipeline",
+              "crm",
+              "own",
+              "executive",
+              "hubspot",
+              "benefits"
+            ],
+            "matchRate": 16,
+            "totalHits": 16,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Channel Partnerships",
+      "company": "Reddit",
+      "location": "London, United Kingdom",
+      "workType": "Hybrid",
+      "salary": "Not Listed",
+      "posted": "Recently Posted",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/7517665",
+      "source": "Greenhouse",
+      "snippet": "We are looking for an experienced Sales Director to lead our Global Channel Partnership business.",
+      "industry": "Social Media/Technology",
+      "companyStage": "Public",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 27,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 6,
+          "max": 8,
+          "note": "Public/Enterprise"
+        },
+        "workType": {
+          "score": 3,
+          "max": 5,
+          "note": "Hybrid"
+        }
+      },
+      "fullDescription": "You have incredible sales acumen, a relentless bias toward action, and will continue to look for opportunities to expand or grow even faster with our partners. You want to win and keep your partners accountable to sales targets. Your team leads every aspect of these partnerships, including contract negotiation, partner education, day-to-day vendor management, process creation, and scaling to new channel partners - all with the goal of increasing our international ads revenue The leader we’re looking for has experience building out a scalable reseller partnerships program and can effectively motivate outsourced teams to succeed. Please note that this role is required to be based in either London or Amsterdam. Responsibilities Define the playbook : Set the sales strategy and tactics for global channel partners implementing a comprehensive sales strategy to drive revenue growth via Channel partnerships globally. Build and maintain relationships with C-levels & VPs at our partners : constantly ensure advocacy for Reddit at our partners, gather feedback to understand their needs and how Reddit can be best positioned at our partners to create a win-win for both. Negotiate (and renegotiate) complex partnership agreements to align with Reddit’s expansion strategy and build in tactics to manage for sustainable growth. Expand partner network and identify additional investments for growth or efficiency such as leveraging AI tooling, API integrations Build a strong sales rigor at our partners: set clear targets, leading our partners to exceed established revenue targets both by creating the sales strategy, tracking key metrics, and accountability in pipeline management Manage, coach & develop a team of partner managers to deliver on ambitious revenue targets and building successful partner relationships Advocate for channel partners internally and build a robust infrastructure to grow & enable partners. Work together with Sales Leadership, Sales Operations, and Marketing Leadership to create scaled end-to-end programs and sales initiatives, Collaborate with Product and Marketing to provide feedback and insights, drive product enhancements and new product launches Stay up to date with industry trends, market dynamics, and competitive landscape to identify new opportunities and ensure the team is working on the highest impact. Represent Reddit in the channel partner markets by speaking at key industry events, Collaborate with the wider International leadership team to drive scale & growth across all international markets by setting a joint strategy, balancing resources, and building for scalability Travel required. Qualifications 12+ years experience in digital media, with 7+ years of people management experience within digital media sales Proven background in building complex reseller partnerships from the ground up Experience leading a team to sell into reseller partners with a history of exceeding revenue targets. Deep familiarity with the channel partner a",
+      "rank": {
+        "total": 41,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 14,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "pipeline",
+              "peo",
+              "integration",
+              "api"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 6,
+            "max": 8,
+            "note": "Public/Enterprise"
+          },
+          "workType": {
+            "score": 3,
+            "max": 5,
+            "note": "Hybrid"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Product Marketing, API Security, Remote",
+      "company": "Planet Green Search",
+      "location": "Missouri",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://weworkremotely.com/remote-jobs/planet-green-search-director-of-product-marketing-api-security-remote-1",
+      "source": "Job Board",
+      "snippet": "&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Saint Louis, MO · Marketing/Public Relations\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://planetgreensearch.com\"&gt;http:",
+      "industry": "Cybersecurity",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 27,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 2,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "api"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 6,
+          "max": 8,
+          "note": "Public/Enterprise"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Remote Director of Product Marketing, API Security, Remote at Planet Green Search Find Jobs Top 100 Remote Companies Top Trending Remote Jobs New! Search by Job Category Programming Full-Stack Programming Front-End Programming Back-End Programming Software Development Design Devops and Sysadmin Management and Finance Product Customer Support Sales and Marketing Search by Role Type Full-Time Contract Community Blog Podcast Remote Work Trends Remote Work Community New! Career Services Free ATS Resume Review New! Automate your Job Search New! About Why Choose WWR? Save with Bundles Frequently Asked Questions Sign in Post a job Sign in Jobs Top Trending Remote Jobs New! All Jobs Search by Vertical Programming Full-Stack Programming Front-End Programming Back-End Programming Software Development Design Devops and Sysadmin Management and Finance Product Customer Support Sales and Marketing Search by Engagement type Full-Time Contract All Other Jobs Top 100 Remote Companies Community Blog Podcast Remote Work Trends Remote Work Community New! Career Services Free ATS Resume Review New! Automate your Job Search New! About Why Choose WWR? Frequently Asked Questions Save with Bundles Post a job &times; All jobs Sales and Marketing Director of Product Marketing, API Security, Remote Director of Product Marketing, API Security, Remote Posted 28 days ago Apply now Save job Director of Product Marketing, API Security, Remote $200K–$250K + Bonus | 100% Remote (Work from Anywhere) Ignite the Future of API Security – From Your Home Base Ready to command the narrative for a cutting-edge API security powerhouse? As Director of Product Marketing , you’ll be the mastermind behind electrifying go-to-market strategies that make cybercriminals sweat and enterprises beg for more. This is your chance to own the spotlight in a high-stakes, high-velocity cybersecurity arena— all from the comfort of your home office, no commute required . We’re a global leader in API protection (think next-gen WAAP, AppSec, and unbreakable runtime defense). You’ll shape how the world sees us: sleek, unstoppable, and always one step ahead . What You’ll Own (and Crush) Strategic Swagger Craft razor-sharp positioning that turns complex tech into irresistible stories. Orchestrate blockbuster product launches—complete with hype, swagger, and flawless execution. Dominate thought leadership: webinars, keynotes, and content that sets the industry agenda. Content That Converts Direct a content empire: white-hot whitepapers, viral blogs, and case studies that close deals. Partner with demand gen to launch campaigns that hit like a DDoS—only legal. Ensure every asset is pixel-perfect, on-time, and dripping with value. Sales Supercharger Arm the sales team with battle-tested playbooks, competitive kill-sheets, and training that turns reps into closers. Deliver pitch-perfect internal keynotes that rally the entire org. Customer Magnetism Be the voice prospects want to hear: gather intel, validate messagin",
+      "rank": {
+        "total": 40,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 15,
+            "max": 20,
+            "note": "5 resume keywords matched",
+            "topMatches": [
+              "go-to-market",
+              "arr",
+              "own",
+              "api",
+              "enterprise"
+            ],
+            "matchRate": 5,
+            "totalHits": 5,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 6,
+            "max": 8,
+            "note": "Public/Enterprise"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Partnerships",
+      "company": "Virtuous",
+      "location": "Not specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.ashbyhq.com/virtuous/424a0ab4-d29e-41a0-8f2f-0116ca1c4374",
+      "source": "Ashby",
+      "snippet": "Virtuous is on a mission to inspire global generosity by helping nonprofits build better relationships with their donors.",
+      "industry": "Nonprofit Software",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 40,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Director of Partnerships @ Virtuous You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 40,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP of Partnerships",
+      "company": "CivicMarketplace",
+      "location": "Not specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.ashbyhq.com/civicmarketplace/1a1b5b1f-b702-4e62-927a-b6030205b371/application",
+      "source": "Ashby",
+      "snippet": "The VP of Partnerships will build trusted relationships with associations and local government leaders, solve real civic challenges, and turn opportunities into impact and revenue for Civic Marketplace.",
+      "industry": "Government Technology",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 40,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "VP of Partnerships @ CivicMarketplace You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 40,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Senior Director Product Marketing - Clinical &amp; Efficiency",
+      "company": "Siemens Healthineers",
+      "location": "Anywhere in the World",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://weworkremotely.com/remote-jobs/siemens-healthineers-senior-director-product-marketing-clinical-efficiency",
+      "source": "Job Board",
+      "snippet": "&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; MLV LB\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://siemens-healthineers.com\"&gt;http://siemens-healthineers.com&lt;/a&gt",
+      "industry": "",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 23,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Qualifications Bachelor’s degree in marketing, Business, Life Sciences, Engineering or related field; MBA preferred. 10+ years of experience in product marketing within healthcare technology, digital health, or enterprise software. Strong track record of driving adoption and revenue growth in the North America market. Deep knowledge of U.S. healthcare systems, provider workflows, and enterprise sales environments. Exceptional leadership and communication skills with the ability to influence at executive and C-suite levels. Experience leading marketing teams and collaborating effectively in a matrix organization. Will require approximately 50%60% travel Who we are : We are a team of more than 72,000 highly dedicated Healthineers in more than 70 countries. As a leader in medical technology, we constantly push the boundaries to create better outcomes and experiences for patients, no matter where they live or what health issues they are facing. Our portfolio is crucial for clinical decision-making and treatment pathways. How we work: When you join Siemens Healthineers, you become one in a global team of scientists, clinicians, developers, researchers, professionals, and skilled specialists, who believe in each individual’s potential to contribute with diverse ideas. We are from different backgrounds, cultures, religions, political and/or sexual orientations, and work together, to fight the world’s most threatening diseases and enable access to care, united by one purpose: to pioneer breakthroughs in healthcare. For everyone. Everywhere. Sustainably. To find out more about Siemens Healthineers businesses, please visit our company page here . The base pay range for this position is: $212,730 - $292,501 Factors which may affect starting pay within this range may include geography/market, skills, education, experience, and other qualifications of the successful candidate. If this is a commission eligible position the commission eligibility will be in accordance with the terms of the Company's plan. Commissions are based on individual performance and/or company performance. The Company offers the following benefits for this position, subject to applicable eligibility requirements: medical insurance, dental insurance, vision insurance, 401(k) retirement plan. life insurance, long-term and short-term disability insurance, paid parking/public transportation, paid time off, paid sick and safe time. Equal Employment Opportunity Statement: Siemens Healthineers is an Equal Opportunity and Affirmative Action Employer encouraging diversity in the workplace. All qualified applicants will receive consideration for employment without regard to their race, color, creed, religion, national origin, citizenship status, ancestry, sex, age, physical or mental disability unrelated to ability, marital status, family responsibilities, pregnancy, genetic information, sexual orientation, gender expression, gender identity, transgender, sex stereotyping, order of protection stat",
+      "rank": {
+        "total": 32,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 9,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "executive",
+              "benefits",
+              "employer"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP of Programs and Partnerships",
+      "company": "Link Health Patient Navigators",
+      "location": "Remote (TX/MA preference)",
+      "workType": "Remote",
+      "salary": "$110,000 - $125,000",
+      "posted": "Recently Posted",
+      "url": "https://job-boards.greenhouse.io/linkhealth?error=true",
+      "source": "Greenhouse",
+      "snippet": "Link Health is seeking a results-driven Director of Programs and Partnerships to lead operational excellence and strategic partnership development.",
+      "industry": "Healthcare Technology",
+      "companyStage": "Early Stage",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 27,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary unclear"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at Link Health Patient Navigators Help patients access life-saving care—apply to be a Link Health Patient Navigator today. We’re looking for Patient Navigators in Houston, Boston, and remotely. Help us guide people to the care they need. Our mission is to ensure equitable access to resources for healthcare, energy assistance, nutrition support, and more, fostering healthier and more resilient communities. Our Patient Navigator Program runs in Houston, TX and Boston, MA for the following seasons: Summer 2025 - Fall 2025 Fall 2025 - Spring 2026 Spring 2026 - Summer 2026 Priority will be given to those who are willing to volunteer for two seasonal cohorts. However, applicants who are only available for one are still encouraged to apply. Create a Job Alert Level-up your career by having opportunities at Link Health Patient Navigators sent directly to your inbox. Create alert Search 2 jobs Link Health Patient Navigators Job Future Patient Navigator Program Interest Form Boston or Houston Remote Patient Navigator - 2025 Remote Powered by Greenhouse",
+      "rank": {
+        "total": 31,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "peo"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary unclear"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Vice President of Revenue Operations",
+      "company": "Instructure",
+      "location": "Not specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.lever.co/instructure/681f9630-c2a5-4767-9573-ed963e4779ec",
+      "source": "Lever",
+      "snippet": "Lead transformation of go-to-market operations by identifying and resolving process bottlenecks.",
+      "industry": "EdTech/Learning Management",
+      "companyStage": "Not specified",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 31,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 8,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "go-to-market",
+            "revenue operations"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 31,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 8,
+            "max": 20,
+            "note": "2 resume keywords matched",
+            "topMatches": [
+              "go-to-market",
+              "revenue operations"
+            ],
+            "matchRate": 2,
+            "totalHits": 2,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Partner Director, Head of Technology Partnerships",
+      "company": "OpenAI",
+      "location": "Not specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.ashbyhq.com/openai/69f6c63c-ab4a-4a4b-8b99-e0e1fe488fa1",
+      "source": "Ashby",
+      "snippet": "This role sits in Partnerships/GTM and leads a portfolio of ISV and technology partnerships, with deep collaboration across internal teams to support integrations, joint go-to-market, and long-term partnership growth.",
+      "industry": "AI Technology",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 42,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 12,
+          "max": 20,
+          "note": "3 resume keywords matched",
+          "topMatches": [
+            "go-to-market",
+            "gtm",
+            "integration"
+          ],
+          "matchRate": 3,
+          "totalHits": 3,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Series D+"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 30,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Series D+"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Senior Director/VP, MGU Partnerships",
+      "company": "Arlo",
+      "location": "Not specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.ashbyhq.com/Arlo/85ec52cd-364f-444c-95c2-d36b203770af/application",
+      "source": "Ashby",
+      "snippet": "We're looking for a strategic, relationship-driven Business Development Lead to own and grow our MGU stop-loss business with health plan and TPA partners.",
+      "industry": "Insurance/Healthcare",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 30,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 3,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "own"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Senior Director/VP, MGU Partnerships @ Arlo You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of EMEA Channel Partnerships",
+      "company": "Quantum Metric",
+      "location": "EMEA",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.lever.co/quantummetric/6f229fc2-53ee-4fcd-b376-d13c15eed443",
+      "source": "Lever",
+      "snippet": "The Director, EMEA Channel Partnerships will be the primary partner resource for all channel-related initiatives within the EMEA region.",
+      "industry": "Technology/Analytics",
+      "companyStage": "Not specified",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 27,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Senior Director - Commerce Partner Success",
+      "company": "Hopper",
+      "location": "USA",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.ashbyhq.com/hopper/9f4744e6-9e53-4e28-856a-1aa08c923bf6/application",
+      "source": "Ashby",
+      "snippet": "As HTS continues to expand its reach as a leading travel technology company, we are looking for a Senior Director of Partner Success to lead the commerce partner strategy, onboarding, and growth for our travel commerce platform.",
+      "industry": "Travel Technology",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 28,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 2,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "onboarding"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Series D+"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 26,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Series D+"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "US Vyndamax Regional Marketing Director - West",
+      "company": "Pfizer",
+      "location": "Texas",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://weworkremotely.com/remote-jobs/pfizer-us-vyndamax-regional-marketing-director-west",
+      "source": "Job Board",
+      "snippet": "&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States - Remote\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://pfizer.com\"&gt;http://pfizer.com&lt;/a&gt;\n&lt;/p&gt;",
+      "industry": "",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 23,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Qualifications Must-Have Bachelor’s Degree 8 + years ’ experience in health system/MG/IDN Sales, Account Management or other customer facing role Prior project management experience (2+ years) Extensive experience in health system/MG/IDN Sales, Account Management or other customer facing role Proven ability to develop insights, strategy, and tactical plans Skills & Knowledge: Strong strategic analytical capability with sound business acumen and customer orientation Strong strategic thinking and analytical skills to synthesize customer and market insights into prioritized marketing opportunities Result oriented with effective planning, prioritization, and project management skills Core marketing capabilities to design marketing strategies and tactics to maximize local opportunities Knowledge of the healthcare market and its customers Effectively works with cross functional stakeholders and is capable of being an effective member of the regional team and ROC (Rare Organized Customer Connection) Strong persuasive interpersonal, communication and leadership skills Experience presenting to Pfizer’s customers within the Healthcare setting. Sound business acumen Nice-to-Have Prior local and/or in-line marketing experience with strong history of achievement and performance preferred (2+ years) Six Sigma Preferred Cross functional experience is preferred Deep understanding of all US healthcare system and IDN /Key Accounts Preferred Candidate demonstrates a breadth of diverse leadership experiences and capabilities including: the ability to influence and collaborate with peers, develop and coach others, oversee and guide the work of other colleagues to achieve meaningful outcomes and create business impact. NON-STANDARD WORK SCHEDULE, TRAVEL OR ENVIRONMENT REQUIREMENTS This position will require up to 50% travel within the region as needed to develop internal and external relationships. Travel outside the Region will be required periodically for training, meetings at NYHQ, launches, etc OTHER JOB DETAILS Last Date to Apply for Job: February 5, 2026 Work Location Assignment: Remote - Field Based Eligible for Relocation Package – No Candidate demonstrates a breadth of diverse leadership experiences and capabilities including: the ability to influence and collaborate with peers, develop and coach others, oversee and guide the work of other colleagues to achieve meaningful outcomes and create business impact. Work Location Assignment: Remote - Field Based The annual base salary for this position ranges from $176,600.00 to $282,900.00. In addition, this position is eligible for participation in Pfizer’s Global Performance Plan with a bonus target of 20.0% of the base salary and eligibility to participate in our share based long term incentive program. We offer comprehensive and generous benefits and programs to help our colleagues lead healthy lives and to support each of life’s moments. Benefits offered include a 401(k) plan with Pfizer Matching Contributions ",
+      "rank": {
+        "total": 25,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 2,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "benefits"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Partnerships Director",
+      "company": "LoyaltyLion",
+      "location": "Not specified",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.lever.co/LoyaltyLion/18a1f9c2-e5f5-43a0-b0e7-415d55479d72",
+      "source": "Lever",
+      "snippet": "Responsible for managing the Partnership Department and delivering its revenue target.",
+      "industry": "Ecommerce/Loyalty Platform",
+      "companyStage": "Not specified",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "rank": {
+        "total": 24,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Vice President of Customer Success",
+      "company": "Wander",
+      "location": "Not specified",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
+      "source": "Ashby",
+      "snippet": "We're hiring a Vice President (VP) of Customer Success who will lead Wander's Customer Success business unit.",
+      "industry": "Travel/Hospitality",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 23,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 23,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Head of Marketing",
+      "company": "Tandm Systems",
+      "location": "Anywhere in the World",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://weworkremotely.com/remote-jobs/tandm-systems-head-of-marketing",
+      "source": "Job Board",
+      "snippet": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/4013/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt",
+      "industry": "",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:00:20.879Z",
+      "total": 15,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 0,
+          "max": 25,
+          "note": ""
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "you have. Show us how you think and work. Presentation: Present your plan to leadership. Decision: The best fit gets the offer. Apply Now Let's start your dream job Apply now Meet JobCopilot: Your Personal AI Job Hunter Automatically Apply to Remote Sales and Marketing Jobs Just set your preferences and Job Copilot will do the rest-finding, filtering, and applying while you focus on what matters. Activate JobCopilot Tandm Systems View company Jobs posted: 1 About the job Posted on 18 days ago Apply before Mar 15th, 2026 Job type Full-Time Salary $100,000 or more USD Category Sales and Marketing Region Anywhere in the World Skills Digital Marketing Marketing Automation Product Marketing Artificial Intelligence (AI) SaaS Content Strategy Apply now Tired of Applying to Jobs Manually? Let JobCopilot do it for you. No more spreadsheets. No more copy-pasting. Just set your preferences and let your Al copilot search, match, and apply to jobs while you sleep. Applies for jobs that actually match your skills Tailors your resume and cover letter automatically Works 24/7-so you don't have to Activate JobCopilot Related Jobs Remote Sales and Marketing jobs → View Company Profile Sales Appointment Setter 1d WALTER Remote Featured Pro Full-Time Anywhere in the World View Company Profile Head of Creator Expansion New ContentJet Inc. Montreal, Canada Featured Full-Time $25,000 - $48,999 USD Anywhere in the World View Company Profile Account Executive 16d Arc.dev Remote Featured Full-Time Anywhere in the World Top 100 Companies Blog Remote Hiring Guide FAQ - Employers Events RSS 38,699 Remote jobs posted &copy; 2026 We Work Remotely &copy; 2026 We Work Remotely Contact Support Terms Guidelines Privacy Why Choose WWR?",
+      "rank": {
+        "total": 22,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 0,
+            "max": 25,
+            "note": ""
+          },
+          "keywords": {
+            "score": 7,
+            "max": 20,
+            "note": "3 resume keywords matched",
+            "topMatches": [
+              "executive",
+              "saas",
+              "employer"
+            ],
+            "matchRate": 3,
+            "totalHits": 3,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Head of Revenue Operations",
+      "company": "HopSkipDrive",
+      "location": "Not Listed",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Recently Posted",
+      "url": "https://job-boards.greenhouse.io/hopskipdrive?error=true",
+      "source": "Greenhouse",
+      "snippet": "At HopSkipDrive, our goal is to create opportunity for all through mobility",
+      "industry": "Transportation Technology",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T02:00:20.880Z",
+      "total": 19,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 0,
+          "max": 25,
+          "note": ""
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "you haven’t been in verbal contact with a HopSkipDrive recruiter, we recommend that you do not share your information with that sender. Hoping to become a HopSkipDrive CareDriver? We encourage you to Apply to Drive . Create a Job Alert Level-up your career by having opportunities at HopSkipDrive sent directly to your inbox. Create alert Search 2 jobs Revenue (Business Unit) Sales Job Regional Account Manager (Future Opportunity) Great Lakes/Northwest Remote - (Seattle/Spokane | Bay Area/Sacramento/MI, WI, MN, MD, DC, VA) Sr. Regional Account Manager (Future Opportunity) Remote - MN, WI, MI, VA, MD, DC Powered by Greenhouse",
+      "rank": {
+        "total": 19,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 0,
+            "max": 25,
+            "note": ""
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "revenue operations"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    }
+  ],
+  "topPicks": [
     {
       "title": "VP Partnerships",
       "company": "PagerDuty",
@@ -116,117 +2802,6 @@
       }
     },
     {
-      "title": "Director of Customer Success Management, Americas",
-      "company": "GitLab",
-      "location": "Not Specified",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://job-boards.greenhouse.io/gitlab?error=true",
-      "source": "Greenhouse",
-      "snippet": "Set the overall vision and strategic plan for the Enterprise Customer Success Account Management organization.",
-      "industry": "DevOps/Software Development",
-      "companyStage": "Public",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 39,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 20,
-          "max": 25,
-          "note": "CS leadership match"
-        },
-        "keywords": {
-          "score": 2,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "enterprise"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 6,
-          "max": 8,
-          "note": "Public/Enterprise"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Jobs at GitLab Current openings at GitLab Search Department Select... 160 jobs Engineering Customer Support Job Associate Support Engineer (AMER - PST / MST) Remote, US Intermediate Support Engineer (AMER - PST / MST) Remote, Canada; Remote, US Support Engineer, U.S. Government Support Remote, US Engineering Data Engineering Job Principal Database Engineer, Data Engineering Remote, EMEA; Remote, North America Senior Site Reliability Engineer, Database Excellence New Remote, Canada; Remote, US Engineering DevOps Engineering Job Engineering Manager, Create:Source Code Remote, Americas Intermediate Backend Engineer, Verify: Runner Core Remote, Canada Engineering Office of the CTO Job Technical Chief of Staff to the CTO Remote, US VP of Engineering, Architecture and Transformation Remote, US Engineering Platforms Engineering Job Engineering Manager, Infrastructure Platforms Remote, Canada; Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom; Remote, US Intermediate Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Canada; Remote, EMEA Intermediate Site Reliability Engineer, Environment Automation Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom Intermediate Site Reliability Engineer, Tenant Scale: Tenant Services Remote, Americas; Remote, EMEA Principal Engineer, Infrastructure Platforms Remote, Australia; Remote, Canada; Remote, France; Remote, Germany; Remote, India; Remote, Ireland; Remote, Israel; Remote, Japan; Remote, Netherlands; Remote, Singapore; Remote, South Korea; Remote, Spain; Remote, United Kingdom; Remote, US Senior Backend Engineer (Ruby and/or Go), Tenant Scale; Cells Infrastructure New Remote, Americas; Remote, APAC; Remote, EMEA Senior Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Americas; Remote, EMEA Staff Backend Engineer, Developer Experience (Ruby) Remote, APAC; Remote, Canada; Remote, EMEA; Remote, Netherlands; Remote, United Kingdom; Remote, US Engineering Sec Engineering Job Engineering Manager, Software Supply Chain Security: Pipeline Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Principal Engineer, Software Supply Chain Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Senior Backend Engineer(Golang),Software Supply Chain Security: Auth Infrastructure Remote, Americas; Remote, APAC; Remote, Canada Software Engineering Manager, Application Security Testing: Composition Analysis & Dynamic Analysis Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US G&A / CIO Data Job Senior Director, Data Analytics Remote, US G&A / CIO Enterprise Applications Job Business Systems Analyst, Marketing Remote, EMEA CPQ Developer Remote, US IT Administrator, CLM Ironclad Remote, North America Salesforce Admin/Release Engineer, CRM Systems Remote, APA",
-      "rank": {
-        "total": 52,
-        "tier": {
-          "label": "👀 Worth Reviewing",
-          "color": "#ffb020",
-          "min": 50
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 20,
-            "max": 25,
-            "note": "CS leadership match"
-          },
-          "keywords": {
-            "score": 15,
-            "max": 20,
-            "note": "5 resume keywords matched",
-            "topMatches": [
-              "pipeline",
-              "crm",
-              "architect",
-              "salesforce",
-              "enterprise"
-            ],
-            "matchRate": 5,
-            "totalHits": 5,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 6,
-            "max": 8,
-            "note": "Public/Enterprise"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
       "title": "Vice President, Revenue Operations and Enablement",
       "company": "Wpromote",
       "url": "https://jobs.lever.co/wpromote/9c67b1fc-0a3c-417e-bb26-6d3d4ecfd611",
@@ -316,116 +2891,6 @@
             ],
             "matchRate": 9,
             "totalHits": 9,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director - Revenue Operations",
-      "company": "Hevo Data",
-      "url": "https://jobs.lever.co/hevodata/c0184460-5f3a-46ef-a873-d6a3c77d1620",
-      "function": "Revenue Operations",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "fullDescription": "Requirements 8+ years of experience in Sales Ops / RevOps with at least 2 years in a leadership role Strong understanding of SaaS GTM models including inbound, outbound, and partner motions Hands-on expertise with HubSpot (preferred) or Salesforce and sales tech ecosystems Proven experience in quota planning, compensation design, and forecasting accuracy Strong analytical skills with comfort in Excel/Sheets and BI tools Ability to influence cross-functional stakeholders with data and clarity Builder mindset with experience scaling processes in high-growth environments Balance of operational rigor and empathy for sales teams We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us. Apply for this job Hevo Data Home Page Jobs powered by",
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 43,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "7 resume keywords matched",
-            "topMatches": [
-              "gtm",
-              "revenue operations",
-              "cross-functional",
-              "quota",
-              "salesforce",
-              "hubspot",
-              "saas"
-            ],
-            "matchRate": 7,
-            "totalHits": 7,
             "totalKeywords": 98,
             "usedFullDesc": true
           },
@@ -559,1057 +3024,19 @@
       }
     },
     {
-      "title": "VP of Partnerships",
-      "company": "Terminus",
-      "url": "https://jobs.lever.co/terminus/da79890e-34d9-4603-8b22-bbf4dc3c69e7",
-      "function": "Partnerships",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 37,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 40,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Revenue Operations",
-      "company": "Curri",
-      "url": "https://jobs.lever.co/curri/e0be7fa4-431a-43d2-8590-4c5fbfdda461",
-      "function": "Revenue Operations",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 37,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP Revenue Operations",
-      "company": "Brevo",
-      "url": "https://jobs.lever.co/brevo/839a76d3-02bd-4941-b6f3-27392cb2d1c3",
-      "function": "Revenue Operations",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 37,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Revenue Operations",
-      "company": "Influ2",
-      "url": "https://jobs.lever.co/influ2/da1ab1cf-24ca-47d2-8ef7-0c8b792f88db",
-      "function": "Revenue Operations",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 34,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 37,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP, Worldwide Channel",
-      "company": "Sonar",
-      "url": "https://jobs.lever.co/sonarsource/b0aa738e-5817-4dd7-ab6b-d5062cf0e22c",
-      "function": "Channel",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 27,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Partner Operations Director",
-      "company": "CaptivateIQ",
-      "url": "https://jobs.lever.co/captivateiq/e764b734-2e99-421f-a042-0fef0cb0b9fc?lever-source%5B%5D=jobs.sequoiacap.com",
-      "function": "Partnerships",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 20,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 23,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director, Partner Development",
-      "company": "Samba TV",
-      "url": "https://jobs.lever.co/sambatv/7f31edbd-bfdd-4b4d-9c20-cdf907b7f696",
-      "function": "Partnerships",
-      "foundDate": "2026-03-04T01:46:08.226Z",
-      "total": 20,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 23,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    }
-  ],
-  "topPicks": [
-    {
-      "title": "VP Partnerships",
-      "company": "PagerDuty",
-      "location": "Not specified",
-      "workType": "Onsite",
-      "salary": "Not Listed",
-      "posted": "Not specified",
-      "url": "https://job-boards.greenhouse.io/pagerduty?error=true",
-      "source": "Greenhouse",
-      "snippet": "Lead a team of channel experts responsible for indirect go to market strategy, sales and programs.",
-      "industry": "DevOps/IT Operations",
-      "companyStage": "Public",
-      "foundDate": "2026-03-04T01:41:00.855Z",
-      "total": 26,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 6,
-          "max": 8,
-          "note": "Public/Enterprise"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "fullDescription": "Jobs at PagerDuty Current openings at PagerDuty Search Department Select... Office Select... 36 jobs Business Operations Job Program Manager Atlanta Program Manager Toronto Customer Success Job Account Manager New Remote (USA - Boston, MA) Account Manager (UK) New London Account Manager (US) New Remote (USA) Customer Success Manager Lisbon Customer Success Professional Services Job Senior Professional Services Consultant Sydney Legal Job Senior Corporate Counsel San Francisco Senior Director & Associate General Counsel (Product & Privacy) San Francisco Marketing Field Marketing Job Digital Programs Marketing Specialist — Regional (EMEA) — Lisbon Metro Area Lisbon People & Places Talent Acquisition Job Senior Technical Recruiter San Francisco Product Development Engineering Leadership Job Engineering Manager - Platform Integrations New Lisbon Product Development Product Management Job Principal Product Manager - Developer Platform Remote (Canada) Principal Product Manager - Developer Platform Remote (USA) Principal Product Manager, Growth Remote (USA) Principal Product Manager, Growth Remote (Canada) Product Manager - App Platform Remote (USA) Product Manager - App Platform Remote (Canada) Senior Product Manager Remote (Canada) Senior Product Manager Remote (USA) Senior Product Manager, AIOps Remote (USA) Senior Product Manager, AIOps Remote (Canada) Product Development Software Engineers Job Site Reliability Engineer II Toronto Software Engineer 2 - Team Incident Analysis New Toronto Product Development UX & Design Job Principal Product Designer Remote (USA) Sales Job Account Executive - New York New Remote (USA - New York City, NY) Account Executive (Sydney) Sydney Account Executive (UK) London Account Executive (US) Remote (USA) Enterprise Account Executive - San Francisco San Francisco Senior Solutions Consultant II New Atlanta Senior Solutions Consultant II- New York New Remote (USA - New York City, NY) Territory Executive (UK) London Territory Executive (US) Remote (USA) Sales Strategic Alliances Job Strategic Alliances Director London Social Impact Job Director, Global Social Impact San Francisco Powered by Greenhouse",
-      "rank": {
-        "total": 45,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 19,
-            "max": 20,
-            "note": "6 resume keywords matched",
-            "topMatches": [
-              "alliance",
-              "peo",
-              "integration",
-              "executive",
-              "alliances",
-              "enterprise"
-            ],
-            "matchRate": 6,
-            "totalHits": 6,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 6,
-            "max": 8,
-            "note": "Public/Enterprise"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP, Customer Success",
-      "company": "Algolia",
-      "location": "Remote - United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not specified",
-      "url": "https://job-boards.greenhouse.io/algolia/jobs/5735111004",
-      "source": "Greenhouse",
-      "snippet": "Lead our global Customer Success organization and shape the future of how Algolia delivers value to customers.",
-      "industry": "AI/Search Technology",
-      "companyStage": "Late Stage",
-      "foundDate": "2026-03-04T01:41:00.855Z",
-      "total": 26,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 7,
-          "max": 8,
-          "note": "Late stage: Late Stage"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "You bring 15+ years of SaaS customer success experience, with at least a decade in senior leadership roles managing multi-regional teams. You’re energized by building diverse, high-performing teams and thrive in an environment where you can innovate, influence, and drive change. Are you ready for the challenge? YOUR ROLE WILL CONSIST OF: Global Leadership & Organizational Strategy Provide leadership to a global Customer Success Management organization, setting the long-term vision and strategy. Lead, inspire, and scale regional CSM leaders and teams across the Americas, EMEA, and APAC. Develop a global operating model balancing consistency with regional nuance. Build a culture grounded in accountability, measurable impact, and customer-centricity. Driving Worldwide Customer Outcomes Be responsible for global retention, Net Revenue Retention (NRR), and customer health metrics. Act as executive sponsor for top strategic global customers. Define global programs that drive customer maturity, product adoption, and measurable ROI. Oversee customer journey frameworks ensuring seamless experiences across lifecycle stages. Cross-Functional Alignment & Strategic Influence Partner with global Sales leadership on account strategies, renewal and expansion priorities. Work with Product & Engineering to deliver structured customer insights for roadmap decisions. Collaborate across Support, Customer Solutions, and Services for an integrated customer experience. Represent customer perspectives at leadership level. Operational Excellence at Scale Establish global KPIs, forecasting models, playbooks, and operating rhythms. Lead global workforce planning, hiring, and leadership development. Oversee escalations worldwide ensuring rapid, customer-centric resolutions. Analyze churn and renewal trends across markets to continuously refine global strategy. YOU MIGHT BE A FIT IF YOU HAVE: 15+ years of experience in Customer Success, Account Management, or related SaaS leadership roles. 10+ years leading global teams and leaders of leaders. Demonstrated ability to scale organizations across multiple regions (AMER and EMEA) Experience supporting enterprise customers with complex, API-driven products Strong executive communication, influence, and relationship-building skills. Deep operational expertise, including forecasting and KPI design. Fluency in English; additional languages are highly valued Algolia is an Equal Opportunity Employer and does not discriminate on the basis of race, color, religion, sex, age, national origin, military status, veteran status, disability status, sexual orientation, gender identity, genetic information, or any other characteristic protected by law. The annual total cash compensation range (base salary and commission) for this role reflects US market pay data within this location. The exact compensation offered for this role may vary depending on specific location and job-related knowledge, technical skills, and experience; and is only one pa",
-      "rank": {
-        "total": 46,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "8 resume keywords matched",
-            "topMatches": [
-              "cross-functional",
-              "kpi",
-              "executive",
-              "api",
-              "saas",
-              "employer"
-            ],
-            "matchRate": 8,
-            "totalHits": 8,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 7,
-            "max": 8,
-            "note": "Late stage: Late Stage"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP, Customer Success",
-      "company": "ConnectWise",
-      "location": "Tampa, FL or Seattle, WA",
-      "workType": "Onsite",
-      "salary": "Not Listed",
-      "posted": "Not specified",
-      "url": "https://job-boards.greenhouse.io/connectwise?error=true",
-      "source": "Greenhouse",
-      "snippet": "Leading software company with over 3,000 colleagues serving over 45,000 partners in technology solution provision.",
-      "industry": "Business Software/IT Services",
-      "companyStage": "Established",
-      "foundDate": "2026-03-04T01:41:00.855Z",
-      "total": 20,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "fullDescription": "Jobs at ‎ConnectWise Current openings at ‎ConnectWise Create a Job Alert Level-up your career by having opportunities at ‎ConnectWise sent directly to your inbox. Create alert Search Department Select... Office Select... 59 jobs Finance Business Applications Job Senior Boomi Developer IND Remote Senior Salesforce Administrator IND Remote Senior Salesforce Developer Pune / Mumbai / Bangalore / Philippines Technical Business Analyst Tampa, FL And US Remote Finance Controllership Job Payroll Specialist Mumbai, IND Finance FP&A Job Senior Financial Analyst Tampa, FL Sr, Manager, FP&A Tampa, FL Finance Information Security Job Senior Product Security Engineer Bangalore, IND Global Marketing Demand Generation Job Digital Marketing Manager New US-Remote Digital Marketing Specialist New US-Remote Marketing Operations Manager New USA Remote Global Marketing Experiential Marketing Job Field Marketing Manager USA Remote - FL Operations Migrations/Quote Desk Job Modernization Manager US Remote and Tampa, FL Operations Partner Enablement Job Associate Partner Success Manager Clark, PHL Manager, Customer Success Remote, US Partner Success Analyst Clark, PHL Product Adoption Specialist US-remote Sr. Manager, Partner Success Clark, PHL Operations Partner Success- Migrations Job Software Consultant Specialist- Modernization Tampa, FL and US- Remote Software Consultant Specialist- Modernization London, UKD and Remote Operations Product Services Job Security Analyst II Mumbai, IND Operations Product Support Job Software Support Specialist I Mumbai, IND Operations Professional Services Job Project Manager Australia Scale Project Manager New Clark, PHL Technical Services Specialist - UMM Pune, IND Technical Support Engineer Mumbai, Pune, Bangalore Technical Support Specialist II Mumbai, Pune, Bangalore Product- Platform Product Management Job Technical Communicator I Bangalore, IND R&D Cloud Operations & Hosting Job Principal Storage Cloud Engineer I ARM Remote OR EU R&D Product Engineering Job Manager, Software Engineering Bangalore, IND Principal Software Engineer I Pune, IND Principal Software Engineer I Bangalore, IND Senior Full Stack Engineer I Bangalore, IND Senior Software Engineer New Pune Senior Software Engineer I Bangalore, IND Senior Sofware Test Engineer I Mumbai, Pune, Bangalore, IND Software Engineer II Bangalore, IND Sales Acquisition Sales - EMEA Job Account Executive - Dutch, Nederlands Speaking Amsterdam, NLD VACATURE – ACCOUNT EXECUTIVE (NEW BUSINESS) New Amsterdam, Netherlands Sales Acquisition Sales - NAM Job Account Executive USA Sales Expansion Sales - NAM Job Regional Sales Manager USA Sales Growth Sales - APAC Job Account Executive Sydney, AUS Account Executive Sydney, AUS Alliances & Distribution Director - APAC Sydney, AUS Sales Growth Sales - EMEA Job Regional Sales Manager London, UKD Sales Renewals Job Renewal Manager Pasig, PHL Sales Sales Development Job Sales Development Representative Tampa, FL Sales Development Representative Lond",
-      "rank": {
-        "total": 40,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "8 resume keywords matched",
-            "topMatches": [
-              "partner enablement",
-              "alliance",
-              "executive",
-              "salesforce",
-              "alliances",
-              "payroll",
-              "aca"
-            ],
-            "matchRate": 8,
-            "totalHits": 8,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
       "title": "Director of Customer Success Management, Americas",
       "company": "GitLab",
-      "location": "Not specified",
-      "workType": "Onsite",
+      "location": "Not Specified",
+      "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Not specified",
+      "posted": "Not Specified",
       "url": "https://job-boards.greenhouse.io/gitlab?error=true",
       "source": "Greenhouse",
       "snippet": "Set the overall vision and strategic plan for the Enterprise Customer Success Account Management organization.",
       "industry": "DevOps/Software Development",
       "companyStage": "Public",
-      "foundDate": "2026-03-04T01:41:00.855Z",
-      "total": 36,
+      "foundDate": "2026-03-04T01:46:08.226Z",
+      "total": 39,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -1649,18 +3076,18 @@
           "note": "Public/Enterprise"
         },
         "workType": {
-          "score": 2,
+          "score": 5,
           "max": 5,
-          "note": "Onsite in radius"
+          "note": "Fully remote ✅"
         }
       },
       "fullDescription": "Jobs at GitLab Current openings at GitLab Search Department Select... 160 jobs Engineering Customer Support Job Associate Support Engineer (AMER - PST / MST) Remote, US Intermediate Support Engineer (AMER - PST / MST) Remote, Canada; Remote, US Support Engineer, U.S. Government Support Remote, US Engineering Data Engineering Job Principal Database Engineer, Data Engineering Remote, EMEA; Remote, North America Senior Site Reliability Engineer, Database Excellence New Remote, Canada; Remote, US Engineering DevOps Engineering Job Engineering Manager, Create:Source Code Remote, Americas Intermediate Backend Engineer, Verify: Runner Core Remote, Canada Engineering Office of the CTO Job Technical Chief of Staff to the CTO Remote, US VP of Engineering, Architecture and Transformation Remote, US Engineering Platforms Engineering Job Engineering Manager, Infrastructure Platforms Remote, Canada; Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom; Remote, US Intermediate Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Canada; Remote, EMEA Intermediate Site Reliability Engineer, Environment Automation Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom Intermediate Site Reliability Engineer, Tenant Scale: Tenant Services Remote, Americas; Remote, EMEA Principal Engineer, Infrastructure Platforms Remote, Australia; Remote, Canada; Remote, France; Remote, Germany; Remote, India; Remote, Ireland; Remote, Israel; Remote, Japan; Remote, Netherlands; Remote, Singapore; Remote, South Korea; Remote, Spain; Remote, United Kingdom; Remote, US Senior Backend Engineer (Ruby and/or Go), Tenant Scale; Cells Infrastructure New Remote, Americas; Remote, APAC; Remote, EMEA Senior Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Americas; Remote, EMEA Staff Backend Engineer, Developer Experience (Ruby) Remote, APAC; Remote, Canada; Remote, EMEA; Remote, Netherlands; Remote, United Kingdom; Remote, US Engineering Sec Engineering Job Engineering Manager, Software Supply Chain Security: Pipeline Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Principal Engineer, Software Supply Chain Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Senior Backend Engineer(Golang),Software Supply Chain Security: Auth Infrastructure Remote, Americas; Remote, APAC; Remote, Canada Software Engineering Manager, Application Security Testing: Composition Analysis & Dynamic Analysis Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US G&A / CIO Data Job Senior Director, Data Analytics Remote, US G&A / CIO Enterprise Applications Job Business Systems Analyst, Marketing Remote, EMEA CPQ Developer Remote, US IT Administrator, CLM Ironclad Remote, North America Salesforce Admin/Release Engineer, CRM Systems Remote, APA",
       "rank": {
-        "total": 49,
+        "total": 52,
         "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
         },
         "breakdown": {
           "industry": {
@@ -1700,21 +3127,20 @@
             "note": "Public/Enterprise"
           },
           "workType": {
-            "score": 2,
+            "score": 5,
             "max": 5,
-            "note": "Onsite in radius"
+            "note": "Fully remote ✅"
           }
         }
       }
     },
     {
-      "title": "Sr. Director, Channel Programs",
-      "company": "HighLevel",
-      "url": "https://jobs.lever.co/gohighlevel/8e0e35fe-3d6b-4ca5-b95b-dd6cd70e3d68",
-      "level": "Senior Director",
-      "department": "Channel",
-      "foundDate": "2026-03-04T01:41:00.856Z",
-      "total": 28,
+      "title": "Director - Revenue Operations",
+      "company": "Hevo Data",
+      "url": "https://jobs.lever.co/hevodata/c0184460-5f3a-46ef-a873-d6a3c77d1620",
+      "function": "Revenue Operations",
+      "foundDate": "2026-03-04T01:46:08.226Z",
+      "total": 24,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -1727,16 +3153,16 @@
           "note": ""
         },
         "title": {
-          "score": 12,
+          "score": 8,
           "max": 25,
-          "note": "Partnerships/Alliances signal"
+          "note": "Senior level signal"
         },
         "keywords": {
           "score": 4,
           "max": 20,
           "note": "1 resume keyword matched",
           "topMatches": [
-            "channel program"
+            "revenue operations"
           ],
           "matchRate": 1,
           "totalHits": 1,
@@ -1759,13 +3185,13 @@
           "note": "Onsite in radius"
         }
       },
-      "fullDescription": "You bring a balance of strategic vision and operational discipline, with a track record of scaling programs that drive measurable business impact. Leveraging your sales-minded, entrepreneurial spirit, you will oversee the rollout and growth of HighLevel’s channel, affiliate, or strategic account programs, ensuring they become a core engine of customer acquisition and retention. You are a strong communicator and relationship builder, with the ability to inspire teams and partners while navigating challenging situations with confidence. This includes not only tough business decisions but also people-related situations, where your leadership maturity and judgment set the tone for the team. You thrive in high-growth environments and know how to translate strategy into execution while empowering and holding your team accountable for success. What You’ll Be Doing Own Strategy & Growth – Develop and lead HighLevel’s channel, affiliate, and/or strategic account programs to drive adoption, retention, and revenue growth. Partner/ Account Acquisition & Management – Identify, recruit, and cultivate high-value partners or accounts, ensuring long-term, mutually beneficial relationships. Independent Leadership – Serve as the senior escalation point, independently handling complex partner/account challenges and people-related situations with sound judgment. Team Leadership & Development – Lead and develop a global organization of directors, managers, and specialists, ensuring alignment, scalability, and leadership readiness across the Affiliate teams. Program Design & Optimization – Develop and manage incentive structures, gamification, commission frameworks, or account growth strategies that maximize engagement and success. Cross-Functional Alignment – Collaborate with Sales, Marketing, Product, and Revenue Operations to deliver seamless partner and account initiatives and go-to-market strategies. Governance & Compliance – Oversee contract compliance, program budget tracking, and partner/account reporting, ensuring transparency and alignment with business goals. Performance & Analytics – Track KPIs, monitor program health, and provide regular reporting to senior leadership, with clear data-driven recommendations for improvement. Industry Engagement – Represent HighLevel at industry events, partner conferences, and trade shows to strengthen brand presence and recruit new partners or accounts. Continuous Improvement – Stay ahead of industry and competitor trends, proactively adapting strategies to keep HighLevel competitive. Serve as the executive representative for all strategic partner relationships, industry alliances, and high-level negotiations. Represent the organization at global events and forums to strengthen market credibility and expand the partnership ecosystem. What You’ll Bring 15 + years of progressive experience in Channel, Partnerships, or Business Development, including 7+ years leading large, global teams. Proven success in driving multi-region",
+      "fullDescription": "Requirements 8+ years of experience in Sales Ops / RevOps with at least 2 years in a leadership role Strong understanding of SaaS GTM models including inbound, outbound, and partner motions Hands-on expertise with HubSpot (preferred) or Salesforce and sales tech ecosystems Proven experience in quota planning, compensation design, and forecasting accuracy Strong analytical skills with comfort in Excel/Sheets and BI tools Ability to influence cross-functional stakeholders with data and clarity Builder mindset with experience scaling processes in high-growth environments Balance of operational rigor and empathy for sales teams We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us. Apply for this job Hevo Data Home Page Jobs powered by",
       "location": "United States",
       "workType": "Remote",
       "source": "Lever",
       "industry": "",
       "rank": {
-        "total": 47,
+        "total": 43,
         "tier": {
           "label": "📋 Low Match",
           "color": "#4a4f66",
@@ -1778,25 +3204,25 @@
             "note": ""
           },
           "title": {
-            "score": 12,
+            "score": 8,
             "max": 25,
-            "note": "Partnerships/Alliances signal"
+            "note": "Senior level signal"
           },
           "keywords": {
             "score": 20,
             "max": 20,
-            "note": "13 resume keywords matched",
+            "note": "7 resume keywords matched",
             "topMatches": [
-              "channel program",
-              "alliance",
-              "go-to-market",
+              "gtm",
               "revenue operations",
-              "own",
-              "executive",
-              "alliances"
+              "cross-functional",
+              "quota",
+              "salesforce",
+              "hubspot",
+              "saas"
             ],
-            "matchRate": 13,
-            "totalHits": 13,
+            "matchRate": 7,
+            "totalHits": 7,
             "totalKeywords": 98,
             "usedFullDesc": true
           },
