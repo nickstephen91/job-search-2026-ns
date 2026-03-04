@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-04T02:32:22.156Z",
-  "totalTracked": 72,
+  "lastUpdated": "2026-03-04T03:25:18.309Z",
+  "totalTracked": 77,
   "entries": [
     {
       "url": "https://www.arbeitnow.com/jobs/companies/erschaffe-dich-neu/head-of-sales-100-remote-vollzeit-berlin-279769",
@@ -289,6 +289,26 @@
     {
       "url": "https://jobs.lever.co/cognite/d586d093-65c5-4c3a-a78b-5c0279399b06",
       "ts": 1772591542156
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/elliptic/d041a934-3d47-4268-99cf-35c92056f53f",
+      "ts": 1772594718309
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/vanta/5f83094a-20e4-4e80-aa1d-375470b22bc6",
+      "ts": 1772594718309
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/xero/8d7b9864-de81-4640-952b-2f7ca719c568",
+      "ts": 1772594718309
+    },
+    {
+      "url": "https://jobs.lever.co/certifyos/7e77e5d5-b510-45e3-911a-eb452cb96d38",
+      "ts": 1772594718309
+    },
+    {
+      "url": "https://jobs.lever.co/actian/905dd8a3-0097-4b90-9294-f2b3cba86c5e",
+      "ts": 1772594718309
     }
   ]
 }
