@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-04T03:33:16.071Z",
-  "totalTracked": 12,
+  "lastUpdated": "2026-03-04T03:45:11.223Z",
+  "totalTracked": 25,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -49,6 +49,58 @@
     {
       "url": "https://job-boards.greenhouse.io/officespacesoftware?error=true",
       "ts": 1772595196071
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/hopper/9f4744e6-9e53-4e28-856a-1aa08c923bf6/application",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Arlo/85ec52cd-364f-444c-95c2-d36b203770af/application",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/vanta/5f83094a-20e4-4e80-aa1d-375470b22bc6",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/dataiku/jobs/5808432004",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/shiphawk?error=true",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/anaplan?error=true",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.lever.co/quantummetric/6f229fc2-53ee-4fcd-b376-d13c15eed443",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.lever.co/sonarsource/b0aa738e-5817-4dd7-ab6b-d5062cf0e22c",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.lever.co/articulate/65318c9d-86f6-426f-986d-094243e442f1",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.lever.co/terminus/da79890e-34d9-4603-8b22-bbf4dc3c69e7",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.lever.co/workwave/139d8c11-30c8-4103-8403-6c912a6b6435",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.lever.co/workwave/6f48cda2-94ec-4ca9-8737-18614e7ce43a",
+      "ts": 1772595911223
+    },
+    {
+      "url": "https://jobs.lever.co/cognite/d586d093-65c5-4c3a-a78b-5c0279399b06",
+      "ts": 1772595911223
     }
   ]
 }
