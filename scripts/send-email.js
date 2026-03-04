@@ -125,60 +125,78 @@ function jobCard(job) {
 
 function topPicksCard(picks) {
   if (!picks||!picks.length) return '';
-  const rows=picks.map(job=>{
-    const s = job.rank?.total || 0;
-    const kw = job.rank?.breakdown?.keywords || {};
-    const mr = kw.matchRate || 0;
+
+  const rows = picks.map(job => {
+    const s   = job.rank?.total || 0;
+    const kw  = job.rank?.breakdown?.keywords || {};
+    const mr  = kw.matchRate || 0;
     const tier = tierInfo(s);
-    const sal = job.salary&&job.salary!=='Not Listed'
-      ? `<span style="color:${C.greenText};font-weight:600;">💰 ${job.salary}</span>` : '';
-    const wtIcon = job.workType==='Remote'?'🌎':job.workType==='Hybrid'?'🏢':'📍';
-    const mrBar = `<div style="background:${C.border};border-radius:2px;height:3px;overflow:hidden;margin:4px 0 3px;">
-      <div style="background:${mr>=60?C.greenMid:mr>=35?C.blueMid:C.muted};width:${Math.max(mr,2)}%;height:3px;"></div>
-    </div>`;
-    const kwTags = (kw.topMatches||[]).slice(0,4).map(k=>
-      `<span style="display:inline-block;background:rgba(255,255,255,0.04);color:${C.muted};border:1px solid rgba(255,255,255,0.07);padding:1px 6px;border-radius:3px;font-size:9px;font-weight:600;margin:2px 2px 0 0;">${k}</span>`
+    const sal  = job.salary && job.salary !== 'Not Listed' ? job.salary : null;
+    const wtIcon = job.workType === 'Remote' ? '🌎' : job.workType === 'Hybrid' ? '🏢' : '📍';
+    const mrColor = mr >= 60 ? C.greenMid : mr >= 35 ? C.blueMid : C.muted;
+
+    const kwTags = (kw.topMatches || []).slice(0, 4).map(k =>
+      `<span style="display:inline-block;background:rgba(255,255,255,0.04);color:${C.muted};` +
+      `border:1px solid rgba(255,255,255,0.07);padding:1px 6px;border-radius:3px;` +
+      `font-size:9px;font-weight:600;margin:2px 3px 0 0;">${k}</span>`
     ).join('');
-    return `<tr>
-      <td style="padding:12px 16px;border-bottom:1px solid ${C.border};vertical-align:middle;">
-        <div style="display:table;width:100%;">
-          <div style="display:table-cell;vertical-align:middle;">
-            <!-- tier badge -->
-            <div style="font-size:8px;font-weight:700;color:${tier.c};letter-spacing:1.5px;text-transform:uppercase;margin-bottom:3px;">${tier.label}</div>
-            <!-- title -->
-            <div style="font-size:13px;font-weight:700;color:${C.heading};margin-bottom:2px;line-height:1.3;">${job.title}</div>
-            <!-- company + location -->
+
+    return `
+    <tr style="border-bottom:1px solid ${C.border};">
+      <td style="padding:11px 16px;vertical-align:middle;">
+
+        <table width="100%" cellpadding="0" cellspacing="0"><tr>
+
+          <!-- left: all text data -->
+          <td style="vertical-align:middle;">
+            <div style="font-size:8px;font-weight:800;color:${tier.c};letter-spacing:1.5px;text-transform:uppercase;margin-bottom:2px;">${tier.label}</div>
+            <div style="font-size:13px;font-weight:700;color:${C.heading};line-height:1.3;margin-bottom:2px;">${job.title}</div>
             <div style="font-size:11px;color:${C.body};margin-bottom:6px;">
-              ${job.company} <span style="color:${C.dim}">·</span> ${wtIcon} ${job.location||'Remote'}
-              ${sal ? ` <span style="color:${C.dim}">·</span> ${sal}` : ''}
+              ${job.company}
+              <span style="color:${C.dim};margin:0 4px;">·</span>
+              ${wtIcon} ${job.location || 'United States'}
+              ${sal ? `<span style="color:${C.dim};margin:0 4px;">·</span><span style="color:${C.greenText};font-weight:600;">💰 ${sal}</span>` : ''}
             </div>
-            <!-- keyword match bar -->
-            <div style="font-size:9px;color:${C.muted};margin-bottom:2px;">🔑 Resume match</div>
-            ${mrBar}
-            <div style="font-size:9px;color:${C.muted};margin-bottom:4px;">${mr}% · ${kw.totalHits||0}/${kw.totalKeywords||0} keywords</div>
-            ${kwTags ? `<div>${kwTags}</div>` : ''}
-          </div>
-          <!-- score ring -->
-          <div style="display:table-cell;vertical-align:middle;text-align:right;padding-left:12px;width:68px;">
-            <div style="width:48px;height:48px;border-radius:50%;border:2px solid ${tier.ring};background:${tier.bg};display:inline-flex;align-items:center;justify-content:center;flex-direction:column;margin-bottom:8px;">
-              <div style="font-size:15px;font-weight:900;color:${tier.ring};font-family:'Courier New',monospace;line-height:1;">${s}</div>
-              <div style="font-size:8px;color:${C.dim};">/100</div>
+            <!-- match bar -->
+            <div style="display:table;width:100%;margin-bottom:2px;">
+              <div style="display:table-cell;vertical-align:middle;font-size:9px;color:${C.dim};width:70px;white-space:nowrap;">🔑 ${mr}% match</div>
+              <div style="display:table-cell;vertical-align:middle;padding-left:8px;">
+                <div style="background:${C.border};border-radius:2px;height:3px;overflow:hidden;">
+                  <div style="background:${mrColor};width:${Math.max(mr,2)}%;height:3px;"></div>
+                </div>
+              </div>
+              <div style="display:table-cell;vertical-align:middle;padding-left:8px;font-size:9px;color:${C.muted};width:60px;white-space:nowrap;">${kw.totalHits||0}/${kw.totalKeywords||0} kw</div>
+            </div>
+            ${kwTags ? `<div style="margin-top:4px;">${kwTags}</div>` : ''}
+          </td>
+
+          <!-- right: score ring + view button -->
+          <td style="vertical-align:middle;text-align:right;padding-left:12px;width:60px;white-space:nowrap;">
+            <div style="width:44px;height:44px;border-radius:50%;border:2px solid ${tier.ring};background:${tier.bg};display:inline-flex;align-items:center;justify-content:center;flex-direction:column;margin-bottom:6px;">
+              <div style="font-size:13px;font-weight:900;color:${tier.ring};font-family:'Courier New',monospace;line-height:1;">${s}</div>
+              <div style="font-size:7px;color:${C.dim};">/100</div>
             </div>
             <div>
-              <a href="${job.url}" style="display:block;background:${C.elevated};color:${C.body};border:1px solid ${C.border2};padding:5px 10px;border-radius:5px;text-decoration:none;font-size:10px;font-weight:600;letter-spacing:0.3px;text-align:center;white-space:nowrap;">View →</a>
+              <a href="${job.url}" style="display:block;background:${C.elevated};color:${C.body};border:1px solid ${C.border2};padding:4px 8px;border-radius:5px;text-decoration:none;font-size:9px;font-weight:600;letter-spacing:0.3px;text-align:center;">View →</a>
             </div>
-          </div>
-        </div>
+          </td>
+
+        </tr></table>
       </td>
     </tr>`;
   }).join('');
+
   return `
 <div style="background:${C.surface};border:1px solid ${C.border};border-radius:10px;margin-bottom:10px;overflow:hidden;font-family:'Inter',Arial,sans-serif;">
-  <div style="padding:12px 16px;border-bottom:1px solid ${C.border};">
-    <div style="font-size:8px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:2px;margin-bottom:3px;">↩ Revisit · Last Digest</div>
-    <div style="font-size:13px;font-weight:700;color:${C.heading};">Previous Top Picks</div>
+  <!-- header -->
+  <div style="padding:10px 16px;border-bottom:1px solid ${C.border};display:table;width:100%;box-sizing:border-box;">
+    <span style="font-size:8px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:2px;">↩ Revisit · Last Digest</span>
+    <span style="float:right;font-size:8px;color:${C.dim};">${picks.length} roles</span>
   </div>
-  <table width="100%" cellpadding="0" cellspacing="0">${rows}</table>
+  <!-- rows -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+    ${rows}
+  </table>
 </div>`;
 }
 
