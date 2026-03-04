@@ -1,0 +1,568 @@
+{
+  "savedAt": "2026-03-04T00:05:06.758Z",
+  "picks": [
+    {
+      "title": "VP, Partnerships",
+      "company": "Checkr",
+      "location": "Remote, United States",
+      "workType": "Remote",
+      "salary": "$300,000 - $340,000 + OTE + Equity",
+      "posted": "Not Available",
+      "url": "https://boards.greenhouse.io/checkr/jobs/5161258",
+      "source": "Greenhouse",
+      "snippet": "Reporting to the SVP, Customer Success and Partnerships you will manage our business plans for alliances and channel, develop close partner relationships, orchestrate cross-functional execution, and drive business success while managing the BD team.",
+      "industry": "HR Technology/Background Checks",
+      "companyStage": "Growth Stage (1,000+ employees)",
+      "foundDate": "2026-03-04T00:04:54.632Z",
+      "total": 83,
+      "tier": {
+        "label": "🔥 Must Apply",
+        "color": "#00e5a0",
+        "min": 80
+      },
+      "breakdown": {
+        "industry": {
+          "score": 22,
+          "max": 30,
+          "note": "Core domain: hr tech"
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 18,
+          "max": 20,
+          "note": "5 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "cross-functional",
+            "hr tech",
+            "reporting",
+            "alliances"
+          ],
+          "matchRate": 5,
+          "totalHits": 5,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary unclear"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage (1,000+ employees)"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 83,
+        "tier": {
+          "label": "🔥 Must Apply",
+          "color": "#00e5a0",
+          "min": 80
+        },
+        "breakdown": {
+          "industry": {
+            "score": 22,
+            "max": 30,
+            "note": "Core domain: hr tech"
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 18,
+            "max": 20,
+            "note": "5 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "cross-functional",
+              "hr tech",
+              "reporting",
+              "alliances"
+            ],
+            "matchRate": 5,
+            "totalHits": 5,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary unclear"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage (1,000+ employees)"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Alliances Partnerships (Cloud)",
+      "company": "GitLab",
+      "location": "Remote, United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Available",
+      "url": "https://boards.greenhouse.io/gitlab/jobs/6753059002",
+      "source": "Greenhouse",
+      "snippet": "Develop and Execute annual partner plans including: collaboration plans, product adoption and customer success plans. This role will report into the VP of Alliances.",
+      "industry": "DevOps Platform",
+      "companyStage": "Public",
+      "foundDate": "2026-03-04T00:04:54.632Z",
+      "total": 55,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 7,
+          "max": 30,
+          "note": "B2B/SaaS signal"
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 6,
+          "max": 8,
+          "note": "Public/Enterprise"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at GitLab Current openings at GitLab Search Department Select... 160 jobs Engineering Customer Support Job Associate Support Engineer (AMER - PST / MST) Remote, US Intermediate Support Engineer (AMER - PST / MST) Remote, Canada; Remote, US Support Engineer, U.S. Government Support Remote, US Engineering Data Engineering Job Principal Database Engineer, Data Engineering Remote, EMEA; Remote, North America Senior Site Reliability Engineer, Database Excellence New Remote, Canada; Remote, US Engineering DevOps Engineering Job Engineering Manager, Create:Source Code Remote, Americas Intermediate Backend Engineer, Verify: Runner Core Remote, Canada Engineering Office of the CTO Job Technical Chief of Staff to the CTO Remote, US VP of Engineering, Architecture and Transformation Remote, US Engineering Platforms Engineering Job Engineering Manager, Infrastructure Platforms Remote, Canada; Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom; Remote, US Intermediate Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Canada; Remote, EMEA Intermediate Site Reliability Engineer, Environment Automation Remote, France; Remote, Germany; Remote, Ireland; Remote, Israel; Remote, Netherlands; Remote, Spain; Remote, United Kingdom Intermediate Site Reliability Engineer, Tenant Scale: Tenant Services Remote, Americas; Remote, EMEA Principal Engineer, Infrastructure Platforms Remote, Australia; Remote, Canada; Remote, France; Remote, Germany; Remote, India; Remote, Ireland; Remote, Israel; Remote, Japan; Remote, Netherlands; Remote, Singapore; Remote, South Korea; Remote, Spain; Remote, United Kingdom; Remote, US Senior Backend Engineer (Ruby and/or Go), Tenant Scale; Cells Infrastructure New Remote, Americas; Remote, APAC; Remote, EMEA Senior Backend (Go) Engineer, Gitlab Delivery -Operate Remote, Americas; Remote, EMEA Staff Backend Engineer, Developer Experience (Ruby) Remote, APAC; Remote, Canada; Remote, EMEA; Remote, Netherlands; Remote, United Kingdom; Remote, US Engineering Sec Engineering Job Engineering Manager, Software Supply Chain Security: Pipeline Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Principal Engineer, Software Supply Chain Security Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US Senior Backend Engineer(Golang),Software Supply Chain Security: Auth Infrastructure Remote, Americas; Remote, APAC; Remote, Canada Software Engineering Manager, Application Security Testing: Composition Analysis & Dynamic Analysis Remote, Canada; Remote, Israel; Remote, Netherlands; Remote, United Kingdom; Remote, US G&A / CIO Data Job Senior Director, Data Analytics New Remote, US G&A / CIO Enterprise Applications Job Business Systems Analyst, Marketing Remote, EMEA CPQ Developer Remote, US IT Administrator, CLM Ironclad Remote, North America Salesforce Admin/Release Engineer, CRM Systems Remote,",
+      "rank": {
+        "total": 69,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 7,
+            "max": 30,
+            "note": "B2B/SaaS signal"
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "7 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "pipeline",
+              "crm",
+              "architect",
+              "salesforce",
+              "alliances",
+              "enterprise"
+            ],
+            "matchRate": 7,
+            "totalHits": 7,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 6,
+            "max": 8,
+            "note": "Public/Enterprise"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Strategic Partnerships Director",
+      "company": "AvidXchange, Inc.",
+      "location": "Not Listed",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Available",
+      "url": "https://job-boards.greenhouse.io/avidxchangeinc/jobs/5063201007",
+      "source": "Greenhouse",
+      "snippet": "Own the ERP Strategy: Build and execute strategic plans for over 300 potential ERP partnerships while constantly scouting the market for new prospects.",
+      "industry": "FinTech/AP Automation",
+      "companyStage": "Public (1,500+ employees)",
+      "foundDate": "2026-03-04T00:04:54.632Z",
+      "total": 44,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: fintech"
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 3,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "own"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 6,
+          "max": 8,
+          "note": "Public/Enterprise"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "What we’re looking for: The \"Hunter\" Mentality: A strong sense of urgency, a bias for action, and at least 7+ years of experience in enterprise sales, partner development, or alliance management. Fintech & Financial Acumen: Deep experience developing complex financial models, including net interchange share, transaction/software fees, and customer acquisition models. Relationship Mastery: A natural ability to build trust with C-suite decision-makers and bridge the gap between business needs and technical solutions. Cross-Functional Leadership: Proven success leading business reviews and coordinating across Product, Marketing, Legal, and Onboarding teams. Strategic Problem Solving: Expert at interpreting business challenges and translating them into optimal process recommendations that scale. Persuasive Communication: Ability to present complex concepts clearly and convincingly to any audience. Market Expertise: Skilled at assessing channel opportunities and building strategies that expand leadership presence in the market. Technical Credibility: Technically capable of demonstrating AvidXchange solutions and understanding how they integrate with potential partners’ pain points. Educational Background: University degree or equivalent experience; an MBA is preferred. About AvidXchange AvidXchange is a leading provider of accounts payable (“AP”) automation software and payment solutions for middle-market businesses and their suppliers. By trade, we are a technology company, but if you ask anyone who works here, they’ll tell you our people are at the core of who we are. At AvidXchange, mindset is everything . We are Connected as People , Growth Minded , and Customer Obsessed . These three mindsets represent our culture – who we are, who we’ve always been, and they guide us to improve every day. Since our founding in 2000 in Charlotte, NC, we’ve created a company of over 1,500 teammates working across the U.S., or remotely. AvidXchange is proud to be Certified™ as a Great Place to Work ®. The prestigious recognition is based on anonymous data from our teammates and makes official what our teammates have known for years – that AvidXchange is a Great Place to Work®. Who you are: A go-getter with an entrepreneurial mindset – that means you are not afraid of taking risks, winning big or facing the unknown. Someone who understands that business is people centric. Connecting with others as humans first allows you to develop mutually beneficial working relationships. Focused on making a difference for our customers. AvidXchange exists to help solve complex problems for our customers so we can all realize our potential. What you’ll get: AvidXchange teammates (we call them AvidXers) get the perks and prestige of a growing tech company paired with the flexibility of a founder-led startup. We help our AvidXers develop as professionals and as human beings, providing work/life balance, development programs, and competitive benefits. At AvidXchange, we are building ",
+      "rank": {
+        "total": 61,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: fintech"
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "7 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "cross-functional",
+              "peo",
+              "own",
+              "benefits",
+              "onboarding"
+            ],
+            "matchRate": 7,
+            "totalHits": 7,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 6,
+            "max": 8,
+            "note": "Public/Enterprise"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Technology Alliances",
+      "company": "Tray.io",
+      "location": "Not Listed",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Available",
+      "url": "https://boards.greenhouse.io/trayio/jobs/5415138002",
+      "source": "Greenhouse",
+      "snippet": "Work with the VP, Global Partnerships to develop the Technology Alliance strategy, goals and objectives. Collaboratively and cross-functionally drive the identification, structuring, and nurturing of all Technology partner relationships.",
+      "industry": "Integration/Automation Platform",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T00:04:54.632Z",
+      "total": 44,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 14,
+          "max": 20,
+          "note": "4 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "cross-functional",
+            "integration",
+            "alliances"
+          ],
+          "matchRate": 4,
+          "totalHits": 4,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 44,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 14,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "cross-functional",
+              "integration",
+              "alliances"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Customer Success Director",
+      "company": "Maven Clinic",
+      "location": "Not Listed",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Available",
+      "url": "https://job-boards.greenhouse.io/mavenclinic/jobs/8173967002",
+      "source": "Greenhouse",
+      "snippet": "Maven is seeking a Customer Success Director to lead our most strategic and complex client partnerships. This is a senior individual contributor role where you will act as a trusted advisor to VP-level Benefits leaders.",
+      "industry": "Healthcare/Digital Health",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T00:04:54.632Z",
+      "total": 40,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: benefits"
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 2,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "benefits"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at Maven Clinic Current openings at Maven Clinic Thank you for your interest in Maven Clinic! Please note that Maven Clinic interview requests and job offers only originate from an @mavenclinic.com email address (e.g jsmith@mavenclinic.com ). Maven Clinic will also never ask for bank account information (routing, account numbers), social security numbers, passwords or any other sensitive information to be delivered over email, or phone. If you want to report a scam by someone impersonating Maven Clinic or a security issue involving Maven Clinic, please notify us at: security@mavenclinic.com . For general and additional inquiries, please contact us at careers@mavenclinic.com . If you're interested in joining our provider network, please see here for more information. Create a Job Alert Level-up your career by having opportunities at Maven Clinic sent directly to your inbox. Create alert Search Department Select... 33 jobs Benefits Support Delivery Job Member Services Senior Associate Remote Care Delivery Job Care Advocate (Japanese Fluency) - Arizona, Nevada, or Oregon Remote Care Advocate (Japanese Fluency) - Hawaii Remote International Care Advocate (Japanese Fluency) - Australia, New Zealand, Hong Kong, or Singapore Remote Client Success Job Client Success Director - SMB New New York, NY; Remote, US (Hub cities) Senior Client Success Manager Remote Clinical Outcomes Job Clinical Outcomes Analyst New Remote Senior Manager, Clinical Outcomes New York, NY; Remote, US (Hub cities) Core Engineering Job Senior Data Engineer New York, NY; Remote, US (Hub cities) Senior Software Engineer, Android New York, NY; Remote, US (Hub cities) Senior Software Engineer, Backend Engineering New York, NY; Remote, US (Hub cities) Senior Software Engineer, Frontend Engineering New York, NY; Remote, US (Hub cities) Senior Software Engineer, iOS New York, NY; Remote, US (Hub cities) Staff Security Engineer New York, NY; Remote, US (Hub cities) Staff Software Engineer, AI/ML New York, NY; Remote, US (Hub cities) Staff Software Engineer, Backend Engineering New York, NY; Remote, US (Hub cities) Core Operations Job Associate, Workforce Planning New York, New York, United States Creative Design Job Senior Brand Designer New York, NY; Remote, US (Hub cities) Finance Job Strategic Finance Associate New York, New York, United States Growth Marketing Job Director, Growth Marketing Remote Senior Associate, Consumer Content New York, NY; Remote, US (Hub cities) Technical Product Marketing Manager (Contract) Remote Information Technology Job Enterprise Systems Architect, Enterprise Technology New York, NY; Remote, US (Hub cities) Senior Integrations Engineer New York, NY; Remote, US (Hub cities) Payer Growth Job Strategic Growth Executive, Payer Channel Sales Remote Payments Delivery Job Manager, Payments Integrity & QA New York, New York, United States; Remote Senior Analyst, Payments Integrity & QA New York, New York, United States; Remote Senior Benefit Design Associate (",
+      "rank": {
+        "total": 56,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: benefits"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 18,
+            "max": 20,
+            "note": "7 resume keywords matched",
+            "topMatches": [
+              "integration",
+              "architect",
+              "executive",
+              "benefits",
+              "enterprise"
+            ],
+            "matchRate": 7,
+            "totalHits": 7,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    }
+  ]
+}
