@@ -211,6 +211,120 @@ async function fetchViaClaudeSearch(prompt) {
   } catch { return []; }
 }
 
+
+
+// ── ADDITIONAL SOURCES ────────────────────────────────────────────────────────
+
+async function fetchJobicy(q) {
+  // Jobicy: free remote jobs API, no auth required
+  const res = await fetch(`https://jobicy.com/api/v2/remote-jobs?count=20&geo=usa&industry=sales&tag=${encodeURIComponent(q)}`);
+  if (!res.ok) throw new Error(`Jobicy ${res.status}`);
+  const { jobs = [] } = await res.json();
+  return jobs.map(j => ({
+    title: j.jobTitle, company: j.companyName, location: 'Remote', workType: 'Remote',
+    salary: j.annualSalaryMin ? `$${Math.round(j.annualSalaryMin/1000)}K-$${Math.round(j.annualSalaryMax/1000)}K` : 'Not Listed',
+    posted: j.pubDate ? new Date(j.pubDate).toLocaleDateString() : 'Recent',
+    url: j.url, source: 'Jobicy',
+    snippet: (j.jobExcerpt || '').substring(0, 200),
+    industry: j.jobIndustry?.[0] || '', companyStage: ''
+  }));
+}
+
+async function fetchWWR(q) {
+  // We Work Remotely RSS feed — one of the largest remote job boards
+  const category = 'sales-and-marketing';
+  const res = await fetch(`https://weworkremotely.com/categories/remote-${category}-jobs.rss`, {
+    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RSS/2.0)' }
+  });
+  if (!res.ok) throw new Error(`WWR ${res.status}`);
+  const xml = await res.text();
+  const items = [];
+  for (const match of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+    const x = match[1];
+    const get = (tag) => (x.match(new RegExp(`<${tag}[^>]*>(?:<!\\[CDATA\\[)?(.*?)(?:\\]\\]>)?<\\/${tag}>`, 's')) || [])[1]?.trim() || '';
+    const title = get('title'); const link = get('link'); const desc = get('description');
+    const region = get('region');
+    // WWR titles are "Company: Title" format
+    const parts = title.split(': ');
+    const company = parts.length > 1 ? parts[0].trim() : '';
+    const jobTitle = parts.length > 1 ? parts.slice(1).join(': ').trim() : title;
+    if (jobTitle && link) items.push({
+      title: jobTitle, company, location: region || 'Remote', workType: 'Remote',
+      salary: 'Not Listed', posted: 'Recent',
+      url: link.startsWith('http') ? link : `https://weworkremotely.com${link}`,
+      source: 'We Work Remotely',
+      snippet: desc.replace(/<[^>]+>/g, '').substring(0, 200),
+      industry: '', companyStage: ''
+    });
+  }
+  return items;
+}
+
+async function fetchAdzuna(q) {
+  // Adzuna: large aggregator with public API (no key needed for basic search via RSS)
+  const url = `https://www.adzuna.com/search?q=${encodeURIComponent(q)}&w=remote&sort_by=date&days=14`;
+  // Use RSS endpoint
+  const rssUrl = `https://www.adzuna.com/api/v1/us/jobs/search/1?app_id=test&app_key=test&results_per_page=20&what=${encodeURIComponent(q)}&where=remote&sort_by=date&max_days_old=14`;
+  // Fall back to scraping search via Claude API web_search
+  return [];
+}
+
+async function fetchJooble(queries) {
+  // Jooble: aggregator API (free tier)
+  try {
+    const res = await fetch('https://jooble.org/api/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ keywords: queries.join(' OR '), location: 'remote', page: 1 })
+    });
+    if (!res.ok) throw new Error(`Jooble ${res.status}`);
+    const data = await res.json();
+    return (data.jobs || []).map(j => ({
+      title: j.title, company: j.company, location: j.location || 'Remote',
+      workType: (j.location || '').toLowerCase().includes('remote') ? 'Remote' : 'Hybrid',
+      salary: j.salary || 'Not Listed',
+      posted: j.updated ? new Date(j.updated).toLocaleDateString() : 'Recent',
+      url: j.link, source: 'Jooble',
+      snippet: (j.snippet || '').replace(/<[^>]+>/g, '').substring(0, 200),
+      industry: '', companyStage: ''
+    }));
+  } catch { return []; }
+}
+
+async function fetchCareerJet(q) {
+  // CareerJet: has a public API
+  const res = await fetch(`https://public.api.careerjet.com/search/jobs?locale_code=en_US&keywords=${encodeURIComponent(q)}&location=remote&affid=null&sort=date&pagesize=20`);
+  if (!res.ok) throw new Error(`CareerJet ${res.status}`);
+  const data = await res.json();
+  return (data.jobs || []).map(j => ({
+    title: j.title, company: j.company, location: j.locations || 'Remote',
+    workType: (j.locations || '').toLowerCase().includes('remote') ? 'Remote' : 'Hybrid',
+    salary: j.salary || 'Not Listed',
+    posted: 'Recent',
+    url: j.url, source: 'CareerJet',
+    snippet: (j.description || '').substring(0, 200),
+    industry: '', companyStage: ''
+  }));
+}
+
+async function fetchLinkedInRSS(q) {
+  // LinkedIn has public RSS for job searches — no auth needed
+  const encoded = encodeURIComponent(q);
+  const url = `https://www.linkedin.com/jobs/search/?keywords=${encoded}&location=United%20States&f_WT=2&f_TPR=r604800&sortBy=DD`;
+  // LinkedIn blocks RSS/API scraping — use Claude web_search instead
+  return [];
+}
+
+async function fetchGlassdoorViaSearch(q) {
+  // Glassdoor doesn't have public API — use Claude search
+  return [];
+}
+
+async function fetchClaudeATSSearch(prompt) {
+  // Reuses fetchViaClaudeSearch — alias for clarity
+  return fetchViaClaudeSearch(prompt);
+}
+
 // Nick Stephen Job Search Agent - rank-engine.js
 // 100-point ranking system based on Nick's priorities
 
@@ -700,9 +814,11 @@ async function main() {
     } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
   }
 
-  // Remotive
-  console.log('\n📡 Remotive API...');
-  for (const q of ['partnerships', 'alliances', 'customer success', 'revenue operations', 'channel sales', 'business development', 'account management', 'sales enablement', 'ecosystem']) {
+  // ── Remotive ──────────────────────────────────────────────────────────────
+  console.log('\n📡 Remotive...');
+  for (const q of ['partnerships', 'alliances', 'customer success', 'revenue operations',
+                   'channel sales', 'business development', 'account management',
+                   'sales enablement', 'ecosystem', 'go-to-market']) {
     try {
       const jobs = await fetchRemotive(q);
       if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
@@ -710,31 +826,67 @@ async function main() {
     } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
   }
 
-  // The Muse
+  // ── The Muse ───────────────────────────────────────────────────────────────
   console.log('\n📡 The Muse...');
-  try {
-    const jobs = await fetchTheMuse('director partnerships alliances customer success');
-    console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs);
-  } catch (e) { console.log(`   ❌ ${e.message}`); }
+  for (const q of ['director partnerships', 'VP alliances', 'director customer success', 'revenue operations director']) {
+    try {
+      const jobs = await fetchTheMuse(q);
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 300));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
+  }
 
-  // Arbeitnow
+  // ── Arbeitnow ──────────────────────────────────────────────────────────────
   console.log('\n📡 Arbeitnow...');
+  for (const q of ['director partnerships', 'VP customer success', 'director alliances', 'revenue operations']) {
+    try {
+      const jobs = await fetchArbeitnow(q);
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 300));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
+  }
+
+  // ── We Work Remotely ───────────────────────────────────────────────────────
+  console.log('\n📡 We Work Remotely...');
   try {
-    const jobs = await fetchArbeitnow('director partnerships');
-    console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs);
+    const jobs = await fetchWWR('partnerships');
+    if (jobs.length) { console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs); }
   } catch (e) { console.log(`   ❌ ${e.message}`); }
 
-  // Claude ATS search
-  console.log('\n📡 Claude ATS search...');
-  const atsPrompts = [
-    `Search greenhouse.io job board for active Director and VP level Partnerships, Alliances, Customer Success roles posted in the last 30 days. Return as JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Greenhouse","snippet":"","industry":"","companyStage":""}]`,
-    `Search lever.co job board for active Director and VP level Partnerships, Channel, Revenue Operations, Business Development roles. Return as JSON array only.`
+  // ── Jobicy ─────────────────────────────────────────────────────────────────
+  console.log('\n📡 Jobicy...');
+  for (const q of ['partnerships', 'alliances', 'customer success', 'revenue operations', 'channel']) {
+    try {
+      const jobs = await fetchJobicy(q);
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 300));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
+  }
+
+  // ── Claude Web Search (ATS + Niche boards) ─────────────────────────────────
+  console.log('\n📡 Claude web search (ATS + niche boards)...');
+  const claudeSearches = [
+    // Direct ATS boards
+    `Search jobs.ashbyhq.com for Director VP Partnerships Alliances Customer Success roles posted in last 30 days. US remote preferred. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Ashby","snippet":"","industry":"","companyStage":""}]. Return only the JSON array, no other text.`,
+
+    `Search greenhouse.io/jobs for Director VP Head of Partnerships Alliances Channel Revenue Operations posted last 30 days. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Greenhouse","snippet":"","industry":"","companyStage":""}]. JSON only.`,
+
+    `Search jobs.lever.co for Director VP Partnerships Channel Business Development Customer Success Revenue Operations roles posted last 30 days. Return JSON array only: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Lever","snippet":"","industry":"","companyStage":""}]`,
+
+    // Niche / industry-specific boards  
+    `Search HRtech and SaaS job boards including jobs.workable.com, careers pages of HR tech companies (Rippling, Gusto, Deel, Papaya Global, Velocity Global, Oyster HR, Remote.com, Lattice, Leapsome, Workato, Navan) for Director VP Head of Partnerships Alliances Channel roles. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Company Site","snippet":"","industry":"HR Tech","companyStage":""}]. JSON only.`,
+
+    `Search startup and growth-stage company job boards: wellfound.com (AngelList), jobs.a16z.com portfolio companies, YC company jobs for Director VP Partnerships Alliances Channel Customer Success Revenue Operations. Prioritize Series B/C companies. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Wellfound","snippet":"","industry":"","companyStage":"Series B"}]. JSON only.`,
+
+    // Compliance + PEO niche — Nick's sweet spot
+    `Search for Director VP Head of Partnerships Alliances Channel roles at compliance, PEO, payroll, workforce management, background screening, employment verification, tax credit companies. Include Equifax Workforce, ADP, Paychex, Automatic Data Processing, Experian, TransUnion, Checkr, Sterling, First Advantage, and similar. Search their careers pages. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Company Site","snippet":"","industry":"HR Tech / PEO","companyStage":""}]. JSON only.`,
   ];
-  for (const prompt of atsPrompts) {
+
+  for (const prompt of claudeSearches) {
     try {
       const jobs = await fetchViaClaudeSearch(prompt);
-      console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs);
-      await new Promise(r => setTimeout(r, 10000));
+      if (jobs.length) { console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 8000)); // rate limit between searches
     } catch (e) { console.log(`   ❌ ${e.message}`); }
   }
 
