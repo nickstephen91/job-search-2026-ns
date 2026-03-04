@@ -1,306 +1,236 @@
-// Nick Stephen Job Search Agent - send-email.js REFINED
+// Nick Stephen Job Search Agent - send-email.js
 const nodemailer = require('nodemailer');
 const fs = require('fs');
 const path = require('path');
 
 const TODAY_PATH = path.join(__dirname, '..', 'results', 'today.json');
 
-const D = {
-  bg:          '#090b12',
-  surface:     '#0f1219',
-  card:        '#13161f',
-  card2:       '#191d29',
-  cardBorder:  '#1e2235',
-  divider:     '#252a3a',
-  headerBg:    'linear-gradient(135deg, #0d0f18 0%, #131829 50%, #0f1520 100%)',
-  accent:      '#4f6ef7',
-  accentLight: '#1e2d6b',
-  accentBorder:'#2d3f8a',
-  green:       '#00c97a',
-  amber:       '#f59e0b',
-  blue:        '#3b82f6',
-  red:         '#ef4444',
-  textPrimary: '#f0f2ff',
-  textSecondary:'#8b90a7',
-  textMuted:   '#4a4f66',
+// ── PALETTE ── near-monochrome dark, color only for signal
+const C = {
+  bg:        '#08090e',
+  surface:   '#0d0f16',
+  elevated:  '#11141d',
+  border:    '#1a1d2e',
+  border2:   '#232638',
+  dim:       '#2e3248',
+  muted:     '#52566e',
+  body:      '#9196b0',
+  soft:      '#c4c8e0',
+  heading:   '#e8eaf5',
+  bright:    '#f2f4ff',
+  greenDim:  '#4a7a5e',
+  greenMid:  '#5e8c6e',
+  greenText: '#8ab898',
+  blueDim:   '#3a4a7a',
+  blueMid:   '#4a5e8e',
+  blueText:  '#8899c8',
+  amberText: '#a08050',
 };
 
-function workPill(workType) {
-  if (workType === 'Remote') {
-    return `<span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:0.3px;background:${D.greenBg};border:1px solid ${D.greenBorder};color:#00c97a;">Remote</span>`;
-  } else if (workType === 'Hybrid') {
-    return `<span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:0.3px;background:${D.accentLight};border:1px solid ${D.accentBorder};color:#4f6ef7;">Hybrid</span>`;
-  }
-  return `<span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:0.3px;background:${D.pillBg};border:1px solid ${D.pillBorder};color:${D.pillText};">Onsite</span>`;
+function tierInfo(s) {
+  if (s >= 80) return { label:'MUST APPLY',      c:C.greenText, bg:'rgba(74,122,94,0.1)',  bd:'rgba(74,122,94,0.22)' };
+  if (s >= 65) return { label:'STRONG MATCH',    c:C.blueText,  bg:'rgba(58,74,122,0.1)', bd:'rgba(58,74,122,0.22)' };
+  if (s >= 50) return { label:'WORTH REVIEWING', c:C.amberText, bg:'rgba(96,72,40,0.1)',  bd:'rgba(96,72,40,0.22)' };
+  return              { label:'LOW MATCH',       c:C.muted,     bg:'rgba(255,255,255,0.02)', bd:C.border };
 }
 
-function sourcePill(source) {
-  return `<span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:600;background:${D.pillBg};border:1px solid ${D.pillBorder};color:#4a4f66;">via ${source || 'Job Board'}</span>`;
+function resolveSource(job) {
+  const s = (job.source||'').toLowerCase(), u = (job.url||'').toLowerCase();
+  const m = {greenhouse:'Greenhouse',lever:'Lever',indeed:'Indeed',remotive:'Remotive',
+             linkedin:'LinkedIn',workday:'Workday',themuse:'The Muse',ashby:'Ashby'};
+  for (const [k,v] of Object.entries(m)) if (s.includes(k)||u.includes(k)) return v;
+  return 'Job Board';
 }
 
-function industryPill(industry) {
-  if (!industry) return '';
-  return `&nbsp;<span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:10px;font-weight:600;background:${D.accentLight};border:1px solid ${D.accentBorder};color:#4f6ef7;">${industry}</span>`;
+function pill(text, col, bg, bd) {
+  col = col||C.muted; bg = bg||'rgba(255,255,255,0.04)'; bd = bd||'rgba(255,255,255,0.07)';
+  return `<span style="display:inline-block;background:${bg};color:${col};border:1px solid ${bd};`+
+    `padding:2px 9px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:0.3px;">${text}</span>`;
 }
 
 function jobCard(job) {
-  const rank = job.rank || {};
-  const total = rank.total || 0;
-  const bd = rank.breakdown || {};
-  const kw = bd.keywords || {};
-  const matchRate = kw.matchRate || 0;
+  const rank=job.rank||{}, total=rank.total||0, bd=rank.breakdown||{}, kw=bd.keywords||{};
+  const mr=kw.matchRate||0, tier=tierInfo(total), src=resolveSource(job);
+  const sal=job.salary&&job.salary!=='Not Listed'?job.salary:null;
+  const wtIcon=job.workType==='Remote'?'🌎':job.workType==='Hybrid'?'🏢':'📍';
+  const mrc=mr>=60?C.greenMid:mr>=35?C.blueMid:mr>=20?C.amberText:C.dim;
 
-  // Colors by score tier
-  const scoreColor = total >= 80 ? '#a3b8a0' : total >= 65 ? '#8899cc' : total >= 50 ? '#b8a070' : '#3a3f55';
-  const scoreBg    = total >= 80 ? 'rgba(163,184,160,0.08)' : total >= 65 ? 'rgba(136,153,204,0.08)' : total >= 50 ? 'rgba(184,160,112,0.08)' : 'rgba(255,255,255,0.03)';
-  const scoreBorder= total >= 80 ? 'rgba(163,184,160,0.2)' : total >= 65 ? 'rgba(136,153,204,0.2)' : total >= 50 ? 'rgba(184,160,112,0.2)' : 'rgba(255,255,255,0.07)';
-  const tierLabel  = total >= 80 ? '🔥 MUST APPLY' : total >= 65 ? '⭐ STRONG MATCH' : total >= 50 ? '👀 WORTH REVIEWING' : '📋 LOW MATCH';
-  const matchColor = matchRate >= 60 ? '#8aab87' : matchRate >= 35 ? '#7a8fbb' : matchRate >= 20 ? '#a89060' : '#3a3f55';
-
-  const salary = job.salary && job.salary !== 'Not Listed' ? job.salary : null;
-  const wtIcon = job.workType === 'Remote' ? '🌎' : job.workType === 'Hybrid' ? '🏢' : '📍';
-
-  // Fix source — never show generic
-  let sourceLabel = (job.source || '').trim();
-  if (!sourceLabel || sourceLabel.toLowerCase() === 'via job board' || sourceLabel.toLowerCase() === 'job board') {
-    const url = (job.url || '').toLowerCase();
-    if (url.includes('greenhouse')) sourceLabel = 'Greenhouse';
-    else if (url.includes('lever')) sourceLabel = 'Lever';
-    else if (url.includes('indeed')) sourceLabel = 'Indeed';
-    else if (url.includes('remotive')) sourceLabel = 'Remotive';
-    else if (url.includes('linkedin')) sourceLabel = 'LinkedIn';
-    else if (url.includes('workday')) sourceLabel = 'Workday';
-    else if (url.includes('themuse')) sourceLabel = 'The Muse';
-    else sourceLabel = 'Job Board';
-  }
-
-  const kwTagsHtml = (kw.topMatches || []).slice(0, 6).map(k =>
-    `<span style="background:rgba(255,255,255,0.05);color:#7a7f9a;border:1px solid rgba(255,255,255,0.08);padding:2px 8px;border-radius:4px;font-size:9px;font-weight:600;margin-right:4px;margin-bottom:3px;display:inline-block;">${k}</span>`
+  const kwTags=(kw.topMatches||[]).slice(0,6).map(k=>
+    `<span style="display:inline-block;background:rgba(255,255,255,0.04);color:${C.muted};`+
+    `border:1px solid rgba(255,255,255,0.07);padding:1px 7px;border-radius:3px;`+
+    `font-size:9px;font-weight:600;margin:2px 3px 2px 0;">${k}</span>`
   ).join('');
 
-  const bdRows = [
-    { l: 'Industry', k: 'industry', m: 30 },
-    { l: 'Title',    k: 'title',    m: 25 },
-    { l: 'Keywords', k: 'keywords', m: 20 },
-    { l: 'Comp',     k: 'comp',     m: 12 },
-  ].map(r => {
-    const pts = (bd[r.k] || {}).score || 0;
-    const pct = Math.round((pts / r.m) * 100);
-    const c = pct >= 75 ? '#6a9e80' : pct >= 45 ? '#5a70a8' : '#2e3348';
+  const bdRows=[
+    {l:'Industry',k:'industry',m:30},{l:'Title',k:'title',m:25},
+    {l:'Keywords',k:'keywords',m:20},{l:'Comp',k:'comp',m:12},
+  ].map(r=>{
+    const pts=(bd[r.k]||{}).score||0, pct=Math.round(pts/r.m*100);
+    const bc=pct>=75?C.greenDim:pct>=45?C.blueDim:C.border2;
+    const tc=pct>=75?C.greenMid:pct>=45?C.blueMid:C.dim;
     return `<tr>
-      <td style="padding:3px 0;width:60px;font-size:10px;color:#8b90a7;white-space:nowrap;">${r.l}</td>
-      <td style="padding:3px 8px;">
-        <div style="background:#1e2235;border-radius:3px;height:4px;overflow:hidden;">
-          <div style="background:${c};width:${Math.max(pct,2)}%;height:4px;border-radius:3px;"></div>
+      <td style="padding:3px 0;width:62px;font-size:10px;color:${C.muted};white-space:nowrap;">${r.l}</td>
+      <td style="padding:3px 10px;">
+        <div style="background:${C.border};border-radius:2px;height:3px;overflow:hidden;">
+          <div style="background:${bc};width:${Math.max(pct,2)}%;height:3px;"></div>
         </div>
       </td>
-      <td style="padding:3px 0;width:36px;font-size:10px;color:${c};text-align:right;font-weight:700;">${pts}/${r.m}</td>
+      <td style="padding:3px 0;width:30px;font-size:10px;color:${tc};text-align:right;font-weight:700;font-family:'Courier New',monospace;">${pts}</td>
     </tr>`;
   }).join('');
 
   return `
-  <div style="background:#13161f;border:1px solid #1e2235;border-radius:12px;margin-bottom:10px;overflow:hidden;font-family:'DM Sans',Arial,sans-serif;">
-
-    <!-- Tier banner -->
-    <div style="background:${scoreBg};border-bottom:1px solid ${scoreBorder};padding:7px 18px;display:table;width:100%;box-sizing:border-box;">
-      <span style="font-size:9px;font-weight:800;color:${scoreColor};letter-spacing:1.5px;">${tierLabel}</span>
-      <span style="font-size:10px;color:${scoreColor};font-weight:700;float:right;font-family:'Courier New',monospace;">${total}/100</span>
-    </div>
-
-    <div style="padding:16px 18px;">
-      <table width="100%" cellpadding="0" cellspacing="0"><tr>
-        <td style="vertical-align:top;">
-
-          <!-- Job title -->
-          <div style="font-size:16px;font-weight:800;color:#f0f2ff;letter-spacing:-0.3px;line-height:1.3;margin-bottom:5px;">${job.title}</div>
-
-          <!-- Company — accent color, prominent -->
-          <div style="font-size:14px;font-weight:700;color:#c8cce8;margin-bottom:5px;">${job.company}</div>
-
-          <!-- Location row -->
-          <div style="font-size:12px;color:#8b90a7;margin-bottom:10px;">
-            ${wtIcon} <span style="color:#9098b8;font-weight:500;">${job.workType}</span>
-            <span style="color:#2a2f45;margin:0 6px;">·</span>
-            ${job.location || 'United States'}
-            ${salary ? `<span style="color:#2a2f45;margin:0 6px;">·</span><span style="color:#7a9e8a;font-weight:600;">💰 ${salary}</span>` : ''}
-          </div>
-
-          <!-- Pills -->
-          <div style="margin-bottom:12px;line-height:2.4;">
-            <span style="background:rgba(255,255,255,0.05);color:#6b7090;border:1px solid rgba(255,255,255,0.08);padding:2px 9px;border-radius:4px;font-size:10px;font-weight:600;">via ${sourceLabel}</span>
-            ${job.industry ? `&nbsp;<span style="background:rgba(255,255,255,0.04);color:#6b7090;border:1px solid rgba(255,255,255,0.07);padding:2px 9px;border-radius:4px;font-size:10px;font-weight:700;">${job.industry}</span>` : ''}
-            ${job.posted ? `&nbsp;<span style="background:rgba(255,255,255,0.04);color:#4a4f66;border:1px solid #1e2235;padding:2px 9px;border-radius:4px;font-size:10px;">📅 ${job.posted}</span>` : ''}
-          </div>
-
-          <!-- Keyword match block -->
-          <div style="background:#0f1219;border:1px solid #1e2235;border-radius:8px;padding:10px 12px;margin-bottom:10px;">
-            <table width="100%" cellpadding="0" cellspacing="0"><tr>
-              <td style="vertical-align:middle;">
-                <div style="font-size:9px;font-weight:700;color:#4a4f66;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;">🔑 Resume Keyword Match</div>
-                <div style="background:#1e2235;border-radius:3px;height:5px;overflow:hidden;margin-bottom:5px;">
-                  <div style="background:${matchColor};width:${Math.max(matchRate,2)}%;height:5px;border-radius:3px;"></div>
-                </div>
-                <div style="font-size:10px;color:#4a4f66;">${kw.totalHits||0}/${kw.totalKeywords||0} resume keywords · ${kw.usedFullDesc ? '<span style="color:#00c97a;font-weight:600;">full description</span>' : 'snippet only'}</div>
-                ${kwTagsHtml ? `<div style="margin-top:7px;line-height:2;">${kwTagsHtml}</div>` : ''}
-              </td>
-              <td style="vertical-align:middle;text-align:right;padding-left:12px;width:52px;white-space:nowrap;">
-                <div style="font-size:24px;font-weight:800;color:${matchColor};line-height:1;">${matchRate}%</div>
-                <div style="font-size:9px;color:#4a4f66;text-align:center;">match</div>
-              </td>
-            </tr></table>
-          </div>
-
-          <!-- Score breakdown bars -->
-          <table width="100%" cellpadding="0" cellspacing="1">${bdRows}</table>
-
-        </td>
-
-        <!-- Score ring + CTA -->
-        <td style="vertical-align:top;text-align:center;padding-left:14px;width:74px;">
-          <div style="width:58px;height:58px;border-radius:50%;border:2px solid ${scoreColor};background:${scoreBg};display:inline-table;text-align:center;margin-bottom:10px;padding-top:10px;">
-            <div style="font-size:18px;font-weight:900;color:${scoreColor};line-height:1.1;">${total}</div>
-            <div style="font-size:9px;color:#4a4f66;">/100</div>
-          </div>
-          <a href="${job.url}" style="display:block;background:#1c2340;color:#8899bb;text-decoration:none;padding:8px 0;border-radius:7px;font-size:11px;font-weight:600;text-align:center;border:1px solid #252d4a;">
-            View Job →
-          </a>
-        </td>
-
-      </tr></table>
-    </div>
-  </div>`;
+<div style="background:${C.surface};border:1px solid ${C.border};border-radius:10px;margin-bottom:8px;overflow:hidden;font-family:'Inter',Arial,sans-serif;">
+  <div style="background:${tier.bg};border-bottom:1px solid ${tier.bd};padding:6px 16px;display:table;width:100%;box-sizing:border-box;">
+    <span style="font-size:8px;font-weight:800;color:${tier.c};letter-spacing:2px;">${tier.label}</span>
+    <span style="float:right;font-size:12px;font-weight:800;color:${tier.c};font-family:'Courier New',monospace;">${total}<span style="font-size:9px;font-weight:400;color:${C.dim};">/100</span></span>
+  </div>
+  <div style="padding:14px 16px;">
+    <table width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td style="vertical-align:top;">
+        <div style="font-size:15px;font-weight:700;color:${C.bright};letter-spacing:-0.3px;line-height:1.35;margin-bottom:3px;">${job.title}</div>
+        <div style="font-size:12px;font-weight:600;color:${C.soft};margin-bottom:6px;">${job.company}</div>
+        <div style="font-size:11px;color:${C.body};margin-bottom:10px;">
+          ${wtIcon}&nbsp;${job.workType}<span style="color:${C.dim};margin:0 5px;">·</span>${job.location||'United States'}${sal?`<span style="color:${C.dim};margin:0 5px;">·</span><span style="color:${C.greenText};font-weight:600;">${sal}</span>`:''}
+        </div>
+        <div style="margin-bottom:12px;line-height:2.2;">
+          ${pill('via '+src)}${job.industry?'&nbsp;'+pill(job.industry):''}${job.posted?'&nbsp;'+pill(job.posted,C.dim):''}
+        </div>
+        <div style="background:${C.bg};border:1px solid ${C.border};border-radius:7px;padding:10px 12px;margin-bottom:10px;">
+          <div style="font-size:8px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:2px;margin-bottom:7px;">Resume Match</div>
+          <table width="100%" cellpadding="0" cellspacing="0"><tr>
+            <td style="vertical-align:middle;">
+              <div style="background:${C.border};border-radius:2px;height:3px;overflow:hidden;margin-bottom:6px;">
+                <div style="background:${mrc};width:${Math.max(mr,2)}%;height:3px;"></div>
+              </div>
+              <div style="font-size:10px;color:${C.muted};">${kw.totalHits||0} of ${kw.totalKeywords||0} keywords · ${kw.usedFullDesc?`<span style="color:${C.greenText};">full post</span>`:'preview only'}</div>
+              ${kwTags?`<div style="margin-top:6px;">${kwTags}</div>`:''}
+            </td>
+            <td style="vertical-align:top;text-align:right;padding-left:10px;width:42px;white-space:nowrap;">
+              <div style="font-size:19px;font-weight:800;color:${mrc===C.dim?C.muted:mrc};font-family:'Courier New',monospace;line-height:1;">${mr}%</div>
+            </td>
+          </tr></table>
+        </div>
+        <table width="100%" cellpadding="0" cellspacing="0">${bdRows}</table>
+      </td>
+      <td style="vertical-align:top;text-align:center;padding-left:12px;width:64px;">
+        <div style="width:50px;height:50px;border-radius:50%;border:1px solid ${tier.bd};background:${tier.bg};margin:0 auto 10px;line-height:50px;text-align:center;">
+          <span style="font-size:15px;font-weight:800;color:${tier.c};font-family:'Courier New',monospace;">${total}</span>
+        </div>
+        <a href="${job.url}" style="display:block;background:${C.elevated};color:${C.body};text-decoration:none;padding:7px 0;border-radius:6px;font-size:10px;font-weight:600;text-align:center;border:1px solid ${C.border2};letter-spacing:0.5px;">View →</a>
+      </td>
+    </tr></table>
+  </div>
+</div>`;
 }
 
 function topPicksCard(picks) {
-  if (!picks || picks.length === 0) return '';
-
-  const rows = picks.map(job => {
-    const salary = job.salary && job.salary !== 'Not Listed'
-      ? `<div style="font-size:11px;color:#00c97a;font-weight:700;margin-top:2px;">💰 ${job.salary}</div>` : '';
-    return `
-    <tr>
-      <td style="padding:14px 20px;border-bottom:1px solid #1e2235;vertical-align:middle;">
-        <div style="font-size:13px;font-weight:700;color:#f0f2ff;margin-bottom:2px;">${job.title}</div>
-        <div style="font-size:12px;color:#8b90a7;">${job.company} · ${job.location}</div>
-        ${salary}
+  if (!picks||!picks.length) return '';
+  const rows=picks.map(job=>{
+    const sal=job.salary&&job.salary!=='Not Listed'?`<span style="color:${C.greenText};"> · ${job.salary}</span>`:'';
+    return `<tr>
+      <td style="padding:11px 16px;border-bottom:1px solid ${C.border};vertical-align:middle;">
+        <div style="font-size:13px;font-weight:600;color:${C.heading};margin-bottom:2px;">${job.title}</div>
+        <div style="font-size:11px;color:${C.body};">${job.company} · ${job.location}${sal}</div>
       </td>
-      <td style="padding:14px 20px;border-bottom:1px solid #1e2235;vertical-align:middle;
-                 text-align:right;white-space:nowrap;width:90px;">
-        <a href="${job.url}" style="display:inline-block;background:${D.accentLight};
-           border:1px solid ${D.accentBorder};color:#4f6ef7;padding:7px 14px;
-           border-radius:7px;text-decoration:none;font-size:11px;font-weight:800;">
-          View →
-        </a>
+      <td style="padding:11px 16px;border-bottom:1px solid ${C.border};vertical-align:middle;text-align:right;width:72px;">
+        <a href="${job.url}" style="display:inline-block;background:${C.elevated};color:${C.body};border:1px solid ${C.border2};padding:5px 11px;border-radius:5px;text-decoration:none;font-size:10px;font-weight:600;letter-spacing:0.3px;">View →</a>
       </td>
     </tr>`;
   }).join('');
-
   return `
-  <div style="background:#13161f;border:1px solid #1e2235;border-radius:10px;
-              margin-bottom:16px;overflow:hidden;">
-    <div style="padding:16px 20px;background:${D.headerBg};border-bottom:1px solid #1e2235;">
-      <div style="font-size:9px;letter-spacing:2px;color:#6b7280;font-weight:700;
-                  text-transform:uppercase;margin-bottom:4px;">Revisit From Last Digest</div>
-      <div style="font-size:15px;font-weight:800;color:#ffffff;">⭐ Your Top 5 Previous Picks</div>
-    </div>
-    <table width="100%" cellpadding="0" cellspacing="0">${rows}</table>
-    <div style="padding:10px 20px;background:#090b12;font-size:10px;
-                color:#4a4f66;text-align:center;">
-      Strongest matches from your last digest · Click to revisit before they expire
-    </div>
-  </div>`;
+<div style="background:${C.surface};border:1px solid ${C.border};border-radius:10px;margin-bottom:10px;overflow:hidden;font-family:'Inter',Arial,sans-serif;">
+  <div style="padding:12px 16px;border-bottom:1px solid ${C.border};">
+    <div style="font-size:8px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:2px;margin-bottom:3px;">Revisit · Last Digest</div>
+    <div style="font-size:13px;font-weight:700;color:${C.heading};">Previous Top Picks</div>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">${rows}</table>
+</div>`;
 }
 
-function statCell(value, label, color) {
-  return `
-  <td style="text-align:center;padding:20px 16px;background:#0f1219;">
-    <div style="font-size:28px;font-weight:900;color:${color};letter-spacing:-1px;line-height:1;">${value}</div>
-    <div style="font-size:10px;color:#4a4f66;margin-top:4px;font-weight:600;
-                letter-spacing:0.8px;text-transform:uppercase;">${label}</div>
+function statCell(val, label, color) {
+  return `<td style="text-align:center;padding:16px 10px;background:${C.surface};">
+    <div style="font-size:24px;font-weight:800;color:${color};letter-spacing:-1px;line-height:1;font-family:'Courier New',monospace;">${val}</div>
+    <div style="font-size:9px;color:${C.muted};margin-top:4px;font-weight:600;letter-spacing:1px;text-transform:uppercase;">${label}</div>
   </td>`;
 }
 
 function buildHTML(data) {
-  const { date, count, jobs = [], topPicks = [], error } = data;
-  const remote = jobs.filter(j => j.workType === 'Remote').length;
-  const hybrid = jobs.filter(j => j.workType !== 'Remote').length;
+  const {date,count,jobs=[],topPicks=[],error}=data;
+  const remote=jobs.filter(j=>j.workType==='Remote').length;
+  const hybrid=jobs.filter(j=>j.workType!=='Remote').length;
+  const mustApply=jobs.filter(j=>(j.rank?.total||0)>=80).length;
+  const strong=jobs.filter(j=>{const s=j.rank?.total||0;return s>=65&&s<80;}).length;
 
-  if (error) {
-    return `<div style="font-family:Arial,sans-serif;background:#090b12;padding:30px;max-width:660px;margin:0 auto;">
-      <h2 style="color:#dc2626;">⚠️ Error — ${date}</h2>
-      <pre style="background:#fff;padding:16px;border-radius:8px;color:#dc2626;font-size:12px;border:1px solid #fecaca;">${error}</pre>
-      </div>`;
-  }
+  if (error) return `<div style="font-family:Arial;background:${C.bg};padding:30px;max-width:640px;margin:0 auto;color:${C.heading};">
+    <h2 style="color:#a05050;">Error — ${date}</h2>
+    <pre style="background:${C.surface};padding:16px;border-radius:8px;color:#a05050;font-size:12px;border:1px solid ${C.border};">${error}</pre></div>`;
 
   return `<!DOCTYPE html>
 <html><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-  * { box-sizing:border-box; -webkit-font-smoothing:antialiased; }
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');*{box-sizing:border-box;-webkit-font-smoothing:antialiased;}</style>
 </head>
-<body style="margin:0;padding:0;background:#090b12;font-family:'Inter',Arial,sans-serif;">
-<div style="max-width:660px;margin:0 auto;padding:24px 16px;">
+<body style="margin:0;padding:0;background:${C.bg};font-family:'Inter',Arial,sans-serif;">
+<div style="max-width:640px;margin:0 auto;padding:20px 16px 48px;">
 
-  <!-- HEADER -->
-  <div style="background:${D.headerBg};border-radius:12px;padding:32px;margin-bottom:12px;">
-    <div style="font-size:9px;letter-spacing:3px;color:#6b7280;font-weight:700;
-                text-transform:uppercase;margin-bottom:12px;">
-      Nick Stephen · 2026 Job Search
-    </div>
-    <div style="font-size:30px;font-weight:900;color:#e8eaf5;letter-spacing:-1px;
-                line-height:1.1;margin-bottom:8px;">
-      ${count > 0 ? `${count} New Role${count !== 1 ? 's' : ''}` : 'All Caught Up'}
-    </div>
-    <div style="font-size:13px;color:#4a4f66;">${date}</div>
-    <div style="margin-top:16px;padding-top:16px;border-top:1px solid #1e2235;
-                font-size:11px;color:#4b5563;">
-      📍 Remote (USA) + ≤60mi Stuart FL &nbsp;·&nbsp; 💼 Director / VP &nbsp;·&nbsp; 💰 $100K–$400K
-    </div>
+  <!-- wordmark -->
+  <div style="padding:0 2px 14px;display:table;width:100%;box-sizing:border-box;">
+    <span style="font-size:9px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:3px;">Nick Stephen · 2026 Job Search</span>
+    <span style="float:right;font-size:9px;color:${C.dim};letter-spacing:0.5px;">${date}</span>
   </div>
 
-  <!-- STATS -->
-  <div style="background:#0f1219;border:1px solid #1e2235;border-radius:10px;
-              margin-bottom:12px;overflow:hidden;">
+  <!-- header -->
+  <div style="background:${C.surface};border:1px solid ${C.border};border-radius:12px;padding:26px 22px;margin-bottom:8px;">
+    <div style="font-size:31px;font-weight:800;color:${C.bright};letter-spacing:-1.2px;line-height:1.1;margin-bottom:8px;">
+      ${count>0?`${count} New Role${count!==1?'s':''}`:'All Caught Up'}
+    </div>
+    <div style="font-size:11px;color:${C.muted};line-height:1.9;">
+      📍 Remote (USA) + ≤60mi Stuart FL &nbsp;<span style="color:${C.dim}">·</span>&nbsp; 💼 Director / VP &nbsp;<span style="color:${C.dim}">·</span>&nbsp; 💰 $100K–$400K
+    </div>
+    ${count>0?`
+    <div style="margin-top:14px;padding-top:12px;border-top:1px solid ${C.border};display:table;width:100%;box-sizing:border-box;">
+      <span style="font-size:11px;color:${C.muted};">
+        ${mustApply>0?`<span style="color:${C.greenText};font-weight:600;">${mustApply} must-apply</span>`:''}
+        ${strong>0?`${mustApply>0?' &nbsp;·&nbsp; ':''}<span style="color:${C.blueText};font-weight:600;">${strong} strong match${strong>1?'es':''}</span>`:''}
+        ${mustApply===0&&strong===0?`<span style="color:${C.muted};">${count} to review</span>`:''}
+      </span>
+      <span style="float:right;font-size:11px;color:${C.dim};">${remote} remote &nbsp;·&nbsp; ${hybrid} local</span>
+    </div>`:``}
+  </div>
+
+  <!-- stats -->
+  <div style="background:${C.surface};border:1px solid ${C.border};border-radius:10px;margin-bottom:10px;overflow:hidden;">
     <table width="100%" cellpadding="0" cellspacing="0"><tr>
-      ${statCell(count, 'New Today', '#8899cc')}
-      <td style="width:1px;"><div style="width:1px;background:#1e2235;height:50px;margin:0 auto;"></div></td>
-      ${statCell(remote, 'Remote', '#7a9e8a')}
-      <td style="width:1px;"><div style="width:1px;background:#1e2235;height:50px;margin:0 auto;"></div></td>
-      ${statCell(hybrid, 'Hybrid/Local', '#8899cc')}
-      <td style="width:1px;"><div style="width:1px;background:#1e2235;height:50px;margin:0 auto;"></div></td>
-      ${statCell(topPicks.length, 'Top Picks', '#a89060')}
+      ${statCell(count,         'New Today',  C.blueText)}
+      <td style="width:1px;background:${C.border};"></td>
+      ${statCell(remote,        'Remote',     C.greenText)}
+      <td style="width:1px;background:${C.border};"></td>
+      ${statCell(mustApply,     'Must Apply', C.greenText)}
+      <td style="width:1px;background:${C.border};"></td>
+      ${statCell(topPicks.length,'Prev Picks',C.amberText)}
     </tr></table>
   </div>
 
-  <!-- TOP PICKS -->
+  <!-- top picks -->
   ${topPicksCard(topPicks)}
 
-  <!-- NEW LISTINGS -->
-  ${count === 0 ? `
-  <div style="background:#13161f;border:1px solid #1e2235;border-radius:10px;
-              padding:48px 32px;text-align:center;">
-    <div style="font-size:32px;margin-bottom:12px;">✅</div>
-    <div style="font-size:16px;font-weight:800;color:#f0f2ff;margin-bottom:6px;">No new listings today</div>
-    <div style="font-size:13px;color:#8b90a7;line-height:1.7;">
-      All matching roles have already been sent.<br>Check back tomorrow.
-    </div>
-  </div>` : `
-  <div style="font-size:9px;letter-spacing:2px;color:#4a4f66;font-weight:700;
-              text-transform:uppercase;margin-bottom:8px;padding-left:2px;">
-    New Listings
-  </div>
-  ${jobs.map(j => jobCard(j)).join('')}
-  `}
+  <!-- section label -->
+  ${count>0?`<div style="font-size:8px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:2.5px;margin:14px 0 8px 2px;">New Listings · Ranked by Match Score</div>`:''}
 
-  <!-- FOOTER -->
-  <div style="text-align:center;padding:28px 16px 8px;">
-    <div style="font-size:10px;color:#4a4f66;line-height:2.2;">
-      <strong style="color:#8b90a7;">Nick Stephen Job Search Agent</strong><br>
-      Runs daily at 6:00 AM ET · Never repeats a listing<br>
-      Indeed · Remotive · The Muse · Arbeitnow · Greenhouse · Lever
+  <!-- job cards -->
+  ${count===0?`
+  <div style="background:${C.surface};border:1px solid ${C.border};border-radius:10px;padding:48px 24px;text-align:center;">
+    <div style="font-size:13px;font-weight:600;color:${C.heading};margin-bottom:6px;">No new listings today</div>
+    <div style="font-size:12px;color:${C.muted};">All matching roles already sent. Check back tomorrow.</div>
+  </div>`:jobs.map(j=>jobCard(j)).join('')}
+
+  <!-- footer -->
+  <div style="padding:20px 2px 0;border-top:1px solid ${C.border};margin-top:10px;">
+    <div style="font-size:10px;color:${C.dim};line-height:2.2;">
+      <strong style="color:${C.muted};">Nick Stephen · Job Search Agent</strong><br>
+      Runs daily 6:00 AM ET &nbsp;·&nbsp; Never repeats a listing &nbsp;·&nbsp; Ranked by resume match<br>
+      Sources: Indeed · Remotive · The Muse · Arbeitnow · Greenhouse · Lever
     </div>
   </div>
 
@@ -310,27 +240,14 @@ function buildHTML(data) {
 
 async function main() {
   if (!fs.existsSync(TODAY_PATH)) { console.log('No results file'); process.exit(0); }
-
-  const data = JSON.parse(fs.readFileSync(TODAY_PATH, 'utf8'));
-  const subject = data.count > 0
-    ? `🎯 ${data.count} New Job${data.count !== 1 ? 's' : ''} · ${data.date}`
-    : `📋 No New Listings · ${data.date}`;
-
+  const data=JSON.parse(fs.readFileSync(TODAY_PATH,'utf8'));
+  const subject=data.count>0
+    ?`🎯 ${data.count} New Job${data.count!==1?'s':''} · ${data.date}`
+    :`📋 No New Listings · ${data.date}`;
   console.log(`📧 ${subject}`);
-
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD }
-  });
-
-  await transporter.sendMail({
-    from: `"Nick's Job Search" <${process.env.GMAIL_USER}>`,
-    to: process.env.RECIPIENT_EMAIL,
-    subject,
-    html: buildHTML(data)
-  });
-
+  const transporter=nodemailer.createTransport({service:'gmail',auth:{user:process.env.GMAIL_USER,pass:process.env.GMAIL_APP_PASSWORD}});
+  await transporter.sendMail({from:`"Nick's Job Search" <${process.env.GMAIL_USER}>`,to:process.env.RECIPIENT_EMAIL,subject,html:buildHTML(data)});
   console.log(`✅ Delivered to ${process.env.RECIPIENT_EMAIL}`);
 }
 
-main().catch(err => { console.error('Email error:', err.message); process.exit(1); });
+main().catch(err=>{console.error('Email error:',err.message);process.exit(1);});
