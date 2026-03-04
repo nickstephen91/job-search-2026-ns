@@ -51,11 +51,11 @@ function jobCard(job) {
   const matchRate = kw.matchRate || 0;
 
   // Colors by score tier
-  const scoreColor = total >= 80 ? '#00c97a' : total >= 65 ? '#4f6ef7' : total >= 50 ? '#f59e0b' : '#4a4f66';
-  const scoreBg    = total >= 80 ? 'rgba(0,201,122,0.1)' : total >= 65 ? 'rgba(79,110,247,0.1)' : total >= 50 ? 'rgba(245,158,11,0.1)' : 'rgba(255,255,255,0.04)';
-  const scoreBorder= total >= 80 ? 'rgba(0,201,122,0.3)' : total >= 65 ? 'rgba(79,110,247,0.3)' : total >= 50 ? 'rgba(245,158,11,0.3)' : 'rgba(255,255,255,0.1)';
+  const scoreColor = total >= 80 ? '#a3b8a0' : total >= 65 ? '#8899cc' : total >= 50 ? '#b8a070' : '#3a3f55';
+  const scoreBg    = total >= 80 ? 'rgba(163,184,160,0.08)' : total >= 65 ? 'rgba(136,153,204,0.08)' : total >= 50 ? 'rgba(184,160,112,0.08)' : 'rgba(255,255,255,0.03)';
+  const scoreBorder= total >= 80 ? 'rgba(163,184,160,0.2)' : total >= 65 ? 'rgba(136,153,204,0.2)' : total >= 50 ? 'rgba(184,160,112,0.2)' : 'rgba(255,255,255,0.07)';
   const tierLabel  = total >= 80 ? '🔥 MUST APPLY' : total >= 65 ? '⭐ STRONG MATCH' : total >= 50 ? '👀 WORTH REVIEWING' : '📋 LOW MATCH';
-  const matchColor = matchRate >= 60 ? '#00c97a' : matchRate >= 35 ? '#4f6ef7' : matchRate >= 20 ? '#f59e0b' : '#4a4f66';
+  const matchColor = matchRate >= 60 ? '#8aab87' : matchRate >= 35 ? '#7a8fbb' : matchRate >= 20 ? '#a89060' : '#3a3f55';
 
   const salary = job.salary && job.salary !== 'Not Listed' ? job.salary : null;
   const wtIcon = job.workType === 'Remote' ? '🌎' : job.workType === 'Hybrid' ? '🏢' : '📍';
@@ -75,7 +75,7 @@ function jobCard(job) {
   }
 
   const kwTagsHtml = (kw.topMatches || []).slice(0, 6).map(k =>
-    `<span style="background:rgba(79,110,247,0.15);color:#a0aeff;border:1px solid rgba(79,110,247,0.3);padding:2px 8px;border-radius:4px;font-size:9px;font-weight:700;margin-right:4px;margin-bottom:3px;display:inline-block;">${k}</span>`
+    `<span style="background:rgba(255,255,255,0.05);color:#7a7f9a;border:1px solid rgba(255,255,255,0.08);padding:2px 8px;border-radius:4px;font-size:9px;font-weight:600;margin-right:4px;margin-bottom:3px;display:inline-block;">${k}</span>`
   ).join('');
 
   const bdRows = [
@@ -86,7 +86,7 @@ function jobCard(job) {
   ].map(r => {
     const pts = (bd[r.k] || {}).score || 0;
     const pct = Math.round((pts / r.m) * 100);
-    const c = pct >= 75 ? '#00c97a' : pct >= 45 ? '#4f6ef7' : '#4a4f66';
+    const c = pct >= 75 ? '#6a9e80' : pct >= 45 ? '#5a70a8' : '#2e3348';
     return `<tr>
       <td style="padding:3px 0;width:60px;font-size:10px;color:#8b90a7;white-space:nowrap;">${r.l}</td>
       <td style="padding:3px 8px;">
@@ -115,20 +115,20 @@ function jobCard(job) {
           <div style="font-size:16px;font-weight:800;color:#f0f2ff;letter-spacing:-0.3px;line-height:1.3;margin-bottom:5px;">${job.title}</div>
 
           <!-- Company — accent color, prominent -->
-          <div style="font-size:14px;font-weight:700;color:#4f6ef7;margin-bottom:5px;">${job.company}</div>
+          <div style="font-size:14px;font-weight:700;color:#c8cce8;margin-bottom:5px;">${job.company}</div>
 
           <!-- Location row -->
           <div style="font-size:12px;color:#8b90a7;margin-bottom:10px;">
-            ${wtIcon} <span style="color:#c5c8d8;font-weight:600;">${job.workType}</span>
+            ${wtIcon} <span style="color:#9098b8;font-weight:500;">${job.workType}</span>
             <span style="color:#2a2f45;margin:0 6px;">·</span>
             ${job.location || 'United States'}
-            ${salary ? `<span style="color:#2a2f45;margin:0 6px;">·</span><span style="color:#00c97a;font-weight:700;">💰 ${salary}</span>` : ''}
+            ${salary ? `<span style="color:#2a2f45;margin:0 6px;">·</span><span style="color:#7a9e8a;font-weight:600;">💰 ${salary}</span>` : ''}
           </div>
 
           <!-- Pills -->
           <div style="margin-bottom:12px;line-height:2.4;">
-            <span style="background:rgba(79,110,247,0.15);color:#a0aeff;border:1px solid rgba(79,110,247,0.3);padding:2px 9px;border-radius:4px;font-size:10px;font-weight:700;">via ${sourceLabel}</span>
-            ${job.industry ? `&nbsp;<span style="background:rgba(124,58,237,0.15);color:#c4b5fd;border:1px solid rgba(124,58,237,0.3);padding:2px 9px;border-radius:4px;font-size:10px;font-weight:700;">${job.industry}</span>` : ''}
+            <span style="background:rgba(255,255,255,0.05);color:#6b7090;border:1px solid rgba(255,255,255,0.08);padding:2px 9px;border-radius:4px;font-size:10px;font-weight:600;">via ${sourceLabel}</span>
+            ${job.industry ? `&nbsp;<span style="background:rgba(255,255,255,0.04);color:#6b7090;border:1px solid rgba(255,255,255,0.07);padding:2px 9px;border-radius:4px;font-size:10px;font-weight:700;">${job.industry}</span>` : ''}
             ${job.posted ? `&nbsp;<span style="background:rgba(255,255,255,0.04);color:#4a4f66;border:1px solid #1e2235;padding:2px 9px;border-radius:4px;font-size:10px;">📅 ${job.posted}</span>` : ''}
           </div>
 
@@ -161,7 +161,7 @@ function jobCard(job) {
             <div style="font-size:18px;font-weight:900;color:${scoreColor};line-height:1.1;">${total}</div>
             <div style="font-size:9px;color:#4a4f66;">/100</div>
           </div>
-          <a href="${job.url}" style="display:block;background:#4f6ef7;color:#fff;text-decoration:none;padding:8px 0;border-radius:7px;font-size:11px;font-weight:700;text-align:center;">
+          <a href="${job.url}" style="display:block;background:#1c2340;color:#8899bb;text-decoration:none;padding:8px 0;border-radius:7px;font-size:11px;font-weight:600;text-align:center;border:1px solid #252d4a;">
             View Job →
           </a>
         </td>
@@ -250,11 +250,11 @@ function buildHTML(data) {
                 text-transform:uppercase;margin-bottom:12px;">
       Nick Stephen · 2026 Job Search
     </div>
-    <div style="font-size:30px;font-weight:900;color:#ffffff;letter-spacing:-1px;
+    <div style="font-size:30px;font-weight:900;color:#e8eaf5;letter-spacing:-1px;
                 line-height:1.1;margin-bottom:8px;">
       ${count > 0 ? `${count} New Role${count !== 1 ? 's' : ''}` : 'All Caught Up'}
     </div>
-    <div style="font-size:13px;color:#6b7280;">${date}</div>
+    <div style="font-size:13px;color:#4a4f66;">${date}</div>
     <div style="margin-top:16px;padding-top:16px;border-top:1px solid #1e2235;
                 font-size:11px;color:#4b5563;">
       📍 Remote (USA) + ≤60mi Stuart FL &nbsp;·&nbsp; 💼 Director / VP &nbsp;·&nbsp; 💰 $100K–$400K
@@ -265,13 +265,13 @@ function buildHTML(data) {
   <div style="background:#0f1219;border:1px solid #1e2235;border-radius:10px;
               margin-bottom:12px;overflow:hidden;">
     <table width="100%" cellpadding="0" cellspacing="0"><tr>
-      ${statCell(count, 'New Today', D.accent)}
+      ${statCell(count, 'New Today', '#8899cc')}
       <td style="width:1px;"><div style="width:1px;background:#1e2235;height:50px;margin:0 auto;"></div></td>
-      ${statCell(remote, 'Remote', D.green)}
+      ${statCell(remote, 'Remote', '#7a9e8a')}
       <td style="width:1px;"><div style="width:1px;background:#1e2235;height:50px;margin:0 auto;"></div></td>
-      ${statCell(hybrid, 'Hybrid/Local', D.accent)}
+      ${statCell(hybrid, 'Hybrid/Local', '#8899cc')}
       <td style="width:1px;"><div style="width:1px;background:#1e2235;height:50px;margin:0 auto;"></div></td>
-      ${statCell(topPicks.length, 'Top Picks', D.amber)}
+      ${statCell(topPicks.length, 'Top Picks', '#a89060')}
     </tr></table>
   </div>
 
