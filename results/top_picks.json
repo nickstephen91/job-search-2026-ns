@@ -1,14 +1,222 @@
 {
-  "savedAt": "2026-03-04T00:49:53.426Z",
+  "savedAt": "2026-03-04T00:57:03.183Z",
   "picks": [
     {
-      "company": "Instructure",
-      "title": "Regional Vice President, APAC - Alliances & Channels",
+      "title": "VP Business Development - Healthcare SaaS",
+      "company": "Jagger",
+      "url": "https://jobs.lever.co/hellojagger/950465a3-006c-459b-bdc5-06d573a539b6",
       "level": "VP",
-      "category": "Channel",
-      "url": "https://jobs.lever.co/instructure/23975fab-1dd9-459f-b8c5-96f2282d436d",
-      "foundDate": "2026-03-04T00:49:48.667Z",
-      "total": 30,
+      "role_type": "Business Development",
+      "foundDate": "2026-03-04T00:56:56.745Z",
+      "total": 34,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 12,
+          "max": 30,
+          "note": "Adjacent: saas"
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 2,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "saas"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "SaaS",
+      "rank": {
+        "total": 37,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 12,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 2,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "saas"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP Revenue Operations",
+      "company": "Brevo",
+      "url": "https://jobs.lever.co/brevo/839a76d3-02bd-4941-b6f3-27392cb2d1c3",
+      "level": "VP",
+      "role_type": "Revenue Operations",
+      "foundDate": "2026-03-04T00:56:56.744Z",
+      "total": 34,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 18,
+          "max": 25,
+          "note": "RevOps/SalesOps match"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 37,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 18,
+            "max": 25,
+            "note": "RevOps/SalesOps match"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "revenue operations"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Business Development & Partnerships Director",
+      "company": "Wintermute",
+      "url": "https://jobs.lever.co/wintermute-trading/d864dd5c-4c3b-454b-8b82-4146d1a46edd",
+      "level": "Director",
+      "role_type": "Partnerships/Business Development",
+      "foundDate": "2026-03-04T00:56:56.744Z",
+      "total": 24,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -26,15 +234,12 @@
           "note": "Partnerships/Alliances signal"
         },
         "keywords": {
-          "score": 6,
+          "score": 0,
           "max": 20,
-          "note": "2 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "alliances"
-          ],
-          "matchRate": 2,
-          "totalHits": 2,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
@@ -54,13 +259,13 @@
           "note": "Onsite in radius"
         }
       },
-      "fullDescription": "requirements in Salesforce. Ensure execution of mutually agreed upon partner cadences including joint business planning, pipeline reviews, and deal close plans. Leverage the scaled partner program to support enablement frameworks, incentives, and co-marketing initiatives. Collaborate with global sales leadership, regional marketing, product, and customer success teams to ensure coordinated execution across markets. Represent Instructure at senior-level partner engagements, industry events, and strategic planning sessions across the region Lead, coach, and develop a high-performing regional channel team as growth demands. Coordinate local Partner participation in events and training, as well as drive product and promotions and programs. Support the development of collateral related to Instructure sales for Channel Partners. About You 8+ years of progressive experience in B2B sales, with at least 5 years in a leadership role managing a channel/partner sales team in APAC - experience in SaaS is mandatory, Edtech is a plus. Proven success building and scaling indirect sales programs across diverse international markets. Deep understanding of APAC regional dynamics, including education systems, procurement models, and cultural variances. Strong executive presence and a proven ability to influence C-level stakeholders—both internally and externally. Experience with strategic alliances, partner co-selling, and complex deal structuring. Fluency in English and one additional language; strongly preferred Extensive travel expected across the region (up to 40%). Understanding of technology use in education and LMS marketplace and companies. Proven success of building strong relationships and partnerships. Minimum of intermediate understanding of company financial measures. Self-motivated and competitive with the ability to prioritise and manage competing demands in a fast-paced environment. Experience with Microsoft Office Tools, Google Apps, Salesforce, and Clari. Manage multiple, competing demands to reach project deliverables and meet deadlines. We believe in hiring great people and treating them right. The more diverse we are, the better our ideas and outcomes. Instructure is an Equal Opportunity Employer. We comply with applicable employment and anti-discrimination laws in every country where we operate. All employees must pass a background check as part of the hiring process. To help protect our teams and systems, we’ve implemented identity verification measures. Candidates may be asked to verify their legal name, current physical location, and provide a valid contact number and residential address, in accordance with local data privacy laws. Any attempt to misrepresent personal or professional information will result in disqualification. We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not repla",
+      "fullDescription": "Requirements: Experience in both traditional financial and digital assets services from high performing teams. 3+ years of FICC sales experience (voice or electronic), working with institutional clients eCommerce experience would also be advantageous. Experience with spot and derivatives OTC products, especially options is required. Experience in business development, partnerships or any client-facing role (B2B sales, investment banking, etc) Experience delivering business results - be ready to talk about numbers/quota achievement, etc Excellent communication skills, both verbal and written; the role is more around providing education to counterparties about our services rather than a standard sales pitch. Therefore it's important to come across convincing, concise, precise and a good listener whilst also being clear on the next steps as well as ensuring timely follow ups. Trading knowledge or crypto knowledge - is a strong advantage; willingness, aptitude and curiosity to understand the fundamentals of blockchain technologies, algorithmic trading and Liquidity provision is crucial BSc/MSc in Business/Economics/Finance or any related degree Here is why you should join our dynamic team: Opportunity to work at the world's leading algorithmic trading firm in digital assets. Engaging projects offering accelerated responsibilities and ownership growth compared to traditional finance environments. A vibrant working culture with team events, celebrations and company wide team building events. A cool office in the heart of New York City which often hosts some of the leading industry events Great company culture: informal, non-hierarchical, ambitious, highly professional yet with a startup vibe, collaborative and entrepreneurial. A performance-based compensation with a significant earning upside alongside standard perks like private medical insurance Note Please ensure you are eligible to work in the US, at the moment Wintermute USA is unfortunately not able to sponsor US visas; if visa is a consideration for you, feel free to apply to the UK or Singapore offices where we offer visas and potential longer term reallocation to the US. Apply for this job Wintermute Home Page Jobs powered by",
       "location": "United States",
       "workType": "Remote",
       "source": "Lever",
       "industry": "",
       "rank": {
-        "total": 47,
+        "total": 36,
         "tier": {
           "label": "📋 Low Match",
           "color": "#4a4f66",
@@ -78,21 +283,16 @@
             "note": "Partnerships/Alliances signal"
           },
           "keywords": {
-            "score": 20,
+            "score": 9,
             "max": 20,
-            "note": "14 resume keywords matched",
+            "note": "3 resume keywords matched",
             "topMatches": [
-              "co-marketing",
-              "alliance",
-              "pipeline",
-              "peo",
-              "executive",
-              "salesforce",
-              "alliances",
-              "saas"
+              "quota",
+              "own",
+              "b2b"
             ],
-            "matchRate": 14,
-            "totalHits": 14,
+            "matchRate": 3,
+            "totalHits": 3,
             "totalKeywords": 98,
             "usedFullDesc": true
           },
@@ -115,13 +315,13 @@
       }
     },
     {
-      "company": "Wpromote",
-      "title": "Vice President, Revenue Operations and Enablement",
-      "level": "VP",
-      "category": "Revenue Operations",
-      "url": "https://jobs.lever.co/wpromote/9c67b1fc-0a3c-417e-bb26-6d3d4ecfd611",
-      "foundDate": "2026-03-04T00:49:48.666Z",
-      "total": 24,
+      "title": "Director, Americas Channel Sales",
+      "company": "Jobgether",
+      "url": "https://jobs.lever.co/jobgether/dd62729c-ad68-4c44-9cba-7d9c33d50c9e",
+      "level": "Director",
+      "role_type": "Channel",
+      "foundDate": "2026-03-04T00:56:56.744Z",
+      "total": 26,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -134,16 +334,16 @@
           "note": ""
         },
         "title": {
-          "score": 8,
+          "score": 12,
           "max": 25,
-          "note": "Senior level signal"
+          "note": "Partnerships/Alliances signal"
         },
         "keywords": {
-          "score": 4,
+          "score": 2,
           "max": 20,
           "note": "1 resume keyword matched",
           "topMatches": [
-            "revenue operations"
+            "channel sales"
           ],
           "matchRate": 1,
           "totalHits": 1,
@@ -166,13 +366,12 @@
           "note": "Onsite in radius"
         }
       },
-      "fullDescription": "Must Have 12+ years of experience in Revenue Operations, Sales Operations, or GTM Strategy, ideally within a tech-enabled services or agency environment. 4+ years of experience people management experience, including guiding and mentoring managers to enable a high-performing team and culture Deep expertise in Salesforce administration, analytics, and process design—paired with strong understanding of the GTM tech stack (Gong, Chili Piper, Seismic, etc.). Proven success leading revenue operations transformation and scaling systems, forecasting, and insights in high-growth environments. Experience designing and executing enablement programs that drive adoption, consistency, and measurable improvements in performance. Exceptional analytical, communication, and stakeholder management skills with the ability to influence across executive and functional teams. A “builder” mindset—comfortable balancing strategic vision with hands-on execution and iterative improvement. Strong alignment with Wpromote’s values of collaboration, accountability, and growth mindset. Wpromote is committed to bringing together individuals from different backgrounds and perspectives, providing employees with a safe and welcoming environment free of discrimination and harassment. We strive to create a diverse & inclusive environment where everyone can thrive, feel a sense of belonging, and do impactful work together. As an equal opportunity employer, we prohibit any unlawful discrimination against a job applicant on the basis of their race, color, religion, gender, gender identity, gender expression, sexual orientation, national origin, family or parental status, disability*, age, veteran status, or any other status protected by the laws or regulations in the locations where we operate. We respect the laws enforced by the EEOC and are dedicated to going above and beyond in fostering diversity across our workplace. Applicants with disabilities may be entitled to reasonable accommodation under the terms of the Americans with Disabilities Act and certain state or local laws. A reasonable accommodation is a change in the way things are normally done which will ensure an equal employment opportunity without imposing undue hardship on Wpromote. This employer participates in E-Verify and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S. If E-Verify cannot confirm that you are authorized to work, this employer is required to give you written instructions and an opportunity to contact Department of Homeland Security (DHS) or Social Security Administration (SSA) so you can begin to resolve the issue before the employer can take any action against you, including terminating your employment. Employers can only use E-Verify once you have accepted a job offer and completed the Form I-9. For more information on E Verify, or if you believe that your employer has violated its E-Verify responsibilities, please contact DHS. We",
       "location": "United States",
       "workType": "Remote",
       "source": "Lever",
       "industry": "",
       "rank": {
-        "total": 43,
+        "total": 29,
         "tier": {
           "label": "📋 Low Match",
           "color": "#4a4f66",
@@ -185,28 +384,21 @@
             "note": ""
           },
           "title": {
-            "score": 8,
+            "score": 12,
             "max": 25,
-            "note": "Senior level signal"
+            "note": "Partnerships/Alliances signal"
           },
           "keywords": {
-            "score": 20,
+            "score": 2,
             "max": 20,
-            "note": "9 resume keywords matched",
+            "note": "1 resume keyword matched",
             "topMatches": [
-              "gtm",
-              "revenue operations",
-              "peo",
-              "i-9",
-              "executive",
-              "salesforce",
-              "gong",
-              "employer"
+              "channel sales"
             ],
-            "matchRate": 9,
-            "totalHits": 9,
+            "matchRate": 1,
+            "totalHits": 1,
             "totalKeywords": 98,
-            "usedFullDesc": true
+            "usedFullDesc": false
           },
           "comp": {
             "score": 6,
@@ -227,12 +419,12 @@
       }
     },
     {
-      "company": "Docebo",
-      "title": "Vice President, Revenue Operations",
-      "level": "VP",
-      "category": "Revenue Operations",
-      "url": "https://jobs.lever.co/docebo/5d88fd75-ab21-428a-83fd-be863a959e35",
-      "foundDate": "2026-03-04T00:49:48.667Z",
+      "title": "Director, Revenue Operations",
+      "company": "VIANT",
+      "url": "https://jobs.lever.co/viantinc/c40f9022-051a-49da-9be6-e44aa8faad39",
+      "level": "Director",
+      "role_type": "Revenue Operations",
+      "foundDate": "2026-03-04T00:56:56.744Z",
       "total": 24,
       "tier": {
         "label": "📋 Low Match",
@@ -306,214 +498,6 @@
             "note": "1 resume keyword matched",
             "topMatches": [
               "revenue operations"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "company": "Onfido",
-      "title": "Vice President of Revenue Operations",
-      "level": "VP",
-      "category": "Revenue Operations",
-      "url": "https://jobs.lever.co/onfido/2276b4c3-8b3c-4118-9387-1b533e3d30f5",
-      "foundDate": "2026-03-04T00:49:48.667Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 27,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "revenue operations"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "company": "Coupa Software",
-      "title": "VP, North America Partner Ecosystem",
-      "level": "VP",
-      "category": "Partnerships",
-      "url": "https://jobs.lever.co/coupa/ee0f33f3-6bad-49a4-bdf1-b30888f42e3d",
-      "foundDate": "2026-03-04T00:49:48.667Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "partner ecosystem"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 27,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "partner ecosystem"
             ],
             "matchRate": 1,
             "totalHits": 1,
