@@ -717,17 +717,24 @@ async function main() {
     console.log(`   ${i+1}. [${j.rank.total}/100] ${j.title} @ ${j.company}`);
   });
 
-  // Save top picks for next email (top 5 by rank)
-  if (rankedJobs.length > 0) saveTopPicks(rankedJobs.slice(0, 5));
+  // Current run top picks — must apply (80+) first, then strong match (65+), up to 5
+  const currentTopPicks = rankedJobs
+    .filter(j => (j.rank?.total || 0) >= 65)
+    .slice(0, 5);
+
+  // Save top picks for NEXT email's "revisit" section
+  if (rankedJobs.length > 0) saveTopPicks(currentTopPicks.length > 0 ? currentTopPicks : rankedJobs.slice(0, 5));
 
   // Update seen URLs — only add the new qualified ones
   const newUrlSet = new Set(newJobs.map(j => j.url));
   saveSeenUrls(seenUrls, newUrlSet);
 
-  // Save today
+  // Save today — currentTopPicks shown in stats, previousTopPicks shown in revisit card
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
     date: dateStr, count: rankedJobs.length,
-    jobs: rankedJobs, topPicks: previousTopPicks
+    jobs: rankedJobs,
+    topPicks: previousTopPicks,          // "revisit" card = last run's bests
+    currentTopPicks: currentTopPicks     // stats bar top picks count = this run
   }, null, 2));
 
   console.log(`\n✅ Done! ${rankedJobs.length} ranked jobs queued for email.`);
