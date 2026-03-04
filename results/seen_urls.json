@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-04T00:28:18.209Z",
-  "totalTracked": 10,
+  "lastUpdated": "2026-03-04T00:32:45.971Z",
+  "totalTracked": 20,
   "entries": [
     {
       "url": "https://www.arbeitnow.com/jobs/companies/erschaffe-dich-neu/head-of-sales-100-remote-vollzeit-berlin-279769",
@@ -41,6 +41,46 @@
     {
       "url": "https://job-boards.greenhouse.io/anaplan/jobs/8294850002",
       "ts": 1772584098209
+    },
+    {
+      "url": "https://boards.greenhouse.io/checkr/jobs/5161258",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/linkhealth/jobs/4869589007",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/fundraiseup/jobs/4575013005",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://jobs.lever.co/articulate/65318c9d-86f6-426f-986d-094243e442f1",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://jobs.lever.co/captivateiq/e764b734-2e99-421f-a042-0fef0cb0b9fc",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://jobs.lever.co/clevertap/7fdbed92-9ab3-4717-b68a-acdaaa66239f",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://jobs.lever.co/openx/5f37505b-1cde-403c-96a6-410ef2f514d9",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://jobs.lever.co/vevo/f96efb22-6571-4a6b-9b06-9c61aa2ca9e7",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://jobs.lever.co/workwave/6f48cda2-94ec-4ca9-8737-18614e7ce43a",
+      "ts": 1772584365971
+    },
+    {
+      "url": "https://jobs.lever.co/gohighlevel/8e0e35fe-3d6b-4ca5-b95b-dd6cd70e3d68",
+      "ts": 1772584365971
     }
   ]
 }

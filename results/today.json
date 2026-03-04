@@ -1,0 +1,1062 @@
+{
+  "date": "Tuesday, March 3, 2026",
+  "count": 10,
+  "jobs": [
+    {
+      "title": "VP, Partnerships",
+      "company": "Checkr",
+      "location": "Remote, United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent (exact date not provided)",
+      "url": "https://boards.greenhouse.io/checkr/jobs/5161258",
+      "source": "Greenhouse",
+      "snippet": "Manage business plans for alliances and channel, develop close partner relationships",
+      "industry": "HR Technology/Background Checks",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 75,
+      "tier": {
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
+      },
+      "breakdown": {
+        "industry": {
+          "score": 22,
+          "max": 30,
+          "note": "Core domain: hr tech"
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 10,
+          "max": 20,
+          "note": "3 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "hr tech",
+            "alliances"
+          ],
+          "matchRate": 3,
+          "totalHits": 3,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at Checkr Current openings at Checkr About Checkr Checkr builds people infrastructure for the future of work. We've designed a faster—and fairer—way to screen job seekers. Established in 2014, Checkr puts modern technology powered by machine learning in the hands of hiring teams, helping to hire great new people with an experience that’s fast, smooth, and safe. Checkr has over 100,000 customers including DoorDash, Coinbase, Lyft, Instacart, and Airtable. A career at Checkr means collaborating with brilliant minds, disrupting an industry, and opening channels of employment to often overlooked candidates. Checkr has been recognized as one of BuiltIn's 2023 Best Places to Work in the US and is a Y Combinator 2023 Breakthrough Company. Create a Job Alert Level-up your career by having opportunities at Checkr sent directly to your inbox. Create alert Search 42 jobs Customer Success Job Associate Customer Success Manager Nashville, Tennessee, United States Enterprise Customer Success Manager San Francisco, California, United States Sr. Principal Customer Success Manager Denver, Colorado, United States; San Francisco, California, United States Engineering Job Backend Software Engineer II San Francisco, California, United States Director of Platform Engineering Denver, Colorado, United States; San Francisco, California, United States Engineering Manager Santiago, Región Metropolitana, Chile Engineering Manager, Growth Denver, Colorado, United States; San Francisco, California, United States Engineering Manager, Truework San Francisco, California, United States Python Engineer, Truework tags.new San Francisco, California, United States Security Engineer Denver, Colorado, United States; San Francisco, California, United States Senior Python Engineer, Truework tags.new San Francisco, California, United States Senior Software Engineer tags.new Santiago, Región Metropolitana, Chile Senior Software Engineer tags.new San Francisco, California, United States Senior Software Engineer, Verifications Denver, Colorado, United States; San Francisco, California, United States Software Engineer II San Francisco, California, United States Sr. Software Engineer tags.new Santiago, Región Metropolitana, Chile Staff Software Engineer Santiago, Región Metropolitana, Chile Finance Job Senior FP&S Analyst San Francisco, California, United States Technical Revenue Accounting Lead San Francisco, California, United States Legal & Compliance Job Director, Legal Product & Privacy San Francisco, California, United States Marketing Job Partner Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Growth Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Product Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Operations Job Quality Assurance Specialist Nashville, Tennessee, United States Senior Manager, Enterprise & Strategic Support Denver, Colorado,",
+      "rank": {
+        "total": 81,
+        "tier": {
+          "label": "🔥 Must Apply",
+          "color": "#00e5a0",
+          "min": 80
+        },
+        "breakdown": {
+          "industry": {
+            "score": 22,
+            "max": 30,
+            "note": "Core domain: hr tech"
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 16,
+            "max": 20,
+            "note": "5 resume keywords matched",
+            "topMatches": [
+              "peo",
+              "hr tech",
+              "compliance",
+              "aca",
+              "enterprise"
+            ],
+            "matchRate": 5,
+            "totalHits": 5,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP of Customer Success",
+      "company": "Fundraise Up",
+      "location": "USA (EST and CST) - Remote",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent (exact date not provided)",
+      "url": "https://job-boards.greenhouse.io/fundraiseup/jobs/4575013005",
+      "source": "Greenhouse",
+      "snippet": "Not specified",
+      "industry": "Fundraising Technology",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 38,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 20,
+          "max": 25,
+          "note": "CS leadership match"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs in Fundraise Up | Fundraise Up Home Product Features Checkout Campaign Pages Insights dashboard Elements Donor Portal Virtual Terminal Global fundraising Integrations All features Platform Artificial Intelligence Payment methods Security Compliances Scalability Enterprise support Fraud protection REST API Migration services Featured Let donors support multiple causes in one donation and manage your designations with ease See the platform in action Request a demo Solutions Sectors Animal welfare Environment Faith-based fundraising International relief Education Use cases Conversion rate optimization Over-the-phone donations High-volume events Recurring giving Non-digital channels Telethons Resources Learn Resource center Blog Case studies Events Using Fundraise Up Docs Product updates Growth A/B tests Support Help center Partner marketplace Report Pulse of the donor 2026: the year of the paradox for nonprofits Get the report Company About Fundraise Up Careers Partner program Community space The team at Fundraise Up is a huge reason for our success. It was the product along with a partner that helped us choose the best strategy for MAP International. Janice Bryant Senior Director, Marketing and Communications Pricing Sign in Get started Careers Help unlock the world’s generosity potential At Fundraise Up, we’re looking for people with passion, grit, and integrity. We welcome diverse perspectives and people who think rigorously and aren’t afraid to challenge assumptions. Join Fundraise Up 300+ team members around the world Empathy and passion. These are the tenets of our team. Together, we provide nonprofits with the technology they deserve to drive impact on a local and global scale. Headquarters in Brooklyn, New York Our home base at Industry City is a true reflection of our company. Vibrant, creative, and collaborative, our office is always open to local, remote and international team members. 3,000+ nonprofits using Fundraise Up Everybody has an ability and willingness to give — we call it their generosity potential. Our mission is to unlock this potential by optimizing how people give. Open Roles The team is growing! You’re encouraged to apply even if your experience doesn’t precisely match the job description. Your skills and passion will stand out — and set you apart — especially if your career has taken some extraordinary twists and turns. Any department Any location We have 139 open roles across all departments in all locations. Backend Developer (Node.js) Georgia - Remote Software Developers Software Developers Backend Developer (Node.js) Serbia - Remote Software Developers Software Developers Backend Developer (Node.js) Armenia - Remote Software Developers Software Developers Backend Developer (Node.js) Poland - Remote Software Developers Software Developers Backend Developer (Node.js) Turkey - Remote Software Developers Software Developers Backend Developer (Node.js) Cyprus - Remote Software Developers Software Developers Backend De",
+      "rank": {
+        "total": 58,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 20,
+            "max": 25,
+            "note": "CS leadership match"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "6 resume keywords matched",
+            "topMatches": [
+              "peo",
+              "compliance",
+              "integration",
+              "dashboard",
+              "api",
+              "enterprise"
+            ],
+            "matchRate": 6,
+            "totalHits": 6,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Sr. Director, Channel Programs",
+      "company": "HighLevel",
+      "url": "https://jobs.lever.co/gohighlevel/8e0e35fe-3d6b-4ca5-b95b-dd6cd70e3d68",
+      "level": "Director",
+      "function": "Channel",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 28,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "channel program"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "You bring a balance of strategic vision and operational discipline, with a track record of scaling programs that drive measurable business impact. Leveraging your sales-minded, entrepreneurial spirit, you will oversee the rollout and growth of HighLevel’s channel, affiliate, or strategic account programs, ensuring they become a core engine of customer acquisition and retention. You are a strong communicator and relationship builder, with the ability to inspire teams and partners while navigating challenging situations with confidence. This includes not only tough business decisions but also people-related situations, where your leadership maturity and judgment set the tone for the team. You thrive in high-growth environments and know how to translate strategy into execution while empowering and holding your team accountable for success. What You’ll Be Doing Own Strategy & Growth – Develop and lead HighLevel’s channel, affiliate, and/or strategic account programs to drive adoption, retention, and revenue growth. Partner/ Account Acquisition & Management – Identify, recruit, and cultivate high-value partners or accounts, ensuring long-term, mutually beneficial relationships. Independent Leadership – Serve as the senior escalation point, independently handling complex partner/account challenges and people-related situations with sound judgment. Team Leadership & Development – Lead and develop a global organization of directors, managers, and specialists, ensuring alignment, scalability, and leadership readiness across the Affiliate teams. Program Design & Optimization – Develop and manage incentive structures, gamification, commission frameworks, or account growth strategies that maximize engagement and success. Cross-Functional Alignment – Collaborate with Sales, Marketing, Product, and Revenue Operations to deliver seamless partner and account initiatives and go-to-market strategies. Governance & Compliance – Oversee contract compliance, program budget tracking, and partner/account reporting, ensuring transparency and alignment with business goals. Performance & Analytics – Track KPIs, monitor program health, and provide regular reporting to senior leadership, with clear data-driven recommendations for improvement. Industry Engagement – Represent HighLevel at industry events, partner conferences, and trade shows to strengthen brand presence and recruit new partners or accounts. Continuous Improvement – Stay ahead of industry and competitor trends, proactively adapting strategies to keep HighLevel competitive. Serve as the executive representative for all strategic partner relationships, industry alliances, and high-level negotiations. Represent the organization at global events and forums to strengthen market credibility and expand the partnership ecosystem. What You’ll Bring 15 + years of progressive experience in Channel, Partnerships, or Business Development, including 7+ years leading large, global teams. Proven success in driving multi-region",
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 47,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "13 resume keywords matched",
+            "topMatches": [
+              "channel program",
+              "alliance",
+              "go-to-market",
+              "revenue operations",
+              "own",
+              "executive",
+              "alliances"
+            ],
+            "matchRate": 13,
+            "totalHits": 13,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Strategic Partnerships Director",
+      "company": "OpenX",
+      "url": "https://jobs.lever.co/openx/5f37505b-1cde-403c-96a6-410ef2f514d9",
+      "level": "Director",
+      "function": "Partnerships",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "Qualifications 8+ years in business development in programmatic advertising Deep understanding of the programmatic advertising ecosystem, including data & identity spaces Demonstrated track record of delivering against large revenue goals Highly analytical with ability to make data supported recommendations Experience negotiating complex legal agreements in partnership with OpenX legal team Proficiency with Google Sheets and Google Slides Ability to work in a fast-paced environment Strong written, verbal and presentation skills MBA preferred $136,000 - $160,000 a year Pursuant to any state, local ordinance, or local hiring regulations, we will consider for employment any qualified applicant, including those with arrest and conviction records, in a manner consistent with the applicable regulation. OpenX is committed to fair and equitable compensation practices. For all applicants, the base salary range is noted above, per year + bonus + equity + benefits. A candidate’s salary is determined by various factors including, but not limited to, relevant work experience, skills, and certifications. A summary of our benefits, which include medical, dental, vision, 401k, equity and more, can be viewed here: https://www.openx.com/company/careers/ A candidate’s salary is determined by various factors including, but not limited to, relevant work experience, skills, and certifications. OpenX VALUES Our five company values form a solid bedrock serving to define us as a group and guide the company. Our values remind us that how we do things often matters as much as what we do. WE ARE ONE We are one team. There are no exceptions. We are a group of strong and diverse individuals unified by a shared mission. We embrace challenges and win together as a team. We respect and care about our colleagues and cultivate an inclusive culture WE ARE CUSTOMER CENTRIC We innovate on behalf of our customers. We understand, respect, and listen carefully to our customers. We build great products to solve our customers’ problems. We manage our customers’ expectations clearly and honestly. We are a trusted partner to all of our customers - we act with integrity at all times. We care. OPENX IS OURS We are all owners of OpenX We all have a voice to improve OpenX We stake our personal and professional reputations on the excellence of our work We are not interested in just \"doing our jobs\"; we take ownership to drive results WE ARE AN OPEN BOOK We understand and respect what each of us does. We are eager to teach and share what we know with others, both internally and externally. We are eager to learn from others and we ask questions internally and externally. WE EVOLVE FAST We take responsible risks and own and learn from our mistakes. We recognize and repeat success. We actively seek out and provide constructive feedback. We adapt quickly and embrace change. We tackle growth and learning with real urgency. We are endlessly curious. OpenX TRAITS Our three traits capture what makes a gr",
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 38,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 11,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "arr",
+              "own",
+              "benefits",
+              "var"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Revenue Operations",
+      "company": "WorkWave",
+      "url": "https://jobs.lever.co/workwave/6f48cda2-94ec-4ca9-8737-18614e7ce43a",
+      "level": "Director",
+      "function": "Revenue Operations",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "qualifications, relevant experience, and the organization's budget. Our Talent Acquisition team will provide more information about the compensation package for this position during the interview process. WHAT YOU SHOULD KNOW ABOUT US: • We are laid back but buttoned up. We offer a casual work environment and remote work flexibility and have a passion for developing creative, innovative best in class solutions that directly contribute to the success of our customers • We care deeply and deliver service and solutions that make a real difference in the lives of our clients and their businesses • We openly accept others as they are and build strong partnerships based on trust • Teamwork and collaboration is key to help our colleagues and customers solve their challenges • Our team is energetic, fun, naturally inquisitive and eager to make an impact, we invite you to join us! LOVE WHAT YOU DO, NO MATTER WHERE YOU DO IT: • Join our Remote-First Global Work Community: WorkWave provides an innovative and dynamic remote-first Global Work Community that encourages growth, creativity, and collaboration. No matter what stage of your career or where you live, WorkWave is your place to be part of a global company with a startup feel, where your ideas matter and your growth is a priority. A GLOBAL COMPANY WITH A LOCAL PRESENCE: • We know that there are benefits of being in the office and working from home. WorkWave promotes a healthy work/life balance and provides employees with the flexibility of collaborating in the office or the option to work virtually if desired. Our teams are well versed at working collaboratively in a fully virtual environment. • Our HQ is based at our state of the art home office in the historic Bell Works complex located in Holmdel Township, New Jersey. We keep our offices available to all to use when working remotely isn’t feasible, or to help with cross training, team building and/or brainstorming. • We have employees in over 30 states, 7 countries and many regional offices - each with their own set of perks and opportunities to give back to the local community. • Whether you work remotely or take advantage of one of our offices, you’ll find a community of WorkWavers that value diversity, and care deeply about our products, clients, our communities and each other. RELAX, WE'VE GOT YOU COVERED: • Employees can expect a robust benefits package, including health and dental and 401k with company match AND BEYOND... • Find your perfect work/life balance with our Flexible Time Off policy or generous PTO plan (role dependent) and paid holidays • Up to 4 weeks paid bonding leave • Tuition reimbursement • Robust Employee Assistance Program through TotalCare offering free counseling 24/7/365, plus financial counseling, legal guidance, adoption assistance services and much more! • 24/7 access to virtual medical care with Teladoc • Quarterly awards based on peer nominations • Regional discounts and perks • Opportunities to participate in charit",
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 32,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 9,
+            "max": 20,
+            "note": "3 resume keywords matched",
+            "topMatches": [
+              "revenue operations",
+              "own",
+              "benefits"
+            ],
+            "matchRate": 3,
+            "totalHits": 3,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP of Programs and Partnerships",
+      "company": "Link Health Patient Navigators",
+      "location": "Not specified",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Recent (exact date not provided)",
+      "url": "https://job-boards.greenhouse.io/linkhealth/jobs/4869589007",
+      "source": "Greenhouse",
+      "snippet": "Developing and managing strategic alliances with measurable outcomes",
+      "industry": "Healthcare/Patient Navigation",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 33,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 7,
+          "max": 8,
+          "note": "Late stage: Growth Stage"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "Jobs at Link Health Patient Navigators Help patients access life-saving care—apply to be a Link Health Patient Navigator today. We’re looking for Patient Navigators in Houston, Boston, and remotely. Help us guide people to the care they need. Our mission is to ensure equitable access to resources for healthcare, energy assistance, nutrition support, and more, fostering healthier and more resilient communities. Our Patient Navigator Program runs in Houston, TX and Boston, MA for the following seasons: Summer 2025 - Fall 2025 Fall 2025 - Spring 2026 Spring 2026 - Summer 2026 Priority will be given to those who are willing to volunteer for two seasonal cohorts. However, applicants who are only available for one are still encouraged to apply. Create a Job Alert Level-up your career by having opportunities at Link Health Patient Navigators sent directly to your inbox. Create alert Search 2 jobs Link Health Patient Navigators Job Future Patient Navigator Program Interest Form Boston or Houston Remote Patient Navigator - 2025 Remote Powered by Greenhouse",
+      "rank": {
+        "total": 31,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "peo"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 7,
+            "max": 8,
+            "note": "Late stage: Growth Stage"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "Vice President - Channel Partnerships, East",
+      "company": "CleverTap",
+      "url": "https://jobs.lever.co/clevertap/7fdbed92-9ab3-4717-b68a-acdaaa66239f",
+      "level": "VP",
+      "function": "Channel Partnerships",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director of Agency Partnerships",
+      "company": "Vevo",
+      "url": "https://jobs.lever.co/vevo/f96efb22-6571-4a6b-9b06-9c61aa2ca9e7",
+      "level": "Director",
+      "function": "Partnerships",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Sales & Business Development",
+      "company": "Articulate",
+      "url": "https://jobs.lever.co/articulate/65318c9d-86f6-426f-986d-094243e442f1",
+      "level": "Director",
+      "function": "Business Development",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 23,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Partner Operations Director",
+      "company": "CaptivateIQ",
+      "url": "https://jobs.lever.co/captivateiq/e764b734-2e99-421f-a042-0fef0cb0b9fc",
+      "level": "Director",
+      "function": "Partnerships",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 23,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    }
+  ],
+  "topPicks": []
+}
