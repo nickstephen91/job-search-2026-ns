@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-04T03:56:58.139Z",
-  "totalTracked": 30,
+  "lastUpdated": "2026-03-04T11:59:08.604Z",
+  "totalTracked": 38,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -67,14 +67,6 @@
       "ts": 1772595911223
     },
     {
-      "url": "https://job-boards.greenhouse.io/shiphawk?error=true",
-      "ts": 1772595911223
-    },
-    {
-      "url": "https://job-boards.greenhouse.io/anaplan?error=true",
-      "ts": 1772595911223
-    },
-    {
       "url": "https://jobs.lever.co/quantummetric/6f229fc2-53ee-4fcd-b376-d13c15eed443",
       "ts": 1772595911223
     },
@@ -119,8 +111,48 @@
       "ts": 1772596618139
     },
     {
+      "url": "https://jobs.ashbyhq.com/1password/30fb2bd1-3747-4be4-bd89-6f419dab7689/application",
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/neuroscale/66d227bf-c29c-48b3-8085-3c55b32a6646",
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/elliptic/d041a934-3d47-4268-99cf-35c92056f53f",
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://careers.nebius.com/",
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/shiphawk?error=true",
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/cybersheath?error=true",
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/anaplan?error=true",
+      "ts": 1772625548604
+    },
+    {
       "url": "https://apply.workable.com/oops",
-      "ts": 1772596618139
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://www.remoterocketship.com/company/papayaglobal-2/jobs/alliance-director-hr-tech-fintech-partnerships-united-kingdom",
+      "ts": 1772625548604
+    },
+    {
+      "url": "https://www.linkedin.com/company/velocity-global-llc",
+      "ts": 1772625548604
     }
   ]
 }

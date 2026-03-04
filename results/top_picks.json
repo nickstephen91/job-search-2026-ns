@@ -1,24 +1,24 @@
 {
-  "savedAt": "2026-03-04T03:56:58.138Z",
+  "savedAt": "2026-03-04T11:59:08.604Z",
   "picks": [
     {
-      "title": "Director / Senior Director, Partnerships and Alliances (Healthcare)",
-      "company": "Innovaccer Analytics",
-      "location": "Not Listed",
-      "workType": "Onsite",
+      "title": "Strategic Partnerships Director - SI Alliances",
+      "company": "Velocity Global",
+      "location": "United States",
+      "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Not Listed",
-      "url": "https://apply.workable.com/innovaccer-analytics/?not_found=true",
-      "source": "Job Board",
-      "snippet": "Innovaccer is transforming healthcare through data-driven innovation, and we're seeking an experienced Director, Partnerships and Alliances",
+      "posted": "1 week ago",
+      "url": "https://www.linkedin.com/company/velocity-global-llc",
+      "source": "LinkedIn",
+      "snippet": "Strategic Partnerships Director focusing on System Integrator alliances and partnerships to drive business growth and revenue expansion.",
       "industry": "HR Tech",
-      "companyStage": "Not Listed",
-      "foundDate": "2026-03-04T03:56:53.421Z",
-      "total": 75,
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T11:58:55.724Z",
+      "total": 63,
       "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
       },
       "breakdown": {
         "industry": {
@@ -27,9 +27,9 @@
           "note": "🎯 Core domain: hr tech"
         },
         "title": {
-          "score": 25,
+          "score": 10,
           "max": 25,
-          "note": "Exact target title"
+          "note": "Partnerships/Channel signal"
         },
         "keywords": {
           "score": 10,
@@ -56,14 +56,238 @@
           "note": "✅ Known fit company"
         },
         "workType": {
-          "score": 2,
+          "score": 5,
           "max": 5,
-          "note": "Onsite in radius"
+          "note": "Fully remote ✅"
         }
       },
-      "fullDescription": "Innovaccer Analytics - Current Openings",
+      "fullDescription": "Velocity Global | LinkedIn Skip to main content LinkedIn Top Content People Learning Jobs Games Sign in Join now Velocity Global Software Development Denver, CO 75,516 followers Follow Discover all 426 employees Report this company About us Pebl puts a world of talent at your fingertips. With our Global Work Platform™, companies can hire, pay, and manage employees in 185+ countries—removing risk, red tape, and guesswork from global growth. Backed by more than a decade of local expertise and compliance leadership, Pebl is built to move as fast as your ambitions, whether you’re bringing on your first international teammate or scaling a workforce across continents. Our AI-powered, human-led platform integrates seamlessly with HRIS, HCM, and ATS systems and delivers instant, vetted answers in 50+ languages—so you stay compliant and confident wherever you grow. We’ve helped thousands of businesses—from Fortune 500s to rapid-growth start-ups—scale strategically around the world. Consistently named a leader in global Employer of Record (EOR) services, Pebl holds more employment licenses than any other EOR and is rated #1 for compliance on G2. With Pebl, companies everywhere can hire great talent anywhere. Website http://hellopebl.com/ External link for Velocity Global Industry Software Development Company size 501-1,000 employees Headquarters Denver, CO Type Privately Held Specialties Employer of Record (EoR), International PEO), Global Immigration, Agent of Record (AoR), Independent Contractor Compliance, International Employment, Global Payroll, International HR, International Business, Foreign Business, Human Resources, HR, Global Strategy, Global Work Platform, Global PEO, Work Anywhere, and Remote Work Locations Primary 3827 Lafayette Street Suite 107 Denver, CO 80205, US Get directions Amsterdam, NL Get directions Bogota, CO Get directions Singapore, SG Get directions Dubai, AE Get directions London, GB Get directions Paris, FR Get directions Toronto, CA Get directions Madrid, ES Get directions Mexico City, MX Get directions Sydney, AU Get directions Hong Kong, HK Get directions Munich, DE Get directions Bangalore, IN Get directions Wellington, NZ Get directions Seoul, KR Get directions Milan, IT Get directions Show more locations Show fewer locations Employees at Velocity Global Greg Corniea Joshua Pollack Alexei Miaskovski Glenn Moyer See all employees Updates Velocity Global 75,516 followers 5mo Report this post We’re turning the page (literally). Velocity Global is now Pebl . New name, new look, new page → Follow Pebl for what’s next. https://lnkd.in/ge5GgB8E Pebl | LinkedIn linkedin.com 80 Like Comment Share Velocity Global 75,516 followers 5mo Report this post The future of global hiring has a new name: Pebl . Velocity Global is now Pebl—an AI-first global hiring platform built on a decade of compliance leadership and local expertise. For more than a decade, we’ve helped companies hire, pay, and manage teams in 185 countries. Now we’re makin",
       "rank": {
-        "total": 75,
+        "total": 73,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 24,
+            "max": 30,
+            "note": "🎯 Core domain: hr tech"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "10 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "peo",
+              "hr tech",
+              "hcm",
+              "alliances",
+              "api",
+              "payroll",
+              "hris"
+            ],
+            "matchRate": 10,
+            "totalHits": 10,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Alliance Director - HR Tech & Fintech Partnerships",
+      "company": "Papaya Global",
+      "location": "United Kingdom",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://www.remoterocketship.com/company/papayaglobal-2/jobs/alliance-director-hr-tech-fintech-partnerships-united-kingdom",
+      "source": "Job Board",
+      "snippet": "We are seeking a results-driven Alliance Director to lead and expand regional and global partnerships in the HR tech and fintech space. This role focuses on driving revenue through co-selling initiatives.",
+      "industry": "HR Tech",
+      "companyStage": "Unicorn",
+      "foundDate": "2026-03-04T11:58:55.724Z",
+      "total": 65,
+      "tier": {
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
+      },
+      "breakdown": {
+        "industry": {
+          "score": 24,
+          "max": 30,
+          "note": "🎯 Core domain: hr tech"
+        },
+        "title": {
+          "score": 10,
+          "max": 25,
+          "note": "Partnerships/Channel signal"
+        },
+        "keywords": {
+          "score": 12,
+          "max": 20,
+          "note": "3 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "hr tech",
+            "co-sell"
+          ],
+          "matchRate": 3,
+          "totalHits": 3,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 65,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 24,
+            "max": 30,
+            "note": "🎯 Core domain: hr tech"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 12,
+            "max": 20,
+            "note": "3 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "hr tech",
+              "co-sell"
+            ],
+            "matchRate": 3,
+            "totalHits": 3,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Head of Partnerships",
+      "company": "Deel",
+      "location": "United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
+      "source": "LinkedIn",
+      "snippet": "The Head of Partnerships will be on a mission to leverage their past record of success launching and growing partner programs to build and sustain Deel's partner marketplace and sales partnerships.",
+      "industry": "HR Tech",
+      "companyStage": "Unicorn",
+      "foundDate": "2026-03-04T11:58:55.724Z",
+      "total": 72,
+      "tier": {
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
+      },
+      "breakdown": {
+        "industry": {
+          "score": 24,
+          "max": 30,
+          "note": "🎯 Core domain: hr tech"
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "hr tech"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "1,000+ Head Of Sponsorship jobs in United States Skip to main content LinkedIn Head Of Sponsorship in United States Expand search This button displays the currently selected search type. When expanded it provides a list of search options that will switch the search inputs to match the current selection. Jobs People Learning Clear text Clear text Clear text Clear text Clear text Sign in Join now Any time Any time (1,110) Past month (910) Past week (354) Past 24 hours (53) Done Company Clear text Creative Circle (5) 160over90 (3) SKIMS (2) Huge (2) Atmosphere TV (2) Done Job type Full-time (1,011) Part-time (28) Contract (25) Temporary (13) Volunteer (2) Done Experience level Internship (3) Entry level (54) Associate (23) Mid-Senior level (325) Director (529) Done Location Clear text New York, NY (144) Los Angeles, CA (28) Washington, DC (21) Seattle, WA (11) Philadelphia, PA (8) Done Salary $40,000+ (80) $60,000+ (79) $80,000+ (72) $100,000+ (65) $120,000+ (51) Done Remote On-site (634) Remote (250) Hybrid (231) Done Get notified about new Head Of Sponsorship jobs in United States . Sign in to create job alert 1,000+ Head Of Sponsorship Jobs in United States Director of Brand Partnerships Director of Brand Partnerships Jubilee Media Los Angeles, CA Be an early applicant 10 hours ago Director, Multi Brand Hybrid Partnerships (East or West Coast) Director, Multi Brand Hybrid Partnerships (East or West Coast) SKIMS Los Angeles, CA 1 week ago Senior Director, Retail Channel Partnerships Senior Director, Retail Channel Partnerships Wix New York, United States Be an early applicant 1 day ago Director, Global IKEA Partnerships Director, Global IKEA Partnerships Taskrabbit New York City Metropolitan Area 2 weeks ago Senior Director, Client Partnership Senior Director, Client Partnership Huge United States 2 weeks ago Director of Partnership Success Director of Partnership Success Teachstone United States Be an early applicant 1 week ago Director, Olympic Partnerships Director, Olympic Partnerships 160over90 New York, NY 2 weeks ago Senior Director Growth & Brand Partnerships Senior Director Growth & Brand Partnerships Creative Circle New York, NY 5 days ago Director of National Brand Partnerships Director of National Brand Partnerships Atmosphere TV New York, NY Be an early applicant 13 hours ago Director, Digital Commerce & Partnerships Director, Digital Commerce & Partnerships KREWE New York, NY 2 months ago Director, Media Partnerships Director, Media Partnerships EDO New York, NY Medical insurance +6 benefits 1 week ago Director, Multi Brand Hybrid Partnerships (East or West Coast) Director, Multi Brand Hybrid Partnerships (East or West Coast) SKIMS New York, NY 1 week ago Director of Product Engineering Director of Product Engineering Amicus Seattle, WA 1 week ago Director, Robotics Partnerships – Meta Robotics Studio Director, Robotics Partnerships – Meta Robotics Studio Meta Menlo Park, CA 14 hours ago Senior Vice President, Head of ReedPop Senior ",
+      "rank": {
+        "total": 78,
         "tier": {
           "label": "⭐ Strong Match",
           "color": "#6c63ff",
@@ -85,9 +309,9 @@
             "max": 20,
             "note": "3 resume keywords matched",
             "topMatches": [
-              "alliance",
+              "peo",
               "hr tech",
-              "alliances"
+              "benefits"
             ],
             "matchRate": 3,
             "totalHits": 3,
@@ -105,117 +329,9 @@
             "note": "✅ Known fit company"
           },
           "workType": {
-            "score": 2,
+            "score": 5,
             "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP, Partnerships",
-      "company": "Sinch",
-      "location": "Not Listed",
-      "workType": "Onsite",
-      "salary": "Not Listed",
-      "posted": "Not Listed",
-      "url": "https://apply.workable.com/sinch/?not_found=true",
-      "source": "Job Board",
-      "snippet": "We are seeking an accomplished and visionary executive to take on the role of VP, Partnerships.",
-      "industry": "HR Tech",
-      "companyStage": "Not Listed",
-      "foundDate": "2026-03-04T03:56:53.421Z",
-      "total": 68,
-      "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
-      },
-      "breakdown": {
-        "industry": {
-          "score": 24,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech"
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 7,
-          "max": 20,
-          "note": "2 resume keywords matched",
-          "topMatches": [
-            "hr tech",
-            "executive"
-          ],
-          "matchRate": 2,
-          "totalHits": 2,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "fullDescription": "Sinch - Current Openings",
-      "rank": {
-        "total": 65,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 24,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "hr tech"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
+            "note": "Fully remote ✅"
           }
         }
       }
