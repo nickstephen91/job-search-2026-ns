@@ -28,10 +28,9 @@ const C = {
 };
 
 function tierInfo(s) {
-  if (s >= 80) return { label:'MUST APPLY',      c:C.greenText, bg:'rgba(74,122,94,0.1)',  bd:'rgba(74,122,94,0.22)' };
-  if (s >= 65) return { label:'STRONG MATCH',    c:C.blueText,  bg:'rgba(58,74,122,0.1)', bd:'rgba(58,74,122,0.22)' };
-  if (s >= 50) return { label:'WORTH REVIEWING', c:C.amberText, bg:'rgba(96,72,40,0.1)',  bd:'rgba(96,72,40,0.22)' };
-  return              { label:'LOW MATCH',       c:C.muted,     bg:'rgba(255,255,255,0.02)', bd:C.border };
+  if (s >= 80) return { label:'MUST APPLY',      c:'#5dba7d', bg:'rgba(93,186,125,0.12)',  bd:'rgba(93,186,125,0.35)', ring:'#5dba7d' };
+  if (s >= 25) return { label: s>=65?'STRONG MATCH':'WORTH REVIEWING', c:'#c8a44a', bg:'rgba(200,164,74,0.1)', bd:'rgba(200,164,74,0.3)', ring:'#c8a44a' };
+  return              { label:'LOW MATCH',       c:C.muted,     bg:'rgba(255,255,255,0.02)', bd:C.border, ring:C.dim };
 }
 
 function resolveSource(job) {
@@ -127,21 +126,56 @@ function jobCard(job) {
 function topPicksCard(picks) {
   if (!picks||!picks.length) return '';
   const rows=picks.map(job=>{
-    const sal=job.salary&&job.salary!=='Not Listed'?`<span style="color:${C.greenText};"> · ${job.salary}</span>`:'';
+    const s = job.rank?.total || 0;
+    const kw = job.rank?.breakdown?.keywords || {};
+    const mr = kw.matchRate || 0;
+    const tier = tierInfo(s);
+    const sal = job.salary&&job.salary!=='Not Listed'
+      ? `<span style="color:${C.greenText};font-weight:600;">💰 ${job.salary}</span>` : '';
+    const wtIcon = job.workType==='Remote'?'🌎':job.workType==='Hybrid'?'🏢':'📍';
+    const mrBar = `<div style="background:${C.border};border-radius:2px;height:3px;overflow:hidden;margin:4px 0 3px;">
+      <div style="background:${mr>=60?C.greenMid:mr>=35?C.blueMid:C.muted};width:${Math.max(mr,2)}%;height:3px;"></div>
+    </div>`;
+    const kwTags = (kw.topMatches||[]).slice(0,4).map(k=>
+      `<span style="display:inline-block;background:rgba(255,255,255,0.04);color:${C.muted};border:1px solid rgba(255,255,255,0.07);padding:1px 6px;border-radius:3px;font-size:9px;font-weight:600;margin:2px 2px 0 0;">${k}</span>`
+    ).join('');
     return `<tr>
-      <td style="padding:11px 16px;border-bottom:1px solid ${C.border};vertical-align:middle;">
-        <div style="font-size:13px;font-weight:600;color:${C.heading};margin-bottom:2px;">${job.title}</div>
-        <div style="font-size:11px;color:${C.body};">${job.company} · ${job.location}${sal}</div>
-      </td>
-      <td style="padding:11px 16px;border-bottom:1px solid ${C.border};vertical-align:middle;text-align:right;width:72px;">
-        <a href="${job.url}" style="display:inline-block;background:${C.elevated};color:${C.body};border:1px solid ${C.border2};padding:5px 11px;border-radius:5px;text-decoration:none;font-size:10px;font-weight:600;letter-spacing:0.3px;">View →</a>
+      <td style="padding:12px 16px;border-bottom:1px solid ${C.border};vertical-align:middle;">
+        <div style="display:table;width:100%;">
+          <div style="display:table-cell;vertical-align:middle;">
+            <!-- tier badge -->
+            <div style="font-size:8px;font-weight:700;color:${tier.c};letter-spacing:1.5px;text-transform:uppercase;margin-bottom:3px;">${tier.label}</div>
+            <!-- title -->
+            <div style="font-size:13px;font-weight:700;color:${C.heading};margin-bottom:2px;line-height:1.3;">${job.title}</div>
+            <!-- company + location -->
+            <div style="font-size:11px;color:${C.body};margin-bottom:6px;">
+              ${job.company} <span style="color:${C.dim}">·</span> ${wtIcon} ${job.location||'Remote'}
+              ${sal ? ` <span style="color:${C.dim}">·</span> ${sal}` : ''}
+            </div>
+            <!-- keyword match bar -->
+            <div style="font-size:9px;color:${C.muted};margin-bottom:2px;">🔑 Resume match</div>
+            ${mrBar}
+            <div style="font-size:9px;color:${C.muted};margin-bottom:4px;">${mr}% · ${kw.totalHits||0}/${kw.totalKeywords||0} keywords</div>
+            ${kwTags ? `<div>${kwTags}</div>` : ''}
+          </div>
+          <!-- score ring -->
+          <div style="display:table-cell;vertical-align:middle;text-align:right;padding-left:12px;width:68px;">
+            <div style="width:48px;height:48px;border-radius:50%;border:2px solid ${tier.ring};background:${tier.bg};display:inline-flex;align-items:center;justify-content:center;flex-direction:column;margin-bottom:8px;">
+              <div style="font-size:15px;font-weight:900;color:${tier.ring};font-family:'Courier New',monospace;line-height:1;">${s}</div>
+              <div style="font-size:8px;color:${C.dim};">/100</div>
+            </div>
+            <div>
+              <a href="${job.url}" style="display:block;background:${C.elevated};color:${C.body};border:1px solid ${C.border2};padding:5px 10px;border-radius:5px;text-decoration:none;font-size:10px;font-weight:600;letter-spacing:0.3px;text-align:center;white-space:nowrap;">View →</a>
+            </div>
+          </div>
+        </div>
       </td>
     </tr>`;
   }).join('');
   return `
 <div style="background:${C.surface};border:1px solid ${C.border};border-radius:10px;margin-bottom:10px;overflow:hidden;font-family:'Inter',Arial,sans-serif;">
   <div style="padding:12px 16px;border-bottom:1px solid ${C.border};">
-    <div style="font-size:8px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:2px;margin-bottom:3px;">Revisit · Last Digest</div>
+    <div style="font-size:8px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:2px;margin-bottom:3px;">↩ Revisit · Last Digest</div>
     <div style="font-size:13px;font-weight:700;color:${C.heading};">Previous Top Picks</div>
   </div>
   <table width="100%" cellpadding="0" cellspacing="0">${rows}</table>
