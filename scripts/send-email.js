@@ -156,7 +156,8 @@ function statCell(val, label, color) {
 }
 
 function buildHTML(data) {
-  const {date,count,jobs=[],topPicks=[],error}=data;
+  const {date,count,jobs=[],topPicks=[],currentTopPicks=[],error}=data;
+  const topPickCount = currentTopPicks.length || jobs.filter(j=>(j.rank?.total||0)>=65).length;
   const remote=jobs.filter(j=>j.workType==='Remote').length;
   const hybrid=jobs.filter(j=>j.workType!=='Remote').length;
   const mustApply=jobs.filter(j=>(j.rank?.total||0)>=80).length;
