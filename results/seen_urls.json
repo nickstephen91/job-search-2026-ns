@@ -1,25 +1,13 @@
 {
-  "lastUpdated": "2026-03-04T01:41:25.045Z",
-  "totalTracked": 12,
+  "lastUpdated": "2026-03-04T01:46:26.673Z",
+  "totalTracked": 21,
   "entries": [
     {
       "url": "https://www.arbeitnow.com/jobs/companies/erschaffe-dich-neu/head-of-sales-100-remote-vollzeit-berlin-279769",
       "ts": 1772588485044
     },
     {
-      "url": "https://job-boards.greenhouse.io/connectwise?error=true",
-      "ts": 1772588485045
-    },
-    {
-      "url": "https://job-boards.greenhouse.io/pagerduty?error=true",
-      "ts": 1772588485045
-    },
-    {
       "url": "https://job-boards.greenhouse.io/algolia/jobs/5735111004",
-      "ts": 1772588485045
-    },
-    {
-      "url": "https://job-boards.greenhouse.io/gitlab?error=true",
       "ts": 1772588485045
     },
     {
@@ -49,6 +37,54 @@
     {
       "url": "https://jobs.lever.co/gohighlevel/8e0e35fe-3d6b-4ca5-b95b-dd6cd70e3d68",
       "ts": 1772588485045
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/connectwise?error=true",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/pagerduty?error=true",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/gitlab?error=true",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/captivateiq/e764b734-2e99-421f-a042-0fef0cb0b9fc?lever-source%5B%5D=jobs.sequoiacap.com",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/sambatv/7f31edbd-bfdd-4b4d-9c20-cdf907b7f696",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/sonarsource/b0aa738e-5817-4dd7-ab6b-d5062cf0e22c",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/wpromote/9c67b1fc-0a3c-417e-bb26-6d3d4ecfd611",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/terminus/da79890e-34d9-4603-8b22-bbf4dc3c69e7",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/curri/e0be7fa4-431a-43d2-8590-4c5fbfdda461",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/brevo/839a76d3-02bd-4941-b6f3-27392cb2d1c3",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/influ2/da1ab1cf-24ca-47d2-8ef7-0c8b792f88db",
+      "ts": 1772588786673
+    },
+    {
+      "url": "https://jobs.lever.co/hevodata/c0184460-5f3a-46ef-a873-d6a3c77d1620",
+      "ts": 1772588786673
     }
   ]
 }
