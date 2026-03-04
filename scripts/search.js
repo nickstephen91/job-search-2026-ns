@@ -517,29 +517,88 @@ function scoreTitle(job) {
   let score = 0;
   let match = '';
 
-  // Perfect title matches
-  if (['director of partnerships', 'vp of partnerships', 'vp, partnerships',
-       'director of alliances', 'vp of alliances', 'head of partnerships',
-       'senior director of partnerships', 'svp partnerships'].some(t => title.includes(t))) {
+  // ── Tier 1: Exact target titles (25pts) ─────────────────────────────────
+  const exact = [
+    'director of partnerships', 'vp of partnerships', 'vp, partnerships',
+    'vice president of partnerships', 'vice president, partnerships',
+    'director of alliances', 'vp of alliances', 'vice president of alliances',
+    'head of partnerships', 'head of alliances', 'head of channel',
+    'senior director of partnerships', 'senior director, partnerships',
+    'svp partnerships', 'svp of partnerships',
+    'director, partnerships', 'director, alliances',
+    'vp partnerships', 'vp alliances',
+  ];
+  if (exact.some(t => title.includes(t))) {
     score = 25; match = 'Exact target title';
-  } else if (['director of channel', 'vp of channel', 'director of ecosystem',
-              'director of reseller', 'vp of business development',
-              'director of business development'].some(t => title.includes(t))) {
-    score = 22; match = 'Strong title match';
-  } else if (['director of customer success', 'vp of customer success',
-              'director of client success', 'vp customer success'].some(t => title.includes(t))) {
+
+  // ── Tier 2: Strong function match (22pts) ────────────────────────────────
+  } else if ([
+    'director of channel', 'vp of channel', 'vp, channel',
+    'director of ecosystem', 'vp of ecosystem',
+    'director of reseller', 'vp of reseller',
+    'director of business development', 'vp of business development', 'vp business development',
+    'director, business development', 'vp, business development',
+    'director of strategic alliances', 'vp of strategic alliances',
+    'director of partner', 'vp of partner',
+    'director, partner', 'head of partner',
+    'director of indirect', 'vp of indirect',
+  ].some(t => title.includes(t))) {
+    score = 22; match = 'Strong function match';
+
+  // ── Tier 3: Customer success leadership (20pts) ──────────────────────────
+  } else if ([
+    'director of customer success', 'vp of customer success',
+    'director of client success', 'vp customer success',
+    'vp, customer success', 'vice president customer success',
+    'director, customer success', 'head of customer success',
+    'senior director customer success',
+  ].some(t => title.includes(t))) {
     score = 20; match = 'CS leadership match';
-  } else if (['director of revenue operations', 'director of sales operations',
-              'vp revenue operations', 'vp of revops'].some(t => title.includes(t))) {
+
+  // ── Tier 4: RevOps / Sales ops (18pts) ───────────────────────────────────
+  } else if ([
+    'director of revenue operations', 'director of sales operations',
+    'vp revenue operations', 'vp of revops', 'vp of revenue operations',
+    'director, revenue operations', 'head of revenue operations',
+    'vp sales operations', 'director of revops',
+  ].some(t => title.includes(t))) {
     score = 18; match = 'RevOps/SalesOps match';
-  } else if (['director of account management', 'director of strategic accounts',
-              'director of sales enablement', 'director of partner success',
-              'vp of account management'].some(t => title.includes(t))) {
+
+  // ── Tier 5: Account mgmt / enablement (15pts) ────────────────────────────
+  } else if ([
+    'director of account management', 'director of strategic accounts',
+    'director of sales enablement', 'director of partner success',
+    'vp of account management', 'director of global accounts',
+    'director of key accounts', 'head of account management',
+    'vp of enablement', 'director of enablement',
+  ].some(t => title.includes(t))) {
     score = 15; match = 'Account/Enablement match';
-  } else if (title.includes('partnership') || title.includes('alliance') || title.includes('channel')) {
-    score = 12; match = 'Partnerships/Alliances signal';
-  } else if (title.includes('director') || title.includes('vp') || title.includes('vice president')) {
-    score = 8; match = 'Senior level signal';
+
+  // ── Tier 6: Keyword present but not exact (10pts) ────────────────────────
+  } else if (title.includes('partnership') || title.includes('alliance') ||
+             title.includes('channel') || title.includes('reseller') ||
+             title.includes('ecosystem') || title.includes('indirect')) {
+    score = 10; match = 'Partnerships/Channel signal';
+
+  // ── Tier 7: Seniority only, weak function (5pts) ─────────────────────────
+  } else if (title.includes('director') || title.includes(' vp') ||
+             title.includes('vice president') || title.includes('head of')) {
+    score = 5; match = 'Senior level — weak function match';
+  }
+
+  // ── Bonus: APAC/Americas/Global scope titles (+2) ─────────────────────────
+  if (score > 0 && (title.includes('global') || title.includes('americas') ||
+      title.includes('north america') || title.includes('worldwide'))) {
+    score = Math.min(score + 2, WEIGHTS.titleMatch);
+    match += ' · Global scope';
+  }
+
+  // ── Penalty: regional/territory-limited roles (-3) ────────────────────────
+  if (score > 0 && (title.includes('apac') || title.includes('emea') ||
+      title.includes('latam') || title.includes('asia pacific') ||
+      title.includes('europe') || title.includes('uk ') || title.includes('australia'))) {
+    score = Math.max(score - 3, 0);
+    match += ' · Non-US region penalty';
   }
 
   return { score: Math.min(score, WEIGHTS.titleMatch), match };
@@ -587,42 +646,71 @@ function scoreResumeKeywords(job) {
 }
 
 function scoreCompensation(job) {
-  const salary = job.salary || '';
-  if (!salary || salary === 'Not Listed') {
-    // Neutral — don't penalize unlisted salary (Nick's preference)
+  const salary = (job.salary || '').toLowerCase();
+  const snippet = (job.snippet || '').toLowerCase();
+  const combined = salary + ' ' + snippet;
+
+  if (!salary || salary === 'not listed') {
+    // Check snippet for salary signals
+    const hasEquity = combined.includes('equity') || combined.includes('stock') || combined.includes('rsu');
+    const hasOTE    = combined.includes('ote') || combined.includes('on-target');
+    if (hasEquity || hasOTE) return { score: 7, note: 'Salary unlisted · equity/OTE signals found' };
     return { score: 6, note: 'Salary not listed' };
   }
 
   const nums = salary.replace(/[^0-9]/g, ' ').trim().split(/\s+/)
     .map(Number).filter(n => n > 10000 && n < 2000000);
 
-  if (nums.length === 0) return { score: 6, note: 'Salary unclear' };
+  if (nums.length === 0) return { score: 6, note: 'Salary format unclear' };
 
+  // Use max value — OTE/total comp is what matters
   const max = Math.max(...nums);
-  if (max >= 200000)      return { score: 12, note: `Top comp: ${salary}` };
-  if (max >= 160000)      return { score: 10, note: `Strong comp: ${salary}` };
-  if (max >= 130000)      return { score: 8,  note: `Target comp: ${salary}` };
-  if (max >= 100000)      return { score: 5,  note: `Acceptable comp: ${salary}` };
+  let note = salary;
+
+  // Bonus signals in snippet
+  const hasEquity = combined.includes('equity') || combined.includes('stock') || combined.includes('rsu');
+  const bonus = hasEquity ? 1 : 0;
+
+  if (max >= 250000) return { score: Math.min(12 + bonus, 12), note: `💰 Executive comp: ${salary}` };
+  if (max >= 200000) return { score: Math.min(12 + bonus, 12), note: `💰 Top comp: ${salary}` };
+  if (max >= 160000) return { score: Math.min(10 + bonus, 12), note: `Strong comp: ${salary}` };
+  if (max >= 130000) return { score: Math.min(8  + bonus, 12), note: `Target range: ${salary}` };
+  if (max >= 100000) return { score: Math.min(5  + bonus, 12), note: `Acceptable: ${salary}` };
   return { score: 2, note: `Below target: ${salary}` };
 }
 
 function scoreCompanyStage(job) {
   const stage = (job.companyStage || '').toLowerCase();
-  const text = `${job.snippet || ''} ${job.company || ''}`.toLowerCase();
+  const text = `${job.snippet || ''} ${job.company || ''} ${job.title || ''}`.toLowerCase();
 
-  // Nick prefers Series B/C and growth-stage; also likes Public/Enterprise
+  // Known high-fit companies from Nick's background — boost these
+  const knownFitCompanies = [
+    'experian', 'equifax', 'adp', 'paychex', 'ceridian', 'workday',
+    'checkr', 'sterling', 'first advantage', 'hireright', 'accurate',
+    'indeed', 'ziprecruiter', 'bamboohr', 'rippling', 'gusto', 'deel',
+    'papaya', 'velocity global', 'oyster', 'remote.com', 'multiplier',
+    'horizons', 'safeguard global', 'globalization partners',
+    'trinet', 'justworks', 'oasis', 'insperity', 'paycor', 'paylocity',
+    'ukg', 'kronos', 'ultimate software', 'isolved', 'paycom',
+    'workato', 'lattice', 'leapsome', 'culture amp', '15five',
+    'crossbeam', 'partnerstack', 'alliances', 'impartner', 'zift',
+  ];
+  const isKnownFit = knownFitCompanies.some(c => text.includes(c));
+  if (isKnownFit) return { score: 8, note: `✅ Known fit company` };
+
+  // Stage signals
   if (['series b', 'series c'].some(s => stage.includes(s) || text.includes(s)))
-    return { score: 8, note: `Ideal stage: ${job.companyStage || 'Series B/C'}` };
-  if (['series d', 'pre-ipo', 'late stage', 'growth'].some(s => stage.includes(s) || text.includes(s)))
-    return { score: 7, note: `Late stage: ${job.companyStage || 'Series D+'}` };
-  if (['public', 'enterprise', 'nasdaq', 'nyse'].some(s => stage.includes(s) || text.includes(s)))
+    return { score: 8, note: `Growth stage: Series B/C` };
+  if (['series d', 'pre-ipo', 'late stage'].some(s => stage.includes(s) || text.includes(s)))
+    return { score: 7, note: `Late stage: Series D+` };
+  if (['public company', 'publicly traded', 'nasdaq', 'nyse', 'fortune 500', 'fortune500'].some(s => text.includes(s)))
     return { score: 6, note: 'Public/Enterprise' };
   if (['series a'].some(s => stage.includes(s) || text.includes(s)))
-    return { score: 4, note: 'Series A — earlier stage' };
-  if (['seed', 'startup'].some(s => stage.includes(s) || text.includes(s)))
-    return { score: 2, note: 'Early stage seed/startup' };
+    return { score: 4, note: 'Series A' };
+  if (['seed', 'pre-seed'].some(s => stage.includes(s) || text.includes(s)))
+    return { score: 2, note: 'Seed stage — early' };
 
-  return { score: 4, note: 'Stage unknown' }; // neutral for unknown
+  return { score: 4, note: 'Stage unknown' };
 }
 
 function scoreWorkType(job) {
