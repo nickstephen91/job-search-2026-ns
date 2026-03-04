@@ -43,6 +43,7 @@ jobs:
       # STEP 4: Commit all updated result files back to the repo
       - name: Commit updated results
         run: |
+          git pull --rebase origin main 
           git config --local user.email "action@github.com"
           git config --local user.name "Nick's Job Search Agent"
           git add -A
