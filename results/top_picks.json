@@ -1,30 +1,30 @@
 {
-  "savedAt": "2026-03-04T02:17:38.435Z",
+  "savedAt": "2026-03-04T02:32:22.155Z",
   "picks": [
     {
-      "title": "Alliance Director - HR Tech & Fintech Partnerships",
-      "company": "Papaya Global",
-      "location": "United Kingdom",
+      "title": "Director of Strategic Partnerships & Alliances",
+      "company": "Neuroscale AI",
+      "location": "Remote",
       "workType": "Remote",
       "salary": "Not Listed",
       "posted": "Not Listed",
-      "url": "https://www.remoterocketship.com/company/papayaglobal-2/jobs/alliance-director-hr-tech-fintech-partnerships-united-kingdom",
-      "source": "Job Board",
-      "snippet": "We are seeking a results-driven Alliance Director to lead and expand regional and global partnerships in the HR tech and fintech space. This role focuses on driving revenue through co-selling initiatives with ISVs, fintech, GSIs, MSPs, and service partners in payroll, payments, and contingent workforce solutions.",
-      "industry": "HR Tech",
-      "companyStage": "Unicorn",
-      "foundDate": "2026-03-04T02:16:49.394Z",
-      "total": 67,
+      "url": "https://jobs.ashbyhq.com/neuroscale/66d227bf-c29c-48b3-8085-3c55b32a6646",
+      "source": "Ashby",
+      "snippet": "Build and own a partner-led revenue engine from the ground up for AI recruiting operating system platform.",
+      "industry": "AI/Recruiting Technology",
+      "companyStage": "Early Growth",
+      "foundDate": "2026-03-04T02:32:17.499Z",
+      "total": 53,
       "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
       },
       "breakdown": {
         "industry": {
-          "score": 24,
+          "score": 13,
           "max": 30,
-          "note": "🎯 Core domain: hr tech"
+          "note": "Adjacent: recruiting tech"
         },
         "title": {
           "score": 10,
@@ -32,14 +32,14 @@
           "note": "Partnerships/Channel signal"
         },
         "keywords": {
-          "score": 14,
+          "score": 11,
           "max": 20,
           "note": "4 resume keywords matched",
           "topMatches": [
             "alliance",
-            "hr tech",
-            "co-sell",
-            "payroll"
+            "own",
+            "alliances",
+            "recruiting"
           ],
           "matchRate": 4,
           "totalHits": 4,
@@ -62,18 +62,19 @@
           "note": "Fully remote ✅"
         }
       },
+      "fullDescription": "Director of Strategic Partnerships & Alliances @ Neuroscale AI You need to enable JavaScript to run this app.",
       "rank": {
-        "total": 67,
+        "total": 50,
         "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
         },
         "breakdown": {
           "industry": {
-            "score": 24,
+            "score": 13,
             "max": 30,
-            "note": "🎯 Core domain: hr tech"
+            "note": "Adjacent: recruiting tech"
           },
           "title": {
             "score": 10,
@@ -81,123 +82,13 @@
             "note": "Partnerships/Channel signal"
           },
           "keywords": {
-            "score": 14,
-            "max": 20,
-            "note": "4 resume keywords matched",
-            "topMatches": [
-              "alliance",
-              "hr tech",
-              "co-sell",
-              "payroll"
-            ],
-            "matchRate": 4,
-            "totalHits": 4,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
             "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Head of Partnerships",
-      "company": "Deel",
-      "location": "United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not Listed",
-      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
-      "source": "LinkedIn",
-      "snippet": "The Head of Partnerships will be on a mission to leverage their past record of success launching and growing partner programs to build and sustain Deel's partner marketplace and sales partnerships as one of the very best.",
-      "industry": "HR Tech",
-      "companyStage": "Unicorn",
-      "foundDate": "2026-03-04T02:16:49.394Z",
-      "total": 72,
-      "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
-      },
-      "breakdown": {
-        "industry": {
-          "score": 24,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech"
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "hr tech"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "1,000+ Head Of Sponsorship jobs in United States Skip to main content LinkedIn Head Of Sponsorship in United States Expand search This button displays the currently selected search type. When expanded it provides a list of search options that will switch the search inputs to match the current selection. Jobs People Learning Clear text Clear text Clear text Clear text Clear text Sign in Join now Any time Any time (1,121) Past month (919) Past week (363) Past 24 hours (62) Done Company Clear text Creative Circle (5) 160over90 (3) SKIMS (2) Huge (2) Atmosphere TV (2) Done Job type Full-time (1,012) Part-time (30) Contract (25) Temporary (12) Volunteer (2) Done Experience level Internship (3) Entry level (57) Associate (24) Mid-Senior level (324) Director (535) Done Location Clear text New York, NY (143) Los Angeles, CA (30) Washington, DC (21) Boston, MA (20) Seattle, WA (11) Done Salary $40,000+ (81) $60,000+ (80) $80,000+ (73) $100,000+ (66) $120,000+ (52) Done Remote On-site (638) Remote (252) Hybrid (231) Done Get notified about new Head Of Sponsorship jobs in United States . Sign in to create job alert 1,000+ Head Of Sponsorship Jobs in United States Director, Multi Brand Hybrid Partnerships (East or West Coast) Director, Multi Brand Hybrid Partnerships (East or West Coast) SKIMS Los Angeles, CA 1 week ago Senior Director, Retail Channel Partnerships Senior Director, Retail Channel Partnerships Wix New York, United States Be an early applicant 21 hours ago Director, Global IKEA Partnerships Director, Global IKEA Partnerships Taskrabbit New York City Metropolitan Area 2 weeks ago Director of Brand Partnerships Director of Brand Partnerships Jubilee Media Los Angeles, CA Be an early applicant 50 minutes ago Senior Director, Client Partnership Senior Director, Client Partnership Huge United States 2 weeks ago Director, Olympic Partnerships Director, Olympic Partnerships 160over90 New York, NY 1 week ago Senior Director Growth & Brand Partnerships Senior Director Growth & Brand Partnerships Creative Circle New York, NY 5 days ago Director of Partnership Success Director of Partnership Success Teachstone United States Be an early applicant 1 week ago Director, Digital Commerce & Partnerships Director, Digital Commerce & Partnerships KREWE New York, NY 2 months ago Director of National Brand Partnerships Director of National Brand Partnerships Atmosphere TV New York, NY Be an early applicant 4 hours ago Director, Media Partnerships Director, Media Partnerships EDO New York, NY Medical insurance +6 benefits 1 week ago Director, Multi Brand Hybrid Partnerships (East or West Coast) Director, Multi Brand Hybrid Partnerships (East or West Coast) SKIMS New York, NY 1 week ago Director of Product Engineering Director of Product Engineering Amicus Seattle, WA 6 days ago Director, Robotics Partnerships – Meta Robotics Studio Director, Robotics Partnerships – Meta Robotics Studio Meta Menlo Park, CA 4 hours ago Director of HR Tech Partnerships Director of HR T",
-      "rank": {
-        "total": 78,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 24,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 10,
             "max": 20,
             "note": "3 resume keywords matched",
             "topMatches": [
-              "peo",
-              "hr tech",
-              "benefits"
+              "alliance",
+              "alliances",
+              "recruiting"
             ],
             "matchRate": 3,
             "totalHits": 3,
@@ -223,57 +114,56 @@
       }
     },
     {
-      "title": "Head of Channel Partnerships",
-      "company": "Gusto",
-      "location": "United States",
+      "title": "Head of Revenue Operations (Director or VP)",
+      "company": "Hightouch",
+      "location": "Remote (North America)",
       "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not Listed",
-      "url": "https://www.indeed.com/q-head-of-partnerships-fintech-jobs.html",
-      "source": "Indeed",
-      "snippet": "We're looking for an experienced and strategic leader to serve as Head of Channel Partnerships at Gusto. This senior role reports to the Head of Indirect GTM and is responsible for building and scaling our channel partner organization.",
-      "industry": "HR Tech",
-      "companyStage": "Public",
-      "foundDate": "2026-03-04T02:16:49.394Z",
-      "total": 76,
+      "salary": "$240,000 to $325,000 per year",
+      "posted": "Not specified",
+      "url": "https://job-boards.greenhouse.io/hightouch?error=true",
+      "source": "Greenhouse",
+      "snippet": "Experience with working in an environment that is sales-led and relies on outbounding and partnerships for leads",
+      "industry": "Data/Technology",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-04T02:32:17.499Z",
+      "total": 42,
       "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
       },
       "breakdown": {
         "industry": {
-          "score": 24,
+          "score": 5,
           "max": 30,
-          "note": "🎯 Core domain: hr tech"
+          "note": "Industry unknown"
         },
         "title": {
-          "score": 25,
+          "score": 18,
           "max": 25,
-          "note": "Exact target title"
+          "note": "RevOps/SalesOps match"
         },
         "keywords": {
-          "score": 8,
+          "score": 4,
           "max": 20,
-          "note": "2 resume keywords matched",
+          "note": "1 resume keyword matched",
           "topMatches": [
-            "gtm",
-            "hr tech"
+            "revenue operations"
           ],
-          "matchRate": 2,
-          "totalHits": 2,
+          "matchRate": 1,
+          "totalHits": 1,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
         "comp": {
           "score": 6,
           "max": 12,
-          "note": "Salary not listed"
+          "note": "Salary format unclear"
         },
         "stage": {
-          "score": 8,
+          "score": 4,
           "max": 8,
-          "note": "✅ Known fit company"
+          "note": "Stage unknown"
         },
         "workType": {
           "score": 5,
@@ -281,46 +171,52 @@
           "note": "Fully remote ✅"
         }
       },
+      "fullDescription": "Jobs at Hightouch Current openings at Hightouch Create a Job Alert Level-up your career by having opportunities at Hightouch sent directly to your inbox. Create alert Search Department Select... 52 jobs AI Job AI Strategy Consultant Remote (North America) Customer Success Job Customer Success Engineer Remote (Europe) Implementation Manager, EMEA Remote (Europe) Manager, Implementation Management Remote (US) Manager, Technical Account Management New York City, New York Technical Account Manager Remote (North America) Design Job Senior Product Designer, Agents Remote (North America) Senior Product Designer, Customer Studio Remote (North America) Engineering Job Backend Engineer, AI Content Agents Remote (North America) Developer Productivity Engineer Remote (North America) Forward Deployed Marketing Data Scientist Remote (North America) Full Stack Product Engineer Remote (North America) Head of Machine Learning Remote (North America) IT Manager Remote (North America) Machine Learning Engineer, AI Decisioning Remote (North America) Principal Engineer, Streaming Systems Remote (North America) Software Engineer, AI Agents Remote (North America) Software Engineer, Control Plane Remote (North America) Software Engineer, Customer Studio Backend Remote (North America) Software Engineer, Distributed Systems Remote (North America) Software Engineer, Journeys Remote (North America) Software Engineer, Streaming Systems Remote (North America) Staff Engineer - AI Productivity Remote (North America) Web Engineer Remote (North America) Finance / Data / Operations Job Analytics Engineer Remote (North America) Marketing & SDR Operations Manager Remote (North America) Legal Job Commercial Counsel New York City, New York Marketing Job Product Marketing Manager, AdTech Remote (North America) Product Marketing Manager, Partnerships Remote (North America) Senior Content Manager Remote (North America) Partnerships Job Cloud Alliance Lead- Google Cloud Platform Remote (North America) Partner Solutions Engineer Remote (North America) People Job GTM Recruiter (Contract) New York, New York People Partner, GTM New York City, New York Sales Job Account Executive (APAC) Remote (APAC) Account Executive, Enterprise West Remote (West Coast) Enterprise Account Executive -Mountain West Remote (Mountain West) Enterprise Account Executive- Northeast Region Northeast, U.S. Enterprise Account Executive, North EMEA Remote (Europe) Enterprise Account Executive- Southeast Region Southeast, U.S. Enterprise Solutions Engineer, West West and Mountain Timezones (North America) Head of Mid-Market Sales, North America New York, NY/ San Francisco, CA Manager, Solutions Engineering New York, NY or San Francisco, CA Mid-Market Account Executive San Francisco, CA Mid-Market Account Executive, East Region Remote (East Coast) Mid-Market Account Executive, EMEA London, United Kingdom Mid-Market Solutions Engineer Remote (North America) Regional VP of Enterprise Sales New York, New York/ Boston, Massach",
       "rank": {
-        "total": 76,
+        "total": 58,
         "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
         },
         "breakdown": {
           "industry": {
-            "score": 24,
+            "score": 5,
             "max": 30,
-            "note": "🎯 Core domain: hr tech"
+            "note": "Industry unknown"
           },
           "title": {
-            "score": 25,
+            "score": 18,
             "max": 25,
-            "note": "Exact target title"
+            "note": "RevOps/SalesOps match"
           },
           "keywords": {
-            "score": 8,
+            "score": 20,
             "max": 20,
-            "note": "2 resume keywords matched",
+            "note": "7 resume keywords matched",
             "topMatches": [
+              "alliance",
               "gtm",
-              "hr tech"
+              "revenue operations",
+              "peo",
+              "executive",
+              "enterprise",
+              "mid-market"
             ],
-            "matchRate": 2,
-            "totalHits": 2,
+            "matchRate": 7,
+            "totalHits": 7,
             "totalKeywords": 98,
-            "usedFullDesc": false
+            "usedFullDesc": true
           },
           "comp": {
             "score": 6,
             "max": 12,
-            "note": "Salary not listed"
+            "note": "Salary format unclear"
           },
           "stage": {
-            "score": 8,
+            "score": 4,
             "max": 8,
-            "note": "✅ Known fit company"
+            "note": "Stage unknown"
           },
           "workType": {
             "score": 5,
@@ -331,29 +227,29 @@
       }
     },
     {
-      "title": "Director of Partnerships, VC & PE",
-      "company": "Deel",
-      "location": "Remote",
+      "title": "Director of Partnerships",
+      "company": "Imubit",
+      "location": "Global (NAM or EU Preferred)",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Recently",
-      "url": "https://jobs.ashbyhq.com/deel/855183db-ccda-4e37-ad6f-a0f5a319d97a",
-      "source": "Ashby",
-      "snippet": "Deel is the all-in-one payroll and HR platform for global teams.",
-      "industry": "HR Technology",
+      "posted": "Not specified",
+      "url": "https://imubit.com/careers/",
+      "source": "Greenhouse",
+      "snippet": "Experience carrying a quota of over $5M+ in a partner capacity",
+      "industry": "Industrial AI/Software",
       "companyStage": "Growth",
-      "foundDate": "2026-03-04T02:16:49.392Z",
-      "total": 74,
+      "foundDate": "2026-03-04T02:32:17.500Z",
+      "total": 53,
       "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
       },
       "breakdown": {
         "industry": {
-          "score": 24,
+          "score": 5,
           "max": 30,
-          "note": "🎯 Core domain: hr tech"
+          "note": "Industry unknown"
         },
         "title": {
           "score": 25,
@@ -361,12 +257,12 @@
           "note": "Exact target title"
         },
         "keywords": {
-          "score": 6,
+          "score": 8,
           "max": 20,
           "note": "2 resume keywords matched",
           "topMatches": [
-            "hr tech",
-            "payroll"
+            "quota",
+            "arr"
           ],
           "matchRate": 2,
           "totalHits": 2,
@@ -379,9 +275,9 @@
           "note": "Salary not listed"
         },
         "stage": {
-          "score": 8,
+          "score": 4,
           "max": 8,
-          "note": "✅ Known fit company"
+          "note": "Stage unknown"
         },
         "workType": {
           "score": 5,
@@ -389,19 +285,19 @@
           "note": "Fully remote ✅"
         }
       },
-      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "fullDescription": "Careers - Imubit Our Customers Product Industries Process Industries Cement &#038; Building Materials Chemicals, Petrochemicals &#038; Polymers Mining, Minerals &#038; Metals Oil &#038; Gas Sustainability Company Company Overview Leadership & Advisory Board Careers Resources News &#038; Awards Events &#038; Webinars Blog Get AIO Assessment Build your future here Careers at Imubit We are mission-driven to invent new technologies that help our clients transcend beyond the limits of what they considered possible. Our team includes globally-renowned Google-endorsed machine learning scientists, world-class hydrocarbon processing experts, and enterprise software seasoned professionals. Build the Future of Digital Innovation at Imubit We are an energetic group of engineers and professionals, all looking to use our talents and experience to innovate the future of technology and energy. What started out as a team of engineers with a dream to change the way AI transcends refineries has turned into a global team of engineers, scientists, and industry experts at the cutting edge of the AI industry. The impact of our work can be seen both in the growth of the company and through the millions of dollars we are saving refineries all over the world. Our company culture is collaborative, inclusive, and supportive. We work through challenges and overcome obstacles together. Here at Imubit, we work hard and we play hard. We share a belief in Imubit’s mission to invent new technologies that help our clients transcend beyond the limits of what they considered possible. We accomplish this with creativity, innovation, dedication, safety, and integrity. We are guided by our principles Our cultural principles enable us to build a company that builds inventions and uses them to transcend people, businesses, and industries. Teamwork Teamwork based on orchestration, trust and support. Passion Passion to collaborate, learn and create. Humility Continuous evolution through humility and iteration. Ownership Ownership over personal and company missions. Purpose Purpose-driven, globally-motivated, empowering leadership. Interested in working at Imubit? Send Us Your Resume See Our Benefits Kickstart Your AI Journey Prove the value of AI optimization at your plant—at no cost. Uncover AI’s potential, based on your unit and your site-specific economics, in this free assessment. Get Started Want to get in touch? Please use the form below! This field is hidden when viewing the form Next Steps: Sync an Email Add-On To get the most out of your form, we suggest that you sync this form with an email add-on. To learn more about your email add-on options, visit the following page (https://www.gravityforms.com/the-8-best-email-plugins-for-wordpress-in-2020/). Important: Delete this tip before you publish the form. About You Your Name (Required) First Last Title (Required) Company (Required) How Can We Reach You? We would love to chat with you. How can we get in touch? Preferred Method of Con",
       "rank": {
-        "total": 72,
+        "total": 56,
         "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
         },
         "breakdown": {
           "industry": {
-            "score": 24,
+            "score": 5,
             "max": 30,
-            "note": "🎯 Core domain: hr tech"
+            "note": "Industry unknown"
           },
           "title": {
             "score": 25,
@@ -409,11 +305,123 @@
             "note": "Exact target title"
           },
           "keywords": {
+            "score": 11,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "peo",
+              "own",
+              "benefits",
+              "enterprise"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Partner Director, Global BCG Alliance",
+      "company": "OpenAI",
+      "location": "Remote",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://jobs.ashbyhq.com/openai/ca7b3ef5-19f5-44c5-9a74-1415327ddc94",
+      "source": "Ashby",
+      "snippet": "Single accountable executive owner of the BCG relationship globally, responsible for defining strategic direction and establishing operating model.",
+      "industry": "AI/Technology",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-04T02:32:17.499Z",
+      "total": 42,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 5,
+          "max": 30,
+          "note": "Industry unknown"
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Channel signal · Global scope"
+        },
+        "keywords": {
+          "score": 10,
+          "max": 20,
+          "note": "3 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "own",
+            "executive"
+          ],
+          "matchRate": 3,
+          "totalHits": 3,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Partner Director, Global BCG Alliance @ OpenAI You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 36,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Channel signal · Global scope"
+          },
+          "keywords": {
             "score": 4,
             "max": 20,
             "note": "1 resume keyword matched",
             "topMatches": [
-              "hr tech"
+              "alliance"
             ],
             "matchRate": 1,
             "totalHits": 1,
@@ -426,9 +434,111 @@
             "note": "Salary not listed"
           },
           "stage": {
-            "score": 8,
+            "score": 4,
             "max": 8,
-            "note": "✅ Known fit company"
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Cloud Partner Business Development",
+      "company": "Cognite",
+      "location": "Americas",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Available",
+      "url": "https://jobs.lever.co/cognite/d586d093-65c5-4c3a-a78b-5c0279399b06",
+      "source": "Lever",
+      "snippet": "Lead development of strategic cloud partnerships regionally through business plans with strategic cloud partners.",
+      "industry": "Industrial IoT",
+      "companyStage": "",
+      "foundDate": "2026-03-04T02:32:17.500Z",
+      "total": 25,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 5,
+          "max": 30,
+          "note": "Industry unknown"
+        },
+        "title": {
+          "score": 5,
+          "max": 25,
+          "note": "Senior level — weak function match"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 25,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 5,
+            "max": 25,
+            "note": "Senior level — weak function match"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
           },
           "workType": {
             "score": 5,
