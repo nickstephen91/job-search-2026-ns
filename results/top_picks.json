@@ -1,0 +1,237 @@
+{
+  "savedAt": "2026-03-04T03:33:16.070Z",
+  "picks": [
+    {
+      "title": "VP, Partnerships",
+      "company": "Checkr",
+      "location": "Remote, United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Specified",
+      "url": "https://job-boards.greenhouse.io/checkr?error=true",
+      "source": "Greenhouse",
+      "snippet": "Looking for a VP, Partnerships to help scale the company's efforts to drive demand across Enterprise, Mid-Market and SMB customers. Reporting to the SVP, Customer Success and Partnerships you will manage our business plans for alliances and channel.",
+      "industry": "Background Check/HR Tech",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T03:33:06.500Z",
+      "total": 94,
+      "tier": {
+        "label": "🔥 Must Apply",
+        "color": "#00e5a0",
+        "min": 80
+      },
+      "breakdown": {
+        "industry": {
+          "score": 30,
+          "max": 30,
+          "note": "🎯 Core domain: hr tech, background check"
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 20,
+          "max": 20,
+          "note": "7 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "hr tech",
+            "reporting",
+            "alliances",
+            "enterprise",
+            "mid-market"
+          ],
+          "matchRate": 7,
+          "totalHits": 7,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at Checkr Current openings at Checkr About Checkr Checkr builds people infrastructure for the future of work. We've designed a faster—and fairer—way to screen job seekers. Established in 2014, Checkr puts modern technology powered by machine learning in the hands of hiring teams, helping to hire great new people with an experience that’s fast, smooth, and safe. Checkr has over 100,000 customers including DoorDash, Coinbase, Lyft, Instacart, and Airtable. A career at Checkr means collaborating with brilliant minds, disrupting an industry, and opening channels of employment to often overlooked candidates. Checkr has been recognized as one of BuiltIn's 2023 Best Places to Work in the US and is a Y Combinator 2023 Breakthrough Company. Create a Job Alert Level-up your career by having opportunities at Checkr sent directly to your inbox. Create alert Search 42 jobs Customer Success Job Associate Customer Success Manager Nashville, Tennessee, United States Enterprise Customer Success Manager San Francisco, California, United States Sr. Principal Customer Success Manager Denver, Colorado, United States; San Francisco, California, United States Engineering Job Backend Software Engineer II San Francisco, California, United States Director of Platform Engineering Denver, Colorado, United States; San Francisco, California, United States Engineering Manager Santiago, Región Metropolitana, Chile Engineering Manager, Growth Denver, Colorado, United States; San Francisco, California, United States Engineering Manager, Truework San Francisco, California, United States Python Engineer, Truework New San Francisco, California, United States Security Engineer Denver, Colorado, United States; San Francisco, California, United States Senior Python Engineer, Truework New San Francisco, California, United States Senior Software Engineer New Santiago, Región Metropolitana, Chile Senior Software Engineer New San Francisco, California, United States Senior Software Engineer, Verifications Denver, Colorado, United States; San Francisco, California, United States Software Engineer II San Francisco, California, United States Sr. Software Engineer New Santiago, Región Metropolitana, Chile Staff Software Engineer Santiago, Región Metropolitana, Chile Finance Job Senior FP&S Analyst San Francisco, California, United States Technical Revenue Accounting Lead San Francisco, California, United States Legal & Compliance Job Director, Legal Product & Privacy San Francisco, California, United States Marketing Job Partner Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Growth Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Product Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Operations Job Quality Assurance Specialist Nashville, Tennessee, United States Senior Manager, Enterprise & Strategic Support Denver, Colorado, United States; Nashville",
+      "rank": {
+        "total": 90,
+        "tier": {
+          "label": "🔥 Must Apply",
+          "color": "#00e5a0",
+          "min": 80
+        },
+        "breakdown": {
+          "industry": {
+            "score": 30,
+            "max": 30,
+            "note": "🎯 Core domain: hr tech, background check"
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 16,
+            "max": 20,
+            "note": "5 resume keywords matched",
+            "topMatches": [
+              "peo",
+              "hr tech",
+              "compliance",
+              "aca",
+              "enterprise"
+            ],
+            "matchRate": 5,
+            "totalHits": 5,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Head of Alliances and Partnerships (REMOTE)",
+      "company": "Upbound",
+      "location": "Remote",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Specified",
+      "url": "https://job-boards.greenhouse.io/upbound/jobs/5678055004",
+      "source": "Greenhouse",
+      "snippet": "Accomplished and highly strategic Head of Partnerships & Alliances to help define and execute Upbound's ecosystem and alliance strategy. This senior individual contributor role operates at the intersection of open source ecosystem development and commercial go-to-market execution.",
+      "industry": "Cloud Infrastructure/Open Source",
+      "companyStage": "Growth Stage",
+      "foundDate": "2026-03-04T03:33:06.500Z",
+      "total": 59,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 5,
+          "max": 30,
+          "note": "Industry unknown"
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 10,
+          "max": 20,
+          "note": "3 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "go-to-market",
+            "alliances"
+          ],
+          "matchRate": 3,
+          "totalHits": 3,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "You bring curiosity about AI and emerging infrastructure models and see partnerships not just as contracts, but as systems for long-term category creation. Open Source Ecosystem & Community Partnerships Build strategic relationships within the Crossplane ecosystem — including contributors, maintainers, and adjacent project communities — to expand adoption and integration momentum. Collaborate with open-source foundations and community leaders to strengthen the broader control plane and platform engineering ecosystem. Support co-marketing, education, and joint initiatives that celebrate community success and reinforce Upbound’s leadership within open source. Partner with Developer Relations and Product teams to ensure two-way collaboration between community innovation and enterprise needs. Strategic Alliance Development Identify, negotiate, and grow high-impact partnerships with hyperscalers (AWS, Azure, GCP), ISVs, and SIs. Develop joint GTM strategies that integrate Crossplane and Upbound into partner ecosystems, marketplaces, and managed service offerings. Collaborate on technical integrations that expand Crossplane’s reach while reinforcing Upbound’s commercial differentiation. Act as a bridge between open-source innovation, partner value creation, and enterprise adoption. Partner GTM Execution Architect and execute partner-led GTM motions including co-selling, account mapping, co-marketing, sales enablement, and joint value propositions. Work closely with marketing to create partner case studies, technical stories, and ecosystem campaigns that highlight real-world outcomes. Translate developer and community adoption signals into commercial opportunities with measurable pipeline impact. Leverage modern GTM and partner analytics tools to optimize engagement, track influence, and refine strategies. Partner Program & Framework Design Design and operationalize a scalable partner program including onboarding, enablement, incentives, and performance tracking. Define partner tiers, certification paths, and engagement models for both open-source collaborators and commercial partners. Establish clear KPIs for ecosystem health, engagement, and partner-driven revenue. Product & Roadmap Alignment Collaborate with product and engineering leadership to ensure partnerships align with roadmap priorities and strategic initiatives. Advocate for integration opportunities and feedback from both the open-source and commercial ecosystems. Drive alignment between Crossplane’s community direction and Upbound’s enterprise strategy to create synergy across the stack. Ecosystem Representation & Industry Presence Represent Upbound and Crossplane at industry events, partner forums, and cloud-native conferences. Act as a senior ambassador across open-source, cloud, and enterprise ecosystems — balancing authenticity, influence, and strategic clarity. Contribute to thought leadership and ecosystem storytelling that elevate Upbound’s role in the Intelligent Control Plane move",
+      "rank": {
+        "total": 69,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "14 resume keywords matched",
+            "topMatches": [
+              "co-marketing",
+              "alliance",
+              "partner ecosystem",
+              "gtm",
+              "operationalize",
+              "architect",
+              "alliances",
+              "marketplaces"
+            ],
+            "matchRate": 14,
+            "totalHits": 14,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    }
+  ]
+}
