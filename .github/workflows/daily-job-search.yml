@@ -43,8 +43,9 @@ jobs:
       # STEP 4: Commit all updated result files back to the repo
       - name: Commit updated results
         run: |
-          git pull --rebase origin main 
-          git config --local user.email "action@github.com"
+          git stash || true
+          git pull --rebase origin main
+          git stash pop || true          git config --local user.email "action@github.com"
           git config --local user.name "Nick's Job Search Agent"
           git add -A
           git diff --staged --quiet || git commit -m "Daily update $(date +'%Y-%m-%d') — new jobs + verification"
