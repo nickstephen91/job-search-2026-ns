@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-04T00:32:45.971Z",
-  "totalTracked": 20,
+  "lastUpdated": "2026-03-04T00:49:53.426Z",
+  "totalTracked": 29,
   "entries": [
     {
       "url": "https://www.arbeitnow.com/jobs/companies/erschaffe-dich-neu/head-of-sales-100-remote-vollzeit-berlin-279769",
@@ -81,6 +81,42 @@
     {
       "url": "https://jobs.lever.co/gohighlevel/8e0e35fe-3d6b-4ca5-b95b-dd6cd70e3d68",
       "ts": 1772584365971
+    },
+    {
+      "url": "https://jobs.lever.co/wpromote/9c67b1fc-0a3c-417e-bb26-6d3d4ecfd611",
+      "ts": 1772585393426
+    },
+    {
+      "url": "https://jobs.lever.co/docebo/5d88fd75-ab21-428a-83fd-be863a959e35",
+      "ts": 1772585393426
+    },
+    {
+      "url": "https://jobs.lever.co/onfido/2276b4c3-8b3c-4118-9387-1b533e3d30f5",
+      "ts": 1772585393426
+    },
+    {
+      "url": "https://jobs.lever.co/ansira/51e505a2-5459-495c-8eaf-0133d9c1dfe5",
+      "ts": 1772585393426
+    },
+    {
+      "url": "https://jobs.lever.co/distro/45fe0a5d-ba36-44a1-84b4-149c492f464e",
+      "ts": 1772585393426
+    },
+    {
+      "url": "https://jobs.lever.co/coupa/ee0f33f3-6bad-49a4-bdf1-b30888f42e3d",
+      "ts": 1772585393426
+    },
+    {
+      "url": "https://jobs.lever.co/enablecomp/876f8e7d-4bb2-4470-949f-2c4cac46d584",
+      "ts": 1772585393426
+    },
+    {
+      "url": "https://jobs.lever.co/jobgether/4eaa8abc-0953-483d-b5ca-7861b6b5f34b",
+      "ts": 1772585393426
+    },
+    {
+      "url": "https://jobs.lever.co/instructure/23975fab-1dd9-459f-b8c5-96f2282d436d",
+      "ts": 1772585393426
     }
   ]
 }

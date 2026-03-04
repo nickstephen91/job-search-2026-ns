@@ -1,7 +1,946 @@
 {
   "date": "Tuesday, March 3, 2026",
-  "count": 10,
+  "count": 9,
   "jobs": [
+    {
+      "company": "Instructure",
+      "title": "Regional Vice President, APAC - Alliances & Channels",
+      "level": "VP",
+      "category": "Channel",
+      "url": "https://jobs.lever.co/instructure/23975fab-1dd9-459f-b8c5-96f2282d436d",
+      "foundDate": "2026-03-04T00:49:48.667Z",
+      "total": 30,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "requirements in Salesforce. Ensure execution of mutually agreed upon partner cadences including joint business planning, pipeline reviews, and deal close plans. Leverage the scaled partner program to support enablement frameworks, incentives, and co-marketing initiatives. Collaborate with global sales leadership, regional marketing, product, and customer success teams to ensure coordinated execution across markets. Represent Instructure at senior-level partner engagements, industry events, and strategic planning sessions across the region Lead, coach, and develop a high-performing regional channel team as growth demands. Coordinate local Partner participation in events and training, as well as drive product and promotions and programs. Support the development of collateral related to Instructure sales for Channel Partners. About You 8+ years of progressive experience in B2B sales, with at least 5 years in a leadership role managing a channel/partner sales team in APAC - experience in SaaS is mandatory, Edtech is a plus. Proven success building and scaling indirect sales programs across diverse international markets. Deep understanding of APAC regional dynamics, including education systems, procurement models, and cultural variances. Strong executive presence and a proven ability to influence C-level stakeholders—both internally and externally. Experience with strategic alliances, partner co-selling, and complex deal structuring. Fluency in English and one additional language; strongly preferred Extensive travel expected across the region (up to 40%). Understanding of technology use in education and LMS marketplace and companies. Proven success of building strong relationships and partnerships. Minimum of intermediate understanding of company financial measures. Self-motivated and competitive with the ability to prioritise and manage competing demands in a fast-paced environment. Experience with Microsoft Office Tools, Google Apps, Salesforce, and Clari. Manage multiple, competing demands to reach project deliverables and meet deadlines. We believe in hiring great people and treating them right. The more diverse we are, the better our ideas and outcomes. Instructure is an Equal Opportunity Employer. We comply with applicable employment and anti-discrimination laws in every country where we operate. All employees must pass a background check as part of the hiring process. To help protect our teams and systems, we’ve implemented identity verification measures. Candidates may be asked to verify their legal name, current physical location, and provide a valid contact number and residential address, in accordance with local data privacy laws. Any attempt to misrepresent personal or professional information will result in disqualification. We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not repla",
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 47,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "14 resume keywords matched",
+            "topMatches": [
+              "co-marketing",
+              "alliance",
+              "pipeline",
+              "peo",
+              "executive",
+              "salesforce",
+              "alliances",
+              "saas"
+            ],
+            "matchRate": 14,
+            "totalHits": 14,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "company": "Wpromote",
+      "title": "Vice President, Revenue Operations and Enablement",
+      "level": "VP",
+      "category": "Revenue Operations",
+      "url": "https://jobs.lever.co/wpromote/9c67b1fc-0a3c-417e-bb26-6d3d4ecfd611",
+      "foundDate": "2026-03-04T00:49:48.666Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "Must Have 12+ years of experience in Revenue Operations, Sales Operations, or GTM Strategy, ideally within a tech-enabled services or agency environment. 4+ years of experience people management experience, including guiding and mentoring managers to enable a high-performing team and culture Deep expertise in Salesforce administration, analytics, and process design—paired with strong understanding of the GTM tech stack (Gong, Chili Piper, Seismic, etc.). Proven success leading revenue operations transformation and scaling systems, forecasting, and insights in high-growth environments. Experience designing and executing enablement programs that drive adoption, consistency, and measurable improvements in performance. Exceptional analytical, communication, and stakeholder management skills with the ability to influence across executive and functional teams. A “builder” mindset—comfortable balancing strategic vision with hands-on execution and iterative improvement. Strong alignment with Wpromote’s values of collaboration, accountability, and growth mindset. Wpromote is committed to bringing together individuals from different backgrounds and perspectives, providing employees with a safe and welcoming environment free of discrimination and harassment. We strive to create a diverse & inclusive environment where everyone can thrive, feel a sense of belonging, and do impactful work together. As an equal opportunity employer, we prohibit any unlawful discrimination against a job applicant on the basis of their race, color, religion, gender, gender identity, gender expression, sexual orientation, national origin, family or parental status, disability*, age, veteran status, or any other status protected by the laws or regulations in the locations where we operate. We respect the laws enforced by the EEOC and are dedicated to going above and beyond in fostering diversity across our workplace. Applicants with disabilities may be entitled to reasonable accommodation under the terms of the Americans with Disabilities Act and certain state or local laws. A reasonable accommodation is a change in the way things are normally done which will ensure an equal employment opportunity without imposing undue hardship on Wpromote. This employer participates in E-Verify and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S. If E-Verify cannot confirm that you are authorized to work, this employer is required to give you written instructions and an opportunity to contact Department of Homeland Security (DHS) or Social Security Administration (SSA) so you can begin to resolve the issue before the employer can take any action against you, including terminating your employment. Employers can only use E-Verify once you have accepted a job offer and completed the Form I-9. For more information on E Verify, or if you believe that your employer has violated its E-Verify responsibilities, please contact DHS. We",
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 43,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "9 resume keywords matched",
+            "topMatches": [
+              "gtm",
+              "revenue operations",
+              "peo",
+              "i-9",
+              "executive",
+              "salesforce",
+              "gong",
+              "employer"
+            ],
+            "matchRate": 9,
+            "totalHits": 9,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "company": "Docebo",
+      "title": "Vice President, Revenue Operations",
+      "level": "VP",
+      "category": "Revenue Operations",
+      "url": "https://jobs.lever.co/docebo/5d88fd75-ab21-428a-83fd-be863a959e35",
+      "foundDate": "2026-03-04T00:49:48.667Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "revenue operations"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "company": "Onfido",
+      "title": "Vice President of Revenue Operations",
+      "level": "VP",
+      "category": "Revenue Operations",
+      "url": "https://jobs.lever.co/onfido/2276b4c3-8b3c-4118-9387-1b533e3d30f5",
+      "foundDate": "2026-03-04T00:49:48.667Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "revenue operations"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "revenue operations"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "company": "Coupa Software",
+      "title": "VP, North America Partner Ecosystem",
+      "level": "VP",
+      "category": "Partnerships",
+      "url": "https://jobs.lever.co/coupa/ee0f33f3-6bad-49a4-bdf1-b30888f42e3d",
+      "foundDate": "2026-03-04T00:49:48.667Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 4,
+          "max": 20,
+          "note": "1 resume keyword matched",
+          "topMatches": [
+            "partner ecosystem"
+          ],
+          "matchRate": 1,
+          "totalHits": 1,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "partner ecosystem"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "company": "Ansira",
+      "title": "Vice President Business Development",
+      "level": "VP",
+      "category": "Business Development",
+      "url": "https://jobs.lever.co/ansira/51e505a2-5459-495c-8eaf-0133d9c1dfe5",
+      "foundDate": "2026-03-04T00:49:48.667Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 23,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "company": "Distro",
+      "title": "Vice President of Inside Sales",
+      "level": "VP",
+      "category": "Business Development",
+      "url": "https://jobs.lever.co/distro/45fe0a5d-ba36-44a1-84b4-149c492f464e",
+      "foundDate": "2026-03-04T00:49:48.667Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 23,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "company": "EnableComp",
+      "title": "Vice President, Client Implementations, Revenue Cycle",
+      "level": "VP",
+      "category": "Revenue Operations",
+      "url": "https://jobs.lever.co/enablecomp/876f8e7d-4bb2-4470-949f-2c4cac46d584",
+      "foundDate": "2026-03-04T00:49:48.667Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 23,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "company": "Jobgether",
+      "title": "Remote Business Growth Vice President",
+      "level": "VP",
+      "category": "Business Development",
+      "url": "https://jobs.lever.co/jobgether/4eaa8abc-0953-483d-b5ca-7861b6b5f34b",
+      "foundDate": "2026-03-04T00:49:48.667Z",
+      "total": 20,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 8,
+          "max": 25,
+          "note": "Senior level signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 23,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 8,
+            "max": 25,
+            "note": "Senior level signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    }
+  ],
+  "topPicks": [
     {
       "title": "VP, Partnerships",
       "company": "Checkr",
@@ -226,6 +1165,112 @@
       }
     },
     {
+      "title": "Strategic Partnerships Director",
+      "company": "OpenX",
+      "url": "https://jobs.lever.co/openx/5f37505b-1cde-403c-96a6-410ef2f514d9",
+      "level": "Director",
+      "function": "Partnerships",
+      "foundDate": "2026-03-04T00:32:36.964Z",
+      "total": 24,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": ""
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Alliances signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "Qualifications 8+ years in business development in programmatic advertising Deep understanding of the programmatic advertising ecosystem, including data & identity spaces Demonstrated track record of delivering against large revenue goals Highly analytical with ability to make data supported recommendations Experience negotiating complex legal agreements in partnership with OpenX legal team Proficiency with Google Sheets and Google Slides Ability to work in a fast-paced environment Strong written, verbal and presentation skills MBA preferred $136,000 - $160,000 a year Pursuant to any state, local ordinance, or local hiring regulations, we will consider for employment any qualified applicant, including those with arrest and conviction records, in a manner consistent with the applicable regulation. OpenX is committed to fair and equitable compensation practices. For all applicants, the base salary range is noted above, per year + bonus + equity + benefits. A candidate’s salary is determined by various factors including, but not limited to, relevant work experience, skills, and certifications. A summary of our benefits, which include medical, dental, vision, 401k, equity and more, can be viewed here: https://www.openx.com/company/careers/ A candidate’s salary is determined by various factors including, but not limited to, relevant work experience, skills, and certifications. OpenX VALUES Our five company values form a solid bedrock serving to define us as a group and guide the company. Our values remind us that how we do things often matters as much as what we do. WE ARE ONE We are one team. There are no exceptions. We are a group of strong and diverse individuals unified by a shared mission. We embrace challenges and win together as a team. We respect and care about our colleagues and cultivate an inclusive culture WE ARE CUSTOMER CENTRIC We innovate on behalf of our customers. We understand, respect, and listen carefully to our customers. We build great products to solve our customers’ problems. We manage our customers’ expectations clearly and honestly. We are a trusted partner to all of our customers - we act with integrity at all times. We care. OPENX IS OURS We are all owners of OpenX We all have a voice to improve OpenX We stake our personal and professional reputations on the excellence of our work We are not interested in just \"doing our jobs\"; we take ownership to drive results WE ARE AN OPEN BOOK We understand and respect what each of us does. We are eager to teach and share what we know with others, both internally and externally. We are eager to learn from others and we ask questions internally and externally. WE EVOLVE FAST We take responsible risks and own and learn from our mistakes. We recognize and repeat success. We actively seek out and provide constructive feedback. We adapt quickly and embrace change. We tackle growth and learning with real urgency. We are endlessly curious. OpenX TRAITS Our three traits capture what makes a gr",
+      "location": "United States",
+      "workType": "Remote",
+      "source": "Lever",
+      "industry": "",
+      "rank": {
+        "total": 38,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": ""
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Alliances signal"
+          },
+          "keywords": {
+            "score": 11,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "arr",
+              "own",
+              "benefits",
+              "var"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
       "title": "Sr. Director, Channel Programs",
       "company": "HighLevel",
       "url": "https://jobs.lever.co/gohighlevel/8e0e35fe-3d6b-4ca5-b95b-dd6cd70e3d68",
@@ -315,112 +1360,6 @@
             ],
             "matchRate": 13,
             "totalHits": 13,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Strategic Partnerships Director",
-      "company": "OpenX",
-      "url": "https://jobs.lever.co/openx/5f37505b-1cde-403c-96a6-410ef2f514d9",
-      "level": "Director",
-      "function": "Partnerships",
-      "foundDate": "2026-03-04T00:32:36.964Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "fullDescription": "Qualifications 8+ years in business development in programmatic advertising Deep understanding of the programmatic advertising ecosystem, including data & identity spaces Demonstrated track record of delivering against large revenue goals Highly analytical with ability to make data supported recommendations Experience negotiating complex legal agreements in partnership with OpenX legal team Proficiency with Google Sheets and Google Slides Ability to work in a fast-paced environment Strong written, verbal and presentation skills MBA preferred $136,000 - $160,000 a year Pursuant to any state, local ordinance, or local hiring regulations, we will consider for employment any qualified applicant, including those with arrest and conviction records, in a manner consistent with the applicable regulation. OpenX is committed to fair and equitable compensation practices. For all applicants, the base salary range is noted above, per year + bonus + equity + benefits. A candidate’s salary is determined by various factors including, but not limited to, relevant work experience, skills, and certifications. A summary of our benefits, which include medical, dental, vision, 401k, equity and more, can be viewed here: https://www.openx.com/company/careers/ A candidate’s salary is determined by various factors including, but not limited to, relevant work experience, skills, and certifications. OpenX VALUES Our five company values form a solid bedrock serving to define us as a group and guide the company. Our values remind us that how we do things often matters as much as what we do. WE ARE ONE We are one team. There are no exceptions. We are a group of strong and diverse individuals unified by a shared mission. We embrace challenges and win together as a team. We respect and care about our colleagues and cultivate an inclusive culture WE ARE CUSTOMER CENTRIC We innovate on behalf of our customers. We understand, respect, and listen carefully to our customers. We build great products to solve our customers’ problems. We manage our customers’ expectations clearly and honestly. We are a trusted partner to all of our customers - we act with integrity at all times. We care. OPENX IS OURS We are all owners of OpenX We all have a voice to improve OpenX We stake our personal and professional reputations on the excellence of our work We are not interested in just \"doing our jobs\"; we take ownership to drive results WE ARE AN OPEN BOOK We understand and respect what each of us does. We are eager to teach and share what we know with others, both internally and externally. We are eager to learn from others and we ask questions internally and externally. WE EVOLVE FAST We take responsible risks and own and learn from our mistakes. We recognize and repeat success. We actively seek out and provide constructive feedback. We adapt quickly and embrace change. We tackle growth and learning with real urgency. We are endlessly curious. OpenX TRAITS Our three traits capture what makes a gr",
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 38,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 11,
-            "max": 20,
-            "note": "4 resume keywords matched",
-            "topMatches": [
-              "arr",
-              "own",
-              "benefits",
-              "var"
-            ],
-            "matchRate": 4,
-            "totalHits": 4,
             "totalKeywords": 98,
             "usedFullDesc": true
           },
@@ -548,515 +1487,7 @@
           }
         }
       }
-    },
-    {
-      "title": "VP of Programs and Partnerships",
-      "company": "Link Health Patient Navigators",
-      "location": "Not specified",
-      "workType": "Onsite",
-      "salary": "Not Listed",
-      "posted": "Recent (exact date not provided)",
-      "url": "https://job-boards.greenhouse.io/linkhealth/jobs/4869589007",
-      "source": "Greenhouse",
-      "snippet": "Developing and managing strategic alliances with measurable outcomes",
-      "industry": "Healthcare/Patient Navigation",
-      "companyStage": "Growth Stage",
-      "foundDate": "2026-03-04T00:32:36.964Z",
-      "total": 33,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 6,
-          "max": 20,
-          "note": "2 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "alliances"
-          ],
-          "matchRate": 2,
-          "totalHits": 2,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 7,
-          "max": 8,
-          "note": "Late stage: Growth Stage"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "fullDescription": "Jobs at Link Health Patient Navigators Help patients access life-saving care—apply to be a Link Health Patient Navigator today. We’re looking for Patient Navigators in Houston, Boston, and remotely. Help us guide people to the care they need. Our mission is to ensure equitable access to resources for healthcare, energy assistance, nutrition support, and more, fostering healthier and more resilient communities. Our Patient Navigator Program runs in Houston, TX and Boston, MA for the following seasons: Summer 2025 - Fall 2025 Fall 2025 - Spring 2026 Spring 2026 - Summer 2026 Priority will be given to those who are willing to volunteer for two seasonal cohorts. However, applicants who are only available for one are still encouraged to apply. Create a Job Alert Level-up your career by having opportunities at Link Health Patient Navigators sent directly to your inbox. Create alert Search 2 jobs Link Health Patient Navigators Job Future Patient Navigator Program Interest Form Boston or Houston Remote Patient Navigator - 2025 Remote Powered by Greenhouse",
-      "rank": {
-        "total": 31,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "peo"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 7,
-            "max": 8,
-            "note": "Late stage: Growth Stage"
-          },
-          "workType": {
-            "score": 2,
-            "max": 5,
-            "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Vice President - Channel Partnerships, East",
-      "company": "CleverTap",
-      "url": "https://jobs.lever.co/clevertap/7fdbed92-9ab3-4717-b68a-acdaaa66239f",
-      "level": "VP",
-      "function": "Channel Partnerships",
-      "foundDate": "2026-03-04T00:32:36.964Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 27,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Agency Partnerships",
-      "company": "Vevo",
-      "url": "https://jobs.lever.co/vevo/f96efb22-6571-4a6b-9b06-9c61aa2ca9e7",
-      "level": "Director",
-      "function": "Partnerships",
-      "foundDate": "2026-03-04T00:32:36.964Z",
-      "total": 24,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 12,
-          "max": 25,
-          "note": "Partnerships/Alliances signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 27,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 12,
-            "max": 25,
-            "note": "Partnerships/Alliances signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director, Sales & Business Development",
-      "company": "Articulate",
-      "url": "https://jobs.lever.co/articulate/65318c9d-86f6-426f-986d-094243e442f1",
-      "level": "Director",
-      "function": "Business Development",
-      "foundDate": "2026-03-04T00:32:36.964Z",
-      "total": 20,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 23,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Partner Operations Director",
-      "company": "CaptivateIQ",
-      "url": "https://jobs.lever.co/captivateiq/e764b734-2e99-421f-a042-0fef0cb0b9fc",
-      "level": "Director",
-      "function": "Partnerships",
-      "foundDate": "2026-03-04T00:32:36.964Z",
-      "total": 20,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": ""
-        },
-        "title": {
-          "score": 8,
-          "max": 25,
-          "note": "Senior level signal"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 2,
-          "max": 5,
-          "note": "Onsite in radius"
-        }
-      },
-      "location": "United States",
-      "workType": "Remote",
-      "source": "Lever",
-      "industry": "",
-      "rank": {
-        "total": 23,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30,
-            "note": ""
-          },
-          "title": {
-            "score": 8,
-            "max": 25,
-            "note": "Senior level signal"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
     }
   ],
-  "topPicks": []
+  "currentTopPicks": []
 }
