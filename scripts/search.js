@@ -456,7 +456,7 @@ function rankJob(job) {
     breakdown: {
       industry:   { score: industry.score,  max: WEIGHTS.industryMatch,  note: industry.matches?.[0] || '' },
       title:      { score: title.score,     max: WEIGHTS.titleMatch,     note: title.match || '' },
-      keywords:   { score: keywords.score,  max: WEIGHTS.resumeKeywords, note: `${keywords.totalHits} resume keyword${keywords.totalHits !== 1 ? 's' : ''} matched`, topMatches: keywords.topMatches },
+      keywords:   { score: keywords.score,  max: WEIGHTS.resumeKeywords, note: `${keywords.totalHits} resume keyword${keywords.totalHits !== 1 ? 's' : ''} matched`, topMatches: keywords.topMatches, matchRate: keywords.matchRate, totalHits: keywords.totalHits, totalKeywords: keywords.totalKeywords, usedFullDesc: keywords.usedFullDesc },
       comp:       { score: comp.score,      max: WEIGHTS.compensation,   note: comp.note },
       stage:      { score: stage.score,     max: WEIGHTS.companyStage,   note: stage.note },
       workType:   { score: workType.score,  max: WEIGHTS.workType,       note: workType.note }
@@ -530,17 +530,20 @@ function normalizeJob(job) {
   else if (wt.includes('hybrid')) job.workType = 'Hybrid';
   else job.workType = 'Onsite';
 
-  // Fix source label
+  // Fix source label — check source string AND url
   const srcMap = {
     'indeed': 'Indeed', 'remotive': 'Remotive', 'the muse': 'The Muse',
     'arbeitnow': 'Arbeitnow', 'greenhouse': 'Greenhouse', 'lever': 'Lever',
-    'via job board': 'Job Board'
+    'workday': 'Workday', 'linkedin': 'LinkedIn', 'smartrecruiters': 'SmartRecruiters',
+    'jobvite': 'Jobvite', 'ashby': 'Ashby'
   };
   const srcLower = (job.source || '').toLowerCase();
+  const urlLower = (job.url || '').toLowerCase();
+  let srcMatched = false;
   for (const [k, v] of Object.entries(srcMap)) {
-    if (srcLower.includes(k)) { job.source = v; break; }
+    if (srcLower.includes(k) || urlLower.includes(k)) { job.source = v; srcMatched = true; break; }
   }
-  if (!job.source) job.source = 'Job Board';
+  if (!srcMatched) job.source = 'Job Board';
 
   // Infer industry from snippet + title if blank
   if (!job.industry || job.industry === 'undefined' || job.industry === '') {
