@@ -1,30 +1,30 @@
 {
-  "savedAt": "2026-03-04T03:45:11.223Z",
+  "savedAt": "2026-03-04T03:56:58.138Z",
   "picks": [
     {
-      "title": "VP of Partnerships",
-      "company": "Terminus",
-      "location": "Not Specified",
+      "title": "Director / Senior Director, Partnerships and Alliances (Healthcare)",
+      "company": "Innovaccer Analytics",
+      "location": "Not Listed",
       "workType": "Onsite",
       "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://jobs.lever.co/terminus/da79890e-34d9-4603-8b22-bbf4dc3c69e7",
-      "source": "Lever",
-      "snippet": "The VP of Partnerships will be responsible for day to day collaboration with sales, marketing, engineering and operations in an effort to develop strategic relationships.",
-      "industry": "MarTech/SaaS",
-      "companyStage": "Growth Stage",
-      "foundDate": "2026-03-04T03:44:39.139Z",
-      "total": 52,
+      "posted": "Not Listed",
+      "url": "https://apply.workable.com/innovaccer-analytics/?not_found=true",
+      "source": "Job Board",
+      "snippet": "Innovaccer is transforming healthcare through data-driven innovation, and we're seeking an experienced Director, Partnerships and Alliances",
+      "industry": "HR Tech",
+      "companyStage": "Not Listed",
+      "foundDate": "2026-03-04T03:56:53.421Z",
+      "total": 75,
       "tier": {
-        "label": "👀 Worth Reviewing",
-        "color": "#ffb020",
-        "min": 50
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
       },
       "breakdown": {
         "industry": {
-          "score": 13,
+          "score": 24,
           "max": 30,
-          "note": "Adjacent: saas"
+          "note": "🎯 Core domain: hr tech"
         },
         "title": {
           "score": 25,
@@ -32,14 +32,126 @@
           "note": "Exact target title"
         },
         "keywords": {
-          "score": 2,
+          "score": 10,
           "max": 20,
-          "note": "1 resume keyword matched",
+          "note": "3 resume keywords matched",
           "topMatches": [
-            "saas"
+            "alliance",
+            "hr tech",
+            "alliances"
           ],
-          "matchRate": 1,
-          "totalHits": 1,
+          "matchRate": 3,
+          "totalHits": 3,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 2,
+          "max": 5,
+          "note": "Onsite in radius"
+        }
+      },
+      "fullDescription": "Innovaccer Analytics - Current Openings",
+      "rank": {
+        "total": 75,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 24,
+            "max": 30,
+            "note": "🎯 Core domain: hr tech"
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title"
+          },
+          "keywords": {
+            "score": 10,
+            "max": 20,
+            "note": "3 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "hr tech",
+              "alliances"
+            ],
+            "matchRate": 3,
+            "totalHits": 3,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 2,
+            "max": 5,
+            "note": "Onsite in radius"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP, Partnerships",
+      "company": "Sinch",
+      "location": "Not Listed",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://apply.workable.com/sinch/?not_found=true",
+      "source": "Job Board",
+      "snippet": "We are seeking an accomplished and visionary executive to take on the role of VP, Partnerships.",
+      "industry": "HR Tech",
+      "companyStage": "Not Listed",
+      "foundDate": "2026-03-04T03:56:53.421Z",
+      "total": 68,
+      "tier": {
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
+      },
+      "breakdown": {
+        "industry": {
+          "score": 24,
+          "max": 30,
+          "note": "🎯 Core domain: hr tech"
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title"
+        },
+        "keywords": {
+          "score": 7,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "hr tech",
+            "executive"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
@@ -59,18 +171,19 @@
           "note": "Onsite in radius"
         }
       },
+      "fullDescription": "Sinch - Current Openings",
       "rank": {
-        "total": 52,
+        "total": 65,
         "tier": {
-          "label": "👀 Worth Reviewing",
-          "color": "#ffb020",
-          "min": 50
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
         },
         "breakdown": {
           "industry": {
-            "score": 13,
+            "score": 24,
             "max": 30,
-            "note": "Adjacent: saas"
+            "note": "🎯 Core domain: hr tech"
           },
           "title": {
             "score": 25,
@@ -78,16 +191,16 @@
             "note": "Exact target title"
           },
           "keywords": {
-            "score": 2,
+            "score": 4,
             "max": 20,
             "note": "1 resume keyword matched",
             "topMatches": [
-              "saas"
+              "hr tech"
             ],
             "matchRate": 1,
             "totalHits": 1,
             "totalKeywords": 98,
-            "usedFullDesc": false
+            "usedFullDesc": true
           },
           "comp": {
             "score": 6,
@@ -103,454 +216,6 @@
             "score": 2,
             "max": 5,
             "note": "Onsite in radius"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Partnerships, Acumatica",
-      "company": "ShipHawk",
-      "location": "Not Specified",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://job-boards.greenhouse.io/shiphawk?error=true",
-      "source": "Greenhouse",
-      "snippet": "The Director, Strategic Partners / Alliances is responsible for building, maintaining and managing long-term relationships with current and prospective channel partners.",
-      "industry": "Logistics/SaaS",
-      "companyStage": "Growth",
-      "foundDate": "2026-03-04T03:44:39.139Z",
-      "total": 65,
-      "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
-      },
-      "breakdown": {
-        "industry": {
-          "score": 13,
-          "max": 30,
-          "note": "Adjacent: saas"
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 8,
-          "max": 20,
-          "note": "3 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "alliances",
-            "saas"
-          ],
-          "matchRate": 3,
-          "totalHits": 3,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Jobs at ShipHawk Current openings at ShipHawk Create a Job Alert Level-up your career by having opportunities at ShipHawk sent directly to your inbox. Create alert Search 3 jobs Product Job Senior Product Manager Remote Professional Services Job WMS Implementation Engineer Remote No Department Job General Interest Application United States Powered by Greenhouse",
-      "rank": {
-        "total": 59,
-        "tier": {
-          "label": "👀 Worth Reviewing",
-          "color": "#ffb020",
-          "min": 50
-        },
-        "breakdown": {
-          "industry": {
-            "score": 13,
-            "max": 30,
-            "note": "Adjacent: saas"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 2,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "saas"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Strategic Alliances Director",
-      "company": "Dataiku",
-      "location": "San Francisco, CA",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://job-boards.greenhouse.io/dataiku/jobs/5808432004",
-      "source": "Greenhouse",
-      "snippet": "Build Joint Plans: Create and run business plans with tech partners that directly increase revenue, market awareness, and new sales opportunities.",
-      "industry": "Technology/Data Analytics",
-      "companyStage": "Growth",
-      "foundDate": "2026-03-04T03:44:39.139Z",
-      "total": 40,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 5,
-          "max": 30,
-          "note": "Industry unknown"
-        },
-        "title": {
-          "score": 10,
-          "max": 25,
-          "note": "Partnerships/Channel signal"
-        },
-        "keywords": {
-          "score": 6,
-          "max": 20,
-          "note": "2 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "alliances"
-          ],
-          "matchRate": 2,
-          "totalHits": 2,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "You have an internal drive to hit (and exceed) your targets. Highly Organized: You can manage multiple high-stakes relationships at once without dropping the ball. A Clear Communicator: You cut through the noise and get your point across effectively, whether in person, over email, or on Slack. Qualifications Experience: 5–7 years in Cloud, Software (ISV), or Consulting, specifically focused on data, AI, or analytics. Partnership Track Record: Proven success in alliance management or business development. You’ve successfully launched joint products or offers before. Demonstrated track record building Marketplace capabilities and Revenue. Tech Literacy: You understand the modern data stack, including cloud providers (AWS, Azure, GCP) and platforms like Snowflake, Databricks, or NVIDIA. Education: A Bachelor’s degree in Business, CS, or a related field (MBA or Master’s is a plus). Travel: Ability to travel approximately 20% of the time. How We’ll Measure Success (Expected Outcomes) Pipeline Growth: More high-quality leads sourced through your partners. Revenue Impact: Increase in new annual recurring revenue (ARR) tied to your partnerships. Increase Marketplace Results: Measured in Revenue and Transaction volume. Go-to-Market Expansion: More ways for customers to buy from us (Marketplace, Resell, Co-sell). Stronger Stories: More published success stories showing the impact of our joint work. #LI-LP1 Compensation and Benefits The final compensation package for this role will be determined during the interview process and is based on a variety of factors, including, but not limited to, geographic location, internal equity, education, skill set, experience and training. Eligible roles may also be entitled to receive commission or other variable compensation through Dataiku's incentive compensation program. Dataiku also offers comprehensive benefits, including stock options, medical, dental, and vision plans, flexible spending accounts, pre-tax commuter benefits, a 401k company match, paid vacations and sick leave, paid parental leave, employer paid disability coverage, and additional health and wellbeing perks and benefits. Dataiku reserves the right to amend or modify employee perks and benefits at any time. US only national base pay ranges $265,000 - $310,000 USD What are you waiting for! At Dataiku, you'll be part of a journey to shape the ever-evolving world of AI. We're not just building a product; we're crafting the future of AI. If you're ready to make a significant impact in a company that values innovation, collaboration, and your personal growth, we can't wait to welcome you to Dataiku! And if you’d like to learn even more about working here, you can visit our Dataiku LinkedIn page . Our practices are rooted in the idea that everyone should be treated with dignity, decency and fairness. Dataiku also believes that a diverse identity is a source of strength and allows us to optimize across the many dimensions that are needed for our success. Th",
-      "rank": {
-        "total": 54,
-        "tier": {
-          "label": "👀 Worth Reviewing",
-          "color": "#ffb020",
-          "min": 50
-        },
-        "breakdown": {
-          "industry": {
-            "score": 5,
-            "max": 30,
-            "note": "Industry unknown"
-          },
-          "title": {
-            "score": 10,
-            "max": 25,
-            "note": "Partnerships/Channel signal"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "11 resume keywords matched",
-            "topMatches": [
-              "alliance",
-              "go-to-market",
-              "pipeline",
-              "arr",
-              "alliances",
-              "slack",
-              "benefits",
-              "aca"
-            ],
-            "matchRate": 11,
-            "totalHits": 11,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Alliances Director",
-      "company": "Anaplan",
-      "location": "Germany",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://job-boards.greenhouse.io/anaplan?error=true",
-      "source": "Greenhouse",
-      "snippet": "This role will focus on partner recruitment, driving demand generation, increasing awareness, and enabling our trusted partners to successfully market and deliver Anaplan solutions.",
-      "industry": "Planning/Analytics Software",
-      "companyStage": "Enterprise",
-      "foundDate": "2026-03-04T03:44:39.139Z",
-      "total": 40,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 5,
-          "max": 30,
-          "note": "Industry unknown"
-        },
-        "title": {
-          "score": 10,
-          "max": 25,
-          "note": "Partnerships/Channel signal"
-        },
-        "keywords": {
-          "score": 6,
-          "max": 20,
-          "note": "2 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "alliances"
-          ],
-          "matchRate": 2,
-          "totalHits": 2,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Jobs at Anaplan Current openings at Anaplan Create a Job Alert Level-up your career by having opportunities at Anaplan sent directly to your inbox. Create alert Department Select... Office Select... 224 jobs G&A Accounting Job Senior Manager, Technical Accounting San Francisco, United States G&A Business Operations Job Anaplan Model Builder Gurugram, India Anaplan Model Builder Gurugram, India Anaplan Solution Architect Remote-Texas, United States G&A Corporate Strategy Job Corporate Strategy Manager New New York City, United States Director, Corporate Strategy New New York City, United States G&A Finance Job CS Operations Manager, EMEA London, United Kingdom FP&A Manager, GTM Finance Minneapolis, United States FP&A Manager, GTM Finance San Francisco, United States FP&A Manager, GTM Finance Miami, United States Senior Engineer, Data & Analytics Gurugram, India G&A Human Resources Job HR Specialist - Employee Relations & Compliance New Gurugram, India Technical Recruiter Manchester, United Kingdom G&A IT Job IT Customer Experience Support Analyst Bracknell, United Kingdom Salesforce CPQ Lead Minneapolis, United States Salesforce CPQ Lead Miami, United States Salesforce CPQ Lead Remote-Virginia, United States G&A Legal Job Senior Legal Counsel, Employment & Labor Reston, United States Third Party Risk Analyst Reston, United States Third Party Risk Analyst Miami, United States Third Party Risk Analyst Minneapolis, United States Third Party Risk Analyst New York City, United States Third Party Risk Analyst San Francisco, United States GTM Job Administrative Specialist New Singapore Executive Assistant North Carolina, United States Financial Consolidation & Reporting (FCR) Sales Specialist New Milan, Italy Financial Consolidation & Reporting (FCR) Sales Specialist New Madrid, Spain GTM Alliances Job Alliances Director, France Paris, France Alliances Director, Germany Germany-Remote, Germany Director, ISV Alliances - North America New York, United States Director, ISV Alliances - North America Seattle, United States Director, ISV Alliances - North America San Francisco, United States Partner Enablement Operations Analyst (Anaplan) Mumbai, India GTM / Customer Success and Professional Services Customer Success Job Customer Success Business Partner Toronto, Canada Principal Platform Adoption Specialist Portland-Remote, United States Principal Platform Adoption Specialist Austin-Remote, United States Principal Platform Adoption Specialist Phoenix-Remote, United States Principal Platform Adoption Specialist Minneapolis-Remote, United States Principal Platform Adoption Specialist San Francisco-Remote, United States Scaled Customer Success Business Partner Manila, Philippines Senior Customer Business Partner Stockholm, Sweden Sr Customer Success Business Partner Tokyo, Japan GTM / Customer Success and Professional Services Innovation Readiness Job Platform Adoption Specialist Tokyo, Japan Platform Adoption Specialist Tokyo, Japan VP of Innovation Readiness &",
-      "rank": {
-        "total": 54,
-        "tier": {
-          "label": "👀 Worth Reviewing",
-          "color": "#ffb020",
-          "min": 50
-        },
-        "breakdown": {
-          "industry": {
-            "score": 5,
-            "max": 30,
-            "note": "Industry unknown"
-          },
-          "title": {
-            "score": 10,
-            "max": 25,
-            "note": "Partnerships/Channel signal"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "9 resume keywords matched",
-            "topMatches": [
-              "partner enablement",
-              "alliance",
-              "gtm",
-              "compliance",
-              "architect",
-              "executive",
-              "salesforce",
-              "alliances"
-            ],
-            "matchRate": 9,
-            "totalHits": 9,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director, Revenue Operations",
-      "company": "WorkWave",
-      "location": "Global",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Not Specified",
-      "url": "https://jobs.lever.co/workwave/6f48cda2-94ec-4ca9-8737-18614e7ce43a",
-      "source": "Lever",
-      "snippet": "WorkWave is seeking a strategic, results-driven Director of Revenue Operations to serve as the primary operational and commercial support partner.",
-      "industry": "Software/Field Service",
-      "companyStage": "Growth Stage",
-      "foundDate": "2026-03-04T03:44:39.140Z",
-      "total": 42,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 5,
-          "max": 30,
-          "note": "Industry unknown"
-        },
-        "title": {
-          "score": 18,
-          "max": 25,
-          "note": "RevOps/SalesOps match"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "revenue operations"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "qualifications, relevant experience, and the organization's budget. Our Talent Acquisition team will provide more information about the compensation package for this position during the interview process. WHAT YOU SHOULD KNOW ABOUT US: • We are laid back but buttoned up. We offer a casual work environment and remote work flexibility and have a passion for developing creative, innovative best in class solutions that directly contribute to the success of our customers • We care deeply and deliver service and solutions that make a real difference in the lives of our clients and their businesses • We openly accept others as they are and build strong partnerships based on trust • Teamwork and collaboration is key to help our colleagues and customers solve their challenges • Our team is energetic, fun, naturally inquisitive and eager to make an impact, we invite you to join us! LOVE WHAT YOU DO, NO MATTER WHERE YOU DO IT: • Join our Remote-First Global Work Community: WorkWave provides an innovative and dynamic remote-first Global Work Community that encourages growth, creativity, and collaboration. No matter what stage of your career or where you live, WorkWave is your place to be part of a global company with a startup feel, where your ideas matter and your growth is a priority. A GLOBAL COMPANY WITH A LOCAL PRESENCE: • We know that there are benefits of being in the office and working from home. WorkWave promotes a healthy work/life balance and provides employees with the flexibility of collaborating in the office or the option to work virtually if desired. Our teams are well versed at working collaboratively in a fully virtual environment. • Our HQ is based at our state of the art home office in the historic Bell Works complex located in Holmdel Township, New Jersey. We keep our offices available to all to use when working remotely isn’t feasible, or to help with cross training, team building and/or brainstorming. • We have employees in over 30 states, 7 countries and many regional offices - each with their own set of perks and opportunities to give back to the local community. • Whether you work remotely or take advantage of one of our offices, you’ll find a community of WorkWavers that value diversity, and care deeply about our products, clients, our communities and each other. RELAX, WE'VE GOT YOU COVERED: • Employees can expect a robust benefits package, including health and dental and 401k with company match AND BEYOND... • Find your perfect work/life balance with our Flexible Time Off policy or generous PTO plan (role dependent) and paid holidays • Up to 4 weeks paid bonding leave • Tuition reimbursement • Robust Employee Assistance Program through TotalCare offering free counseling 24/7/365, plus financial counseling, legal guidance, adoption assistance services and much more! • 24/7 access to virtual medical care with Teladoc • Quarterly awards based on peer nominations • Regional discounts and perks • Opportunities to participate in charit",
-      "rank": {
-        "total": 47,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 5,
-            "max": 30,
-            "note": "Industry unknown"
-          },
-          "title": {
-            "score": 18,
-            "max": 25,
-            "note": "RevOps/SalesOps match"
-          },
-          "keywords": {
-            "score": 9,
-            "max": 20,
-            "note": "3 resume keywords matched",
-            "topMatches": [
-              "revenue operations",
-              "own",
-              "benefits"
-            ],
-            "matchRate": 3,
-            "totalHits": 3,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
           }
         }
       }
