@@ -60,12 +60,55 @@ function saveTopPicks(jobs) {
 // ── FILTERS ───────────────────────────────────────────────────────────────────
 const SENIOR_TITLES = ['director', 'vp', 'vice president', 'head of', 'senior director',
   'svp', 'chief', 'principal', 'senior manager', 'sr. manager', 'sr manager'];
-const HARD_JUNIOR = ['coordinator', 'specialist', 'analyst', 'junior', 'intern', 'assistant'];
-const TARGET_FUNCTIONS = ['partner', 'alliance', 'channel', 'reseller', 'ecosystem',
-  'customer success', 'client success', 'revenue oper', 'revops', 'sales oper',
-  'business development', 'account manag', 'enablement', 'go-to-market', 'gtm',
-  'strategic account', 'sales enablement', 'partner success', 'growth',
-  'commercial', 'revenue', 'sales', 'relationship', 'enterprise', 'market'];
+
+const HARD_JUNIOR = ['coordinator', 'specialist', 'analyst', 'junior', 'intern', 'assistant',
+  'associate', 'entry level', 'entry-level'];
+
+// ── TIGHT function targeting — Nick's actual roles ─────────────────────────
+// Must match his core competency: partnerships, alliances, channels, customer success, revops
+const TARGET_FUNCTIONS = [
+  // Core — partnerships/alliances/channel
+  'partner', 'alliance', 'channel', 'reseller', 'ecosystem', 'indirect',
+  'isv', 'var ', ' var,', 'distribution',
+  // Customer success / account management
+  'customer success', 'client success', 'account management', 'account manag',
+  'strategic account', 'partner success', 'client relationship',
+  // Revenue / sales operations
+  'revenue oper', 'revops', 'sales oper', 'sales enablement',
+  // Business development — only when standalone
+  'business development',
+  // GTM / enablement
+  'go-to-market', 'gtm', 'enablement',
+];
+
+// ── HARD REJECT title patterns — even if seniority + function passes ───────
+// These are roles that match loose keywords but are clearly not Nick's space
+const HARD_REJECT_TITLES = [
+  // Marketing disciplines
+  'growth market', 'marketing director', 'marketing manager', 'marketing vp',
+  'content market', 'demand generation', 'demand gen', 'brand market',
+  'product market', 'field market', 'digital market', 'performance market',
+  'seo', 'social media', 'email market', 'lifecycle market', 'communications',
+  // Pure engineering/product
+  'engineering director', 'software director', 'product director', 'data director',
+  'engineering manager', 'product manager', 'engineering vp', 'product vp',
+  'technical director', 'solutions engineer', 'sales engineer',
+  // Finance/legal/HR/ops not Nick's space
+  'finance director', 'financial director', 'legal director', 'hr director',
+  'human resources', 'people director', 'talent director', 'recruiting director',
+  'supply chain', 'logistics director', 'operations director', 'manufacturing',
+  'facilities', 'real estate director',
+  // Healthcare clinical
+  'medical director', 'clinical director', 'nursing director', 'physician',
+  'healthcare director', 'patient',
+  // Trading/investment/securities
+  'trading director', 'investment director', 'portfolio director', 'fund director',
+  'wealth management', 'asset management', 'securities', 'hedge fund',
+  // Other irrelevant
+  'creative director', 'design director', 'art director', 'ux director',
+  'research director', 'science director', 'policy director', 'government',
+  'public sector', 'nonprofit',
+];
 
 // Cities within ~60 miles of Stuart FL 34997
 const IN_RADIUS = [
@@ -124,8 +167,21 @@ function meetsRequirements(job) {
     if (nums.length > 0 && Math.max(...nums) < 100000) return false;
   }
 
-  // FILTER 4: Target function
-  return TARGET_FUNCTIONS.some(f => title.includes(f));
+  // FILTER 4: Hard reject — wrong role type even if title/seniority passes
+  const isHardReject = HARD_REJECT_TITLES.some(r => title.includes(r));
+  if (isHardReject) {
+    console.log(`   🚫 Role reject: "${job.title}"`);
+    return false;
+  }
+
+  // FILTER 5: Must match Nick's core functions
+  const matchesFunction = TARGET_FUNCTIONS.some(f => title.includes(f));
+  if (!matchesFunction) {
+    console.log(`   🚫 Function reject: "${job.title}"`);
+    return false;
+  }
+
+  return true;
 }
 
 // ── SOURCES ───────────────────────────────────────────────────────────────────
@@ -396,30 +452,61 @@ function scoreIndustry(job) {
   let score = 0;
   const matches = [];
 
-  // Tier 1 — Perfect industry match (Nick's core domains)
-  const tier1 = ['hr tech', 'hrtech', 'hcm', 'peo', 'professional employer',
-    'i-9', 'i9', 'e-verify', 'wotc', 'unemployment cost', 'ucm',
-    'workforce compliance', 'employer services', 'payroll tech'];
-  const tier1Hits = tier1.filter(k => text.includes(k));
-  if (tier1Hits.length >= 2) { score = 30; matches.push(`Core domain: ${tier1Hits.slice(0,2).join(', ')}`); }
-  else if (tier1Hits.length === 1) { score = 22; matches.push(`Core domain: ${tier1Hits[0]}`); }
-
-  // Tier 2 — Strong adjacent match
-  if (score < 22) {
-    const tier2 = ['saas', 'b2b software', 'compliance', 'payroll', 'benefits',
-      'background screening', 'identity verification', 'fintech', 'insurtech',
-      'staffing tech', 'recruiting tech', 'workforce'];
-    const tier2Hits = tier2.filter(k => text.includes(k));
-    if (tier2Hits.length >= 2) { score = Math.max(score, 18); matches.push(`Adjacent: ${tier2Hits.slice(0,2).join(', ')}`); }
-    else if (tier2Hits.length === 1) { score = Math.max(score, 12); matches.push(`Adjacent: ${tier2Hits[0]}`); }
+  // ── HARD NEGATIVE — wrong industry signals, cap score low ─────────────────
+  const hardNegative = [
+    'trading', 'hedge fund', 'investment bank', 'securities', 'asset management',
+    'wealth management', 'private equity', 'venture capital', 'insurance broker',
+    'real estate', 'construction', 'manufacturing', 'oil and gas', 'energy sector',
+    'mining', 'agriculture', 'hospitality', 'retail', 'ecommerce', 'e-commerce',
+    'media', 'entertainment', 'gaming company', 'food and beverage', 'restaurant',
+    'healthcare provider', 'hospital', 'clinical', 'pharmaceutical', 'biotech',
+    'nonprofit', 'government', 'public sector', 'education', 'k-12', 'university',
+    'advertising agency', 'marketing agency', 'pr agency', 'creative agency',
+  ];
+  const negHit = hardNegative.find(k => text.includes(k));
+  if (negHit) {
+    return { score: 0, matches: [`❌ Wrong industry: ${negHit}`] };
   }
 
-  // Tier 3 — General B2B/SaaS
-  if (score < 12) {
-    if (text.includes('b2b') || text.includes('enterprise software') || text.includes('cloud')) {
-      score = Math.max(score, 7);
-      matches.push('B2B/SaaS signal');
-    }
+  // ── Tier 1 — Nick's sweet spot (30pts) ────────────────────────────────────
+  const tier1 = [
+    'hr tech', 'hrtech', 'hcm', 'human capital management',
+    'peo', 'professional employer', 'employer of record', 'eor',
+    'i-9', 'i9', 'e-verify', 'wotc', 'work opportunity tax',
+    'unemployment cost', 'ucm', 'unemployment insurance',
+    'workforce compliance', 'employer services', 'payroll tech',
+    'background screening', 'background check', 'employment verification',
+    'identity verification', 'tax credit',
+  ];
+  const tier1Hits = tier1.filter(k => text.includes(k));
+  if (tier1Hits.length >= 2) { score = 30; matches.push(`🎯 Core domain: ${tier1Hits.slice(0,2).join(', ')}`); }
+  else if (tier1Hits.length === 1) { score = 24; matches.push(`🎯 Core domain: ${tier1Hits[0]}`); }
+
+  // ── Tier 2 — Strong adjacent (18pts max) ──────────────────────────────────
+  if (score < 24) {
+    const tier2 = [
+      'saas', 'b2b software', 'compliance software', 'regtech', 'legaltech',
+      'payroll', 'benefits administration', 'benefits tech', 'insurtech',
+      'staffing tech', 'recruiting tech', 'talent tech', 'ats',
+      'workforce management', 'workforce', 'fintech', 'payments tech',
+      'data company', 'data platform', 'api platform',
+    ];
+    const tier2Hits = tier2.filter(k => text.includes(k));
+    if (tier2Hits.length >= 2) { score = Math.max(score, 18); matches.push(`Strong adjacent: ${tier2Hits.slice(0,2).join(', ')}`); }
+    else if (tier2Hits.length === 1) { score = Math.max(score, 13); matches.push(`Adjacent: ${tier2Hits[0]}`); }
+  }
+
+  // ── Tier 3 — General B2B (8pts max) ───────────────────────────────────────
+  if (score < 13) {
+    const tier3 = ['b2b', 'enterprise software', 'cloud platform', 'platform company'];
+    const tier3Hit = tier3.find(k => text.includes(k));
+    if (tier3Hit) { score = Math.max(score, 8); matches.push(`B2B signal: ${tier3Hit}`); }
+  }
+
+  // ── No industry signal at all — score 5 (unknown, not penalized heavily) ──
+  if (score === 0) {
+    score = 5;
+    matches.push('Industry unknown');
   }
 
   return { score: Math.min(score, WEIGHTS.industryMatch), matches };
