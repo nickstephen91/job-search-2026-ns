@@ -230,7 +230,9 @@ function buildHTML(data) {
   <!-- wordmark -->
   <div style="padding:0 2px 14px;display:table;width:100%;box-sizing:border-box;">
     <span style="font-size:9px;font-weight:700;color:${C.dim};text-transform:uppercase;letter-spacing:3px;">Nick Stephen · 2026 Job Search</span>
-    <span style="float:right;font-size:9px;color:${C.dim};letter-spacing:0.5px;">${date}</span>
+    <span style="float:right;">
+      <a href="https://nickstephen91.github.io/job-search-2026-ns/" style="font-size:10px;font-weight:600;color:${C.blueText};text-decoration:none;background:rgba(136,153,200,0.08);border:1px solid rgba(136,153,200,0.2);padding:3px 10px;border-radius:4px;letter-spacing:0.3px;">View Dashboard →</a>
+    </span>
   </div>
 
   <!-- header -->
