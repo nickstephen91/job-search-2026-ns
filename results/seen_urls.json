@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T04:41:54.852Z",
-  "totalTracked": 44,
+  "lastUpdated": "2026-03-05T12:05:00.665Z",
+  "totalTracked": 49,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -48,10 +48,6 @@
     },
     {
       "url": "https://apply.workable.com/sinch/?not_found=true",
-      "ts": 1772676163580
-    },
-    {
-      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
       "ts": 1772676163580
     },
     {
@@ -123,10 +119,6 @@
       "ts": 1772684981791
     },
     {
-      "url": "https://careers.nebius.com/",
-      "ts": 1772684981791
-    },
-    {
       "url": "https://job-boards.greenhouse.io/hightouch?error=true",
       "ts": 1772684981791
     },
@@ -163,10 +155,6 @@
       "ts": 1772685714852
     },
     {
-      "url": "https://job-boards.greenhouse.io/linkhealth?error=true",
-      "ts": 1772685714852
-    },
-    {
       "url": "https://job-boards.greenhouse.io/upbound/jobs/5678055004",
       "ts": 1772685714852
     },
@@ -177,6 +165,38 @@
     {
       "url": "https://www.indeed.com/q-%22channel-partnerships%22-l-remote-jobs.html",
       "ts": 1772685714852
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/stuut-ai/f475c87a-b5a3-434c-8500-c1d5d8655329",
+      "ts": 1772712300665
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openphilanthropy/058b0a7b-3a62-4b0c-a7e6-b524e50b0eb6/application",
+      "ts": 1772712300665
+    },
+    {
+      "url": "https://careers.nebius.com/",
+      "ts": 1772712300665
+    },
+    {
+      "url": "https://imubit.com/careers/",
+      "ts": 1772712300665
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/linkhealth?error=true",
+      "ts": 1772712300665
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/hopskipdrive?error=true",
+      "ts": 1772712300665
+    },
+    {
+      "url": "https://apply.workable.com/oops",
+      "ts": 1772712300665
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
+      "ts": 1772712300665
     }
   ]
 }
