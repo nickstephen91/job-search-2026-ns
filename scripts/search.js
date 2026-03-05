@@ -3,8 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const RESULTS_DIR = path.join(__dirname, '..', 'results');
+const DOCS_RESULTS_DIR = path.join(__dirname, '..', 'docs', 'results');
 const SEEN_URLS_PATH = path.join(RESULTS_DIR, 'seen_urls.json');
 const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
+const DOCS_TODAY_PATH = path.join(DOCS_RESULTS_DIR, 'today.json');
 const TOP_PICKS_PATH = path.join(RESULTS_DIR, 'top_picks.json');
 
 // ── PERSISTENCE ──────────────────────────────────────────────────────────────
@@ -1073,8 +1075,44 @@ async function main() {
   });
   console.log(`\n📊 Total unique: ${deduped.length}`);
 
+  // Universal age filter — reject jobs older than 30 days
+  const MAX_JOB_AGE_DAYS = 30;
+  const now = Date.now();
+
+  function parsePostedAge(posted) {
+    if (!posted || posted === 'Recent') return 0; // assume fresh if no date
+    const s = posted.toLowerCase();
+    // "X days ago" / "X hours ago" / "X weeks ago"
+    const daysAgo = s.match(/(\d+)\s*day/);
+    if (daysAgo) return parseInt(daysAgo[1]);
+    const hoursAgo = s.match(/(\d+)\s*hour/);
+    if (hoursAgo) return 0;
+    const weeksAgo = s.match(/(\d+)\s*week/);
+    if (weeksAgo) return parseInt(weeksAgo[1]) * 7;
+    const monthsAgo = s.match(/(\d+)\s*month/);
+    if (monthsAgo) return parseInt(monthsAgo[1]) * 30;
+    // Try parsing as actual date string e.g. "3/1/2026" or "2026-01-15"
+    try {
+      const d = new Date(posted);
+      if (!isNaN(d.getTime())) {
+        return Math.floor((now - d.getTime()) / (1000 * 60 * 60 * 24));
+      }
+    } catch(e) {}
+    return 0; // unknown format — keep it
+  }
+
+  const fresh = deduped.filter(job => {
+    const ageDays = parsePostedAge(job.posted);
+    if (ageDays > MAX_JOB_AGE_DAYS) {
+      console.log(`   ⏰ Skipping stale job (${ageDays}d old): ${job.title} @ ${job.company}`);
+      return false;
+    }
+    return true;
+  });
+  console.log(`📅 After age filter (max ${MAX_JOB_AGE_DAYS}d): ${fresh.length} (removed ${deduped.length - fresh.length} stale)`);
+
   // Filter
-  const qualified = deduped.filter(meetsRequirements);
+  const qualified = fresh.filter(meetsRequirements);
   console.log(`✅ After filters: ${qualified.length}`);
 
   // New only
@@ -1158,6 +1196,13 @@ async function main() {
 
   // Save today — currentTopPicks shown in stats, previousTopPicks shown in revisit card
   fs.writeFileSync(TODAY_PATH, JSON.stringify({
+    date: dateStr, count: rankedJobs.length,
+    jobs: rankedJobs,
+    topPicks: previousTopPicks,          // "revisit" card = last run's bests
+    currentTopPicks: currentTopPicks     // stats bar top picks count = this run
+  }, null, 2));
+  if (!fs.existsSync(DOCS_RESULTS_DIR)) fs.mkdirSync(DOCS_RESULTS_DIR, { recursive: true });
+  fs.writeFileSync(DOCS_TODAY_PATH, JSON.stringify({
     date: dateStr, count: rankedJobs.length,
     jobs: rankedJobs,
     topPicks: previousTopPicks,          // "revisit" card = last run's bests
