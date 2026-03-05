@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T02:02:43.580Z",
-  "totalTracked": 17,
+  "lastUpdated": "2026-03-05T04:20:36.703Z",
+  "totalTracked": 27,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -63,12 +63,52 @@
       "ts": 1772676163580
     },
     {
-      "url": "https://job-boards.greenhouse.io/checkr?error=true",
+      "url": "https://jobs.experian.com/job/director-data-strategy-and-partnerships-in-united-states-jid-1551",
       "ts": 1772676163580
     },
     {
-      "url": "https://jobs.experian.com/job/director-data-strategy-and-partnerships-in-united-states-jid-1551",
-      "ts": 1772676163580
+      "url": "https://jobs.ashbyhq.com/neuroscale/66d227bf-c29c-48b3-8085-3c55b32a6646",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/vantage/6396ad08-3328-4c66-943f-95fd1b0b380c",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/higharc/332ca91a-f17b-436c-903d-45fdea246b76",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://jobs.lever.co/terminus/da79890e-34d9-4603-8b22-bbf4dc3c69e7",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://jobs.lever.co/vevo/f96efb22-6571-4a6b-9b06-9c61aa2ca9e7",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://jobs.lever.co/convex/57f83705-9ff6-4c3c-a394-6dfd2166ee3d",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://jobs.lever.co/actian/905dd8a3-0097-4b90-9294-f2b3cba86c5e",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://www.indeed.com/q-head-of-partnerships-fintech-jobs.html",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://www.linkedin.com/company/velocity-global-llc",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://www.indeed.com/q-deel-remote-jobs.html",
+      "ts": 1772684436703
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/checkr?error=true",
+      "ts": 1772684436703
     }
   ]
 }

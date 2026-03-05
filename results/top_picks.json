@@ -1,20 +1,20 @@
 {
-  "savedAt": "2026-03-05T02:02:43.579Z",
+  "savedAt": "2026-03-05T04:20:36.702Z",
   "picks": [
     {
       "title": "VP, Partnerships",
       "company": "Checkr",
-      "location": "Remote",
+      "location": "San Francisco, CA",
       "workType": "Remote",
       "salary": "$300,000 to $340,000",
       "posted": "Not Listed",
       "url": "https://job-boards.greenhouse.io/checkr?error=true",
       "source": "Greenhouse",
-      "snippet": "Checkr is looking for a VP, Partnerships to help scale the company's efforts to drive demand across Enterprise, Mid-Market and SMB customers. Manage our key alliance relationships, partnership planning and joint bookings goal setting, and operational execution with HR Technology vendors (ATS, HRIS).",
-      "industry": "HR Tech / Background Screening",
+      "snippet": "Reporting to the SVP, Customer Success and Partnerships you will manage our business plans for alliances and channel, develop close partner relationships, orchestrate cross-functional execution, and drive business success while managing the BD team.",
+      "industry": "HR Tech / PEO",
       "companyStage": "Private",
-      "foundDate": "2026-03-05T02:02:04.068Z",
-      "total": 92,
+      "foundDate": "2026-03-05T04:20:18.559Z",
+      "total": 94,
       "tier": {
         "label": "🔥 Must Apply",
         "color": "#00e5a0",
@@ -24,7 +24,7 @@
         "industry": {
           "score": 30,
           "max": 30,
-          "note": "🎯 Core domain: hr tech, background screening"
+          "note": "🎯 Core domain: hr tech, peo"
         },
         "title": {
           "score": 25,
@@ -32,17 +32,18 @@
           "note": "Exact target title"
         },
         "keywords": {
-          "score": 18,
+          "score": 20,
           "max": 20,
-          "note": "7 resume keywords matched",
+          "note": "6 resume keywords matched",
           "topMatches": [
             "alliance",
+            "cross-functional",
+            "peo",
             "hr tech",
-            "background screening",
-            "hris"
+            "alliances"
           ],
-          "matchRate": 7,
-          "totalHits": 7,
+          "matchRate": 6,
+          "totalHits": 6,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
@@ -64,7 +65,7 @@
       },
       "fullDescription": "Jobs at Checkr Current openings at Checkr About Checkr Checkr builds people infrastructure for the future of work. We've designed a faster—and fairer—way to screen job seekers. Established in 2014, Checkr puts modern technology powered by machine learning in the hands of hiring teams, helping to hire great new people with an experience that’s fast, smooth, and safe. Checkr has over 100,000 customers including DoorDash, Coinbase, Lyft, Instacart, and Airtable. A career at Checkr means collaborating with brilliant minds, disrupting an industry, and opening channels of employment to often overlooked candidates. Checkr has been recognized as one of BuiltIn's 2023 Best Places to Work in the US and is a Y Combinator 2023 Breakthrough Company. Create a Job Alert Level-up your career by having opportunities at Checkr sent directly to your inbox. Create alert Search 44 jobs Customer Success Job Associate Customer Success Manager Nashville, Tennessee, United States Enterprise Customer Success Manager San Francisco, California, United States Sr. Principal Customer Success Manager Denver, Colorado, United States; San Francisco, California, United States Engineering Job Backend Software Engineer II San Francisco, California, United States Director of Platform Engineering Denver, Colorado, United States; San Francisco, California, United States Engineering Manager Santiago, Región Metropolitana, Chile Engineering Manager, Growth Denver, Colorado, United States; San Francisco, California, United States Engineering Manager, Truework San Francisco, California, United States Python Engineer, Truework New San Francisco, California, United States Security Engineer Denver, Colorado, United States; San Francisco, California, United States Senior Python Engineer, Truework New San Francisco, California, United States Senior Software Engineer Santiago, Región Metropolitana, Chile Senior Software Engineer New San Francisco, California, United States Senior Software Engineer, Verifications Denver, Colorado, United States; San Francisco, California, United States Software Engineer II San Francisco, California, United States Sr. Software Engineer Santiago, Región Metropolitana, Chile Staff Software Engineer Santiago, Región Metropolitana, Chile Finance Job Senior FP&S Analyst San Francisco, California, United States Technical Revenue Accounting Lead San Francisco, California, United States Information Technology Job Salesforce Administrator New Santiago, Región Metropolitana, Chile Legal & Compliance Job Director, Legal Product & Privacy San Francisco, California, United States Senior Product Counsel New San Francisco, California, United States Marketing Job Partner Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Growth Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Product Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Operations Job ",
       "rank": {
-        "total": 94,
+        "total": 92,
         "tier": {
           "label": "🔥 Must Apply",
           "color": "#00e5a0",
@@ -74,7 +75,7 @@
           "industry": {
             "score": 30,
             "max": 30,
-            "note": "🎯 Core domain: hr tech, background screening"
+            "note": "🎯 Core domain: hr tech, peo"
           },
           "title": {
             "score": 25,
@@ -82,19 +83,19 @@
             "note": "Exact target title"
           },
           "keywords": {
-            "score": 20,
+            "score": 18,
             "max": 20,
-            "note": "7 resume keywords matched",
+            "note": "6 resume keywords matched",
             "topMatches": [
               "peo",
               "hr tech",
               "compliance",
               "salesforce",
-              "background screening",
-              "aca"
+              "aca",
+              "enterprise"
             ],
-            "matchRate": 7,
-            "totalHits": 7,
+            "matchRate": 6,
+            "totalHits": 6,
             "totalKeywords": 98,
             "usedFullDesc": true
           },
@@ -117,132 +118,23 @@
       }
     },
     {
-      "title": "VP, Partnerships",
-      "company": "Sinch",
-      "location": "Remote",
+      "title": "Strategic Partnerships Director - SI Alliances",
+      "company": "Velocity Global",
+      "location": "United States",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://apply.workable.com/sinch/?not_found=true",
-      "source": "Job Board",
-      "snippet": "Accomplished and visionary executive to take on the role of VP, Partnerships. Reporting directly to the EVP, Americas and serving as a key member of the leadership team.",
+      "posted": "1 week ago",
+      "url": "https://www.linkedin.com/company/velocity-global-llc",
+      "source": "LinkedIn",
+      "snippet": "Strategic Partnerships Director - SI Alliances position at Velocity Global focusing on system integrator partnerships",
       "industry": "HR Tech",
-      "companyStage": "Established",
-      "foundDate": "2026-03-05T02:02:04.068Z",
-      "total": 75,
+      "companyStage": "Growth",
+      "foundDate": "2026-03-05T04:20:18.559Z",
+      "total": 63,
       "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
-      },
-      "breakdown": {
-        "industry": {
-          "score": 24,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech"
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 11,
-          "max": 20,
-          "note": "3 resume keywords matched",
-          "topMatches": [
-            "hr tech",
-            "reporting",
-            "executive"
-          ],
-          "matchRate": 3,
-          "totalHits": 3,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Sinch - Current Openings",
-      "rank": {
-        "total": 68,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 24,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "hr tech"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Alliance Director - HR Tech & Fintech Partnerships",
-      "company": "Papaya Global",
-      "location": "United Kingdom",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://www.remoterocketship.com/company/papayaglobal-2/jobs/alliance-director-hr-tech-fintech-partnerships-united-kingdom",
-      "source": "Job Board",
-      "snippet": "Results-driven Alliance Director to lead and expand regional and global partnerships in the HR tech and fintech space. Focus on driving revenue through co-selling initiatives with ISVs, fintech, GSIs, MSPs.",
-      "industry": "HR Tech",
-      "companyStage": "Unicorn",
-      "foundDate": "2026-03-05T02:02:04.068Z",
-      "total": 65,
-      "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
       },
       "breakdown": {
         "industry": {
@@ -256,13 +148,13 @@
           "note": "Partnerships/Channel signal"
         },
         "keywords": {
-          "score": 12,
+          "score": 10,
           "max": 20,
           "note": "3 resume keywords matched",
           "topMatches": [
             "alliance",
             "hr tech",
-            "co-sell"
+            "alliances"
           ],
           "matchRate": 3,
           "totalHits": 3,
@@ -285,8 +177,9 @@
           "note": "Fully remote ✅"
         }
       },
+      "fullDescription": "Velocity Global | LinkedIn Skip to main content LinkedIn Top Content People Learning Jobs Games Sign in Join now Continue with email By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . Velocity Global Software Development Denver, CO 75,519 followers Follow Discover all 426 employees Report this company About us Pebl puts a world of talent at your fingertips. With our Global Work Platform™, companies can hire, pay, and manage employees in 185+ countries—removing risk, red tape, and guesswork from global growth. Backed by more than a decade of local expertise and compliance leadership, Pebl is built to move as fast as your ambitions, whether you’re bringing on your first international teammate or scaling a workforce across continents. Our AI-powered, human-led platform integrates seamlessly with HRIS, HCM, and ATS systems and delivers instant, vetted answers in 50+ languages—so you stay compliant and confident wherever you grow. We’ve helped thousands of businesses—from Fortune 500s to rapid-growth start-ups—scale strategically around the world. Consistently named a leader in global Employer of Record (EOR) services, Pebl holds more employment licenses than any other EOR and is rated #1 for compliance on G2. With Pebl, companies everywhere can hire great talent anywhere. Website http://hellopebl.com/ External link for Velocity Global Industry Software Development Company size 501-1,000 employees Headquarters Denver, CO Type Privately Held Specialties Employer of Record (EoR), International PEO), Global Immigration, Agent of Record (AoR), Independent Contractor Compliance, International Employment, Global Payroll, International HR, International Business, Foreign Business, Human Resources, HR, Global Strategy, Global Work Platform, Global PEO, Work Anywhere, and Remote Work Locations Primary 3827 Lafayette Street Suite 107 Denver, CO 80205, US Get directions Amsterdam, NL Get directions Bogota, CO Get directions Singapore, SG Get directions Dubai, AE Get directions London, GB Get directions Paris, FR Get directions Toronto, CA Get directions Madrid, ES Get directions Mexico City, MX Get directions Sydney, AU Get directions Hong Kong, HK Get directions Munich, DE Get directions Bangalore, IN Get directions Wellington, NZ Get directions Seoul, KR Get directions Milan, IT Get directions Show more locations Show fewer locations Employees at Velocity Global Greg Corniea Joshua Pollack Alexei Miaskovski Glenn Moyer See all employees Updates Velocity Global 75,519 followers 5mo Report this post We’re turning the page (literally). Velocity Global is now Pebl . New name, new look, new page → Follow Pebl for what’s next. https://lnkd.in/ge5GgB8E Pebl | LinkedIn linkedin.com 80 Like Comment Share Velocity Global 75,519 followers 5mo Report this post The future of global hiring has a new name: Pebl . Velocity Global is now Pebl—an AI-first global hiring platform built on a decade of compliance l",
       "rank": {
-        "total": 65,
+        "total": 73,
         "tier": {
           "label": "⭐ Strong Match",
           "color": "#6c63ff",
@@ -304,16 +197,133 @@
             "note": "Partnerships/Channel signal"
           },
           "keywords": {
-            "score": 12,
+            "score": 20,
             "max": 20,
-            "note": "3 resume keywords matched",
+            "note": "10 resume keywords matched",
             "topMatches": [
               "alliance",
+              "peo",
               "hr tech",
-              "co-sell"
+              "hcm",
+              "alliances",
+              "api",
+              "payroll",
+              "hris"
             ],
-            "matchRate": 3,
-            "totalHits": 3,
+            "matchRate": 10,
+            "totalHits": 10,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Global Head of Partnerships",
+      "company": "Deel",
+      "location": "California",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://www.indeed.com/q-deel-remote-jobs.html",
+      "source": "Indeed",
+      "snippet": "Executive presence to navigate boardroom-level negotiations, yet maintain granular obsession of builder who can audit API integration",
+      "industry": "HR Tech",
+      "companyStage": "Unicorn",
+      "foundDate": "2026-03-05T04:20:18.559Z",
+      "total": 81,
+      "tier": {
+        "label": "🔥 Must Apply",
+        "color": "#00e5a0",
+        "min": 80
+      },
+      "breakdown": {
+        "industry": {
+          "score": 24,
+          "max": 30,
+          "note": "🎯 Core domain: hr tech"
+        },
+        "title": {
+          "score": 25,
+          "max": 25,
+          "note": "Exact target title · Global scope"
+        },
+        "keywords": {
+          "score": 13,
+          "max": 20,
+          "note": "4 resume keywords matched",
+          "topMatches": [
+            "hr tech",
+            "integration",
+            "executive",
+            "api"
+          ],
+          "matchRate": 4,
+          "totalHits": 4,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 81,
+        "tier": {
+          "label": "🔥 Must Apply",
+          "color": "#00e5a0",
+          "min": 80
+        },
+        "breakdown": {
+          "industry": {
+            "score": 24,
+            "max": 30,
+            "note": "🎯 Core domain: hr tech"
+          },
+          "title": {
+            "score": 25,
+            "max": 25,
+            "note": "Exact target title · Global scope"
+          },
+          "keywords": {
+            "score": 13,
+            "max": 20,
+            "note": "4 resume keywords matched",
+            "topMatches": [
+              "hr tech",
+              "integration",
+              "executive",
+              "api"
+            ],
+            "matchRate": 4,
+            "totalHits": 4,
             "totalKeywords": 98,
             "usedFullDesc": false
           },
@@ -336,19 +346,19 @@
       }
     },
     {
-      "title": "Head of Partnerships",
-      "company": "Deel",
-      "location": "United States",
+      "title": "Head of Channel Partnerships",
+      "company": "Gusto",
+      "location": "Remote",
       "workType": "Remote",
       "salary": "Not Listed",
       "posted": "Recent",
-      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
-      "source": "LinkedIn",
-      "snippet": "Mission to leverage past record of success launching and growing partner programs to build and sustain Deel's partner marketplace and sales partnerships. Responsible for finding and managing partners.",
+      "url": "https://www.indeed.com/q-head-of-partnerships-fintech-jobs.html",
+      "source": "Indeed",
+      "snippet": "Strategic leader to serve as Head of Channel Partnerships at Gusto. Reports to Head of Indirect GTM and responsible for building and scaling channel partner organization",
       "industry": "HR Tech",
-      "companyStage": "Unicorn",
-      "foundDate": "2026-03-05T02:02:04.068Z",
-      "total": 72,
+      "companyStage": "Public",
+      "foundDate": "2026-03-05T04:20:18.559Z",
+      "total": 76,
       "tier": {
         "label": "⭐ Strong Match",
         "color": "#6c63ff",
@@ -366,14 +376,15 @@
           "note": "Exact target title"
         },
         "keywords": {
-          "score": 4,
+          "score": 8,
           "max": 20,
-          "note": "1 resume keyword matched",
+          "note": "2 resume keywords matched",
           "topMatches": [
+            "gtm",
             "hr tech"
           ],
-          "matchRate": 1,
-          "totalHits": 1,
+          "matchRate": 2,
+          "totalHits": 2,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
@@ -393,9 +404,8 @@
           "note": "Fully remote ✅"
         }
       },
-      "fullDescription": "1,000+ Head Of Sponsorship jobs in United States Skip to main content LinkedIn Head Of Sponsorship in United States Expand search This button displays the currently selected search type. When expanded it provides a list of search options that will switch the search inputs to match the current selection. Jobs People Learning Clear text Clear text Clear text Clear text Clear text Sign in Join now Any time Any time (1,073) Past month (880) Past week (288) Past 24 hours (62) Done Company Clear text Creative Circle (5) SKIMS (2) Huge (2) Atmosphere TV (2) Teachstone (1) Done Job type Full-time (964) Part-time (26) Contract (26) Temporary (12) Volunteer (2) Done Experience level Internship (3) Entry level (54) Associate (22) Mid-Senior level (303) Director (510) Done Location Clear text New York, NY (143) Los Angeles, CA (29) Washington, DC (21) Boston, MA (20) Seattle, WA (10) Done Salary $40,000+ (75) $60,000+ (74) $80,000+ (67) $100,000+ (62) $120,000+ (48) Done Remote On-site (606) Remote (236) Hybrid (231) Done Get notified about new Head Of Sponsorship jobs in United States . Sign in to create job alert 1,000+ Head Of Sponsorship Jobs in United States Director of Brand Partnerships Director of Brand Partnerships Jubilee Media Los Angeles, CA 1 day ago Director, Multi Brand Hybrid Partnerships (East or West Coast) Director, Multi Brand Hybrid Partnerships (East or West Coast) SKIMS Los Angeles, CA 1 week ago New York Operations Coordinator New York Operations Coordinator Puppy Sphere New York, NY 2 days ago Marketing Director, Streaming & Partnerships Marketing Director, Streaming & Partnerships America's Test Kitchen Boston, MA Be an early applicant 3 weeks ago Director, Global IKEA Partnerships Director, Global IKEA Partnerships Taskrabbit New York City Metropolitan Area 2 weeks ago Director of Partnership Success Director of Partnership Success Teachstone United States Be an early applicant 1 week ago Senior Director, Client Partnership Senior Director, Client Partnership Huge United States 2 weeks ago Senior Brand Partnerships Director (US) Senior Brand Partnerships Director (US) Dexerto United States 2 days ago Director, Multi Brand Hybrid Partnerships (East or West Coast) Director, Multi Brand Hybrid Partnerships (East or West Coast) SKIMS New York, NY 1 week ago Director of National Brand Partnerships Director of National Brand Partnerships Atmosphere TV New York, NY 1 day ago Senior Director Growth & Brand Partnerships Senior Director Growth & Brand Partnerships Creative Circle New York, NY 6 days ago Ted Moore ’71 Director of Sailing Ted Moore ’71 Director of Sailing Cornell University Ithaca, NY Be an early applicant 1 day ago Director, Olympic Partnerships Director, Olympic Partnerships 160over90 New York, NY 2 weeks ago Director, Robotics Partnerships – Meta Robotics Studio Director, Robotics Partnerships – Meta Robotics Studio Meta Menlo Park, CA 1 day ago Senior Vice President, Head of ReedPop Senior Vice President, Head of ReedPop R",
       "rank": {
-        "total": 78,
+        "total": 76,
         "tier": {
           "label": "⭐ Strong Match",
           "color": "#6c63ff",
@@ -413,18 +423,17 @@
             "note": "Exact target title"
           },
           "keywords": {
-            "score": 10,
+            "score": 8,
             "max": 20,
-            "note": "3 resume keywords matched",
+            "note": "2 resume keywords matched",
             "topMatches": [
-              "peo",
-              "hr tech",
-              "aca"
+              "gtm",
+              "hr tech"
             ],
-            "matchRate": 3,
-            "totalHits": 3,
+            "matchRate": 2,
+            "totalHits": 2,
             "totalKeywords": 98,
-            "usedFullDesc": true
+            "usedFullDesc": false
           },
           "comp": {
             "score": 6,
