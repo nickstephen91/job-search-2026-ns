@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T12:05:00.665Z",
-  "totalTracked": 49,
+  "lastUpdated": "2026-03-05T14:23:20.438Z",
+  "totalTracked": 63,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -123,10 +123,6 @@
       "ts": 1772684981791
     },
     {
-      "url": "https://job-boards.greenhouse.io/partnerstack?error=true",
-      "ts": 1772684981791
-    },
-    {
       "url": "https://wellfound.com/jobs/1262447-vp-of-partnership-growth",
       "ts": 1772684981791
     },
@@ -175,15 +171,7 @@
       "ts": 1772712300665
     },
     {
-      "url": "https://careers.nebius.com/",
-      "ts": 1772712300665
-    },
-    {
       "url": "https://imubit.com/careers/",
-      "ts": 1772712300665
-    },
-    {
-      "url": "https://job-boards.greenhouse.io/linkhealth?error=true",
       "ts": 1772712300665
     },
     {
@@ -197,6 +185,74 @@
     {
       "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
       "ts": 1772712300665
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Arlo/85ec52cd-364f-444c-95c2-d36b203770af/application",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://careers.nebius.com/",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/partnerstack?error=true",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/cybersheath?error=true",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/linkhealth?error=true",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.lever.co/sprypointservices/0d678a99-0f67-4f6b-a35c-eb4e6c609ed0",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.lever.co/rover/6987d7fb-46f2-4a82-8611-cb0832552277",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.lever.co/curri/e0be7fa4-431a-43d2-8590-4c5fbfdda461",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.lever.co/govini/3ecb767c-21d4-48f9-9301-58b2ce0d8f05",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.lever.co/makpar/cf7b6bd2-fce3-45e5-9506-d2fa27a084db",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.lever.co/UpMetrics/82068283-f73a-4667-aa6b-666648acc1d4",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.lever.co/clevertap/7fdbed92-9ab3-4717-b68a-acdaaa66239f",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.lever.co/Ionicpartners/25d9037c-9126-4df0-ac0c-e3a1b1945d72",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.workable.com/view/2K9MgYnwWACq9n5jff35WT/senior-channel-partnership-manager-in-toronto-at-moomoo",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.experian.com/job/director-strategic-alliances-remote-in-costa-mesa-united-states-jid-1750",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.experian.com/job/senior-director-strategic-growth-and-partnerships-housing-in-united-states-jid-4320",
+      "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.experian.com/job/business-development-director-oem-partnerships-remote-in-united-states-jid-4269",
+      "ts": 1772720600438
     }
   ]
 }
