@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T04:20:36.703Z",
-  "totalTracked": 27,
+  "lastUpdated": "2026-03-05T04:29:41.791Z",
+  "totalTracked": 36,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -109,6 +109,42 @@
     {
       "url": "https://job-boards.greenhouse.io/checkr?error=true",
       "ts": 1772684436703
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/montecarlodata/4d8b8f69-e806-4641-94f4-a0ac09f12578",
+      "ts": 1772684981791
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/elliptic/d041a934-3d47-4268-99cf-35c92056f53f",
+      "ts": 1772684981791
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/clear/jobs/7635195",
+      "ts": 1772684981791
+    },
+    {
+      "url": "https://careers.nebius.com/",
+      "ts": 1772684981791
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/hightouch?error=true",
+      "ts": 1772684981791
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/partnerstack?error=true",
+      "ts": 1772684981791
+    },
+    {
+      "url": "https://wellfound.com/jobs/1262447-vp-of-partnership-growth",
+      "ts": 1772684981791
+    },
+    {
+      "url": "https://careers.equifax.com/en/jobs/j00172866/partner-success-director/",
+      "ts": 1772684981791
+    },
+    {
+      "url": "Not specified",
+      "ts": 1772684981791
     }
   ]
 }

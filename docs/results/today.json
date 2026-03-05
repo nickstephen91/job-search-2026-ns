@@ -1,25 +1,25 @@
 {
   "date": "Wednesday, March 4, 2026",
-  "count": 11,
+  "count": 9,
   "jobs": [
     {
-      "title": "VP, Partnerships",
-      "company": "Checkr",
-      "location": "San Francisco, CA",
+      "title": "VP of Strategic Partnerships",
+      "company": "Spring Health",
+      "location": "Remote",
       "workType": "Remote",
-      "salary": "$300,000 to $340,000",
-      "posted": "Not Listed",
-      "url": "https://job-boards.greenhouse.io/checkr?error=true",
-      "source": "Greenhouse",
-      "snippet": "Reporting to the SVP, Customer Success and Partnerships you will manage our business plans for alliances and channel, develop close partner relationships, orchestrate cross-functional execution, and drive business success while managing the BD team.",
+      "salary": "$225,000-275,000",
+      "posted": "Not specified",
+      "url": "Not specified",
+      "source": "Job Board",
+      "snippet": "Reporting to the CRO and partnering with Legal, Compliance, Implementation, Product & Engineering the VP of Strategic Partnerships will own the development and execution of a comprehensive partnership strategy. Experience in the Employee Benefits ecosystem strongly preferred.",
       "industry": "HR Tech / PEO",
       "companyStage": "Private",
-      "foundDate": "2026-03-05T04:20:18.559Z",
-      "total": 94,
+      "foundDate": "2026-03-05T04:29:35.319Z",
+      "total": 75,
       "tier": {
-        "label": "🔥 Must Apply",
-        "color": "#00e5a0",
-        "min": 80
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
       },
       "breakdown": {
         "industry": {
@@ -28,20 +28,21 @@
           "note": "🎯 Core domain: hr tech, peo"
         },
         "title": {
-          "score": 25,
+          "score": 10,
           "max": 25,
-          "note": "Exact target title"
+          "note": "Partnerships/Channel signal"
         },
         "keywords": {
           "score": 20,
           "max": 20,
           "note": "6 resume keywords matched",
           "topMatches": [
-            "alliance",
-            "cross-functional",
             "peo",
             "hr tech",
-            "alliances"
+            "compliance",
+            "reporting",
+            "own",
+            "benefits"
           ],
           "matchRate": 6,
           "totalHits": 6,
@@ -54,9 +55,9 @@
           "note": "Salary format unclear"
         },
         "stage": {
-          "score": 8,
+          "score": 4,
           "max": 8,
-          "note": "✅ Known fit company"
+          "note": "Stage unknown"
         },
         "workType": {
           "score": 5,
@@ -64,13 +65,12 @@
           "note": "Fully remote ✅"
         }
       },
-      "fullDescription": "Jobs at Checkr Current openings at Checkr About Checkr Checkr builds people infrastructure for the future of work. We've designed a faster—and fairer—way to screen job seekers. Established in 2014, Checkr puts modern technology powered by machine learning in the hands of hiring teams, helping to hire great new people with an experience that’s fast, smooth, and safe. Checkr has over 100,000 customers including DoorDash, Coinbase, Lyft, Instacart, and Airtable. A career at Checkr means collaborating with brilliant minds, disrupting an industry, and opening channels of employment to often overlooked candidates. Checkr has been recognized as one of BuiltIn's 2023 Best Places to Work in the US and is a Y Combinator 2023 Breakthrough Company. Create a Job Alert Level-up your career by having opportunities at Checkr sent directly to your inbox. Create alert Search 44 jobs Customer Success Job Associate Customer Success Manager Nashville, Tennessee, United States Enterprise Customer Success Manager San Francisco, California, United States Sr. Principal Customer Success Manager Denver, Colorado, United States; San Francisco, California, United States Engineering Job Backend Software Engineer II San Francisco, California, United States Director of Platform Engineering Denver, Colorado, United States; San Francisco, California, United States Engineering Manager Santiago, Región Metropolitana, Chile Engineering Manager, Growth Denver, Colorado, United States; San Francisco, California, United States Engineering Manager, Truework San Francisco, California, United States Python Engineer, Truework New San Francisco, California, United States Security Engineer Denver, Colorado, United States; San Francisco, California, United States Senior Python Engineer, Truework New San Francisco, California, United States Senior Software Engineer Santiago, Región Metropolitana, Chile Senior Software Engineer New San Francisco, California, United States Senior Software Engineer, Verifications Denver, Colorado, United States; San Francisco, California, United States Software Engineer II San Francisco, California, United States Sr. Software Engineer Santiago, Región Metropolitana, Chile Staff Software Engineer Santiago, Región Metropolitana, Chile Finance Job Senior FP&S Analyst San Francisco, California, United States Technical Revenue Accounting Lead San Francisco, California, United States Information Technology Job Salesforce Administrator New Santiago, Región Metropolitana, Chile Legal & Compliance Job Director, Legal Product & Privacy San Francisco, California, United States Senior Product Counsel New San Francisco, California, United States Marketing Job Partner Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Growth Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Product Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Operations Job ",
       "rank": {
-        "total": 92,
+        "total": 75,
         "tier": {
-          "label": "🔥 Must Apply",
-          "color": "#00e5a0",
-          "min": 80
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
         },
         "breakdown": {
           "industry": {
@@ -79,26 +79,26 @@
             "note": "🎯 Core domain: hr tech, peo"
           },
           "title": {
-            "score": 25,
+            "score": 10,
             "max": 25,
-            "note": "Exact target title"
+            "note": "Partnerships/Channel signal"
           },
           "keywords": {
-            "score": 18,
+            "score": 20,
             "max": 20,
             "note": "6 resume keywords matched",
             "topMatches": [
               "peo",
               "hr tech",
               "compliance",
-              "salesforce",
-              "aca",
-              "enterprise"
+              "reporting",
+              "own",
+              "benefits"
             ],
             "matchRate": 6,
             "totalHits": 6,
             "totalKeywords": 98,
-            "usedFullDesc": true
+            "usedFullDesc": false
           },
           "comp": {
             "score": 6,
@@ -106,9 +106,9 @@
             "note": "Salary format unclear"
           },
           "stage": {
-            "score": 8,
+            "score": 4,
             "max": 8,
-            "note": "✅ Known fit company"
+            "note": "Stage unknown"
           },
           "workType": {
             "score": 5,
@@ -119,44 +119,160 @@
       }
     },
     {
-      "title": "Global Head of Partnerships",
-      "company": "Deel",
-      "location": "California",
+      "title": "Head of Revenue Operations (Director or VP)",
+      "company": "Hightouch",
+      "location": "Remote (North America)",
       "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://www.indeed.com/q-deel-remote-jobs.html",
-      "source": "Indeed",
-      "snippet": "Executive presence to navigate boardroom-level negotiations, yet maintain granular obsession of builder who can audit API integration",
-      "industry": "HR Tech",
-      "companyStage": "Unicorn",
-      "foundDate": "2026-03-05T04:20:18.559Z",
-      "total": 81,
+      "salary": "$240,000 to $325,000",
+      "posted": "Not specified",
+      "url": "https://job-boards.greenhouse.io/hightouch?error=true",
+      "source": "Greenhouse",
+      "snippet": "Work with sales leadership and executive team to achieve growth goals, own territory management and forecasting",
+      "industry": "Data/SaaS",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 58,
       "tier": {
-        "label": "🔥 Must Apply",
-        "color": "#00e5a0",
-        "min": 80
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
       },
       "breakdown": {
         "industry": {
-          "score": 24,
+          "score": 13,
           "max": 30,
-          "note": "🎯 Core domain: hr tech"
+          "note": "Adjacent: saas"
         },
         "title": {
-          "score": 25,
+          "score": 18,
           "max": 25,
-          "note": "Exact target title · Global scope"
+          "note": "RevOps/SalesOps match"
         },
         "keywords": {
-          "score": 13,
+          "score": 12,
           "max": 20,
           "note": "4 resume keywords matched",
           "topMatches": [
-            "hr tech",
-            "integration",
+            "revenue operations",
+            "own",
             "executive",
-            "api"
+            "saas"
+          ],
+          "matchRate": 4,
+          "totalHits": 4,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary format unclear"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at Hightouch Current openings at Hightouch Create a Job Alert Level-up your career by having opportunities at Hightouch sent directly to your inbox. Create alert Search Department Select... 53 jobs AI Job AI Strategy Consultant Remote (North America) Customer Success Job Customer Success Engineer Remote (Europe) Implementation Manager, EMEA Remote (Europe) Manager, Implementation Management Remote (US) Manager, Technical Account Management New York City, New York Technical Account Manager Remote (North America) Design Job Senior Product Designer, Agents Remote (North America) Senior Product Designer, Customer Studio Remote (North America) Engineering Job Backend Engineer, AI Content Agents Remote (North America) Developer Productivity Engineer Remote (North America) Forward Deployed Marketing Data Scientist Remote (North America) Full Stack Product Engineer Remote (North America) Head of Machine Learning Remote (North America) IT Manager Remote (North America) Machine Learning Engineer, AI Decisioning Remote (North America) Principal Engineer, Streaming Systems Remote (North America) Software Engineer, AI Agents Remote (North America) Software Engineer, Control Plane Remote (North America) Software Engineer, Customer Studio Backend Remote (North America) Software Engineer, Distributed Systems Remote (North America) Software Engineer, Journeys Remote (North America) Software Engineer, Streaming Systems Remote (North America) Staff Engineer - AI Productivity Remote (North America) Web Engineer Remote (North America) Finance / Data / Operations Job Analytics Engineer Remote (North America) Marketing & SDR Operations Manager Remote (North America) Legal Job Commercial Counsel New York City, New York Marketing Job Product Marketing Manager, AdTech Remote (North America) Product Marketing Manager, Partnerships Remote (North America) Senior Content Manager Remote (North America) Partnerships Job Cloud Alliance Lead- Google Cloud Platform Remote (North America) Partner Solutions Engineer Remote (North America) People Job GTM Recruiter (Contract) New York, New York People Partner, GTM New York City, New York Sales Job Account Executive (APAC) Remote (APAC) Account Executive, Enterprise West Remote (West Coast) Enterprise Account Executive -Mountain West Remote (Mountain West) Enterprise Account Executive- Northeast Region Northeast, U.S. Enterprise Account Executive, North EMEA Remote (Europe) Enterprise Account Executive- Southeast Region Southeast, U.S. Enterprise Solutions Engineer, East East and Central Timezones (North America) Enterprise Solutions Engineer, West West and Mountain Timezones (North America) Head of Mid-Market Sales, North America New York, NY/ San Francisco, CA Manager, Solutions Engineering New York, NY or San Francisco, CA Mid-Market Account Executive San Francisco, CA Mid-Market Account Executive, East Region Remote (East Coast) Mid-Market Account Executive, EMEA London, United Kingdom Mid-Market Solutions Engineer Remote (Nor",
+      "rank": {
+        "total": 66,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 13,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 18,
+            "max": 25,
+            "note": "RevOps/SalesOps match"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "8 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "gtm",
+              "revenue operations",
+              "peo",
+              "executive",
+              "saas",
+              "enterprise"
+            ],
+            "matchRate": 8,
+            "totalHits": 8,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary format unclear"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Partner Success Director",
+      "company": "Equifax",
+      "location": "London",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://careers.equifax.com/en/jobs/j00172866/partner-success-director/",
+      "source": "Job Board",
+      "snippet": "Equifax is seeking a Partner Success Director to join our Sales UK Business Unit and Strategic Alliances & Partnerships team. This senior leadership role is responsible for driving sustainable growth and innovation through existing strategic partnerships.",
+      "industry": "HR Tech / PEO",
+      "companyStage": "Public",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 65,
+      "tier": {
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
+      },
+      "breakdown": {
+        "industry": {
+          "score": 30,
+          "max": 30,
+          "note": "🎯 Core domain: hr tech, peo"
+        },
+        "title": {
+          "score": 5,
+          "max": 25,
+          "note": "Senior level — weak function match"
+        },
+        "keywords": {
+          "score": 14,
+          "max": 20,
+          "note": "4 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "peo",
+            "hr tech",
+            "alliances"
           ],
           "matchRate": 4,
           "totalHits": 4,
@@ -174,38 +290,38 @@
           "note": "✅ Known fit company"
         },
         "workType": {
-          "score": 5,
+          "score": 2,
           "max": 5,
-          "note": "Fully remote ✅"
+          "note": "Onsite in radius"
         }
       },
       "rank": {
-        "total": 81,
+        "total": 65,
         "tier": {
-          "label": "🔥 Must Apply",
-          "color": "#00e5a0",
-          "min": 80
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
         },
         "breakdown": {
           "industry": {
-            "score": 24,
+            "score": 30,
             "max": 30,
-            "note": "🎯 Core domain: hr tech"
+            "note": "🎯 Core domain: hr tech, peo"
           },
           "title": {
-            "score": 25,
+            "score": 5,
             "max": 25,
-            "note": "Exact target title · Global scope"
+            "note": "Senior level — weak function match"
           },
           "keywords": {
-            "score": 13,
+            "score": 14,
             "max": 20,
             "note": "4 resume keywords matched",
             "topMatches": [
+              "alliance",
+              "peo",
               "hr tech",
-              "integration",
-              "executive",
-              "api"
+              "alliances"
             ],
             "matchRate": 4,
             "totalHits": 4,
@@ -223,255 +339,31 @@
             "note": "✅ Known fit company"
           },
           "workType": {
-            "score": 5,
+            "score": 2,
             "max": 5,
-            "note": "Fully remote ✅"
+            "note": "Onsite in radius"
           }
         }
       }
     },
     {
-      "title": "Head of Channel Partnerships",
-      "company": "Gusto",
-      "location": "Remote",
+      "title": "Director of Partnerships",
+      "company": "PartnerStack",
+      "location": "Canada / USA",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://www.indeed.com/q-head-of-partnerships-fintech-jobs.html",
-      "source": "Indeed",
-      "snippet": "Strategic leader to serve as Head of Channel Partnerships at Gusto. Reports to Head of Indirect GTM and responsible for building and scaling channel partner organization",
-      "industry": "HR Tech",
-      "companyStage": "Public",
-      "foundDate": "2026-03-05T04:20:18.559Z",
-      "total": 76,
+      "posted": "Not specified",
+      "url": "https://job-boards.greenhouse.io/partnerstack?error=true",
+      "source": "Greenhouse",
+      "snippet": "Build, run, and scale PartnerStack's partner ecosystem with 5+ years in B2B SaaS partnerships and alliances leadership",
+      "industry": "Partnership Platform/SaaS",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 71,
       "tier": {
         "label": "⭐ Strong Match",
         "color": "#6c63ff",
         "min": 65
-      },
-      "breakdown": {
-        "industry": {
-          "score": 24,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech"
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 8,
-          "max": 20,
-          "note": "2 resume keywords matched",
-          "topMatches": [
-            "gtm",
-            "hr tech"
-          ],
-          "matchRate": 2,
-          "totalHits": 2,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "rank": {
-        "total": 76,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 24,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 8,
-            "max": 20,
-            "note": "2 resume keywords matched",
-            "topMatches": [
-              "gtm",
-              "hr tech"
-            ],
-            "matchRate": 2,
-            "totalHits": 2,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Strategic Partnerships Director - SI Alliances",
-      "company": "Velocity Global",
-      "location": "United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "1 week ago",
-      "url": "https://www.linkedin.com/company/velocity-global-llc",
-      "source": "LinkedIn",
-      "snippet": "Strategic Partnerships Director - SI Alliances position at Velocity Global focusing on system integrator partnerships",
-      "industry": "HR Tech",
-      "companyStage": "Growth",
-      "foundDate": "2026-03-05T04:20:18.559Z",
-      "total": 63,
-      "tier": {
-        "label": "👀 Worth Reviewing",
-        "color": "#ffb020",
-        "min": 50
-      },
-      "breakdown": {
-        "industry": {
-          "score": 24,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech"
-        },
-        "title": {
-          "score": 10,
-          "max": 25,
-          "note": "Partnerships/Channel signal"
-        },
-        "keywords": {
-          "score": 10,
-          "max": 20,
-          "note": "3 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "hr tech",
-            "alliances"
-          ],
-          "matchRate": 3,
-          "totalHits": 3,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Velocity Global | LinkedIn Skip to main content LinkedIn Top Content People Learning Jobs Games Sign in Join now Continue with email By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . Velocity Global Software Development Denver, CO 75,519 followers Follow Discover all 426 employees Report this company About us Pebl puts a world of talent at your fingertips. With our Global Work Platform™, companies can hire, pay, and manage employees in 185+ countries—removing risk, red tape, and guesswork from global growth. Backed by more than a decade of local expertise and compliance leadership, Pebl is built to move as fast as your ambitions, whether you’re bringing on your first international teammate or scaling a workforce across continents. Our AI-powered, human-led platform integrates seamlessly with HRIS, HCM, and ATS systems and delivers instant, vetted answers in 50+ languages—so you stay compliant and confident wherever you grow. We’ve helped thousands of businesses—from Fortune 500s to rapid-growth start-ups—scale strategically around the world. Consistently named a leader in global Employer of Record (EOR) services, Pebl holds more employment licenses than any other EOR and is rated #1 for compliance on G2. With Pebl, companies everywhere can hire great talent anywhere. Website http://hellopebl.com/ External link for Velocity Global Industry Software Development Company size 501-1,000 employees Headquarters Denver, CO Type Privately Held Specialties Employer of Record (EoR), International PEO), Global Immigration, Agent of Record (AoR), Independent Contractor Compliance, International Employment, Global Payroll, International HR, International Business, Foreign Business, Human Resources, HR, Global Strategy, Global Work Platform, Global PEO, Work Anywhere, and Remote Work Locations Primary 3827 Lafayette Street Suite 107 Denver, CO 80205, US Get directions Amsterdam, NL Get directions Bogota, CO Get directions Singapore, SG Get directions Dubai, AE Get directions London, GB Get directions Paris, FR Get directions Toronto, CA Get directions Madrid, ES Get directions Mexico City, MX Get directions Sydney, AU Get directions Hong Kong, HK Get directions Munich, DE Get directions Bangalore, IN Get directions Wellington, NZ Get directions Seoul, KR Get directions Milan, IT Get directions Show more locations Show fewer locations Employees at Velocity Global Greg Corniea Joshua Pollack Alexei Miaskovski Glenn Moyer See all employees Updates Velocity Global 75,519 followers 5mo Report this post We’re turning the page (literally). Velocity Global is now Pebl . New name, new look, new page → Follow Pebl for what’s next. https://lnkd.in/ge5GgB8E Pebl | LinkedIn linkedin.com 80 Like Comment Share Velocity Global 75,519 followers 5mo Report this post The future of global hiring has a new name: Pebl . Velocity Global is now Pebl—an AI-first global hiring platform built on a decade of compliance l",
-      "rank": {
-        "total": 73,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 24,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech"
-          },
-          "title": {
-            "score": 10,
-            "max": 25,
-            "note": "Partnerships/Channel signal"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "10 resume keywords matched",
-            "topMatches": [
-              "alliance",
-              "peo",
-              "hr tech",
-              "hcm",
-              "alliances",
-              "api",
-              "payroll",
-              "hris"
-            ],
-            "matchRate": 10,
-            "totalHits": 10,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP of Partnerships",
-      "company": "Terminus",
-      "location": "Not Specified",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://jobs.lever.co/terminus/da79890e-34d9-4603-8b22-bbf4dc3c69e7",
-      "source": "Lever",
-      "snippet": "Responsible for day to day collaboration with sales, marketing, engineering and operations to develop strategic relationships that facilitate pipeline growth.",
-      "industry": "Marketing Technology/SaaS",
-      "companyStage": "Growth Stage",
-      "foundDate": "2026-03-05T04:20:18.558Z",
-      "total": 59,
-      "tier": {
-        "label": "👀 Worth Reviewing",
-        "color": "#ffb020",
-        "min": 50
       },
       "breakdown": {
         "industry": {
@@ -485,15 +377,18 @@
           "note": "Exact target title"
         },
         "keywords": {
-          "score": 6,
+          "score": 14,
           "max": 20,
-          "note": "2 resume keywords matched",
+          "note": "5 resume keywords matched",
           "topMatches": [
-            "pipeline",
-            "saas"
+            "alliance",
+            "partner ecosystem",
+            "alliances",
+            "saas",
+            "b2b"
           ],
-          "matchRate": 2,
-          "totalHits": 2,
+          "matchRate": 5,
+          "totalHits": 5,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
@@ -503,9 +398,9 @@
           "note": "Salary not listed"
         },
         "stage": {
-          "score": 4,
+          "score": 8,
           "max": 8,
-          "note": "Stage unknown"
+          "note": "✅ Known fit company"
         },
         "workType": {
           "score": 5,
@@ -513,8 +408,9 @@
           "note": "Fully remote ✅"
         }
       },
+      "fullDescription": "Jobs at PartnerStack Current Openings at PartnerStack Create a Job Alert Level-up your career by having opportunities at PartnerStack sent directly to your inbox. Create alert Search Department Select... 4 jobs Engineering Job Staff Engineer Canada/Remote Marketing Job Performance Creative Manager Canada/Remote Success Job Customer Success Manager Canada/Remote Onboarding Consultant New Canada/Remote Powered by Greenhouse",
       "rank": {
-        "total": 59,
+        "total": 61,
         "tier": {
           "label": "👀 Worth Reviewing",
           "color": "#ffb020",
@@ -532,127 +428,15 @@
             "note": "Exact target title"
           },
           "keywords": {
-            "score": 6,
+            "score": 4,
             "max": 20,
             "note": "2 resume keywords matched",
             "topMatches": [
-              "pipeline",
-              "saas"
+              "saas",
+              "onboarding"
             ],
             "matchRate": 2,
             "totalHits": 2,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director of Strategic Partnerships & Alliances",
-      "company": "Neuroscale AI",
-      "location": "Remote",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://jobs.ashbyhq.com/neuroscale/66d227bf-c29c-48b3-8085-3c55b32a6646",
-      "source": "Ashby",
-      "snippet": "Director of Strategic Partnerships & Alliances to build and own a partner-led revenue engine from the ground up at AI recruiting platform.",
-      "industry": "AI/Recruiting Technology",
-      "companyStage": "Early Growth",
-      "foundDate": "2026-03-05T04:20:18.557Z",
-      "total": 53,
-      "tier": {
-        "label": "👀 Worth Reviewing",
-        "color": "#ffb020",
-        "min": 50
-      },
-      "breakdown": {
-        "industry": {
-          "score": 13,
-          "max": 30,
-          "note": "Adjacent: recruiting tech"
-        },
-        "title": {
-          "score": 10,
-          "max": 25,
-          "note": "Partnerships/Channel signal"
-        },
-        "keywords": {
-          "score": 11,
-          "max": 20,
-          "note": "4 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "own",
-            "alliances",
-            "recruiting"
-          ],
-          "matchRate": 4,
-          "totalHits": 4,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Director of Strategic Partnerships & Alliances @ Neuroscale AI You need to enable JavaScript to run this app.",
-      "rank": {
-        "total": 50,
-        "tier": {
-          "label": "👀 Worth Reviewing",
-          "color": "#ffb020",
-          "min": 50
-        },
-        "breakdown": {
-          "industry": {
-            "score": 13,
-            "max": 30,
-            "note": "Adjacent: recruiting tech"
-          },
-          "title": {
-            "score": 10,
-            "max": 25,
-            "note": "Partnerships/Channel signal"
-          },
-          "keywords": {
-            "score": 8,
-            "max": 20,
-            "note": "3 resume keywords matched",
-            "topMatches": [
-              "alliance",
-              "alliances",
-              "recruiting"
-            ],
-            "matchRate": 3,
-            "totalHits": 3,
             "totalKeywords": 98,
             "usedFullDesc": true
           },
@@ -675,246 +459,41 @@
       }
     },
     {
-      "title": "VP of Customer Success",
-      "company": "Vantage",
-      "location": "Remote",
+      "title": "Director of Partnerships",
+      "company": "Elliptic",
+      "location": "Not Listed",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://jobs.ashbyhq.com/vantage/6396ad08-3328-4c66-943f-95fd1b0b380c",
+      "posted": "Not Listed",
+      "url": "https://jobs.ashbyhq.com/elliptic/d041a934-3d47-4268-99cf-35c92056f53f",
       "source": "Ashby",
-      "snippet": "VP of Customer Success position at Vantage.",
-      "industry": "Cloud Cost Management",
-      "companyStage": "Growth",
-      "foundDate": "2026-03-05T04:20:18.558Z",
-      "total": 40,
+      "snippet": "As Director of Partnerships, you'll play a pivotal role in driving Elliptic's commercial growth by building and scaling a high-impact partner ecosystem.",
+      "industry": "Fintech/Crypto",
+      "companyStage": "Not Listed",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 57,
       "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
       },
       "breakdown": {
         "industry": {
-          "score": 5,
+          "score": 13,
           "max": 30,
-          "note": "Industry unknown"
+          "note": "Adjacent: fintech"
         },
         "title": {
-          "score": 20,
+          "score": 25,
           "max": 25,
-          "note": "CS leadership match"
+          "note": "Exact target title"
         },
         "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
           "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "VP of Customer Success @ Vantage You need to enable JavaScript to run this app.",
-      "rank": {
-        "total": 40,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 5,
-            "max": 30,
-            "note": "Industry unknown"
-          },
-          "title": {
-            "score": 20,
-            "max": 25,
-            "note": "CS leadership match"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director, Customer Success",
-      "company": "Convex",
-      "location": "San Francisco",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://jobs.lever.co/convex/57f83705-9ff6-4c3c-a394-6dfd2166ee3d",
-      "source": "Lever",
-      "snippet": "Play a crucial role in creating the foundation of a new world-class Customer Success operation.",
-      "industry": "Commercial Services/PropTech",
-      "companyStage": "Growth Stage",
-      "foundDate": "2026-03-05T04:20:18.558Z",
-      "total": 40,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 5,
-          "max": 30,
-          "note": "Industry unknown"
-        },
-        "title": {
-          "score": 20,
-          "max": 25,
-          "note": "CS leadership match"
-        },
-        "keywords": {
-          "score": 0,
-          "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "rank": {
-        "total": 40,
-        "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
-        },
-        "breakdown": {
-          "industry": {
-            "score": 5,
-            "max": 30,
-            "note": "Industry unknown"
-          },
-          "title": {
-            "score": 20,
-            "max": 25,
-            "note": "CS leadership match"
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Director, Customer Success",
-      "company": "Higharc",
-      "location": "Remote",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://jobs.ashbyhq.com/higharc/332ca91a-f17b-436c-903d-45fdea246b76",
-      "source": "Ashby",
-      "snippet": "Director of Customer Success to architect and lead a modern, outcome-driven CS organization that helps customers realize measurable business value.",
-      "industry": "Construction Technology",
-      "companyStage": "Growth",
-      "foundDate": "2026-03-05T04:20:18.558Z",
-      "total": 38,
-      "tier": {
-        "label": "📋 Low Match",
-        "color": "#4a4f66",
-        "min": 0
-      },
-      "breakdown": {
-        "industry": {
-          "score": 0,
-          "max": 30,
-          "note": "❌ Wrong industry: construction"
-        },
-        "title": {
-          "score": 20,
-          "max": 25,
-          "note": "CS leadership match"
-        },
-        "keywords": {
-          "score": 3,
           "max": 20,
           "note": "1 resume keyword matched",
           "topMatches": [
-            "architect"
+            "partner ecosystem"
           ],
           "matchRate": 1,
           "totalHits": 1,
@@ -937,24 +516,24 @@
           "note": "Fully remote ✅"
         }
       },
-      "fullDescription": "Director, Customer Success @ Higharc You need to enable JavaScript to run this app.",
+      "fullDescription": "Director of Partnerships @ Elliptic You need to enable JavaScript to run this app.",
       "rank": {
-        "total": 35,
+        "total": 53,
         "tier": {
-          "label": "📋 Low Match",
-          "color": "#4a4f66",
-          "min": 0
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
         },
         "breakdown": {
           "industry": {
-            "score": 0,
+            "score": 13,
             "max": 30,
-            "note": "❌ Wrong industry: construction"
+            "note": "Adjacent: fintech"
           },
           "title": {
-            "score": 20,
+            "score": 25,
             "max": 25,
-            "note": "CS leadership match"
+            "note": "Exact target title"
           },
           "keywords": {
             "score": 0,
@@ -985,19 +564,128 @@
       }
     },
     {
-      "title": "Senior Vice President of Global Support and Customer Success",
-      "company": "Actian Corporation",
-      "location": "Global",
+      "title": "Director, Partner Operations",
+      "company": "Nebius",
+      "location": "United States",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://jobs.lever.co/actian/905dd8a3-0097-4b90-9294-f2b3cba86c5e",
-      "source": "Lever",
-      "snippet": "Lead our global support and customer experience initiatives with a world-class strategy that maximizes customer retention.",
-      "industry": "Data Management/Analytics",
-      "companyStage": "Mature",
-      "foundDate": "2026-03-05T04:20:18.558Z",
-      "total": 27,
+      "posted": "Not specified",
+      "url": "https://careers.nebius.com/",
+      "source": "Greenhouse",
+      "snippet": "Lead annual planning for Channel & Alliances organization, partner with senior leadership to define channel strategy",
+      "industry": "Cloud Infrastructure",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 52,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 5,
+          "max": 30,
+          "note": "Industry unknown"
+        },
+        "title": {
+          "score": 22,
+          "max": 25,
+          "note": "Strong function match"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Find your role: Open positions at Nebius Contact sales Log in to Token Factory Log in to AI Cloud AI Cloud Token Factory Solutions Why Nebius Pricing Docs Resources Company For investors Find your place at Nebius 269 open roles All departments All locations All work formats Role Department Location Account Executive - APJ Sales Remote · Singapore Account Executive - Benelux Customer Experience Amsterdam Account Executive - DACH Sales Germany · Remote Account Executive - France Sales France · Paris Account Executive - Middle East Sales Abu Dhabi · Dubai Advanced IT Data Center Technician Hardware Infrastructure Mäntsälä AI Governance Specialist Legal Amsterdam · London · Remote - Europe AI/ML Specialist Solutions Architect Customer Experience Canada · Remote - United States AI/ML Specialist Solutions Architect Customer Experience Amsterdam · Remote - Europe Application Security Engineer Technology Amsterdam · Berlin · Prague · Remote - Europe BDR Manager Sales United States Business Development Representative Sales New York City, New York · San Francisco Bay Area, California · United States Business Development Representative Sales Dubai Business Development Representative - Israel Sales Tel Aviv Business Development Representative - Nebius Token Factory Sales Remote - United States Business Development Representative - Singapore Sales Singapore Business Development Representative - UKI Sales London Campaigns & Events Manager Communications Amsterdam Channel Partner Manager, Middle East Sales Abu Dhabi · Remote Communications Business Partner Communications Amsterdam Communications Designer - Social Media Marketing United States Construction Project Manager, Data Centers Hardware Infrastructure United States Content & Channels Manager Communications Amsterdam Corporate Development Associate Finance London Customer Engineer Customer Experience United States Customer Support Engineer Customer Experience United States Data Center Design Lead Hardware Infrastructure Remote - United States Data Center Facilities Manager Hardware Infrastructure United States Data Center Infrastructure Engineer Hardware Infrastructure New Jersey Data Center IT Infrastructure Engineer Hardware Infrastructure Béthune, Pas-de-Calais Data Center IT Manager Hardware Infrastructure Mäntsälä Data Center IT Manager Hardware Infrastructure Béthune, Pas-de-Calais Data Center IT Manager Hardware Infrastructure Minnesota Data Center IT Manager Hardware Infrastructure Oklahoma Data Center IT Support Manager Hardware Infrastructure Mäntsälä Data Center IT Support Manager (Longcross) Hardware Infrastructure London Data Center IT Technician Hardware Infrastructure London Data Center IT Technician Hardware Infrastructure Béthune, Pas-de-Calais Datacenter IT Technician (Longcross) Hardware Infrastructure London Data Center L1 IT Technician Hardware Infrastructure Finland Data Center Logistics Specialist Hardware Infrastructure United States Data Center Logistics Specialist Hardware Infras",
+      "rank": {
+        "total": 52,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 22,
+            "max": 25,
+            "note": "Strong function match"
+          },
+          "keywords": {
+            "score": 6,
+            "max": 20,
+            "note": "2 resume keywords matched",
+            "topMatches": [
+              "architect",
+              "executive"
+            ],
+            "matchRate": 2,
+            "totalHits": 2,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Senior Director, Strategic Partnerships & Alliances",
+      "company": "Monte Carlo",
+      "location": "Not Listed",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://jobs.ashbyhq.com/montecarlodata/4d8b8f69-e806-4641-94f4-a0ac09f12578",
+      "source": "Ashby",
+      "snippet": "Monte Carlo is seeking a Senior Director of Partnerships & Alliances to lead and expand our strategic partnerships and alliance initiatives.",
+      "industry": "Data Technology",
+      "companyStage": "Series B",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 40,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -1010,9 +698,118 @@
           "note": "Industry unknown"
         },
         "title": {
-          "score": 7,
+          "score": 10,
           "max": 25,
-          "note": "Senior level — weak function match · Global scope"
+          "note": "Partnerships/Channel signal"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 40,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 6,
+            "max": 20,
+            "note": "2 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "alliances"
+            ],
+            "matchRate": 2,
+            "totalHits": 2,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP of Partnership & Growth",
+      "company": "Lomotif",
+      "location": "Brazil/Los Angeles/Remote",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://wellfound.com/jobs/1262447-vp-of-partnership-growth",
+      "source": "Job Board",
+      "snippet": "12-15 years leadership experience, Growth/Partnerships background, partnerships include content, promotions, influencers",
+      "industry": "Social Media/Video",
+      "companyStage": "Not specified",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 37,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": "❌ Wrong industry: media"
+        },
+        "title": {
+          "score": 22,
+          "max": 25,
+          "note": "Strong function match"
         },
         "keywords": {
           "score": 0,
@@ -1041,7 +838,7 @@
         }
       },
       "rank": {
-        "total": 27,
+        "total": 37,
         "tier": {
           "label": "📋 Low Match",
           "color": "#4a4f66",
@@ -1049,14 +846,14 @@
         },
         "breakdown": {
           "industry": {
-            "score": 5,
+            "score": 0,
             "max": 30,
-            "note": "Industry unknown"
+            "note": "❌ Wrong industry: media"
           },
           "title": {
-            "score": 7,
+            "score": 22,
             "max": 25,
-            "note": "Senior level — weak function match · Global scope"
+            "note": "Strong function match"
           },
           "keywords": {
             "score": 0,
@@ -1087,19 +884,19 @@
       }
     },
     {
-      "title": "Director of Agency Partnerships",
-      "company": "Vevo",
-      "location": "Not Specified",
+      "title": "Director, Commercial Partnerships & Channel Sales",
+      "company": "CLEAR",
+      "location": "New York, New York, United States",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://jobs.lever.co/vevo/f96efb22-6571-4a6b-9b06-9c61aa2ca9e7",
-      "source": "Lever",
-      "snippet": "Support the day-to-day development and maintenance of Vevo's agency upfront partnerships.",
-      "industry": "Music/Media/Entertainment",
-      "companyStage": "Mature",
-      "foundDate": "2026-03-05T04:20:18.558Z",
-      "total": 25,
+      "posted": "Not specified",
+      "url": "https://job-boards.greenhouse.io/clear/jobs/7635195",
+      "source": "Greenhouse",
+      "snippet": "Seeking highly experienced Director to lead CLEAR1 partner ecosystem across ISVs, VARs, Marketplaces, and System Integrators",
+      "industry": "Technology/Identity",
+      "companyStage": "Public",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 40,
       "tier": {
         "label": "📋 Low Match",
         "color": "#4a4f66",
@@ -1107,9 +904,9 @@
       },
       "breakdown": {
         "industry": {
-          "score": 0,
+          "score": 5,
           "max": 30,
-          "note": "❌ Wrong industry: media"
+          "note": "Industry unknown"
         },
         "title": {
           "score": 10,
@@ -1117,12 +914,17 @@
           "note": "Partnerships/Channel signal"
         },
         "keywords": {
-          "score": 0,
+          "score": 10,
           "max": 20,
-          "note": "0 resume keywords matched",
-          "topMatches": [],
-          "matchRate": 0,
-          "totalHits": 0,
+          "note": "4 resume keywords matched",
+          "topMatches": [
+            "partner ecosystem",
+            "marketplaces",
+            "channel sales",
+            "var"
+          ],
+          "matchRate": 4,
+          "totalHits": 4,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
@@ -1142,8 +944,9 @@
           "note": "Fully remote ✅"
         }
       },
+      "fullDescription": "you have a disability or chronic condition (physical, visual, auditory, cognitive, mental, emotional, or other) that substantially limits one or more of your major life activities, including mobility, communication (seeing, hearing, speaking), and learning? Select... Are you a veteran or active member of the United States Armed Forces? Select... Submit application Powered by Greenhouse",
       "rank": {
-        "total": 25,
+        "total": 32,
         "tier": {
           "label": "📋 Low Match",
           "color": "#4a4f66",
@@ -1151,9 +954,9 @@
         },
         "breakdown": {
           "industry": {
-            "score": 0,
+            "score": 5,
             "max": 30,
-            "note": "❌ Wrong industry: media"
+            "note": "Industry unknown"
           },
           "title": {
             "score": 10,
@@ -1161,14 +964,16 @@
             "note": "Partnerships/Channel signal"
           },
           "keywords": {
-            "score": 0,
+            "score": 2,
             "max": 20,
-            "note": "0 resume keywords matched",
-            "topMatches": [],
-            "matchRate": 0,
-            "totalHits": 0,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "channel sales"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
             "totalKeywords": 98,
-            "usedFullDesc": false
+            "usedFullDesc": true
           },
           "comp": {
             "score": 6,
@@ -1193,451 +998,6 @@
     {
       "title": "VP, Partnerships",
       "company": "Checkr",
-      "location": "Remote",
-      "workType": "Remote",
-      "salary": "$300,000 to $340,000",
-      "posted": "Not Listed",
-      "url": "https://job-boards.greenhouse.io/checkr?error=true",
-      "source": "Greenhouse",
-      "snippet": "Checkr is looking for a VP, Partnerships to help scale the company's efforts to drive demand across Enterprise, Mid-Market and SMB customers. Manage our key alliance relationships, partnership planning and joint bookings goal setting, and operational execution with HR Technology vendors (ATS, HRIS).",
-      "industry": "HR Tech / Background Screening",
-      "companyStage": "Private",
-      "foundDate": "2026-03-05T02:02:04.068Z",
-      "total": 92,
-      "tier": {
-        "label": "🔥 Must Apply",
-        "color": "#00e5a0",
-        "min": 80
-      },
-      "breakdown": {
-        "industry": {
-          "score": 30,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech, background screening"
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 18,
-          "max": 20,
-          "note": "7 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "hr tech",
-            "background screening",
-            "hris"
-          ],
-          "matchRate": 7,
-          "totalHits": 7,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary format unclear"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Jobs at Checkr Current openings at Checkr About Checkr Checkr builds people infrastructure for the future of work. We've designed a faster—and fairer—way to screen job seekers. Established in 2014, Checkr puts modern technology powered by machine learning in the hands of hiring teams, helping to hire great new people with an experience that’s fast, smooth, and safe. Checkr has over 100,000 customers including DoorDash, Coinbase, Lyft, Instacart, and Airtable. A career at Checkr means collaborating with brilliant minds, disrupting an industry, and opening channels of employment to often overlooked candidates. Checkr has been recognized as one of BuiltIn's 2023 Best Places to Work in the US and is a Y Combinator 2023 Breakthrough Company. Create a Job Alert Level-up your career by having opportunities at Checkr sent directly to your inbox. Create alert Search 44 jobs Customer Success Job Associate Customer Success Manager Nashville, Tennessee, United States Enterprise Customer Success Manager San Francisco, California, United States Sr. Principal Customer Success Manager Denver, Colorado, United States; San Francisco, California, United States Engineering Job Backend Software Engineer II San Francisco, California, United States Director of Platform Engineering Denver, Colorado, United States; San Francisco, California, United States Engineering Manager Santiago, Región Metropolitana, Chile Engineering Manager, Growth Denver, Colorado, United States; San Francisco, California, United States Engineering Manager, Truework San Francisco, California, United States Python Engineer, Truework New San Francisco, California, United States Security Engineer Denver, Colorado, United States; San Francisco, California, United States Senior Python Engineer, Truework New San Francisco, California, United States Senior Software Engineer Santiago, Región Metropolitana, Chile Senior Software Engineer New San Francisco, California, United States Senior Software Engineer, Verifications Denver, Colorado, United States; San Francisco, California, United States Software Engineer II San Francisco, California, United States Sr. Software Engineer Santiago, Región Metropolitana, Chile Staff Software Engineer Santiago, Región Metropolitana, Chile Finance Job Senior FP&S Analyst San Francisco, California, United States Technical Revenue Accounting Lead San Francisco, California, United States Information Technology Job Salesforce Administrator New Santiago, Región Metropolitana, Chile Legal & Compliance Job Director, Legal Product & Privacy San Francisco, California, United States Senior Product Counsel New San Francisco, California, United States Marketing Job Partner Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Growth Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Sr. Product Marketing Manager Denver, Colorado, United States; San Francisco, California, United States Operations Job ",
-      "rank": {
-        "total": 94,
-        "tier": {
-          "label": "🔥 Must Apply",
-          "color": "#00e5a0",
-          "min": 80
-        },
-        "breakdown": {
-          "industry": {
-            "score": 30,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech, background screening"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 20,
-            "max": 20,
-            "note": "7 resume keywords matched",
-            "topMatches": [
-              "peo",
-              "hr tech",
-              "compliance",
-              "salesforce",
-              "background screening",
-              "aca"
-            ],
-            "matchRate": 7,
-            "totalHits": 7,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary format unclear"
-          },
-          "stage": {
-            "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "VP, Partnerships",
-      "company": "Sinch",
-      "location": "Remote",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://apply.workable.com/sinch/?not_found=true",
-      "source": "Job Board",
-      "snippet": "Accomplished and visionary executive to take on the role of VP, Partnerships. Reporting directly to the EVP, Americas and serving as a key member of the leadership team.",
-      "industry": "HR Tech",
-      "companyStage": "Established",
-      "foundDate": "2026-03-05T02:02:04.068Z",
-      "total": 75,
-      "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
-      },
-      "breakdown": {
-        "industry": {
-          "score": 24,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech"
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 11,
-          "max": 20,
-          "note": "3 resume keywords matched",
-          "topMatches": [
-            "hr tech",
-            "reporting",
-            "executive"
-          ],
-          "matchRate": 3,
-          "totalHits": 3,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 4,
-          "max": 8,
-          "note": "Stage unknown"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "Sinch - Current Openings",
-      "rank": {
-        "total": 68,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 24,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 4,
-            "max": 20,
-            "note": "1 resume keyword matched",
-            "topMatches": [
-              "hr tech"
-            ],
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 4,
-            "max": 8,
-            "note": "Stage unknown"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Alliance Director - HR Tech & Fintech Partnerships",
-      "company": "Papaya Global",
-      "location": "United Kingdom",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://www.remoterocketship.com/company/papayaglobal-2/jobs/alliance-director-hr-tech-fintech-partnerships-united-kingdom",
-      "source": "Job Board",
-      "snippet": "Results-driven Alliance Director to lead and expand regional and global partnerships in the HR tech and fintech space. Focus on driving revenue through co-selling initiatives with ISVs, fintech, GSIs, MSPs.",
-      "industry": "HR Tech",
-      "companyStage": "Unicorn",
-      "foundDate": "2026-03-05T02:02:04.068Z",
-      "total": 65,
-      "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
-      },
-      "breakdown": {
-        "industry": {
-          "score": 24,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech"
-        },
-        "title": {
-          "score": 10,
-          "max": 25,
-          "note": "Partnerships/Channel signal"
-        },
-        "keywords": {
-          "score": 12,
-          "max": 20,
-          "note": "3 resume keywords matched",
-          "topMatches": [
-            "alliance",
-            "hr tech",
-            "co-sell"
-          ],
-          "matchRate": 3,
-          "totalHits": 3,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "rank": {
-        "total": 65,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 24,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech"
-          },
-          "title": {
-            "score": 10,
-            "max": 25,
-            "note": "Partnerships/Channel signal"
-          },
-          "keywords": {
-            "score": 12,
-            "max": 20,
-            "note": "3 resume keywords matched",
-            "topMatches": [
-              "alliance",
-              "hr tech",
-              "co-sell"
-            ],
-            "matchRate": 3,
-            "totalHits": 3,
-            "totalKeywords": 98,
-            "usedFullDesc": false
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    },
-    {
-      "title": "Head of Partnerships",
-      "company": "Deel",
-      "location": "United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "Recent",
-      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
-      "source": "LinkedIn",
-      "snippet": "Mission to leverage past record of success launching and growing partner programs to build and sustain Deel's partner marketplace and sales partnerships. Responsible for finding and managing partners.",
-      "industry": "HR Tech",
-      "companyStage": "Unicorn",
-      "foundDate": "2026-03-05T02:02:04.068Z",
-      "total": 72,
-      "tier": {
-        "label": "⭐ Strong Match",
-        "color": "#6c63ff",
-        "min": 65
-      },
-      "breakdown": {
-        "industry": {
-          "score": 24,
-          "max": 30,
-          "note": "🎯 Core domain: hr tech"
-        },
-        "title": {
-          "score": 25,
-          "max": 25,
-          "note": "Exact target title"
-        },
-        "keywords": {
-          "score": 4,
-          "max": 20,
-          "note": "1 resume keyword matched",
-          "topMatches": [
-            "hr tech"
-          ],
-          "matchRate": 1,
-          "totalHits": 1,
-          "totalKeywords": 98,
-          "usedFullDesc": false
-        },
-        "comp": {
-          "score": 6,
-          "max": 12,
-          "note": "Salary not listed"
-        },
-        "stage": {
-          "score": 8,
-          "max": 8,
-          "note": "✅ Known fit company"
-        },
-        "workType": {
-          "score": 5,
-          "max": 5,
-          "note": "Fully remote ✅"
-        }
-      },
-      "fullDescription": "1,000+ Head Of Sponsorship jobs in United States Skip to main content LinkedIn Head Of Sponsorship in United States Expand search This button displays the currently selected search type. When expanded it provides a list of search options that will switch the search inputs to match the current selection. Jobs People Learning Clear text Clear text Clear text Clear text Clear text Sign in Join now Any time Any time (1,073) Past month (880) Past week (288) Past 24 hours (62) Done Company Clear text Creative Circle (5) SKIMS (2) Huge (2) Atmosphere TV (2) Teachstone (1) Done Job type Full-time (964) Part-time (26) Contract (26) Temporary (12) Volunteer (2) Done Experience level Internship (3) Entry level (54) Associate (22) Mid-Senior level (303) Director (510) Done Location Clear text New York, NY (143) Los Angeles, CA (29) Washington, DC (21) Boston, MA (20) Seattle, WA (10) Done Salary $40,000+ (75) $60,000+ (74) $80,000+ (67) $100,000+ (62) $120,000+ (48) Done Remote On-site (606) Remote (236) Hybrid (231) Done Get notified about new Head Of Sponsorship jobs in United States . Sign in to create job alert 1,000+ Head Of Sponsorship Jobs in United States Director of Brand Partnerships Director of Brand Partnerships Jubilee Media Los Angeles, CA 1 day ago Director, Multi Brand Hybrid Partnerships (East or West Coast) Director, Multi Brand Hybrid Partnerships (East or West Coast) SKIMS Los Angeles, CA 1 week ago New York Operations Coordinator New York Operations Coordinator Puppy Sphere New York, NY 2 days ago Marketing Director, Streaming & Partnerships Marketing Director, Streaming & Partnerships America's Test Kitchen Boston, MA Be an early applicant 3 weeks ago Director, Global IKEA Partnerships Director, Global IKEA Partnerships Taskrabbit New York City Metropolitan Area 2 weeks ago Director of Partnership Success Director of Partnership Success Teachstone United States Be an early applicant 1 week ago Senior Director, Client Partnership Senior Director, Client Partnership Huge United States 2 weeks ago Senior Brand Partnerships Director (US) Senior Brand Partnerships Director (US) Dexerto United States 2 days ago Director, Multi Brand Hybrid Partnerships (East or West Coast) Director, Multi Brand Hybrid Partnerships (East or West Coast) SKIMS New York, NY 1 week ago Director of National Brand Partnerships Director of National Brand Partnerships Atmosphere TV New York, NY 1 day ago Senior Director Growth & Brand Partnerships Senior Director Growth & Brand Partnerships Creative Circle New York, NY 6 days ago Ted Moore ’71 Director of Sailing Ted Moore ’71 Director of Sailing Cornell University Ithaca, NY Be an early applicant 1 day ago Director, Olympic Partnerships Director, Olympic Partnerships 160over90 New York, NY 2 weeks ago Director, Robotics Partnerships – Meta Robotics Studio Director, Robotics Partnerships – Meta Robotics Studio Meta Menlo Park, CA 1 day ago Senior Vice President, Head of ReedPop Senior Vice President, Head of ReedPop R",
-      "rank": {
-        "total": 78,
-        "tier": {
-          "label": "⭐ Strong Match",
-          "color": "#6c63ff",
-          "min": 65
-        },
-        "breakdown": {
-          "industry": {
-            "score": 24,
-            "max": 30,
-            "note": "🎯 Core domain: hr tech"
-          },
-          "title": {
-            "score": 25,
-            "max": 25,
-            "note": "Exact target title"
-          },
-          "keywords": {
-            "score": 10,
-            "max": 20,
-            "note": "3 resume keywords matched",
-            "topMatches": [
-              "peo",
-              "hr tech",
-              "aca"
-            ],
-            "matchRate": 3,
-            "totalHits": 3,
-            "totalKeywords": 98,
-            "usedFullDesc": true
-          },
-          "comp": {
-            "score": 6,
-            "max": 12,
-            "note": "Salary not listed"
-          },
-          "stage": {
-            "score": 8,
-            "max": 8,
-            "note": "✅ Known fit company"
-          },
-          "workType": {
-            "score": 5,
-            "max": 5,
-            "note": "Fully remote ✅"
-          }
-        }
-      }
-    }
-  ],
-  "currentTopPicks": [
-    {
-      "title": "VP, Partnerships",
-      "company": "Checkr",
       "location": "San Francisco, CA",
       "workType": "Remote",
       "salary": "$300,000 to $340,000",
@@ -1737,6 +1097,122 @@
             "score": 6,
             "max": 12,
             "note": "Salary format unclear"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Strategic Partnerships Director - SI Alliances",
+      "company": "Velocity Global",
+      "location": "United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "1 week ago",
+      "url": "https://www.linkedin.com/company/velocity-global-llc",
+      "source": "LinkedIn",
+      "snippet": "Strategic Partnerships Director - SI Alliances position at Velocity Global focusing on system integrator partnerships",
+      "industry": "HR Tech",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-05T04:20:18.559Z",
+      "total": 63,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 24,
+          "max": 30,
+          "note": "🎯 Core domain: hr tech"
+        },
+        "title": {
+          "score": 10,
+          "max": 25,
+          "note": "Partnerships/Channel signal"
+        },
+        "keywords": {
+          "score": 10,
+          "max": 20,
+          "note": "3 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "hr tech",
+            "alliances"
+          ],
+          "matchRate": 3,
+          "totalHits": 3,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Velocity Global | LinkedIn Skip to main content LinkedIn Top Content People Learning Jobs Games Sign in Join now Continue with email By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . Velocity Global Software Development Denver, CO 75,519 followers Follow Discover all 426 employees Report this company About us Pebl puts a world of talent at your fingertips. With our Global Work Platform™, companies can hire, pay, and manage employees in 185+ countries—removing risk, red tape, and guesswork from global growth. Backed by more than a decade of local expertise and compliance leadership, Pebl is built to move as fast as your ambitions, whether you’re bringing on your first international teammate or scaling a workforce across continents. Our AI-powered, human-led platform integrates seamlessly with HRIS, HCM, and ATS systems and delivers instant, vetted answers in 50+ languages—so you stay compliant and confident wherever you grow. We’ve helped thousands of businesses—from Fortune 500s to rapid-growth start-ups—scale strategically around the world. Consistently named a leader in global Employer of Record (EOR) services, Pebl holds more employment licenses than any other EOR and is rated #1 for compliance on G2. With Pebl, companies everywhere can hire great talent anywhere. Website http://hellopebl.com/ External link for Velocity Global Industry Software Development Company size 501-1,000 employees Headquarters Denver, CO Type Privately Held Specialties Employer of Record (EoR), International PEO), Global Immigration, Agent of Record (AoR), Independent Contractor Compliance, International Employment, Global Payroll, International HR, International Business, Foreign Business, Human Resources, HR, Global Strategy, Global Work Platform, Global PEO, Work Anywhere, and Remote Work Locations Primary 3827 Lafayette Street Suite 107 Denver, CO 80205, US Get directions Amsterdam, NL Get directions Bogota, CO Get directions Singapore, SG Get directions Dubai, AE Get directions London, GB Get directions Paris, FR Get directions Toronto, CA Get directions Madrid, ES Get directions Mexico City, MX Get directions Sydney, AU Get directions Hong Kong, HK Get directions Munich, DE Get directions Bangalore, IN Get directions Wellington, NZ Get directions Seoul, KR Get directions Milan, IT Get directions Show more locations Show fewer locations Employees at Velocity Global Greg Corniea Joshua Pollack Alexei Miaskovski Glenn Moyer See all employees Updates Velocity Global 75,519 followers 5mo Report this post We’re turning the page (literally). Velocity Global is now Pebl . New name, new look, new page → Follow Pebl for what’s next. https://lnkd.in/ge5GgB8E Pebl | LinkedIn linkedin.com 80 Like Comment Share Velocity Global 75,519 followers 5mo Report this post The future of global hiring has a new name: Pebl . Velocity Global is now Pebl—an AI-first global hiring platform built on a decade of compliance l",
+      "rank": {
+        "total": 73,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 24,
+            "max": 30,
+            "note": "🎯 Core domain: hr tech"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "10 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "peo",
+              "hr tech",
+              "hcm",
+              "alliances",
+              "api",
+              "payroll",
+              "hris"
+            ],
+            "matchRate": 10,
+            "totalHits": 10,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
           },
           "stage": {
             "score": 8,
@@ -1970,31 +1446,33 @@
           }
         }
       }
-    },
+    }
+  ],
+  "currentTopPicks": [
     {
-      "title": "Strategic Partnerships Director - SI Alliances",
-      "company": "Velocity Global",
-      "location": "United States",
+      "title": "VP of Strategic Partnerships",
+      "company": "Spring Health",
+      "location": "Remote",
       "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "1 week ago",
-      "url": "https://www.linkedin.com/company/velocity-global-llc",
-      "source": "LinkedIn",
-      "snippet": "Strategic Partnerships Director - SI Alliances position at Velocity Global focusing on system integrator partnerships",
-      "industry": "HR Tech",
-      "companyStage": "Growth",
-      "foundDate": "2026-03-05T04:20:18.559Z",
-      "total": 63,
+      "salary": "$225,000-275,000",
+      "posted": "Not specified",
+      "url": "Not specified",
+      "source": "Job Board",
+      "snippet": "Reporting to the CRO and partnering with Legal, Compliance, Implementation, Product & Engineering the VP of Strategic Partnerships will own the development and execution of a comprehensive partnership strategy. Experience in the Employee Benefits ecosystem strongly preferred.",
+      "industry": "HR Tech / PEO",
+      "companyStage": "Private",
+      "foundDate": "2026-03-05T04:29:35.319Z",
+      "total": 75,
       "tier": {
-        "label": "👀 Worth Reviewing",
-        "color": "#ffb020",
-        "min": 50
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
       },
       "breakdown": {
         "industry": {
-          "score": 24,
+          "score": 30,
           "max": 30,
-          "note": "🎯 Core domain: hr tech"
+          "note": "🎯 Core domain: hr tech, peo"
         },
         "title": {
           "score": 10,
@@ -2002,16 +1480,249 @@
           "note": "Partnerships/Channel signal"
         },
         "keywords": {
-          "score": 10,
+          "score": 20,
           "max": 20,
-          "note": "3 resume keywords matched",
+          "note": "6 resume keywords matched",
+          "topMatches": [
+            "peo",
+            "hr tech",
+            "compliance",
+            "reporting",
+            "own",
+            "benefits"
+          ],
+          "matchRate": 6,
+          "totalHits": 6,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary format unclear"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "rank": {
+        "total": 75,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 30,
+            "max": 30,
+            "note": "🎯 Core domain: hr tech, peo"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "6 resume keywords matched",
+            "topMatches": [
+              "peo",
+              "hr tech",
+              "compliance",
+              "reporting",
+              "own",
+              "benefits"
+            ],
+            "matchRate": 6,
+            "totalHits": 6,
+            "totalKeywords": 98,
+            "usedFullDesc": false
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary format unclear"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Head of Revenue Operations (Director or VP)",
+      "company": "Hightouch",
+      "location": "Remote (North America)",
+      "workType": "Remote",
+      "salary": "$240,000 to $325,000",
+      "posted": "Not specified",
+      "url": "https://job-boards.greenhouse.io/hightouch?error=true",
+      "source": "Greenhouse",
+      "snippet": "Work with sales leadership and executive team to achieve growth goals, own territory management and forecasting",
+      "industry": "Data/SaaS",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 58,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 13,
+          "max": 30,
+          "note": "Adjacent: saas"
+        },
+        "title": {
+          "score": 18,
+          "max": 25,
+          "note": "RevOps/SalesOps match"
+        },
+        "keywords": {
+          "score": 12,
+          "max": 20,
+          "note": "4 resume keywords matched",
+          "topMatches": [
+            "revenue operations",
+            "own",
+            "executive",
+            "saas"
+          ],
+          "matchRate": 4,
+          "totalHits": 4,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary format unclear"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at Hightouch Current openings at Hightouch Create a Job Alert Level-up your career by having opportunities at Hightouch sent directly to your inbox. Create alert Search Department Select... 53 jobs AI Job AI Strategy Consultant Remote (North America) Customer Success Job Customer Success Engineer Remote (Europe) Implementation Manager, EMEA Remote (Europe) Manager, Implementation Management Remote (US) Manager, Technical Account Management New York City, New York Technical Account Manager Remote (North America) Design Job Senior Product Designer, Agents Remote (North America) Senior Product Designer, Customer Studio Remote (North America) Engineering Job Backend Engineer, AI Content Agents Remote (North America) Developer Productivity Engineer Remote (North America) Forward Deployed Marketing Data Scientist Remote (North America) Full Stack Product Engineer Remote (North America) Head of Machine Learning Remote (North America) IT Manager Remote (North America) Machine Learning Engineer, AI Decisioning Remote (North America) Principal Engineer, Streaming Systems Remote (North America) Software Engineer, AI Agents Remote (North America) Software Engineer, Control Plane Remote (North America) Software Engineer, Customer Studio Backend Remote (North America) Software Engineer, Distributed Systems Remote (North America) Software Engineer, Journeys Remote (North America) Software Engineer, Streaming Systems Remote (North America) Staff Engineer - AI Productivity Remote (North America) Web Engineer Remote (North America) Finance / Data / Operations Job Analytics Engineer Remote (North America) Marketing & SDR Operations Manager Remote (North America) Legal Job Commercial Counsel New York City, New York Marketing Job Product Marketing Manager, AdTech Remote (North America) Product Marketing Manager, Partnerships Remote (North America) Senior Content Manager Remote (North America) Partnerships Job Cloud Alliance Lead- Google Cloud Platform Remote (North America) Partner Solutions Engineer Remote (North America) People Job GTM Recruiter (Contract) New York, New York People Partner, GTM New York City, New York Sales Job Account Executive (APAC) Remote (APAC) Account Executive, Enterprise West Remote (West Coast) Enterprise Account Executive -Mountain West Remote (Mountain West) Enterprise Account Executive- Northeast Region Northeast, U.S. Enterprise Account Executive, North EMEA Remote (Europe) Enterprise Account Executive- Southeast Region Southeast, U.S. Enterprise Solutions Engineer, East East and Central Timezones (North America) Enterprise Solutions Engineer, West West and Mountain Timezones (North America) Head of Mid-Market Sales, North America New York, NY/ San Francisco, CA Manager, Solutions Engineering New York, NY or San Francisco, CA Mid-Market Account Executive San Francisco, CA Mid-Market Account Executive, East Region Remote (East Coast) Mid-Market Account Executive, EMEA London, United Kingdom Mid-Market Solutions Engineer Remote (Nor",
+      "rank": {
+        "total": 66,
+        "tier": {
+          "label": "⭐ Strong Match",
+          "color": "#6c63ff",
+          "min": 65
+        },
+        "breakdown": {
+          "industry": {
+            "score": 13,
+            "max": 30,
+            "note": "Adjacent: saas"
+          },
+          "title": {
+            "score": 18,
+            "max": 25,
+            "note": "RevOps/SalesOps match"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "8 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "gtm",
+              "revenue operations",
+              "peo",
+              "executive",
+              "saas",
+              "enterprise"
+            ],
+            "matchRate": 8,
+            "totalHits": 8,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary format unclear"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Partner Success Director",
+      "company": "Equifax",
+      "location": "London",
+      "workType": "Onsite",
+      "salary": "Not Listed",
+      "posted": "Not specified",
+      "url": "https://careers.equifax.com/en/jobs/j00172866/partner-success-director/",
+      "source": "Job Board",
+      "snippet": "Equifax is seeking a Partner Success Director to join our Sales UK Business Unit and Strategic Alliances & Partnerships team. This senior leadership role is responsible for driving sustainable growth and innovation through existing strategic partnerships.",
+      "industry": "HR Tech / PEO",
+      "companyStage": "Public",
+      "foundDate": "2026-03-05T04:29:35.318Z",
+      "total": 65,
+      "tier": {
+        "label": "⭐ Strong Match",
+        "color": "#6c63ff",
+        "min": 65
+      },
+      "breakdown": {
+        "industry": {
+          "score": 30,
+          "max": 30,
+          "note": "🎯 Core domain: hr tech, peo"
+        },
+        "title": {
+          "score": 5,
+          "max": 25,
+          "note": "Senior level — weak function match"
+        },
+        "keywords": {
+          "score": 14,
+          "max": 20,
+          "note": "4 resume keywords matched",
           "topMatches": [
             "alliance",
+            "peo",
             "hr tech",
             "alliances"
           ],
-          "matchRate": 3,
-          "totalHits": 3,
+          "matchRate": 4,
+          "totalHits": 4,
           "totalKeywords": 98,
           "usedFullDesc": false
         },
@@ -2026,14 +1737,13 @@
           "note": "✅ Known fit company"
         },
         "workType": {
-          "score": 5,
+          "score": 2,
           "max": 5,
-          "note": "Fully remote ✅"
+          "note": "Onsite in radius"
         }
       },
-      "fullDescription": "Velocity Global | LinkedIn Skip to main content LinkedIn Top Content People Learning Jobs Games Sign in Join now Continue with email By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . Velocity Global Software Development Denver, CO 75,519 followers Follow Discover all 426 employees Report this company About us Pebl puts a world of talent at your fingertips. With our Global Work Platform™, companies can hire, pay, and manage employees in 185+ countries—removing risk, red tape, and guesswork from global growth. Backed by more than a decade of local expertise and compliance leadership, Pebl is built to move as fast as your ambitions, whether you’re bringing on your first international teammate or scaling a workforce across continents. Our AI-powered, human-led platform integrates seamlessly with HRIS, HCM, and ATS systems and delivers instant, vetted answers in 50+ languages—so you stay compliant and confident wherever you grow. We’ve helped thousands of businesses—from Fortune 500s to rapid-growth start-ups—scale strategically around the world. Consistently named a leader in global Employer of Record (EOR) services, Pebl holds more employment licenses than any other EOR and is rated #1 for compliance on G2. With Pebl, companies everywhere can hire great talent anywhere. Website http://hellopebl.com/ External link for Velocity Global Industry Software Development Company size 501-1,000 employees Headquarters Denver, CO Type Privately Held Specialties Employer of Record (EoR), International PEO), Global Immigration, Agent of Record (AoR), Independent Contractor Compliance, International Employment, Global Payroll, International HR, International Business, Foreign Business, Human Resources, HR, Global Strategy, Global Work Platform, Global PEO, Work Anywhere, and Remote Work Locations Primary 3827 Lafayette Street Suite 107 Denver, CO 80205, US Get directions Amsterdam, NL Get directions Bogota, CO Get directions Singapore, SG Get directions Dubai, AE Get directions London, GB Get directions Paris, FR Get directions Toronto, CA Get directions Madrid, ES Get directions Mexico City, MX Get directions Sydney, AU Get directions Hong Kong, HK Get directions Munich, DE Get directions Bangalore, IN Get directions Wellington, NZ Get directions Seoul, KR Get directions Milan, IT Get directions Show more locations Show fewer locations Employees at Velocity Global Greg Corniea Joshua Pollack Alexei Miaskovski Glenn Moyer See all employees Updates Velocity Global 75,519 followers 5mo Report this post We’re turning the page (literally). Velocity Global is now Pebl . New name, new look, new page → Follow Pebl for what’s next. https://lnkd.in/ge5GgB8E Pebl | LinkedIn linkedin.com 80 Like Comment Share Velocity Global 75,519 followers 5mo Report this post The future of global hiring has a new name: Pebl . Velocity Global is now Pebl—an AI-first global hiring platform built on a decade of compliance l",
       "rank": {
-        "total": 73,
+        "total": 65,
         "tier": {
           "label": "⭐ Strong Match",
           "color": "#6c63ff",
@@ -2041,33 +1751,29 @@
         },
         "breakdown": {
           "industry": {
-            "score": 24,
+            "score": 30,
             "max": 30,
-            "note": "🎯 Core domain: hr tech"
+            "note": "🎯 Core domain: hr tech, peo"
           },
           "title": {
-            "score": 10,
+            "score": 5,
             "max": 25,
-            "note": "Partnerships/Channel signal"
+            "note": "Senior level — weak function match"
           },
           "keywords": {
-            "score": 20,
+            "score": 14,
             "max": 20,
-            "note": "10 resume keywords matched",
+            "note": "4 resume keywords matched",
             "topMatches": [
               "alliance",
               "peo",
               "hr tech",
-              "hcm",
-              "alliances",
-              "api",
-              "payroll",
-              "hris"
+              "alliances"
             ],
-            "matchRate": 10,
-            "totalHits": 10,
+            "matchRate": 4,
+            "totalHits": 4,
             "totalKeywords": 98,
-            "usedFullDesc": true
+            "usedFullDesc": false
           },
           "comp": {
             "score": 6,
@@ -2080,9 +1786,9 @@
             "note": "✅ Known fit company"
           },
           "workType": {
-            "score": 5,
+            "score": 2,
             "max": 5,
-            "note": "Fully remote ✅"
+            "note": "Onsite in radius"
           }
         }
       }
