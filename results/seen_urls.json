@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-04T11:59:08.604Z",
-  "totalTracked": 38,
+  "lastUpdated": "2026-03-05T01:28:59.015Z",
+  "totalTracked": 42,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -153,6 +153,22 @@
     {
       "url": "https://www.linkedin.com/company/velocity-global-llc",
       "ts": 1772625548604
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/montecarlodata/4d8b8f69-e806-4641-94f4-a0ac09f12578",
+      "ts": 1772674139015
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/xero/8d7b9864-de81-4640-952b-2f7ca719c568",
+      "ts": 1772674139015
+    },
+    {
+      "url": "https://jobs.lever.co/dnb/7f34e35b-5ff5-4fd8-970c-1de6c8e074b6",
+      "ts": 1772674139015
+    },
+    {
+      "url": "https://jobs.experian.com/job/director-data-strategy-and-partnerships-in-united-states-jid-1551",
+      "ts": 1772674139015
     }
   ]
 }
