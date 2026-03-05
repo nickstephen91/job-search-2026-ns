@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T04:29:41.791Z",
-  "totalTracked": 36,
+  "lastUpdated": "2026-03-05T04:41:54.852Z",
+  "totalTracked": 44,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -145,6 +145,38 @@
     {
       "url": "Not specified",
       "ts": 1772684981791
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/hopper/9f4744e6-9e53-4e28-856a-1aa08c923bf6",
+      "ts": 1772685714852
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/1password/30fb2bd1-3747-4be4-bd89-6f419dab7689",
+      "ts": 1772685714852
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/openai/69f6c63c-ab4a-4a4b-8b99-e0e1fe488fa1",
+      "ts": 1772685714852
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/xero/8d7b9864-de81-4640-952b-2f7ca719c568",
+      "ts": 1772685714852
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/linkhealth?error=true",
+      "ts": 1772685714852
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/upbound/jobs/5678055004",
+      "ts": 1772685714852
+    },
+    {
+      "url": "https://www.glassdoor.com/job-listing/director-of-partnerships-vc-pe-deel-JV_KO0,30_KE31,35.htm?jl=1009912806552",
+      "ts": 1772685714852
+    },
+    {
+      "url": "https://www.indeed.com/q-%22channel-partnerships%22-l-remote-jobs.html",
+      "ts": 1772685714852
     }
   ]
 }
