@@ -12,34 +12,74 @@ const JOBS_PATH = path.join(RESULTS_DIR, 'jobs.json');
 const MASTER_CSV_PATH = path.join(RESULTS_DIR, 'master_job_history.csv');
 
 // Check if a job URL is still live
-// We do a HEAD request — if 404, 410, or redirects to a generic jobs page, it's likely filled
+// Does a full GET request and scans page body for "position filled" signals
 async function isJobStillActive(url) {
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8000);
+    const timeout = setTimeout(() => controller.abort(), 10000);
 
     const response = await fetch(url, {
-      method: 'HEAD',
+      method: 'GET',
       redirect: 'follow',
       signal: controller.signal,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; JobSearchBot/1.0)'
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
       }
     });
 
     clearTimeout(timeout);
 
-    // Definitive "gone" signals
+    // Definitive HTTP "gone" signals
     if (response.status === 404 || response.status === 410) return false;
 
     // Check final URL for filled-job redirect patterns
     const finalUrl = response.url.toLowerCase();
-    const filledPatterns = [
-      'job-filled', 'position-filled', 'no-longer-available',
-      'expired', 'job-closed', 'listing-expired', 'not-found',
-      '/404', 'jobnotfound', 'position-closed', 'job-expired'
+    const filledUrlPatterns = [
+      'job-filled', 'position-filled', 'no-longer-available', 'expired',
+      'job-closed', 'listing-expired', 'not-found', '/404', 'jobnotfound',
+      'position-closed', 'job-expired', 'jobs/search', 'jobs/results'
     ];
-    if (filledPatterns.some(p => finalUrl.includes(p))) return false;
+    if (filledUrlPatterns.some(p => finalUrl.includes(p))) return false;
+
+    // Read page body and scan for closed signals
+    const body = (await response.text()).toLowerCase();
+
+    const closedSignals = [
+      'this job is no longer available',
+      'this position has been filled',
+      'this job has been filled',
+      'job is no longer accepting',
+      'no longer accepting applications',
+      'this posting has expired',
+      'position is no longer available',
+      'this role has been filled',
+      'job listing has expired',
+      'this opportunity is no longer',
+      'vacancy has been filled',
+      'application window has closed',
+      'role is no longer available',
+      'job is closed',
+      'position has been closed',
+      'this job is closed',
+      'no longer open',
+      'this position is closed',
+      'job posting is no longer active',
+      'we are not currently hiring',
+      'this requisition is closed',
+      'req is closed',
+      'opening has been filled',
+      'not accepting applications',
+    ];
+
+    if (closedSignals.some(s => body.includes(s))) {
+      console.log(`   🚫 Closed signal found in page body`);
+      return false;
+    }
+
+    // If page body is very short (under 500 chars) and has no job title signals, likely a redirect/error page
+    if (body.length < 500 && !body.includes('apply') && !body.includes('job')) return false;
 
     return true;
   } catch (err) {
