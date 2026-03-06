@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-05T14:23:20.438Z",
-  "totalTracked": 63,
+  "lastUpdated": "2026-03-06T11:59:08.780Z",
+  "totalTracked": 71,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -103,10 +103,6 @@
       "ts": 1772684436703
     },
     {
-      "url": "https://job-boards.greenhouse.io/checkr?error=true",
-      "ts": 1772684436703
-    },
-    {
       "url": "https://jobs.ashbyhq.com/montecarlodata/4d8b8f69-e806-4641-94f4-a0ac09f12578",
       "ts": 1772684981791
     },
@@ -116,10 +112,6 @@
     },
     {
       "url": "https://job-boards.greenhouse.io/clear/jobs/7635195",
-      "ts": 1772684981791
-    },
-    {
-      "url": "https://job-boards.greenhouse.io/hightouch?error=true",
       "ts": 1772684981791
     },
     {
@@ -253,6 +245,46 @@
     {
       "url": "https://jobs.experian.com/job/business-development-director-oem-partnerships-remote-in-united-states-jid-4269",
       "ts": 1772720600438
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/vanta/5f83094a-20e4-4e80-aa1d-375470b22bc6",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/hightouch?error=true",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://jobs.lever.co/panopto/95de2e1e-beb0-4472-8155-40ef7c83b5f1",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://jobs.lever.co/instructure/681f9630-c2a5-4767-9573-ed963e4779ec",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://jobs.lever.co/redoxengine/b89410c5-58a1-453b-9d0f-ee6688c72649",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://jobs.lever.co/mattermost/a20f3209-c16c-4e42-be1b-a9f358d15850",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://jobs.lever.co/captivateiq/dedbc815-9a9d-4e7b-af0c-97b6c2d67de8",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://jobs.lever.co/jobgether/0b09b32a-cc71-48ca-8691-3f2ab856de70",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/checkr?error=true",
+      "ts": 1772798348780
+    },
+    {
+      "url": "https://jobs.adp.com/en/jobs/262816/director-of-strategic-partnerships-and-growth/",
+      "ts": 1772798348780
     }
   ]
 }
