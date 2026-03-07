@@ -1049,6 +1049,35 @@ async function main() {
   // All scrape-based sources removed — Greenhouse + Lever APIs only (guaranteed live)
 
     // ── FREE DIRECT ATS APIs (no Claude cost) ──────────────────────────────────
+  // ── REMOTE-ONLY BOARDS (every result guaranteed remote) ─────────────────────
+  console.log('\n📡 Remotive...');
+  try {
+    for (const q of ['partnerships','alliances','customer success','revenue operations','channel','business development']) {
+      const r = await fetch('https://remotive.com/api/remote-jobs?search='+encodeURIComponent(q)+'&limit=20',{signal:AbortSignal.timeout(8000)});
+      if(!r.ok) continue;
+      const d = await r.json();
+      const jobs=(d.jobs||[]).map(j=>({title:j.title,company:j.company_name,location:'Remote',workType:'Remote',salary:j.salary||'Not Listed',posted:j.publication_date?new Date(j.publication_date).toLocaleDateString():'Recent',url:j.url,source:'Remotive',verified:false,snippet:j.description?j.description.replace(/<[^>]+>/g,' ').substring(0,200):'',industry:'',companyStage:''}));
+      if(jobs.length){console.log('   ✅ "'+q+'" → '+jobs.length);allJobs=allJobs.concat(jobs);}
+    }
+  } catch(e){console.log('   ❌ Remotive:',e.message);}
+
+  console.log('\n📡 We Work Remotely...');
+  try {
+    for (const cat of ['executive','sales','business']) {
+      const r = await fetch('https://weworkremotely.com/categories/remote-'+cat+'-jobs.rss',{signal:AbortSignal.timeout(8000)});
+      if(!r.ok) continue;
+      const xml = await r.text();
+      const items = xml.match(/<item>([\s\S]*?)<\/item>/g)||[];
+      for(const item of items){
+        const title=((item.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/)||[])[1]||'').replace(/^[^:]+:\s*/,'');
+        const company=(item.match(/<company><!\[CDATA\[(.*?)\]\]><\/company>/)||[])[1]||'';
+        const link=(item.match(/<link>(.*?)<\/link>/)||[])[1]||'';
+        if(title) allJobs.push({title,company,location:'Remote',workType:'Remote',salary:'Not Listed',posted:'Recent',url:link.startsWith('http')?link:'https://weworkremotely.com'+link,source:'WWR',verified:false,snippet:'',industry:'',companyStage:''});
+      }
+      if(items.length) console.log('   ✅ '+cat+': '+items.length+' results');
+    }
+  } catch(e){console.log('   ❌ WWR:',e.message);}
+
   // Greenhouse board API — free, no auth needed
   console.log('\n🏢 Fetching from Greenhouse boards API...');
   const greenhouseCompanies = [
