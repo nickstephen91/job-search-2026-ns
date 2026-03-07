@@ -9,17 +9,6 @@ const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
 const DOCS_TODAY_PATH = path.join(DOCS_RESULTS_DIR, 'today.json');
 const TOP_PICKS_PATH = path.join(RESULTS_DIR, 'top_picks.json');
 
-// ── MANUAL BLOCKLIST — confirmed dead jobs, never show again ────────────────
-const BLOCKED_JOBS = [
-  { company: 'checkr', title: 'vp, partnerships' },
-  { company: 'checkr', title: 'vp partnerships' },
-];
-function isBlocked(job) {
-  const co = (job.company || '').toLowerCase().trim();
-  const ti = (job.title || '').toLowerCase().trim();
-  return BLOCKED_JOBS.some(b => co.includes(b.company) && ti.includes(b.title));
-}
-
 // ── PERSISTENCE ──────────────────────────────────────────────────────────────
 function loadSeenUrls() {
   try {
@@ -1123,11 +1112,7 @@ async function main() {
   console.log(`📅 After age filter (max ${MAX_JOB_AGE_DAYS}d): ${fresh.length} (removed ${deduped.length - fresh.length} stale)`);
 
   // Filter
-  const unblocked = fresh.filter(job => {
-    if (isBlocked(job)) { console.log(`   🚫 Blocked: "${job.title}" @ ${job.company}`); return false; }
-    return true;
-  });
-  const qualified = unblocked.filter(meetsRequirements);
+  const qualified = fresh.filter(meetsRequirements);
   console.log(`✅ After filters: ${qualified.length}`);
 
   // New only
