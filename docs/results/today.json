@@ -1,6 +1,549 @@
 {
-  "generated": "",
+  "date": "Friday, March 6, 2026",
+  "count": 0,
   "jobs": [],
-  "topPicks": [],
+  "topPicks": [
+    {
+      "title": "Head of Strategic Alliances and Partnerships",
+      "company": "Timescale",
+      "location": "Not Listed",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://jobs.ashbyhq.com/timescale/b637dc42-9290-4958-b3b8-93f863785391",
+      "source": "Ashby",
+      "snippet": "As the Head of Strategic Alliances & Partnerships at Timescale you will report to the Chief Revenue Officer and will be responsible for recruiting, building, and driving revenue from the global Timescale partner ecosystem and related GTM.",
+      "industry": "Database Technology",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-07T01:59:18.444Z",
+      "total": 50,
+      "tier": {
+        "label": "👀 Worth Reviewing",
+        "color": "#ffb020",
+        "min": 50
+      },
+      "breakdown": {
+        "industry": {
+          "score": 5,
+          "max": 30,
+          "note": "Industry unknown"
+        },
+        "title": {
+          "score": 10,
+          "max": 25,
+          "note": "Partnerships/Channel signal"
+        },
+        "keywords": {
+          "score": 16,
+          "max": 20,
+          "note": "5 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "partner ecosystem",
+            "gtm",
+            "alliances",
+            "recruiting"
+          ],
+          "matchRate": 5,
+          "totalHits": 5,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 40,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 6,
+            "max": 20,
+            "note": "2 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "alliances"
+            ],
+            "matchRate": 2,
+            "totalHits": 2,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "VP of Programs and Partnerships",
+      "company": "Link Health Patient Navigators",
+      "location": "Not Listed",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://job-boards.greenhouse.io/linkhealth?error=true",
+      "source": "Greenhouse",
+      "snippet": "Proven track record of developing and managing strategic alliances with measurable outcomes",
+      "industry": "Healthcare Technology",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-07T01:59:18.444Z",
+      "total": 40,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 5,
+          "max": 30,
+          "note": "Industry unknown"
+        },
+        "title": {
+          "score": 10,
+          "max": 25,
+          "note": "Partnerships/Channel signal"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs at Link Health Patient Navigators Help patients access life-saving care—apply to be a Link Health Patient Navigator today. We’re looking for Patient Navigators in Houston, Boston, and remotely. Help us guide people to the care they need. Our mission is to ensure equitable access to resources for healthcare, energy assistance, nutrition support, and more, fostering healthier and more resilient communities. Our Patient Navigator Program runs in Houston, TX and Boston, MA for the following seasons: Summer 2025 - Fall 2025 Fall 2025 - Spring 2026 Spring 2026 - Summer 2026 Priority will be given to those who are willing to volunteer for two seasonal cohorts. However, applicants who are only available for one are still encouraged to apply. Create a Job Alert Level-up your career by having opportunities at Link Health Patient Navigators sent directly to your inbox. Create alert Search 2 jobs Link Health Patient Navigators Job Future Patient Navigator Program Interest Form Boston or Houston Remote Patient Navigator - 2025 Remote Powered by Greenhouse",
+      "rank": {
+        "total": 38,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "note": "1 resume keyword matched",
+            "topMatches": [
+              "peo"
+            ],
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Vice President of Growth & Strategic Partnerships",
+      "company": "Quindar",
+      "location": "Not Listed",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://jobs.ashbyhq.com/quindar/9e1075e3-5321-4adf-84cf-b77d052b1c11",
+      "source": "Ashby",
+      "snippet": "Quindar is seeking a Vice President of Growth & Strategic Partnerships to drive revenue and expand adoption of our cloud-native satellite mission operations platform, with a primary focus on U.S. Department of Defense and Intelligence Community customers.",
+      "industry": "Aerospace/Defense",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-07T01:59:18.444Z",
+      "total": 30,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 5,
+          "max": 30,
+          "note": "Industry unknown"
+        },
+        "title": {
+          "score": 10,
+          "max": 25,
+          "note": "Partnerships/Channel signal"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Vice President of Growth & Strategic Partnerships @ Quindar You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 30,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Vice President of Global Partnerships",
+      "company": "FloSports, Inc.",
+      "location": "Not Listed",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Not Listed",
+      "url": "https://jobs.ashbyhq.com/flosports/6ca8e3e8-35c7-4de1-ab13-b66c8130fcd4",
+      "source": "Ashby",
+      "snippet": "FloSports is seeking a Vice President of Global Partnerships to lead the strategic direction, execution, and growth of our global media rights and licensing partnerships.",
+      "industry": "Sports Media",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-07T01:59:18.444Z",
+      "total": 27,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 0,
+          "max": 30,
+          "note": "❌ Wrong industry: media"
+        },
+        "title": {
+          "score": 12,
+          "max": 25,
+          "note": "Partnerships/Channel signal · Global scope"
+        },
+        "keywords": {
+          "score": 0,
+          "max": 20,
+          "note": "0 resume keywords matched",
+          "topMatches": [],
+          "matchRate": 0,
+          "totalHits": 0,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 4,
+          "max": 8,
+          "note": "Stage unknown"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "Jobs You need to enable JavaScript to run this app.",
+      "rank": {
+        "total": 27,
+        "tier": {
+          "label": "📋 Low Match",
+          "color": "#4a4f66",
+          "min": 0
+        },
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30,
+            "note": "❌ Wrong industry: media"
+          },
+          "title": {
+            "score": 12,
+            "max": 25,
+            "note": "Partnerships/Channel signal · Global scope"
+          },
+          "keywords": {
+            "score": 0,
+            "max": 20,
+            "note": "0 resume keywords matched",
+            "topMatches": [],
+            "matchRate": 0,
+            "totalHits": 0,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 4,
+            "max": 8,
+            "note": "Stage unknown"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    },
+    {
+      "title": "Strategic Alliances Director",
+      "company": "Dataiku",
+      "location": "San Francisco, United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "Recent",
+      "url": "https://job-boards.greenhouse.io/dataiku/jobs/5808432004",
+      "source": "Greenhouse",
+      "snippet": "5–7 years in Cloud, Software (ISV), or Consulting, specifically focused on data, AI, or analytics. Partnership Track Record: Proven success in alliance management or business development.",
+      "industry": "Data & AI",
+      "companyStage": "Growth",
+      "foundDate": "2026-03-07T01:59:18.444Z",
+      "total": 40,
+      "tier": {
+        "label": "📋 Low Match",
+        "color": "#4a4f66",
+        "min": 0
+      },
+      "breakdown": {
+        "industry": {
+          "score": 5,
+          "max": 30,
+          "note": "Industry unknown"
+        },
+        "title": {
+          "score": 10,
+          "max": 25,
+          "note": "Partnerships/Channel signal"
+        },
+        "keywords": {
+          "score": 6,
+          "max": 20,
+          "note": "2 resume keywords matched",
+          "topMatches": [
+            "alliance",
+            "alliances"
+          ],
+          "matchRate": 2,
+          "totalHits": 2,
+          "totalKeywords": 98,
+          "usedFullDesc": false
+        },
+        "comp": {
+          "score": 6,
+          "max": 12,
+          "note": "Salary not listed"
+        },
+        "stage": {
+          "score": 8,
+          "max": 8,
+          "note": "✅ Known fit company"
+        },
+        "workType": {
+          "score": 5,
+          "max": 5,
+          "note": "Fully remote ✅"
+        }
+      },
+      "fullDescription": "You have an internal drive to hit (and exceed) your targets. Highly Organized: You can manage multiple high-stakes relationships at once without dropping the ball. A Clear Communicator: You cut through the noise and get your point across effectively, whether in person, over email, or on Slack. Qualifications Experience: 5–7 years in Cloud, Software (ISV), or Consulting, specifically focused on data, AI, or analytics. Partnership Track Record: Proven success in alliance management or business development. You’ve successfully launched joint products or offers before. Demonstrated track record building Marketplace capabilities and Revenue. Tech Literacy: You understand the modern data stack, including cloud providers (AWS, Azure, GCP) and platforms like Snowflake, Databricks, or NVIDIA. Education: A Bachelor’s degree in Business, CS, or a related field (MBA or Master’s is a plus). Travel: Ability to travel approximately 20% of the time. How We’ll Measure Success (Expected Outcomes) Pipeline Growth: More high-quality leads sourced through your partners. Revenue Impact: Increase in new annual recurring revenue (ARR) tied to your partnerships. Increase Marketplace Results: Measured in Revenue and Transaction volume. Go-to-Market Expansion: More ways for customers to buy from us (Marketplace, Resell, Co-sell). Stronger Stories: More published success stories showing the impact of our joint work. #LI-LP1 Compensation and Benefits The final compensation package for this role will be determined during the interview process and is based on a variety of factors, including, but not limited to, geographic location, internal equity, education, skill set, experience and training. Eligible roles may also be entitled to receive commission or other variable compensation through Dataiku's incentive compensation program. Dataiku also offers comprehensive benefits, including stock options, medical, dental, and vision plans, flexible spending accounts, pre-tax commuter benefits, a 401k company match, paid vacations and sick leave, paid parental leave, employer paid disability coverage, and additional health and wellbeing perks and benefits. Dataiku reserves the right to amend or modify employee perks and benefits at any time. US only national base pay ranges $265,000 - $310,000 USD What are you waiting for! At Dataiku, you'll be part of a journey to shape the ever-evolving world of AI. We're not just building a product; we're crafting the future of AI. If you're ready to make a significant impact in a company that values innovation, collaboration, and your personal growth, we can't wait to welcome you to Dataiku! And if you’d like to learn even more about working here, you can visit our Dataiku LinkedIn page . Our practices are rooted in the idea that everyone should be treated with dignity, decency and fairness. Dataiku also believes that a diverse identity is a source of strength and allows us to optimize across the many dimensions that are needed for our success. Th",
+      "rank": {
+        "total": 54,
+        "tier": {
+          "label": "👀 Worth Reviewing",
+          "color": "#ffb020",
+          "min": 50
+        },
+        "breakdown": {
+          "industry": {
+            "score": 5,
+            "max": 30,
+            "note": "Industry unknown"
+          },
+          "title": {
+            "score": 10,
+            "max": 25,
+            "note": "Partnerships/Channel signal"
+          },
+          "keywords": {
+            "score": 20,
+            "max": 20,
+            "note": "11 resume keywords matched",
+            "topMatches": [
+              "alliance",
+              "go-to-market",
+              "pipeline",
+              "arr",
+              "alliances",
+              "slack",
+              "benefits",
+              "aca"
+            ],
+            "matchRate": 11,
+            "totalHits": 11,
+            "totalKeywords": 98,
+            "usedFullDesc": true
+          },
+          "comp": {
+            "score": 6,
+            "max": 12,
+            "note": "Salary not listed"
+          },
+          "stage": {
+            "score": 8,
+            "max": 8,
+            "note": "✅ Known fit company"
+          },
+          "workType": {
+            "score": 5,
+            "max": 5,
+            "note": "Fully remote ✅"
+          }
+        }
+      }
+    }
+  ],
   "currentTopPicks": []
 }
