@@ -151,15 +151,28 @@ const TOO_FAR = [
 function isLocationOk(job) {
   const loc = (job.location || '').toLowerCase();
   const workType = (job.workType || '').toLowerCase();
+  const snippet = (job.snippet || '').toLowerCase();
+  const title = (job.title || '').toLowerCase();
 
-  // Must have explicit remote signal
+  // Explicit remote workType
   if (workType === 'remote') return true;
+
+  // Remote in location field
   if (loc.includes('remote')) return true;
+
+  // Remote mentioned in job snippet/description
+  if (snippet.includes('remote')) return true;
+
+  // Location is just "United States" or blank = likely remote-eligible at VP/Director level
+  const trimmedLoc = loc.trim();
+  if (!trimmedLoc || trimmedLoc === 'united states' || trimmedLoc === 'usa' || 
+      trimmedLoc === 'us' || trimmedLoc === 'north america' || 
+      trimmedLoc === 'anywhere' || trimmedLoc === 'worldwide') return true;
 
   // Allow if in Stuart FL radius
   if (IN_RADIUS.some(c => loc.includes(c))) return true;
 
-  // Everything else — onsite or hybrid elsewhere — reject
+  // Everything else — single city onsite — reject
   return false;
 }
 
