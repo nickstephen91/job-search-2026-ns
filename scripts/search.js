@@ -1035,67 +1035,9 @@ async function main() {
     { q: 'Director Business Development', l: 'West Palm Beach, FL' },
   ];
 
-  console.log('📡 Indeed RSS...');
-  for (const { q, l } of indeedSearches) {
-    try {
-      const jobs = await fetchIndeedRSS(q, l);
-      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
-      await new Promise(r => setTimeout(r, 800));
-    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
-  }
+  // All scrape-based sources removed — Greenhouse + Lever APIs only (guaranteed live)
 
-  // ── Remotive ──────────────────────────────────────────────────────────────
-  console.log('\n📡 Remotive...');
-  for (const q of ['partnerships', 'alliances', 'customer success', 'revenue operations',
-                   'channel sales', 'business development', 'account management',
-                   'sales enablement', 'ecosystem', 'go-to-market']) {
-    try {
-      const jobs = await fetchRemotive(q);
-      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
-      await new Promise(r => setTimeout(r, 400));
-    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
-  }
-
-  // ── The Muse ───────────────────────────────────────────────────────────────
-  console.log('\n📡 The Muse...');
-  for (const q of ['director partnerships', 'VP alliances', 'director customer success', 'revenue operations director']) {
-    try {
-      const jobs = await fetchTheMuse(q);
-      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
-      await new Promise(r => setTimeout(r, 300));
-    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
-  }
-
-  // ── Arbeitnow ──────────────────────────────────────────────────────────────
-  console.log('\n📡 Arbeitnow...');
-  for (const q of ['director partnerships', 'VP customer success', 'director alliances', 'revenue operations']) {
-    try {
-      const jobs = await fetchArbeitnow(q);
-      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
-      await new Promise(r => setTimeout(r, 300));
-    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
-  }
-
-  // ── We Work Remotely ───────────────────────────────────────────────────────
-  console.log('\n📡 We Work Remotely...');
-  try {
-    const jobs = await fetchWWR('partnerships');
-    if (jobs.length) { console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs); }
-  } catch (e) { console.log(`   ❌ ${e.message}`); }
-
-  // ── Jobicy ─────────────────────────────────────────────────────────────────
-  console.log('\n📡 Jobicy...');
-  for (const q of ['partnerships', 'alliances', 'customer success', 'revenue operations', 'channel']) {
-    try {
-      const jobs = await fetchJobicy(q);
-      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
-      await new Promise(r => setTimeout(r, 300));
-    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
-  }
-
-  // ── Claude Web Search (ATS + Niche boards) ─────────────────────────────────
-  console.log('\n📡 Claude web search (ATS + niche boards)...');
-  // ── FREE DIRECT ATS APIs (no Claude cost) ──────────────────────────────────
+    // ── FREE DIRECT ATS APIs (no Claude cost) ──────────────────────────────────
   // Greenhouse board API — free, no auth needed
   console.log('\n🏢 Fetching from Greenhouse boards API...');
   const greenhouseCompanies = [
