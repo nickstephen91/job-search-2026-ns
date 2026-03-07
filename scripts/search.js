@@ -152,17 +152,15 @@ function isLocationOk(job) {
   const loc = (job.location || '').toLowerCase();
   const workType = (job.workType || '').toLowerCase();
 
-  // Always allow remote
-  if (workType === 'remote' || loc.includes('remote')) return true;
+  // Must have explicit remote signal
+  if (workType === 'remote') return true;
+  if (loc.includes('remote')) return true;
 
-  // Allow if in radius
+  // Allow if in Stuart FL radius
   if (IN_RADIUS.some(c => loc.includes(c))) return true;
 
-  // Reject if clearly too far
-  if (TOO_FAR.some(c => loc.includes(c))) return false;
-
-  // If location is vague (e.g. "United States", "USA", blank) — allow it
-  return true;
+  // Everything else — onsite or hybrid elsewhere — reject
+  return false;
 }
 
 function meetsRequirements(job) {
