@@ -1026,7 +1026,8 @@ async function main() {
   // ── We Work Remotely ───────────────────────────────────────────────────────
   console.log('\n📡 We Work Remotely...');
   try {
-    const jobs = await fetchWWR('partnerships');
+    // DISABLED - WWR returns unverifiable URLs
+    // const jobs = await fetchWWR('partnerships');
     if (jobs.length) { console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs); }
   } catch (e) { console.log(`   ❌ ${e.message}`); }
 
