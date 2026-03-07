@@ -9,15 +9,28 @@ const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
 const DOCS_TODAY_PATH = path.join(DOCS_RESULTS_DIR, 'today.json');
 const TOP_PICKS_PATH = path.join(RESULTS_DIR, 'top_picks.json');
 
+// ── MANUAL BLOCKLIST — jobs confirmed dead/irrelevant, never show again ────
+const BLOCKED_JOBS = [
+  { company: 'checkr', title: 'vp, partnerships' },      // confirmed expired
+  { company: 'checkr', title: 'vp partnerships' },
+];
+
+function isBlocked(job) {
+  const co = (job.company || '').toLowerCase().trim();
+  const ti = (job.title || '').toLowerCase().trim();
+  return BLOCKED_JOBS.some(b => co.includes(b.company) && ti.includes(b.title));
+}
+
 // ── PERSISTENCE ──────────────────────────────────────────────────────────────
 function loadSeenUrls() {
   try {
     if (!fs.existsSync(SEEN_URLS_PATH)) return new Set();
-    const data = JSON.parse(fs.readFileSync(SEEN_URLS_PATH, 'utf8'));
-    // Only keep URLs from the last 14 days to prevent seen list from growing forever
+    const raw = JSON.parse(fs.readFileSync(SEEN_URLS_PATH, 'utf8'));
+    // Handle both {entries:[]} format and plain [] array (from reset)
+    const entries = Array.isArray(raw) ? [] : (Array.isArray(raw.entries) ? raw.entries : []);
     const cutoff = Date.now() - (14 * 24 * 60 * 60 * 1000);
-    const recent = (data.entries || []).filter(e => e.ts > cutoff);
-    return new Set(recent.map(e => e.url));
+    const recent = entries.filter(e => e && e.ts && e.ts > cutoff);
+    return new Set(recent.map(e => e.url).filter(Boolean));
   } catch { return new Set(); }
 }
 
@@ -25,11 +38,14 @@ function saveSeenUrls(seenUrls, newUrls) {
   let existing = [];
   try {
     if (fs.existsSync(SEEN_URLS_PATH)) {
-      existing = JSON.parse(fs.readFileSync(SEEN_URLS_PATH, 'utf8')).entries || [];
+      const raw = JSON.parse(fs.readFileSync(SEEN_URLS_PATH, 'utf8'));
+      // raw.entries exists as a native Array method on arrays — must check it's a real array
+      const ent = raw && !Array.isArray(raw) && Array.isArray(raw.entries) ? raw.entries : [];
+      existing = ent;
     }
   } catch {}
   const cutoff = Date.now() - (14 * 24 * 60 * 60 * 1000);
-  const kept = existing.filter(e => e.ts > cutoff && !newUrls.has(e.url));
+  const kept = existing.filter(e => e && e.ts && e.ts > cutoff && !newUrls.has(e.url));
   const added = Array.from(newUrls).map(url => ({ url, ts: Date.now() }));
   fs.writeFileSync(SEEN_URLS_PATH, JSON.stringify({
     lastUpdated: new Date().toISOString(),
@@ -252,7 +268,7 @@ async function fetchViaClaudeSearch(prompt) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'x-api-key': process.env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
     body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514', max_tokens: 4000,
+      model: 'claude-haiku-4-5-20251001', max_tokens: 1500,
       tools: [{ type: 'web_search_20250305', name: 'web_search' }],
       messages: [{ role: 'user', content: prompt }]
     })
@@ -810,24 +826,61 @@ const CLOSED_SIGNALS = [
 
 async function resolveUrl(url) {
   try {
+    // Check URL itself for obvious closed signals before even fetching
+    const urlLower = url.toLowerCase();
+    if (urlLower.includes('error=true') || urlLower.includes('?error=') || 
+        urlLower.includes('job-not-found') || urlLower.includes('expired')) {
+      return { finalUrl: url, isClosed: true, ok: false, description: null };
+    }
+
     const controller = new AbortController();
-    setTimeout(() => controller.abort(), 6000);
+    setTimeout(() => controller.abort(), 8000);
     const res = await fetch(url, {
-      method: 'GET',
-      redirect: 'follow',
-      signal: controller.signal,
-      headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' }
+      method: 'GET', redirect: 'follow', signal: controller.signal,
+      headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5' }
     });
+
     const finalUrl = res.url || url;
+
+    // Any 4xx/5xx = dead
+    if (res.status >= 400) {
+      return { finalUrl, isClosed: true, ok: false, description: null };
+    }
+    
+    // Check final URL for closed signals
+    const finalUrlLower = finalUrl.toLowerCase();
+    if (finalUrlLower.includes('error=true') || finalUrlLower.includes('?error=') ||
+        finalUrlLower.includes('job-not-found') || finalUrlLower.includes('not-found') ||
+        finalUrlLower.includes('jobs/search') || finalUrlLower.includes('jobs/results') ||
+        finalUrlLower.includes('/404') || finalUrlLower.includes('expired')) {
+      return { finalUrl, isClosed: true, ok: false, description: null };
+    }
+
     const html = await res.text();
-    const textLower = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').toLowerCase();
-    
-    // Check if job is closed
-    const isClosed = CLOSED_SIGNALS.some(signal => textLower.includes(signal));
-    
-    return { finalUrl, isClosed, ok: res.ok };
-  } catch {
-    return { finalUrl: url, isClosed: false, ok: true }; // assume open if fetch fails
+    const text = html
+      .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+      .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ')
+      .replace(/\s+/g, ' ').trim();
+    const textLower = text.toLowerCase();
+
+    // Check for closed signals
+    const isClosed = CLOSED_SIGNALS.some(s => textLower.includes(s));
+    if (isClosed) return { finalUrl, isClosed: true, ok: false, description: null };
+
+    // Extract description for keyword matching (reuse this fetch — no second request needed)
+    const reqIdx = text.search(/requirements|qualifications|what you.ll need|what we.re looking for|you have|you bring|must have/i);
+    const description = reqIdx > -1 ? text.substring(reqIdx, reqIdx + 3000) : text.substring(0, 3000);
+
+    return { finalUrl, isClosed: false, ok: true, description };
+  } catch(err) {
+    // On timeout or network error — mark as closed to be safe
+    // Better to miss a job than show a dead link
+    console.log(`   ⚠️  Fetch failed for ${url.substring(0,50)} — removing (${err.message})`);
+    return { finalUrl: url, isClosed: true, ok: false, description: null };
   }
 }
 
@@ -1026,8 +1079,7 @@ async function main() {
   // ── We Work Remotely ───────────────────────────────────────────────────────
   console.log('\n📡 We Work Remotely...');
   try {
-    // DISABLED - WWR returns unverifiable URLs
-    // const jobs = await fetchWWR('partnerships');
+    const jobs = await fetchWWR('partnerships');
     if (jobs.length) { console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs); }
   } catch (e) { console.log(`   ❌ ${e.message}`); }
 
@@ -1043,29 +1095,65 @@ async function main() {
 
   // ── Claude Web Search (ATS + Niche boards) ─────────────────────────────────
   console.log('\n📡 Claude web search (ATS + niche boards)...');
-  const claudeSearches = [
-    // Direct ATS boards
-    `Search jobs.ashbyhq.com for Director VP Partnerships Alliances Customer Success roles posted in last 30 days. US remote preferred. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Ashby","snippet":"","industry":"","companyStage":""}]. Return only the JSON array, no other text.`,
-
-    `Search greenhouse.io/jobs for Director VP Head of Partnerships Alliances Channel Revenue Operations posted last 30 days. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Greenhouse","snippet":"","industry":"","companyStage":""}]. JSON only.`,
-
-    `Search jobs.lever.co for Director VP Partnerships Channel Business Development Customer Success Revenue Operations roles posted last 30 days. Return JSON array only: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Lever","snippet":"","industry":"","companyStage":""}]`,
-
-    // Niche / industry-specific boards  
-    `Search HRtech and SaaS job boards including jobs.workable.com, careers pages of HR tech companies (Rippling, Gusto, Deel, Papaya Global, Velocity Global, Oyster HR, Remote.com, Lattice, Leapsome, Workato, Navan) for Director VP Head of Partnerships Alliances Channel roles. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Company Site","snippet":"","industry":"HR Tech","companyStage":""}]. JSON only.`,
-
-    `Search startup and growth-stage company job boards: wellfound.com (AngelList), jobs.a16z.com portfolio companies, YC company jobs for Director VP Partnerships Alliances Channel Customer Success Revenue Operations. Prioritize Series B/C companies. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Wellfound","snippet":"","industry":"","companyStage":"Series B"}]. JSON only.`,
-
-    // Compliance + PEO niche — Nick's sweet spot
-    `Search for Director VP Head of Partnerships Alliances Channel roles at compliance, PEO, payroll, workforce management, background screening, employment verification, tax credit companies. Include Equifax Workforce, ADP, Paychex, Automatic Data Processing, Experian, TransUnion, Checkr, Sterling, First Advantage, and similar. Search their careers pages. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Company Site","snippet":"","industry":"HR Tech / PEO","companyStage":""}]. JSON only.`,
+  // ── FREE DIRECT ATS APIs (no Claude cost) ──────────────────────────────────
+  // Greenhouse board API — free, no auth needed
+  console.log('\n🏢 Fetching from Greenhouse boards API...');
+  const greenhouseCompanies = [
+    'checkr','rippling','gusto','deel','lattice','navan','leapsome',
+    'papayaglobal','velocityglobal','oysterhr','workato','remote',
+    'experian','firstadvantage','sterlingcheck','hirequest',
+    'justworks','trinet','bamboohr','namely','paycor','paylocity',
+    'adp','ceridian','ukg','dayforce','isolved','paycom'
   ];
-
-  for (const prompt of claudeSearches) {
+  for (const co of greenhouseCompanies) {
     try {
-      const jobs = await fetchViaClaudeSearch(prompt);
-      if (jobs.length) { console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs); }
-      await new Promise(r => setTimeout(r, 8000)); // rate limit between searches
-    } catch (e) { console.log(`   ❌ ${e.message}`); }
+      const r = await fetch(`https://boards-api.greenhouse.io/v1/boards/${co}/jobs?content=true`, {signal: AbortSignal.timeout(6000)});
+      if (!r.ok) continue;
+      const d = await r.json();
+      const jobs = (d.jobs || []).filter(j => {
+        const t = (j.title||'').toLowerCase();
+        return /partner|alliance|channel|reseller|business dev|revenue ops|customer success|vp|director|head of/i.test(t);
+      }).map(j => ({
+        title: j.title, company: co.charAt(0).toUpperCase()+co.slice(1),
+        location: (j.location?.name)||'United States',
+        workType: /remote/i.test(j.location?.name||'')?'Remote':'Onsite',
+        salary: 'Not Listed', posted: j.updated_at ? new Date(j.updated_at).toLocaleDateString() : 'Recent',
+        url: j.absolute_url, source: 'Greenhouse', verified: true,
+        snippet: j.content ? j.content.replace(/<[^>]+>/g,' ').substring(0,200) : '',
+        industry: '', companyStage: ''
+      }));
+      if (jobs.length) { console.log(`   ✅ ${co}: ${jobs.length} roles`); allJobs = allJobs.concat(jobs); }
+    } catch(e) { /* skip */ }
+  }
+
+  // Lever postings API — free, no auth needed  
+  console.log('\n🏢 Fetching from Lever postings API...');
+  const leverCompanies = [
+    'rippling','gusto','deel','lattice','navan','leapsome','remote',
+    'papayaglobal','velocityglobal','workato','experian','checkr',
+    'justworks','bamboohr','namely','paycor','paylocity','paycom',
+    'servicenow','salesforce','hubspot','zendesk','freshworks'
+  ];
+  for (const co of leverCompanies) {
+    try {
+      const r = await fetch(`https://api.lever.co/v0/postings/${co}?mode=json&state=published`, {signal: AbortSignal.timeout(6000)});
+      if (!r.ok) continue;
+      const jobs = await r.json();
+      const filtered = (Array.isArray(jobs)?jobs:[]).filter(j => {
+        const t = (j.text||'').toLowerCase();
+        return /partner|alliance|channel|reseller|business dev|revenue ops|customer success|vp|director|head of/i.test(t);
+      }).map(j => ({
+        title: j.text, company: co.charAt(0).toUpperCase()+co.slice(1),
+        location: (j.categories?.location)||'United States',
+        workType: /remote/i.test(j.categories?.location||'')?'Remote':'Onsite',
+        salary: 'Not Listed',
+        posted: j.createdAt ? new Date(j.createdAt).toLocaleDateString() : 'Recent',
+        url: j.hostedUrl, source: 'Lever', verified: true,
+        snippet: j.descriptionPlain ? j.descriptionPlain.substring(0,200) : '',
+        industry: '', companyStage: ''
+      }));
+      if (filtered.length) { console.log(`   ✅ ${co}: ${filtered.length} roles`); allJobs = allJobs.concat(filtered); }
+    } catch(e) { /* skip */ }
   }
 
   // Dedup
@@ -1113,7 +1201,16 @@ async function main() {
   console.log(`📅 After age filter (max ${MAX_JOB_AGE_DAYS}d): ${fresh.length} (removed ${deduped.length - fresh.length} stale)`);
 
   // Filter
-  const qualified = fresh.filter(meetsRequirements);
+  // Remove manually blocked jobs
+  const unblocked = fresh.filter(job => {
+    if (isBlocked(job)) {
+      console.log(`   🚫 Blocked: "${job.title}" @ ${job.company}`);
+      return false;
+    }
+    return true;
+  });
+
+  const qualified = unblocked.filter(meetsRequirements);
   console.log(`✅ After filters: ${qualified.length}`);
 
   // New only
@@ -1133,33 +1230,49 @@ async function main() {
     console.log(`   👀 Worth a Look (35-49): ${newJobs.filter(j => j.score >= 35 && j.score < 50).length}`);
   }
 
-  // Resolve URLs + check closed + fetch descriptions (batch, with delays)
+  // Resolve URLs + check closed + fetch descriptions
   console.log('\n🔗 Resolving URLs and checking job status...');
   const validJobs = [];
   for (let i = 0; i < newJobs.length; i++) {
     const job = newJobs[i];
     
-    // Step 1: Resolve redirect URL and check if job is closed
-    const { finalUrl, isClosed } = await resolveUrl(job.url);
+    // Even pre-verified jobs: reject if URL already contains error signals
+    const urlCheck = (job.url || '').toLowerCase();
+    if (urlCheck.includes('error=true') || urlCheck.includes('?error=') ||
+        urlCheck.includes('/oops') || urlCheck.includes('not_found=true') ||
+        urlCheck.includes('not-found') || urlCheck.includes('expired_jd_redirect') ||
+        urlCheck.includes('job-not-found') || urlCheck.includes('jobs/search') ||
+        urlCheck.includes('trk=expired') || urlCheck.includes('linkedin.com/company/')) {
+      console.log(`   ❌ [${i+1}/${newJobs.length}] BAD URL — removing: ${job.title.substring(0,40)}`);
+      seenUrls.add(job.url);
+      continue;
+    }
+
+    // Greenhouse and Lever API jobs are pre-verified — always live, skip HTTP check
+    if (job.verified) {
+      seenUrls.add(job.url);
+      console.log(`   ✅ [${i+1}/${newJobs.length}] Pre-verified (${job.source}): ${job.title.substring(0,40)}`);
+      validJobs.push(job);
+      continue;
+    }
+
+    // All other sources: resolve URL + check for closed signals
+    const resolveResult = await resolveUrl(job.url);
+    const { finalUrl, isClosed } = resolveResult;
     
     if (isClosed) {
       console.log(`   ❌ [${i+1}/${newJobs.length}] CLOSED — removing: ${job.title.substring(0,40)}`);
-      // Add to seen URLs so it never resurfaces
       seenUrls.add(job.url);
       seenUrls.add(finalUrl);
       continue;
     }
     
-    // Store original URL as seen too (pre-redirect), update job URL to final destination
     seenUrls.add(job.url);
     job.url = finalUrl;
-    console.log(`   🔗 [${i+1}/${newJobs.length}] Active → ${finalUrl.substring(0,60)}`);
+    console.log(`   🔗 [${i+1}/${newJobs.length}] Verified active: ${finalUrl.substring(0,60)}`);
     
-    // Step 2: Fetch full description for keyword matching
-    const desc = await fetchFullDescription(job.url);
-    if (desc) {
-      job.fullDescription = desc;
-      console.log(`      📄 Got description`);
+    if (resolveResult.description) {
+      job.fullDescription = resolveResult.description;
     }
     
     validJobs.push(job);
