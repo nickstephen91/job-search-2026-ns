@@ -1003,6 +1003,235 @@ async function main() {
   }
 
   // ── Remotive ──────────────────────────────────────────────────────────────
-  // Unreliable sources removed - Greenhouse + Lever APIs only (guaranteed live jobs)
+  console.log('\n📡 Remotive...');
+  for (const q of ['partnerships', 'alliances', 'customer success', 'revenue operations',
+                   'channel sales', 'business development', 'account management',
+                   'sales enablement', 'ecosystem', 'go-to-market']) {
+    try {
+      const jobs = await fetchRemotive(q);
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 400));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
+  }
 
+  // ── The Muse ───────────────────────────────────────────────────────────────
+  console.log('\n📡 The Muse...');
+  for (const q of ['director partnerships', 'VP alliances', 'director customer success', 'revenue operations director']) {
+    try {
+      const jobs = await fetchTheMuse(q);
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 300));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
+  }
+
+  // ── Arbeitnow ──────────────────────────────────────────────────────────────
+  console.log('\n📡 Arbeitnow...');
+  for (const q of ['director partnerships', 'VP customer success', 'director alliances', 'revenue operations']) {
+    try {
+      const jobs = await fetchArbeitnow(q);
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 300));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
+  }
+
+  // ── We Work Remotely ───────────────────────────────────────────────────────
+  console.log('\n📡 We Work Remotely...');
+  try {
+    const jobs = await fetchWWR('partnerships');
+    if (jobs.length) { console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs); }
+  } catch (e) { console.log(`   ❌ ${e.message}`); }
+
+  // ── Jobicy ─────────────────────────────────────────────────────────────────
+  console.log('\n📡 Jobicy...');
+  for (const q of ['partnerships', 'alliances', 'customer success', 'revenue operations', 'channel']) {
+    try {
+      const jobs = await fetchJobicy(q);
+      if (jobs.length) { console.log(`   ✅ "${q}" → ${jobs.length}`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 300));
+    } catch (e) { console.log(`   ❌ "${q}": ${e.message}`); }
+  }
+
+  // ── Claude Web Search (ATS + Niche boards) ─────────────────────────────────
+  console.log('\n📡 Claude web search (ATS + niche boards)...');
+  const claudeSearches = [
+    // Direct ATS boards
+    `Search jobs.ashbyhq.com for Director VP Partnerships Alliances Customer Success roles posted in last 30 days. US remote preferred. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Ashby","snippet":"","industry":"","companyStage":""}]. Return only the JSON array, no other text.`,
+
+    `Search greenhouse.io/jobs for Director VP Head of Partnerships Alliances Channel Revenue Operations posted last 30 days. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Greenhouse","snippet":"","industry":"","companyStage":""}]. JSON only.`,
+
+    `Search jobs.lever.co for Director VP Partnerships Channel Business Development Customer Success Revenue Operations roles posted last 30 days. Return JSON array only: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Lever","snippet":"","industry":"","companyStage":""}]`,
+
+    // Niche / industry-specific boards  
+    `Search HRtech and SaaS job boards including jobs.workable.com, careers pages of HR tech companies (Rippling, Gusto, Deel, Papaya Global, Velocity Global, Oyster HR, Remote.com, Lattice, Leapsome, Workato, Navan) for Director VP Head of Partnerships Alliances Channel roles. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Company Site","snippet":"","industry":"HR Tech","companyStage":""}]. JSON only.`,
+
+    `Search startup and growth-stage company job boards: wellfound.com (AngelList), jobs.a16z.com portfolio companies, YC company jobs for Director VP Partnerships Alliances Channel Customer Success Revenue Operations. Prioritize Series B/C companies. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Wellfound","snippet":"","industry":"","companyStage":"Series B"}]. JSON only.`,
+
+    // Compliance + PEO niche — Nick's sweet spot
+    `Search for Director VP Head of Partnerships Alliances Channel roles at compliance, PEO, payroll, workforce management, background screening, employment verification, tax credit companies. Include Equifax Workforce, ADP, Paychex, Automatic Data Processing, Experian, TransUnion, Checkr, Sterling, First Advantage, and similar. Search their careers pages. Return JSON array: [{"title":"","company":"","location":"","workType":"Remote","salary":"Not Listed","posted":"","url":"","source":"Company Site","snippet":"","industry":"HR Tech / PEO","companyStage":""}]. JSON only.`,
+  ];
+
+  for (const prompt of claudeSearches) {
+    try {
+      const jobs = await fetchViaClaudeSearch(prompt);
+      if (jobs.length) { console.log(`   ✅ ${jobs.length} results`); allJobs = allJobs.concat(jobs); }
+      await new Promise(r => setTimeout(r, 8000)); // rate limit between searches
+    } catch (e) { console.log(`   ❌ ${e.message}`); }
+  }
+
+  // Dedup
+  const urlSet = new Set();
+  const deduped = allJobs.filter(j => {
+    if (!j.url || urlSet.has(j.url)) return false;
+    urlSet.add(j.url); return true;
+  });
+  console.log(`\n📊 Total unique: ${deduped.length}`);
+
+  // Universal age filter — reject jobs older than 30 days
+  const MAX_JOB_AGE_DAYS = 30;
+  const now = Date.now();
+
+  function parsePostedAge(posted) {
+    if (!posted || posted === 'Recent') return 0; // assume fresh if no date
+    const s = posted.toLowerCase();
+    // "X days ago" / "X hours ago" / "X weeks ago"
+    const daysAgo = s.match(/(\d+)\s*day/);
+    if (daysAgo) return parseInt(daysAgo[1]);
+    const hoursAgo = s.match(/(\d+)\s*hour/);
+    if (hoursAgo) return 0;
+    const weeksAgo = s.match(/(\d+)\s*week/);
+    if (weeksAgo) return parseInt(weeksAgo[1]) * 7;
+    const monthsAgo = s.match(/(\d+)\s*month/);
+    if (monthsAgo) return parseInt(monthsAgo[1]) * 30;
+    // Try parsing as actual date string e.g. "3/1/2026" or "2026-01-15"
+    try {
+      const d = new Date(posted);
+      if (!isNaN(d.getTime())) {
+        return Math.floor((now - d.getTime()) / (1000 * 60 * 60 * 24));
+      }
+    } catch(e) {}
+    return 0; // unknown format — keep it
+  }
+
+  const fresh = deduped.filter(job => {
+    const ageDays = parsePostedAge(job.posted);
+    if (ageDays > MAX_JOB_AGE_DAYS) {
+      console.log(`   ⏰ Skipping stale job (${ageDays}d old): ${job.title} @ ${job.company}`);
+      return false;
+    }
+    return true;
+  });
+  console.log(`📅 After age filter (max ${MAX_JOB_AGE_DAYS}d): ${fresh.length} (removed ${deduped.length - fresh.length} stale)`);
+
+  // Filter
+  const unblocked = fresh.filter(job => {
+    if (isBlocked(job)) { console.log(`   🚫 Blocked: "${job.title}" @ ${job.company}`); return false; }
+    return true;
+  });
+  const qualified = unblocked.filter(meetsRequirements);
+  console.log(`✅ After filters: ${qualified.length}`);
+
+  // New only
+  const newJobs = qualified
+    .filter(j => !seenUrls.has(j.url))
+    .map(j => {
+      const ranking = rankJob(j);
+      return { ...j, foundDate: new Date().toISOString(), ...ranking };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  console.log(`🆕 New this run: ${newJobs.length}`);
+  if (newJobs.length > 0) {
+    console.log(`   🔥 Prime Match (80+): ${newJobs.filter(j => j.score >= 80).length}`);
+    console.log(`   ⭐ Strong Fit (65-79): ${newJobs.filter(j => j.score >= 65 && j.score < 80).length}`);
+    console.log(`   👍 Good Fit (50-64): ${newJobs.filter(j => j.score >= 50 && j.score < 65).length}`);
+    console.log(`   👀 Worth a Look (35-49): ${newJobs.filter(j => j.score >= 35 && j.score < 50).length}`);
+  }
+
+  // Resolve URLs + check closed + fetch descriptions (batch, with delays)
+  console.log('\n🔗 Resolving URLs and checking job status...');
+  const validJobs = [];
+  for (let i = 0; i < newJobs.length; i++) {
+    const job = newJobs[i];
+    
+    // Step 1: Resolve redirect URL and check if job is closed
+    const { finalUrl, isClosed } = await resolveUrl(job.url);
+    
+    if (isClosed) {
+      console.log(`   ❌ [${i+1}/${newJobs.length}] CLOSED — removing: ${job.title.substring(0,40)}`);
+      // Add to seen URLs so it never resurfaces
+      seenUrls.add(job.url);
+      seenUrls.add(finalUrl);
+      continue;
+    }
+    
+    // Store original URL as seen too (pre-redirect), update job URL to final destination
+    seenUrls.add(job.url);
+    job.url = finalUrl;
+    console.log(`   🔗 [${i+1}/${newJobs.length}] Active → ${finalUrl.substring(0,60)}`);
+    
+    // Step 2: Fetch full description for keyword matching
+    const desc = await fetchFullDescription(job.url);
+    if (desc) {
+      job.fullDescription = desc;
+      console.log(`      📄 Got description`);
+    }
+    
+    validJobs.push(job);
+    if (i < newJobs.length - 1) await new Promise(r => setTimeout(r, 500));
+  }
   
+  const activeJobs = validJobs;
+  console.log(`\n✅ ${activeJobs.length} active jobs (${newJobs.length - activeJobs.length} closed/removed)`);
+  // Replace newJobs reference for ranking
+  newJobs.length = 0;
+  activeJobs.forEach(j => newJobs.push(j));
+
+  // Rank all new jobs
+  const rankedJobs = newJobs
+    .map(j => normalizeJob(j))
+    .map(j => ({ ...j, rank: rankJob(j) }))
+    .sort((a, b) => b.rank.total - a.rank.total);
+
+  console.log(`\n🏆 Top 3 ranked jobs:`);
+  rankedJobs.slice(0, 3).forEach((j, i) => {
+    console.log(`   ${i+1}. [${j.rank.total}/100] ${j.title} @ ${j.company}`);
+  });
+
+  // Current run top picks — must apply (80+) first, then strong match (65+), up to 5
+  const currentTopPicks = rankedJobs
+    .filter(j => (j.rank?.total || 0) >= 65)
+    .slice(0, 5);
+
+  // Save top picks for NEXT email's "revisit" section
+  if (rankedJobs.length > 0) saveTopPicks(currentTopPicks.length > 0 ? currentTopPicks : rankedJobs.slice(0, 5));
+
+  // Update seen URLs — only add the new qualified ones
+  const newUrlSet = new Set(newJobs.map(j => j.url));
+  saveSeenUrls(seenUrls, newUrlSet);
+
+  // Save today — currentTopPicks shown in stats, previousTopPicks shown in revisit card
+  fs.writeFileSync(TODAY_PATH, JSON.stringify({
+    date: dateStr, count: rankedJobs.length,
+    jobs: rankedJobs,
+    topPicks: previousTopPicks,          // "revisit" card = last run's bests
+    currentTopPicks: currentTopPicks     // stats bar top picks count = this run
+  }, null, 2));
+  if (!fs.existsSync(DOCS_RESULTS_DIR)) fs.mkdirSync(DOCS_RESULTS_DIR, { recursive: true });
+  fs.writeFileSync(DOCS_TODAY_PATH, JSON.stringify({
+    date: dateStr, count: rankedJobs.length,
+    jobs: rankedJobs,
+    topPicks: previousTopPicks,          // "revisit" card = last run's bests
+    currentTopPicks: currentTopPicks     // stats bar top picks count = this run
+  }, null, 2));
+
+  console.log(`\n✅ Done! ${rankedJobs.length} ranked jobs queued for email.`);
+}
+
+main().catch(err => {
+  console.error('Fatal:', err.message);
+  if (!fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
+  fs.writeFileSync(TODAY_PATH, JSON.stringify({
+    date: new Date().toLocaleDateString(), count: 0, jobs: [], topPicks: [], error: err.message
+  }, null, 2));
+  process.exit(1);
+});
