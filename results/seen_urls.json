@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-06T11:59:08.780Z",
-  "totalTracked": 71,
+  "lastUpdated": "2026-03-07T00:52:47.081Z",
+  "totalTracked": 72,
   "entries": [
     {
       "url": "https://jobs.ashbyhq.com/wander/b01cc6b4-64d8-414f-83c5-d409fc333f3d",
@@ -171,14 +171,6 @@
       "ts": 1772712300665
     },
     {
-      "url": "https://apply.workable.com/oops",
-      "ts": 1772712300665
-    },
-    {
-      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
-      "ts": 1772712300665
-    },
-    {
       "url": "https://jobs.ashbyhq.com/Arlo/85ec52cd-364f-444c-95c2-d36b203770af/application",
       "ts": 1772720600438
     },
@@ -285,6 +277,18 @@
     {
       "url": "https://jobs.adp.com/en/jobs/262816/director-of-strategic-partnerships-and-growth/",
       "ts": 1772798348780
+    },
+    {
+      "url": "https://jobs.lever.co/gohighlevel/34c0c17f-8f26-424d-a7e6-d0a7911d0d1c",
+      "ts": 1772844767081
+    },
+    {
+      "url": "https://apply.workable.com/oops",
+      "ts": 1772844767081
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/head-of-sponsorship-jobs?trk=expired_jd_redirect",
+      "ts": 1772844767081
     }
   ]
 }
