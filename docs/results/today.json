@@ -103,11 +103,11 @@
       "url": "https://job-boards.greenhouse.io/workato/jobs/8316210002",
       "source": "Greenhouse",
       "snippet": "About Workato Workato transforms technology complexity into business opportunity. As the leader in enterprise orchestration, Workato helps businesses globally streamline operations by connecting data, processes, applications, and experiences. Its AI-powered platform enables teams to navigate complex workflows in real-time, driving efficiency and agility. Trusted by a community of 400,000 global customers, Workato empowers organizations of every size to unlock new value and lead in today’s fast-c",
-      "score": 43,
-      "tier": "👀 Worth a Look",
+      "score": 46,
+      "tier": "Ã°ÂÂÂ Worth a Look",
       "industry": "Tech",
       "rank": {
-        "total": 43,
+        "total": 46,
         "breakdown": {
           "industry": {
             "score": 8,
@@ -118,13 +118,13 @@
             "max": 25
           },
           "keywords": {
-            "score": 15,
-            "max": 50,
+            "score": 6,
+            "max": 20,
             "matchRate": 7,
             "totalHits": 5,
             "totalKeywords": 72,
             "usedFullDesc": true,
-            "matched": [
+            "topMatches": [
               "partner",
               "partnership",
               "partnerships",
@@ -133,8 +133,8 @@
             ]
           },
           "comp": {
-            "score": 20,
-            "max": 20
+            "score": 12,
+            "max": 12
           }
         }
       }
@@ -149,35 +149,35 @@
       "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
       "source": "Greenhouse",
       "snippet": "Job Title: Director, Partner Sales - Enterprise&nbsp; Location: This is a fully remote opportunity and can be worked from any location in the United States. ABOUT THE COMPANY: Clari + Salesloft are building the next era of enterprise revenue — one where teams make confident decisions powered by AI and real signals. By combining our scale, insights, and AI innovation, we’re building the industry’s first Predictive Revenue System , enabling humans and AI to work together to make smarter decisions ",
-      "score": 11,
-      "tier": "👀 Worth a Look",
+      "score": 25,
+      "tier": "Ã°ÂÂÂ Worth a Look",
       "industry": "General",
       "rank": {
-        "total": 11,
+        "total": 25,
         "breakdown": {
           "industry": {
             "score": 0,
             "max": 30
           },
           "title": {
-            "score": 10,
+            "score": 20,
             "max": 25
           },
           "keywords": {
-            "score": 6,
-            "max": 50,
+            "score": 2,
+            "max": 20,
             "matchRate": 3,
             "totalHits": 2,
             "totalKeywords": 72,
             "usedFullDesc": true,
-            "matched": [
+            "topMatches": [
               "partner",
               "director"
             ]
           },
           "comp": {
-            "score": 5,
-            "max": 20
+            "score": 3,
+            "max": 12
           }
         }
       }
