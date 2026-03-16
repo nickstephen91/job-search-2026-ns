@@ -12,16 +12,39 @@
       "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
       "score": 50,
       "tier": "👍 Good Fit",
-      "matchedKeywords": [
-        "partner",
-        "partnership",
-        "partnerships",
-        "channel",
-        "peo"
-      ],
-      "industryScore": 30,
-      "keywordScore": 15,
-      "salaryScore": 5
+      "industry": "HR Tech / PEO",
+      "rank": {
+        "total": 50,
+        "breakdown": {
+          "industry": {
+            "score": 30,
+            "max": 30
+          },
+          "title": {
+            "score": 20,
+            "max": 25
+          },
+          "keywords": {
+            "score": 15,
+            "max": 50,
+            "matchRate": 7,
+            "totalHits": 5,
+            "totalKeywords": 72,
+            "usedFullDesc": true,
+            "matched": [
+              "partner",
+              "partnership",
+              "partnerships",
+              "channel",
+              "peo"
+            ]
+          },
+          "comp": {
+            "score": 5,
+            "max": 20
+          }
+        }
+      }
     },
     {
       "title": "Channel Partner Manager",
@@ -35,14 +58,37 @@
       "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
       "score": 44,
       "tier": "👀 Worth a Look",
-      "matchedKeywords": [
-        "partner",
-        "channel",
-        "peo"
-      ],
-      "industryScore": 30,
-      "keywordScore": 9,
-      "salaryScore": 5
+      "industry": "HR Tech / PEO",
+      "rank": {
+        "total": 44,
+        "breakdown": {
+          "industry": {
+            "score": 30,
+            "max": 30
+          },
+          "title": {
+            "score": 10,
+            "max": 25
+          },
+          "keywords": {
+            "score": 9,
+            "max": 50,
+            "matchRate": 4,
+            "totalHits": 3,
+            "totalKeywords": 72,
+            "usedFullDesc": true,
+            "matched": [
+              "partner",
+              "channel",
+              "peo"
+            ]
+          },
+          "comp": {
+            "score": 5,
+            "max": 20
+          }
+        }
+      }
     },
     {
       "title": "Manager, Sales (Los Angeles)",
@@ -56,12 +102,35 @@
       "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
       "score": 38,
       "tier": "👀 Worth a Look",
-      "matchedKeywords": [
-        "peo"
-      ],
-      "industryScore": 30,
-      "keywordScore": 3,
-      "salaryScore": 5
+      "industry": "HR Tech / PEO",
+      "rank": {
+        "total": 38,
+        "breakdown": {
+          "industry": {
+            "score": 30,
+            "max": 30
+          },
+          "title": {
+            "score": 0,
+            "max": 25
+          },
+          "keywords": {
+            "score": 3,
+            "max": 50,
+            "matchRate": 1,
+            "totalHits": 1,
+            "totalKeywords": 72,
+            "usedFullDesc": true,
+            "matched": [
+              "peo"
+            ]
+          },
+          "comp": {
+            "score": 5,
+            "max": 20
+          }
+        }
+      }
     }
   ]
 }
