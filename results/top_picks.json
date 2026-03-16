@@ -1,23 +1,23 @@
 {
   "picks": [
     {
-      "title": "Manager, Channel Partnerships (Phoenix, AZ)",
-      "company": "Justworks",
-      "location": "Remote",
+      "title": "Director, Business Development - AI Partnerships",
+      "company": "Workato",
+      "location": "United States",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "3/10/2026",
-      "url": "https://boards.greenhouse.io/justworks/jobs/7636412?gh_jid=7636412",
+      "posted": "3/13/2026",
+      "url": "https://job-boards.greenhouse.io/workato/jobs/8316210002",
       "source": "Greenhouse",
-      "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
-      "score": 50,
-      "tier": "👍 Good Fit",
-      "industry": "HR Tech / PEO",
+      "snippet": "About Workato Workato transforms technology complexity into business opportunity. As the leader in enterprise orchestration, Workato helps businesses globally streamline operations by connecting data, processes, applications, and experiences. Its AI-powered platform enables teams to navigate complex workflows in real-time, driving efficiency and agility. Trusted by a community of 400,000 global customers, Workato empowers organizations of every size to unlock new value and lead in today’s fast-c",
+      "score": 43,
+      "tier": "👀 Worth a Look",
+      "industry": "Tech",
       "rank": {
-        "total": 50,
+        "total": 43,
         "breakdown": {
           "industry": {
-            "score": 30,
+            "score": 8,
             "max": 30
           },
           "title": {
@@ -35,35 +35,35 @@
               "partner",
               "partnership",
               "partnerships",
-              "channel",
-              "peo"
+              "business development",
+              "director"
             ]
           },
           "comp": {
-            "score": 5,
+            "score": 20,
             "max": 20
           }
         }
       }
     },
     {
-      "title": "Channel Partner Manager",
-      "company": "Justworks",
+      "title": "Director, Partner Sales - Enterprise",
+      "company": "Salesloft",
       "location": "Remote",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "3/10/2026",
-      "url": "https://boards.greenhouse.io/justworks/jobs/7305519?gh_jid=7305519",
+      "posted": "3/11/2026",
+      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
       "source": "Greenhouse",
-      "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
-      "score": 44,
+      "snippet": "Job Title: Director, Partner Sales - Enterprise&nbsp; Location: This is a fully remote opportunity and can be worked from any location in the United States. ABOUT THE COMPANY: Clari + Salesloft are building the next era of enterprise revenue — one where teams make confident decisions powered by AI and real signals. By combining our scale, insights, and AI innovation, we’re building the industry’s first Predictive Revenue System , enabling humans and AI to work together to make smarter decisions ",
+      "score": 11,
       "tier": "👀 Worth a Look",
-      "industry": "HR Tech / PEO",
+      "industry": "General",
       "rank": {
-        "total": 44,
+        "total": 11,
         "breakdown": {
           "industry": {
-            "score": 30,
+            "score": 0,
             "max": 30
           },
           "title": {
@@ -71,58 +71,15 @@
             "max": 25
           },
           "keywords": {
-            "score": 9,
+            "score": 6,
             "max": 50,
-            "matchRate": 4,
-            "totalHits": 3,
+            "matchRate": 3,
+            "totalHits": 2,
             "totalKeywords": 72,
             "usedFullDesc": true,
             "matched": [
               "partner",
-              "channel",
-              "peo"
-            ]
-          },
-          "comp": {
-            "score": 5,
-            "max": 20
-          }
-        }
-      }
-    },
-    {
-      "title": "Manager, Sales (Los Angeles)",
-      "company": "Justworks",
-      "location": "Remote",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "3/10/2026",
-      "url": "https://boards.greenhouse.io/justworks/jobs/7453050?gh_jid=7453050",
-      "source": "Greenhouse",
-      "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
-      "score": 38,
-      "tier": "👀 Worth a Look",
-      "industry": "HR Tech / PEO",
-      "rank": {
-        "total": 38,
-        "breakdown": {
-          "industry": {
-            "score": 30,
-            "max": 30
-          },
-          "title": {
-            "score": 0,
-            "max": 25
-          },
-          "keywords": {
-            "score": 3,
-            "max": 50,
-            "matchRate": 1,
-            "totalHits": 1,
-            "totalKeywords": 72,
-            "usedFullDesc": true,
-            "matched": [
-              "peo"
+              "director"
             ]
           },
           "comp": {
