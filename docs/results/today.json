@@ -1,7 +1,8 @@
 {
   "date": "Monday, March 16, 2026",
-  "count": 2,
-  "jobs": [
+  "count": 0,
+  "jobs": [],
+  "topPicks": [
     {
       "title": "Director, Business Development - AI Partnerships",
       "company": "Workato",
@@ -29,6 +30,5 @@
       "tier": "👍 Good Fit"
     }
   ],
-  "topPicks": [],
   "currentTopPicks": []
 }
