@@ -12,7 +12,8 @@
     'hubspot','zendesk','freshworks','intercom','drift','qualified',
     'navan','expensify','brex','ramp','airbase',
     'fivetran','hightouch','census','segment','amplitude','vanta','drata','secureframe','thoropass'
-  ];ick Stephen Job Search Agent - v13 - Intelligent Scoring
+  ];
+// Nick Stephen Job Search Agent - v13 - Intelligent Scoring
 const fs = require('fs');
 const path = require('path');
 
@@ -23,7 +24,7 @@ const TODAY_PATH = path.join(RESULTS_DIR, 'today.json');
 const DOCS_TODAY_PATH = path.join(DOCS_RESULTS_DIR, 'today.json');
 const TOP_PICKS_PATH = path.join(RESULTS_DIR, 'top_picks.json');
 
-// ââ NICK'S RESUME KEYWORDS (from actual CV) ââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ NICK'S RESUME KEYWORDS (from actual CV) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 const RESUME_KEYWORDS = [
   // Core function
   'partner','partnership','partnerships','alliance','alliances','reseller','resellers',
@@ -48,7 +49,7 @@ const RESUME_KEYWORDS = [
   'senior director','managing director',
 ];
 
-// ââ DISQUALIFYING REQUIREMENTS (fields Nick has NO experience in) âââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ DISQUALIFYING REQUIREMENTS (fields Nick has NO experience in) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 const HARD_DISQUALIFIERS = [
   // Healthcare / Medical
   'healthcare experience required','medical device','health system','clinical',
@@ -85,7 +86,7 @@ const HARD_DISQUALIFIERS = [
   'dod experience','military required',
 ];
 
-// ââ INDUSTRY SCORING (30% of total) ââââââââââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ INDUSTRY SCORING (30% of total) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 const INDUSTRY_SIGNALS = {
   tier1: { // Perfect fit - 30pts
     patterns: ['peo','professional employer','background screening','background check',
@@ -110,7 +111,7 @@ const INDUSTRY_SIGNALS = {
   }
 };
 
-// ââ SALARY PARSING ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ SALARY PARSING Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 function parseSalary(text) {
   if (!text) return null;
   // Extract numbers from salary strings like "$120k-$160k", "120,000 - 160,000", etc.
@@ -129,7 +130,7 @@ function scoreSalary(salary, text) {
   // Try to parse from salary field first, then from text
   let parsed = parseSalary(salary);
   if (!parsed) parsed = parseSalary(text);
-  if (!parsed) return 5; // No salary info â neutral score
+  if (!parsed) return 5; // No salary info Ã¢ÂÂ neutral score
 
   const { min, max, avg } = parsed;
   if (max < 80000) return 0; // Below threshold entirely
@@ -140,20 +141,20 @@ function scoreSalary(salary, text) {
   return 5;
 }
 
-// ââ MAIN SCORING ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ MAIN SCORING Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 function scoreJob(job) {
   const title = (job.title || '').toLowerCase();
   const snippet = (job.snippet || '').toLowerCase();
   const text = title + ' ' + snippet;
 
-  // ââ 1. HARD DISQUALIFIER CHECK (instant reject) âââââââââââââââââââââââââââ
+  // Ã¢ÂÂÃ¢ÂÂ 1. HARD DISQUALIFIER CHECK (instant reject) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   for (const dq of HARD_DISQUALIFIERS) {
     if (text.includes(dq)) {
-      return { score: 0, tier: 'ð« Disqualified', disqualifier: dq, skip: true, rank: { total: 0 } };
+      return { score: 0, tier: 'Ã°ÂÂÂ« Disqualified', disqualifier: dq, skip: true, rank: { total: 0 } };
     }
   }
 
-  // ââ 2. INDUSTRY SCORE (30 pts max) âââââââââââââââââââââââââââââââââââââââ
+  // Ã¢ÂÂÃ¢ÂÂ 2. INDUSTRY SCORE (30 pts max) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   let industryScore = 0;
   let industryLabel = 'General';
   for (const [tierName, { patterns, score }] of Object.entries(INDUSTRY_SIGNALS)) {
@@ -164,18 +165,18 @@ function scoreJob(job) {
     }
   }
 
-  // ââ 3. KEYWORD MATCH SCORE (50 pts max) ââââââââââââââââââââââââââââââââââ
+  // Ã¢ÂÂÃ¢ÂÂ 3. KEYWORD MATCH SCORE (50 pts max) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   const matchedKeywords = RESUME_KEYWORDS.filter(kw => text.includes(kw.toLowerCase()));
   const keywordScore = Math.min(50, matchedKeywords.length * 3);
   const matchRate = RESUME_KEYWORDS.length > 0 ? Math.round(matchedKeywords.length / RESUME_KEYWORDS.length * 100) : 0;
 
-  // ââ 4. SALARY SCORE (20 pts max) âââââââââââââââââââââââââââââââââââââââââ
+  // Ã¢ÂÂÃ¢ÂÂ 4. SALARY SCORE (20 pts max) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
   const salaryScore = scoreSalary(job.salary, snippet);
 
   const total = Math.min(100, industryScore + keywordScore + salaryScore);
-  const tierLabel = total >= 80 ? 'ð¥ Must Apply' :
-                    total >= 65 ? 'â­ Strong Match' :
-                    total >= 50 ? 'ð Good Fit' : 'ð Worth a Look';
+  const tierLabel = total >= 80 ? 'Ã°ÂÂÂ¥ Must Apply' :
+                    total >= 65 ? 'Ã¢Â­Â Strong Match' :
+                    total >= 50 ? 'Ã°ÂÂÂ Good Fit' : 'Ã°ÂÂÂ Worth a Look';
 
   // Title score based on seniority
   const titleLower = (job.title||'').toLowerCase();
@@ -189,9 +190,9 @@ function scoreJob(job) {
   const keywordScoreNorm = Math.min(20, Math.round(keywordScore * 0.4));
   const compScore = Math.min(12, Math.round(salaryScore * 0.6));
   const totalNorm = Math.min(100, industryScore + titleScore + keywordScoreNorm + compScore);
-  const tierLabelFinal = totalNorm >= 80 ? 'ð¥ Must Apply' :
-                         totalNorm >= 65 ? 'â­ Strong Match' :
-                         totalNorm >= 50 ? 'ð Good Fit' : 'ð Worth a Look';
+  const tierLabelFinal = totalNorm >= 80 ? 'Ã°ÂÂÂ¥ Must Apply' :
+                         totalNorm >= 65 ? 'Ã¢Â­Â Strong Match' :
+                         totalNorm >= 50 ? 'Ã°ÂÂÂ Good Fit' : 'Ã°ÂÂÂ Worth a Look';
 
   return {
     score: totalNorm,
@@ -215,7 +216,7 @@ function scoreJob(job) {
   };
 }
 
-// ââ TITLE / ROLE FILTER âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ TITLE / ROLE FILTER Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 const TITLE_REQUIRED_LEVEL = /\bvp\b|vice.?pres|(?:senior\s+)?director|head\s+of|senior\s+director|chief|senior\s+manager/i;
 const TITLE_REQUIRED_FUNCTION = /partner|alliance|channel|reseller|customer.?success|revenue.?ops|revops|business.?dev|gtm|go.to.market/i;
 const TITLE_REJECTS = /\bengineer\b|\bdeveloper\b|\bdevops\b|data.?scientist|\bdesigner\b|product.?manager|product.?marketing|field.?marketing|partner.?marketing|\bmedia\b|demand.?gen|social.?media|\bcontent\b|\bseo\b|\bpaid\b|accountant|\bfinance\b|\blegal\b|\brecruiter\b|\bhr.?business\b|talent.?acquisition|it.?director|infrastructure|technical.?account|associate.?customer|enablement.?manager|sales.?development|supply.?chain|\bmarketing\b/i;
@@ -231,7 +232,7 @@ function meetsRequirements(job) {
   return true;
 }
 
-// ââ LOCATION CHECK ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ LOCATION CHECK Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 const STUART_FL_CITIES = [
   'stuart','port st. lucie','port saint lucie','fort pierce','vero beach',
   'jupiter','palm beach gardens','west palm beach','lake worth','boynton beach',
@@ -258,7 +259,7 @@ function isLocationOk(job) {
   return false;
 }
 
-// ââ PERSISTENCE âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ PERSISTENCE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 function loadSeenUrls() {
   try {
     if (!fs.existsSync(SEEN_URLS_PATH)) return new Set();
@@ -296,7 +297,7 @@ function saveTopPicks(jobs) {
   fs.writeFileSync(TOP_PICKS_PATH, JSON.stringify({ picks: jobs.slice(0, 5) }, null, 2));
 }
 
-// ââ SOURCES âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ SOURCES Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 async function fetchRemotive() {
   const jobs = [];
   const queries = ['partnerships director','alliances vp','channel director','customer success vp','revenue operations director','business development director'];
@@ -312,8 +313,8 @@ async function fetchRemotive() {
           url: j.url, source: 'Remotive',
           snippet: (j.description||'').replace(/<[^>]+>/g,' ').substring(0,500) });
       }
-      if ((d.jobs||[]).length) console.log(`   â Remotive "${q}": ${(d.jobs||[]).length}`);
-    } catch(e) { console.log(`   â Remotive "${q}": ${e.message}`); }
+      if ((d.jobs||[]).length) console.log(`   Ã¢ÂÂ Remotive "${q}": ${(d.jobs||[]).length}`);
+    } catch(e) { console.log(`   Ã¢ÂÂ Remotive "${q}": ${e.message}`); }
   }
   return jobs;
 }
@@ -337,8 +338,8 @@ async function fetchWWR() {
           url: link.startsWith('http') ? link : `https://weworkremotely.com${link}`,
           source: 'WWR', snippet: desc.substring(0, 500) });
       }
-      if (items.length) console.log(`   â WWR ${cat}: ${items.length}`);
-    } catch(e) { console.log(`   â WWR ${cat}: ${e.message}`); }
+      if (items.length) console.log(`   Ã¢ÂÂ WWR ${cat}: ${items.length}`);
+    } catch(e) { console.log(`   Ã¢ÂÂ WWR ${cat}: ${e.message}`); }
   }
   return jobs;
 }
@@ -375,7 +376,7 @@ async function fetchGreenhouse() {
           url: j.absolute_url, source: 'Greenhouse',
           snippet: content.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().substring(0, 500) });
       }
-      if (relevant.length) console.log(`   â ${co}: ${relevant.length} relevant`);
+      if (relevant.length) console.log(`   Ã¢ÂÂ ${co}: ${relevant.length} relevant`);
     } catch(e) { /* skip */ }
   }
   return jobs;
@@ -409,13 +410,13 @@ async function fetchLever() {
           url: j.hostedUrl, source: 'Lever',
           snippet: desc.substring(0, 500) });
       }
-      if (relevant.length) console.log(`   â ${co}: ${relevant.length} relevant`);
+      if (relevant.length) console.log(`   Ã¢ÂÂ ${co}: ${relevant.length} relevant`);
     } catch(e) { /* skip */ }
   }
   return jobs;
 }
 
-// ââ MAIN ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// Ã¢ÂÂÃ¢ÂÂ MAIN Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
 async function main() {
   const dateStr = new Date().toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   console.log('='.repeat(60));
@@ -430,13 +431,13 @@ async function main() {
   const previousTopPicks = loadTopPicks();
   console.log(`\nPreviously seen: ${seenUrls.size} | Previous top picks: ${previousTopPicks.length}`);
 
-  console.log('\nð¡ Fetching from all sources...');
+  console.log('\nÃ°ÂÂÂ¡ Fetching from all sources...');
   const [remotiveJobs, wwrJobs, greenhouseJobs, leverJobs] = await Promise.all([
     fetchRemotive(), fetchWWR(), fetchGreenhouse(), fetchLever()
   ]);
 
   const allJobs = [...remotiveJobs, ...wwrJobs, ...greenhouseJobs, ...leverJobs];
-  console.log(`\nð Raw total: ${allJobs.length}`);
+  console.log(`\nÃ°ÂÂÂ Raw total: ${allJobs.length}`);
 
   // Dedup by URL first
   const urlSet = new Set();
@@ -451,39 +452,39 @@ async function main() {
     if (titleCoSet.has(key)) return false;
     titleCoSet.add(key); return true;
   });
-  console.log(`ð After dedup: ${deduped.length} (from ${allJobs.length} raw)`);
+  console.log(`Ã°ÂÂÂ After dedup: ${deduped.length} (from ${allJobs.length} raw)`);
 
   // Title/role filter
   const qualified = deduped.filter(j => {
     if (!meetsRequirements(j)) return false;
-    if (!isLocationOk(j)) { console.log(`   ð Location reject: "${j.title}" @ ${j.location}`); return false; }
+    if (!isLocationOk(j)) { console.log(`   Ã°ÂÂÂ Location reject: "${j.title}" @ ${j.location}`); return false; }
     return true;
   });
-  console.log(`â After title+location filter: ${qualified.length}`);
+  console.log(`Ã¢ÂÂ After title+location filter: ${qualified.length}`);
 
   // Remove already seen
   const isBulkRun = seenUrls.size === 0;
   const newJobs = isBulkRun ? qualified : qualified.filter(j => !seenUrls.has(j.url));
-  console.log(`ð New this run: ${newJobs.length}`);
+  console.log(`Ã°ÂÂÂ New this run: ${newJobs.length}`);
 
   // Score, disqualify, and sort
   const scored = [];
   let disqualified = 0;
   for (const j of newJobs) {
     const s = scoreJob(j);
-    if (s.skip) { console.log(`   ð« Disqualified (${s.disqualifier}): ${j.title} @ ${j.company}`); disqualified++; continue; }
+    if (s.skip) { console.log(`   Ã°ÂÂÂ« Disqualified (${s.disqualifier}): ${j.title} @ ${j.company}`); disqualified++; continue; }
     scored.push({ ...j, score: s.score, tier: s.tier, industry: s.industry || j.industry || '', rank: s.rank });
   }
   scored.sort((a, b) => b.score - a.score);
-  console.log(`â After disqualifiers: ${scored.length} (removed ${disqualified})`);
+  console.log(`Ã¢ÂÂ After disqualifiers: ${scored.length} (removed ${disqualified})`);
 
   // Summary
-  console.log(`\n   ð¥ Must Apply (80+): ${scored.filter(j=>j.score>=80).length}`);
-  console.log(`   â­ Strong Match (65-79): ${scored.filter(j=>j.score>=65&&j.score<80).length}`);
-  console.log(`   ð Good Fit (50-64): ${scored.filter(j=>j.score>=50&&j.score<65).length}`);
-  console.log(`   ð Worth a Look (<50): ${scored.filter(j=>j.score<50).length}`);
+  console.log(`\n   Ã°ÂÂÂ¥ Must Apply (80+): ${scored.filter(j=>j.score>=80).length}`);
+  console.log(`   Ã¢Â­Â Strong Match (65-79): ${scored.filter(j=>j.score>=65&&j.score<80).length}`);
+  console.log(`   Ã°ÂÂÂ Good Fit (50-64): ${scored.filter(j=>j.score>=50&&j.score<65).length}`);
+  console.log(`   Ã°ÂÂÂ Worth a Look (<50): ${scored.filter(j=>j.score<50).length}`);
 
-  console.log(`\nð Top 5:`);
+  console.log(`\nÃ°ÂÂÂ Top 5:`);
   scored.slice(0, 5).forEach((j, i) => console.log(`   ${i+1}. [${j.score}] ${j.title} @ ${j.company} | ${j.tier}`));
 
   // Save
@@ -495,7 +496,7 @@ async function main() {
   const output = { date: dateStr, count: scored.length, jobs: scored, topPicks: previousTopPicks, currentTopPicks: topPicks };
   fs.writeFileSync(TODAY_PATH, JSON.stringify(output, null, 2));
   fs.writeFileSync(DOCS_TODAY_PATH, JSON.stringify(output, null, 2));
-  console.log(`\nâ Done! ${scored.length} jobs saved.`);
+  console.log(`\nÃ¢ÂÂ Done! ${scored.length} jobs saved.`);
 }
 
 main().catch(err => {
