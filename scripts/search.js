@@ -135,33 +135,48 @@ function scoreJob(job) {
   // ── 1. HARD DISQUALIFIER CHECK (instant reject) ───────────────────────────
   for (const dq of HARD_DISQUALIFIERS) {
     if (text.includes(dq)) {
-      return { score: 0, tier: '🚫 Disqualified', disqualifier: dq, skip: true };
+      return { score: 0, tier: '🚫 Disqualified', disqualifier: dq, skip: true, rank: { total: 0 } };
     }
   }
 
   // ── 2. INDUSTRY SCORE (30 pts max) ───────────────────────────────────────
   let industryScore = 0;
-  for (const [tier, { patterns, score }] of Object.entries(INDUSTRY_SIGNALS)) {
+  let industryLabel = 'General';
+  for (const [tierName, { patterns, score }] of Object.entries(INDUSTRY_SIGNALS)) {
     if (patterns.some(p => text.includes(p))) {
       industryScore = score;
+      industryLabel = tierName === 'tier1' ? 'HR Tech / PEO' : tierName === 'tier2' ? 'HR SaaS' : tierName === 'tier3' ? 'B2B SaaS' : 'Tech';
       break;
     }
   }
 
   // ── 3. KEYWORD MATCH SCORE (50 pts max) ──────────────────────────────────
-  // Match against Nick's resume keywords found in job description
   const matchedKeywords = RESUME_KEYWORDS.filter(kw => text.includes(kw.toLowerCase()));
   const keywordScore = Math.min(50, matchedKeywords.length * 3);
+  const matchRate = RESUME_KEYWORDS.length > 0 ? Math.round(matchedKeywords.length / RESUME_KEYWORDS.length * 100) : 0;
 
   // ── 4. SALARY SCORE (20 pts max) ─────────────────────────────────────────
   const salaryScore = scoreSalary(job.salary, snippet);
 
   const total = Math.min(100, industryScore + keywordScore + salaryScore);
-  const tier = total >= 80 ? '🔥 Must Apply' :
-               total >= 65 ? '⭐ Strong Match' :
-               total >= 50 ? '👍 Good Fit' : '👀 Worth a Look';
+  const tierLabel = total >= 80 ? '🔥 Must Apply' :
+                    total >= 65 ? '⭐ Strong Match' :
+                    total >= 50 ? '👍 Good Fit' : '👀 Worth a Look';
 
-  return { score: total, tier, matchedKeywords: matchedKeywords.slice(0, 8), industryScore, keywordScore, salaryScore };
+  return {
+    score: total,
+    tier: tierLabel,
+    industry: industryLabel,
+    rank: {
+      total,
+      breakdown: {
+        industry: { score: industryScore, max: 30 },
+        title:    { score: Math.min(25, matchedKeywords.filter(k => /vp|director|head|manager|alliance|partner|channel/.test(k)).length * 5), max: 25 },
+        keywords: { score: keywordScore, max: 50, matchRate, totalHits: matchedKeywords.length, totalKeywords: RESUME_KEYWORDS.length, usedFullDesc: snippet.length > 200, matched: matchedKeywords.slice(0, 10) },
+        comp:     { score: salaryScore, max: 20 }
+      }
+    }
+  };
 }
 
 // ── TITLE / ROLE FILTER ───────────────────────────────────────────────────────
@@ -403,7 +418,7 @@ async function main() {
   for (const j of newJobs) {
     const s = scoreJob(j);
     if (s.skip) { console.log(`   🚫 Disqualified (${s.disqualifier}): ${j.title} @ ${j.company}`); disqualified++; continue; }
-    scored.push({ ...j, ...s });
+    scored.push({ ...j, score: s.score, tier: s.tier, industry: s.industry || j.industry || '', rank: s.rank });
   }
   scored.sort((a, b) => b.score - a.score);
   console.log(`✅ After disqualifiers: ${scored.length} (removed ${disqualified})`);
