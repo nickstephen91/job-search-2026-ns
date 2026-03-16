@@ -163,31 +163,56 @@ function scoreJob(job) {
                     total >= 65 ? '⭐ Strong Match' :
                     total >= 50 ? '👍 Good Fit' : '👀 Worth a Look';
 
+  // Title score based on seniority
+  const titleLower = (job.title||'').toLowerCase();
+  const titleScore = /\bvp\b|vice.?pres/.test(titleLower) ? 25 :
+                     /senior.?director/.test(titleLower) ? 23 :
+                     /\bdirector\b/.test(titleLower) ? 20 :
+                     /head.?of/.test(titleLower) ? 20 :
+                     /senior.?manager/.test(titleLower) ? 12 : 8;
+
+  // Normalize to dashboard maxes: industry=30, title=25, keywords=20, comp=12
+  const keywordScoreNorm = Math.min(20, Math.round(keywordScore * 0.4));
+  const compScore = Math.min(12, Math.round(salaryScore * 0.6));
+  const totalNorm = Math.min(100, industryScore + titleScore + keywordScoreNorm + compScore);
+  const tierLabelFinal = totalNorm >= 80 ? '🔥 Must Apply' :
+                         totalNorm >= 65 ? '⭐ Strong Match' :
+                         totalNorm >= 50 ? '👍 Good Fit' : '👀 Worth a Look';
+
   return {
-    score: total,
-    tier: tierLabel,
+    score: totalNorm,
+    tier: tierLabelFinal,
     industry: industryLabel,
     rank: {
-      total,
+      total: totalNorm,
       breakdown: {
         industry: { score: industryScore, max: 30 },
-        title:    { score: Math.min(25, matchedKeywords.filter(k => /vp|director|head|manager|alliance|partner|channel/.test(k)).length * 5), max: 25 },
-        keywords: { score: keywordScore, max: 50, matchRate, totalHits: matchedKeywords.length, totalKeywords: RESUME_KEYWORDS.length, usedFullDesc: snippet.length > 200, matched: matchedKeywords.slice(0, 10) },
-        comp:     { score: salaryScore, max: 20 }
+        title:    { score: titleScore, max: 25 },
+        keywords: {
+          score: keywordScoreNorm, max: 20,
+          matchRate, totalHits: matchedKeywords.length,
+          totalKeywords: RESUME_KEYWORDS.length,
+          usedFullDesc: snippet.length > 200,
+          topMatches: matchedKeywords.slice(0, 8)
+        },
+        comp: { score: compScore, max: 12 }
       }
     }
   };
 }
 
 // ── TITLE / ROLE FILTER ───────────────────────────────────────────────────────
-const TITLE_REQUIRED_LEVEL = /\bvp\b|vice.?pres|(?:senior\s+)?director|head\s+of|chief|senior\s+manager/i;
+const TITLE_REQUIRED_LEVEL = /\bvp\b|vice.?pres|(?:senior\s+)?director|head\s+of|senior\s+director|chief|senior\s+manager/i;
 const TITLE_REQUIRED_FUNCTION = /partner|alliance|channel|reseller|customer.?success|revenue.?ops|revops|business.?dev|gtm|go.to.market/i;
-const TITLE_REJECTS = /\bengineer\b|\bdeveloper\b|\bdevops\b|data.?scientist|\bdesigner\b|product.?manager|product.?marketing|field.?marketing|partner.?marketing|\bmedia\b|demand.?gen|social.?media|\bcontent\b|\bseo\b|\bpaid\b|accountant|\bfinance\b|\blegal\b|\brecruiter\b|\bhr.?business\b|talent.?acquisition|it.?director|infrastructure|technical.?account|associate.?customer|enablement.?manager|sales.?development|supply.?chain/i;
+const TITLE_REJECTS = /\bengineer\b|\bdeveloper\b|\bdevops\b|data.?scientist|\bdesigner\b|product.?manager|product.?marketing|field.?marketing|partner.?marketing|\bmedia\b|demand.?gen|social.?media|\bcontent\b|\bseo\b|\bpaid\b|accountant|\bfinance\b|\blegal\b|\brecruiter\b|\bhr.?business\b|talent.?acquisition|it.?director|infrastructure|technical.?account|associate.?customer|enablement.?manager|sales.?development|supply.?chain|\bmarketing\b/i;
 
 function meetsRequirements(job) {
   const title = (job.title || '');
+  // Must have seniority level
   if (!TITLE_REQUIRED_LEVEL.test(title)) return false;
+  // Must be partnerships/alliances/channel/CS/RevOps function
   if (!TITLE_REQUIRED_FUNCTION.test(title)) return false;
+  // Reject wrong functions
   if (TITLE_REJECTS.test(title)) return false;
   return true;
 }
@@ -204,13 +229,18 @@ function isLocationOk(job) {
   const loc = (job.location || '').toLowerCase();
   const workType = (job.workType || '').toLowerCase();
   const snippet = (job.snippet || '').toLowerCase();
+
+  // Explicit remote workType (set by us for Remotive/WWR)
   if (workType === 'remote') return true;
+  // Remote in location field
   if (loc.includes('remote')) return true;
-  if (snippet.includes('fully remote') || snippet.includes('100% remote') ||
+  // Strong remote signals in description
+  if (snippet.includes('fully remote') || snippet.includes('100% remote') || 
       snippet.includes('remote-first') || snippet.includes('remote position') ||
       snippet.includes('work from anywhere') || snippet.includes('work from home')) return true;
+  // Stuart FL radius
   if (STUART_FL_CITIES.some(c => loc.includes(c))) return true;
-  // "United States" alone NOT accepted - must have explicit remote signal
+  // "United States" alone is NOT accepted - too many are actually hybrid/onsite
   return false;
 }
 
@@ -394,13 +424,13 @@ async function main() {
   const allJobs = [...remotiveJobs, ...wwrJobs, ...greenhouseJobs, ...leverJobs];
   console.log(`\n📊 Raw total: ${allJobs.length}`);
 
-  // Dedup by URL
+  // Dedup by URL first
   const urlSet = new Set();
   const dedupedByUrl = allJobs.filter(j => {
     if (!j.url || urlSet.has(j.url)) return false;
     urlSet.add(j.url); return true;
   });
-  // Dedup by title+company to remove same role posted in multiple regions
+  // Then dedup by title+company to remove same role posted in multiple regions
   const titleCoSet = new Set();
   const deduped = dedupedByUrl.filter(j => {
     const key = (j.title + '|' + j.company).toLowerCase().replace(/\s+/g,'');
