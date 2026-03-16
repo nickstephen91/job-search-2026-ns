@@ -180,9 +180,9 @@ function scoreJob(job) {
 }
 
 // ── TITLE / ROLE FILTER ───────────────────────────────────────────────────────
-const TITLE_REQUIRED_LEVEL = /\bvp\b|vice.?pres|director|head.?of|senior.?director|chief|manager|senior.?manager/i;
-const TITLE_REQUIRED_FUNCTION = /partner|alliance|channel|reseller|customer.?success|revenue.?ops|revops|business.?dev|gtm|go.to.market|account.?management|sales/i;
-const TITLE_REJECTS = /\bengineer\b|\bdeveloper\b|\bdevops\b|data.?scientist|\bdesigner\b|product.?manager|field.?marketing|\bmedia\b|demand.?gen|social.?media|\bcontent\b|\bseo\b|\bpaid\b|accountant|\bfinance\b|\blegal\b|\brecruiter\b|\bhr.?business\b|talent.?acquisition|it.?director|infrastructure/i;
+const TITLE_REQUIRED_LEVEL = /\bvp\b|vice.?pres|(?:senior\s+)?director|head\s+of|chief|senior\s+manager/i;
+const TITLE_REQUIRED_FUNCTION = /partner|alliance|channel|reseller|customer.?success|revenue.?ops|revops|business.?dev|gtm|go.to.market/i;
+const TITLE_REJECTS = /\bengineer\b|\bdeveloper\b|\bdevops\b|data.?scientist|\bdesigner\b|product.?manager|product.?marketing|field.?marketing|partner.?marketing|\bmedia\b|demand.?gen|social.?media|\bcontent\b|\bseo\b|\bpaid\b|accountant|\bfinance\b|\blegal\b|\brecruiter\b|\bhr.?business\b|talent.?acquisition|it.?director|infrastructure|technical.?account|associate.?customer|enablement.?manager|sales.?development|supply.?chain/i;
 
 function meetsRequirements(job) {
   const title = (job.title || '');
@@ -204,11 +204,13 @@ function isLocationOk(job) {
   const loc = (job.location || '').toLowerCase();
   const workType = (job.workType || '').toLowerCase();
   const snippet = (job.snippet || '').toLowerCase();
-
   if (workType === 'remote') return true;
   if (loc.includes('remote')) return true;
-  if (snippet.includes('this is a remote') || snippet.includes('fully remote') || snippet.includes('100% remote')) return true;
+  if (snippet.includes('fully remote') || snippet.includes('100% remote') ||
+      snippet.includes('remote-first') || snippet.includes('remote position') ||
+      snippet.includes('work from anywhere') || snippet.includes('work from home')) return true;
   if (STUART_FL_CITIES.some(c => loc.includes(c))) return true;
+  // "United States" alone NOT accepted - must have explicit remote signal
   return false;
 }
 
@@ -327,7 +329,7 @@ async function fetchGreenhouse() {
           salary: 'Not Listed',
           posted: j.updated_at ? new Date(j.updated_at).toLocaleDateString() : 'Recent',
           url: j.absolute_url, source: 'Greenhouse',
-          snippet: content.substring(0, 500) });
+          snippet: content.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().substring(0, 500) });
       }
       if (relevant.length) console.log(`   ✅ ${co}: ${relevant.length} relevant`);
     } catch(e) { /* skip */ }
@@ -394,11 +396,18 @@ async function main() {
 
   // Dedup by URL
   const urlSet = new Set();
-  const deduped = allJobs.filter(j => {
+  const dedupedByUrl = allJobs.filter(j => {
     if (!j.url || urlSet.has(j.url)) return false;
     urlSet.add(j.url); return true;
   });
-  console.log(`📊 After dedup: ${deduped.length}`);
+  // Dedup by title+company to remove same role posted in multiple regions
+  const titleCoSet = new Set();
+  const deduped = dedupedByUrl.filter(j => {
+    const key = (j.title + '|' + j.company).toLowerCase().replace(/\s+/g,'');
+    if (titleCoSet.has(key)) return false;
+    titleCoSet.add(key); return true;
+  });
+  console.log(`📊 After dedup: ${deduped.length} (from ${allJobs.length} raw)`);
 
   // Title/role filter
   const qualified = deduped.filter(j => {
