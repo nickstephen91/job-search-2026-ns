@@ -46,7 +46,7 @@ function score(job){
 }
 
 const TITLE_OK=/\bvp\b|vice.?pres|(?:senior\s+)?director|head\s+of|chief|senior\s+manager/i;
-const FUNC_OK=/partner|alliance|channel|reseller|customer.?success|revenue.?ops|revops|business.?dev|gtm|go.to.market|account.?executive|sales.?director|sales.?manager/i;
+const FUNC_OK=/partner|alliance|channel|reseller|customer.?success|revenue.?ops|revops|business.?dev|gtm|go.to.market|account.?executive|sales.?director|sales.?manager|account.?manager|hcm|payroll.?sales|payroll.?manager|payroll.?director|workforce.?sales/i;
 const REJECT=/\bengineer\b|\bdeveloper\b|\bdevops\b|data.?scientist|\bdesigner\b|product.?manager|product.?marketing|field.?marketing|partner.?marketing|\bmedia\b|demand.?gen|social.?media|\bcontent\b|\bseo\b|accountant|\bfinance\b|\blegal\b|\brecruiter\b|talent.?acquisition|it.?director|infrastructure|technical.?account|associate.?customer|supply.?chain/i;
 const FL=['stuart','port st. lucie','port saint lucie','fort pierce','vero beach','jupiter','palm beach gardens','west palm beach','lake worth','boynton beach','hobe sound','jensen beach','palm city','boca raton','delray beach','florida',', fl'];
 
