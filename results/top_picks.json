@@ -1,30 +1,67 @@
 {
   "picks": [
     {
-      "title": "Director, Business Development - AI Partnerships",
-      "company": "Workato",
-      "location": "United States (Remote-eligible)",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "3/13/2026",
-      "url": "https://job-boards.greenhouse.io/workato/jobs/8316210002",
-      "source": "Greenhouse",
-      "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;About Workato&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;Workato transforms technology complexity into business opportunity. As the leader in enterprise orchestration, Workato helps businesses globally streamline operations by connecting dat",
-      "score": 60,
-      "tier": "👍 Good Fit"
-    },
-    {
-      "title": "Director, Partner Sales - Enterprise",
-      "company": "Salesloft",
+      "title": "Manager, Channel Partnerships (Phoenix, AZ)",
+      "company": "Justworks",
       "location": "Remote",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "3/11/2026",
-      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
+      "posted": "3/10/2026",
+      "url": "https://boards.greenhouse.io/justworks/jobs/7636412?gh_jid=7636412",
       "source": "Greenhouse",
-      "snippet": "&lt;p&gt;&lt;strong&gt;Job Title: &lt;/strong&gt;&lt;strong&gt;Director, Partner Sales - Enterprise&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Location: &lt;/strong&gt;&lt;em&gt;This is a fully remote opportunity and can be worked from any location in the United States.&lt;/em&gt;&lt;",
-      "score": 57,
-      "tier": "👍 Good Fit"
+      "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
+      "score": 50,
+      "tier": "👍 Good Fit",
+      "matchedKeywords": [
+        "partner",
+        "partnership",
+        "partnerships",
+        "channel",
+        "peo"
+      ],
+      "industryScore": 30,
+      "keywordScore": 15,
+      "salaryScore": 5
+    },
+    {
+      "title": "Channel Partner Manager",
+      "company": "Justworks",
+      "location": "Remote",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "3/10/2026",
+      "url": "https://boards.greenhouse.io/justworks/jobs/7305519?gh_jid=7305519",
+      "source": "Greenhouse",
+      "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
+      "score": 44,
+      "tier": "👀 Worth a Look",
+      "matchedKeywords": [
+        "partner",
+        "channel",
+        "peo"
+      ],
+      "industryScore": 30,
+      "keywordScore": 9,
+      "salaryScore": 5
+    },
+    {
+      "title": "Manager, Sales (Los Angeles)",
+      "company": "Justworks",
+      "location": "Remote",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "3/10/2026",
+      "url": "https://boards.greenhouse.io/justworks/jobs/7453050?gh_jid=7453050",
+      "source": "Greenhouse",
+      "snippet": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h1&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h1&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;At Justworks, you’ll enjoy a welcoming and casual environment, great benefits, wellness program offerings, company retreats, and the ability to interact with and learn from leaders in the startup community. We work hard and care about our most prized asset - our people.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 40",
+      "score": 38,
+      "tier": "👀 Worth a Look",
+      "matchedKeywords": [
+        "peo"
+      ],
+      "industryScore": 30,
+      "keywordScore": 3,
+      "salaryScore": 5
     }
   ]
 }
