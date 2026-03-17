@@ -1,54 +1,7 @@
 {
-  "date": "Monday, March 16, 2026",
-  "count": 4,
+  "date": "Tuesday, March 17, 2026",
+  "count": 2,
   "jobs": [
-    {
-      "title": "Director, Business Development - AI Partnerships",
-      "company": "Workato",
-      "location": "United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "3/13/2026",
-      "url": "https://job-boards.greenhouse.io/workato/jobs/8316210002",
-      "source": "Greenhouse",
-      "verified": true,
-      "snippet": "About Workato Workato transforms technology complexity into business opportunity. As the leader in enterprise orchestration, Workato helps businesses globally streamline operations by connecting data, processes, applications, and experiences. Its AI-powered platform enables teams to navigate complex workflows in real-time, driving efficiency and agility. Trusted by a community of 400,000 global customers, Workato empowers organizations of every size to unlock new value and lead in today’s fast-c",
-      "score": 46,
-      "tier": "👀 Worth a Look",
-      "industry": "Tech",
-      "rank": {
-        "total": 46,
-        "breakdown": {
-          "industry": {
-            "score": 8,
-            "max": 30
-          },
-          "title": {
-            "score": 20,
-            "max": 25
-          },
-          "keywords": {
-            "score": 6,
-            "max": 20,
-            "matchRate": 11,
-            "totalHits": 5,
-            "totalKeywords": 45,
-            "usedFullDesc": true,
-            "topMatches": [
-              "partner",
-              "partnership",
-              "partnerships",
-              "business development",
-              "director"
-            ]
-          },
-          "comp": {
-            "score": 12,
-            "max": 12
-          }
-        }
-      }
-    },
     {
       "title": "Senior Manager, Small Business Partnerships",
       "company": "Brex",
@@ -56,7 +9,7 @@
       "workType": "Remote",
       "salary": "Not Listed",
       "posted": "3/12/2026",
-      "url": "https://www.brex.com/careers/8457370002?gh_jid=8457370002",
+      "url": "https://www.brex.com/careers/8457349002?gh_jid=8457349002",
       "source": "Greenhouse",
       "verified": true,
       "snippet": "Why join us Brex is the AI-powered spend platform. We help companies spend with confidence with integrated corporate cards, banking, and global payments, plus intuitive software for travel and expenses. Tens of thousands of companies from startups to enterprises — including DoorDash, Flexport, and Compass — use Brex to proactively control spend, reduce costs, and increase efficiency on a global scale. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with ",
@@ -95,57 +48,13 @@
       }
     },
     {
-      "title": "Director, Partner Sales - Enterprise",
-      "company": "Salesloft",
-      "location": "Remote",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "3/11/2026",
-      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
-      "source": "Greenhouse",
-      "verified": true,
-      "snippet": "Job Title: Director, Partner Sales - Enterprise&nbsp; Location: This is a fully remote opportunity and can be worked from any location in the United States. ABOUT THE COMPANY: Clari + Salesloft are building the next era of enterprise revenue — one where teams make confident decisions powered by AI and real signals. By combining our scale, insights, and AI innovation, we’re building the industry’s first Predictive Revenue System , enabling humans and AI to work together to make smarter decisions ",
-      "score": 25,
-      "tier": "👀 Worth a Look",
-      "industry": "General",
-      "rank": {
-        "total": 25,
-        "breakdown": {
-          "industry": {
-            "score": 0,
-            "max": 30
-          },
-          "title": {
-            "score": 20,
-            "max": 25
-          },
-          "keywords": {
-            "score": 2,
-            "max": 20,
-            "matchRate": 4,
-            "totalHits": 2,
-            "totalKeywords": 45,
-            "usedFullDesc": true,
-            "topMatches": [
-              "partner",
-              "director"
-            ]
-          },
-          "comp": {
-            "score": 3,
-            "max": 12
-          }
-        }
-      }
-    },
-    {
       "title": "Senior Manager, Enterprise Customer Success",
       "company": "Brex",
       "location": "United States",
       "workType": "Remote",
       "salary": "Not Listed",
       "posted": "3/12/2026",
-      "url": "https://www.brex.com/careers/8409276002?gh_jid=8409276002",
+      "url": "https://www.brex.com/careers/8409267002?gh_jid=8409267002",
       "source": "Greenhouse",
       "verified": true,
       "snippet": "Why join us Brex is the AI-powered spend platform. We help companies spend with confidence with integrated corporate cards, banking, and global payments, plus intuitive software for travel and expenses. Tens of thousands of companies from startups to enterprises — including DoorDash, Flexport, and Compass — use Brex to proactively control spend, reduce costs, and increase efficiency on a global scale. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with ",
