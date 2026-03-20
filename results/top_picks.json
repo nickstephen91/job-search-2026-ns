@@ -1,86 +1,47 @@
 {
   "picks": [
     {
-      "title": "Senior Manager, Small Business Partnerships",
-      "company": "Brex",
-      "location": "United States",
+      "title": "Partnerships Director",
+      "company": "Veriff",
+      "location": "Remote",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "3/12/2026",
-      "url": "https://www.brex.com/careers/8457349002?gh_jid=8457349002",
+      "posted": "3/19/2026",
+      "url": "https://www.veriff.com/careers/position/8436756002?gh_jid=8436756002",
       "source": "Greenhouse",
       "verified": true,
-      "snippet": "Why join us Brex is the AI-powered spend platform. We help companies spend with confidence with integrated corporate cards, banking, and global payments, plus intuitive software for travel and expenses. Tens of thousands of companies from startups to enterprises — including DoorDash, Flexport, and Compass — use Brex to proactively control spend, reduce costs, and increase efficiency on a global scale. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with ",
-      "score": 27,
-      "tier": "👀 Worth a Look",
-      "industry": "Tech",
+      "snippet": "At Veriff, we verify identities at scale, helping businesses connect with honest people online. Our software verifies over 10,000 government-issued documents from more than 190 countries, and this is growing fast! These are millions of verified identities a year and countless people working behind the scenes to help make the lives of millions—and eventually billions—of people safer online. We are a force for good, and we want to be the standard for trust online. As a Partnership Director you wil",
+      "score": 68,
+      "tier": "⭐ Strong Match",
+      "industry": "HR Tech/PEO",
       "rank": {
-        "total": 27,
+        "total": 68,
         "breakdown": {
           "industry": {
-            "score": 8,
+            "score": 30,
             "max": 30
           },
           "title": {
-            "score": 12,
+            "score": 20,
             "max": 25
           },
           "keywords": {
-            "score": 4,
+            "score": 6,
             "max": 20,
-            "matchRate": 7,
-            "totalHits": 3,
+            "matchRate": 11,
+            "totalHits": 5,
             "totalKeywords": 45,
             "usedFullDesc": true,
             "topMatches": [
               "partner",
               "partnership",
-              "partnerships"
+              "partnerships",
+              "peo",
+              "director"
             ]
           },
           "comp": {
-            "score": 3,
-            "max": 12
-          }
-        }
-      }
-    },
-    {
-      "title": "Senior Manager, Enterprise Customer Success",
-      "company": "Brex",
-      "location": "United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "3/12/2026",
-      "url": "https://www.brex.com/careers/8409267002?gh_jid=8409267002",
-      "source": "Greenhouse",
-      "verified": true,
-      "snippet": "Why join us Brex is the AI-powered spend platform. We help companies spend with confidence with integrated corporate cards, banking, and global payments, plus intuitive software for travel and expenses. Tens of thousands of companies from startups to enterprises — including DoorDash, Flexport, and Compass — use Brex to proactively control spend, reduce costs, and increase efficiency on a global scale. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with ",
-      "score": 23,
-      "tier": "👀 Worth a Look",
-      "industry": "Tech",
-      "rank": {
-        "total": 23,
-        "breakdown": {
-          "industry": {
-            "score": 8,
-            "max": 30
-          },
-          "title": {
             "score": 12,
-            "max": 25
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 45,
-            "usedFullDesc": true,
-            "topMatches": []
-          },
-          "comp": {
-            "score": 3,
             "max": 12
           }
         }
