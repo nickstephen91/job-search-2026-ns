@@ -1,7 +1,97 @@
 {
-  "date": "Monday, March 30, 2026",
-  "count": 0,
-  "jobs": [],
+  "date": "Tuesday, March 31, 2026",
+  "count": 2,
+  "jobs": [
+    {
+      "title": "Senior Manager, Small Business Partnerships",
+      "company": "Brex",
+      "location": "United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "3/27/2026",
+      "url": "https://www.brex.com/careers/8457370002?gh_jid=8457370002",
+      "source": "Greenhouse",
+      "verified": true,
+      "snippet": "Why join us Brex is the AI-powered spend platform. We help companies spend with confidence with integrated corporate cards, banking, and global payments, plus intuitive software for travel and expenses. Tens of thousands of companies from startups to enterprises — including DoorDash, Flexport, and Compass — use Brex to proactively control spend, reduce costs, and increase efficiency on a global scale. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with ",
+      "score": 27,
+      "tier": "👀 Worth a Look",
+      "industry": "Tech",
+      "rank": {
+        "total": 27,
+        "breakdown": {
+          "industry": {
+            "score": 8,
+            "max": 30
+          },
+          "title": {
+            "score": 12,
+            "max": 25
+          },
+          "keywords": {
+            "score": 4,
+            "max": 20,
+            "matchRate": 7,
+            "totalHits": 3,
+            "totalKeywords": 45,
+            "usedFullDesc": true,
+            "topMatches": [
+              "partner",
+              "partnership",
+              "partnerships"
+            ]
+          },
+          "comp": {
+            "score": 3,
+            "max": 12
+          }
+        }
+      }
+    },
+    {
+      "title": "Director, Partner Sales - Enterprise",
+      "company": "Salesloft",
+      "location": "Remote",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "3/11/2026",
+      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
+      "source": "Greenhouse",
+      "verified": true,
+      "snippet": "Job Title: Director, Partner Sales - Enterprise&nbsp; Location: This is a fully remote opportunity and can be worked from any location in the United States. ABOUT THE COMPANY: Clari + Salesloft are building the next era of enterprise revenue — one where teams make confident decisions powered by AI and real signals. By combining our scale, insights, and AI innovation, we’re building the industry’s first Predictive Revenue System , enabling humans and AI to work together to make smarter decisions ",
+      "score": 25,
+      "tier": "👀 Worth a Look",
+      "industry": "General",
+      "rank": {
+        "total": 25,
+        "breakdown": {
+          "industry": {
+            "score": 0,
+            "max": 30
+          },
+          "title": {
+            "score": 20,
+            "max": 25
+          },
+          "keywords": {
+            "score": 2,
+            "max": 20,
+            "matchRate": 4,
+            "totalHits": 2,
+            "totalKeywords": 45,
+            "usedFullDesc": true,
+            "topMatches": [
+              "partner",
+              "director"
+            ]
+          },
+          "comp": {
+            "score": 3,
+            "max": 12
+          }
+        }
+      }
+    }
+  ],
   "topPicks": [
     {
       "title": "Senior Manager, Enterprise Customer Success",

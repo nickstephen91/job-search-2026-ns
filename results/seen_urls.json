@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-03-30T11:54:52.754Z",
+  "lastUpdated": "2026-03-31T11:50:59.324Z",
   "entries": [
-    {
-      "url": "https://job-boards.greenhouse.io/workato/jobs/8316210002",
-      "ts": 1773693091039
-    },
-    {
-      "url": "https://www.brex.com/careers/8457370002?gh_jid=8457370002",
-      "ts": 1773693091039
-    },
-    {
-      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
-      "ts": 1773693091039
-    },
-    {
-      "url": "https://www.brex.com/careers/8409276002?gh_jid=8409276002",
-      "ts": 1773693091039
-    },
     {
       "url": "https://www.brex.com/careers/8457349002?gh_jid=8457349002",
       "ts": 1773758526385
@@ -40,6 +24,14 @@
     {
       "url": "https://www.brex.com/careers/8409273002?gh_jid=8409273002",
       "ts": 1774536778636
+    },
+    {
+      "url": "https://www.brex.com/careers/8457370002?gh_jid=8457370002",
+      "ts": 1774957859324
+    },
+    {
+      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
+      "ts": 1774957859324
     }
   ]
 }
