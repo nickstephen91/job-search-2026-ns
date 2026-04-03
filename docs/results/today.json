@@ -1,7 +1,8 @@
 {
-  "date": "Thursday, April 2, 2026",
-  "count": 2,
-  "jobs": [
+  "date": "Friday, April 3, 2026",
+  "count": 0,
+  "jobs": [],
+  "topPicks": [
     {
       "title": "Senior Manager, Small Business Partnerships",
       "company": "Brex",
@@ -55,49 +56,6 @@
       "salary": "Not Listed",
       "posted": "3/27/2026",
       "url": "https://www.brex.com/careers/8409267002?gh_jid=8409267002",
-      "source": "Greenhouse",
-      "verified": true,
-      "snippet": "Why join us Brex is the AI-powered spend platform. We help companies spend with confidence with integrated corporate cards, banking, and global payments, plus intuitive software for travel and expenses. Tens of thousands of companies from startups to enterprises — including DoorDash, Flexport, and Compass — use Brex to proactively control spend, reduce costs, and increase efficiency on a global scale. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with ",
-      "score": 23,
-      "tier": "👀 Worth a Look",
-      "industry": "Tech",
-      "rank": {
-        "total": 23,
-        "breakdown": {
-          "industry": {
-            "score": 8,
-            "max": 30
-          },
-          "title": {
-            "score": 12,
-            "max": 25
-          },
-          "keywords": {
-            "score": 0,
-            "max": 20,
-            "matchRate": 0,
-            "totalHits": 0,
-            "totalKeywords": 45,
-            "usedFullDesc": true,
-            "topMatches": []
-          },
-          "comp": {
-            "score": 3,
-            "max": 12
-          }
-        }
-      }
-    }
-  ],
-  "topPicks": [
-    {
-      "title": "Senior Manager, Enterprise Customer Success",
-      "company": "Brex",
-      "location": "United States",
-      "workType": "Remote",
-      "salary": "Not Listed",
-      "posted": "3/27/2026",
-      "url": "https://www.brex.com/careers/8409276002?gh_jid=8409276002",
       "source": "Greenhouse",
       "verified": true,
       "snippet": "Why join us Brex is the AI-powered spend platform. We help companies spend with confidence with integrated corporate cards, banking, and global payments, plus intuitive software for travel and expenses. Tens of thousands of companies from startups to enterprises — including DoorDash, Flexport, and Compass — use Brex to proactively control spend, reduce costs, and increase efficiency on a global scale. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with ",
