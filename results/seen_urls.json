@@ -1,14 +1,6 @@
 {
-  "lastUpdated": "2026-04-03T11:38:34.760Z",
+  "lastUpdated": "2026-04-04T11:30:16.940Z",
   "entries": [
-    {
-      "url": "https://www.veriff.com/careers/position/8436756002?gh_jid=8436756002",
-      "ts": 1774007887852
-    },
-    {
-      "url": "https://www.brex.com/careers/8409265002?gh_jid=8409265002",
-      "ts": 1774007887852
-    },
     {
       "url": "https://www.brex.com/careers/8408803002?gh_jid=8408803002",
       "ts": 1774093643993
@@ -36,6 +28,10 @@
     {
       "url": "https://www.brex.com/careers/8409267002?gh_jid=8409267002",
       "ts": 1775130399793
+    },
+    {
+      "url": "https://www.veriff.com/careers/position/8436756002?gh_jid=8436756002",
+      "ts": 1775302216940
     }
   ]
 }
