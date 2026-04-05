@@ -1,47 +1,41 @@
 {
   "picks": [
     {
-      "title": "Partnerships Director",
-      "company": "Veriff",
-      "location": "Remote",
+      "title": "Senior Manager, Enterprise Customer Success",
+      "company": "Brex",
+      "location": "United States",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "3/26/2026",
-      "url": "https://www.veriff.com/careers/position/8436756002?gh_jid=8436756002",
+      "posted": "3/27/2026",
+      "url": "https://www.brex.com/careers/8408803002?gh_jid=8408803002",
       "source": "Greenhouse",
       "verified": true,
-      "snippet": "At Veriff, we verify identities at scale, helping businesses connect with honest people online. Our software verifies over 13,000+ government-issued documents from more than 230+ countries, and this is growing fast! These are millions of verified identities a year and countless people working behind the scenes to help make the lives of millions—and eventually billions—of people safer online. We are a force for good, and we want to be the standard for trust online. As a Partnership Director you w",
-      "score": 68,
-      "tier": "⭐ Strong Match",
-      "industry": "HR Tech/PEO",
+      "snippet": "Why join us Brex is the AI-powered spend platform. We help companies spend with confidence with integrated corporate cards, banking, and global payments, plus intuitive software for travel and expenses. Tens of thousands of companies from startups to enterprises — including DoorDash, Flexport, and Compass — use Brex to proactively control spend, reduce costs, and increase efficiency on a global scale. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with ",
+      "score": 23,
+      "tier": "👀 Worth a Look",
+      "industry": "Tech",
       "rank": {
-        "total": 68,
+        "total": 23,
         "breakdown": {
           "industry": {
-            "score": 30,
+            "score": 8,
             "max": 30
           },
           "title": {
-            "score": 20,
+            "score": 12,
             "max": 25
           },
           "keywords": {
-            "score": 6,
+            "score": 0,
             "max": 20,
-            "matchRate": 11,
-            "totalHits": 5,
+            "matchRate": 0,
+            "totalHits": 0,
             "totalKeywords": 45,
             "usedFullDesc": true,
-            "topMatches": [
-              "partner",
-              "partnership",
-              "partnerships",
-              "peo",
-              "director"
-            ]
+            "topMatches": []
           },
           "comp": {
-            "score": 12,
+            "score": 3,
             "max": 12
           }
         }
