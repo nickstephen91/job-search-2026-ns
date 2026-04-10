@@ -1,7 +1,51 @@
 {
-  "date": "Thursday, April 9, 2026",
-  "count": 0,
-  "jobs": [],
+  "date": "Friday, April 10, 2026",
+  "count": 1,
+  "jobs": [
+    {
+      "title": "Senior Manager, National Technology Partners",
+      "company": "Brex",
+      "location": "United States",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "4/9/2026",
+      "url": "https://www.brex.com/careers/8389679002?gh_jid=8389679002",
+      "source": "Greenhouse",
+      "verified": true,
+      "snippet": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex’s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focu",
+      "score": 33,
+      "tier": "👀 Worth a Look",
+      "industry": "Tech",
+      "rank": {
+        "total": 33,
+        "breakdown": {
+          "industry": {
+            "score": 8,
+            "max": 30
+          },
+          "title": {
+            "score": 12,
+            "max": 25
+          },
+          "keywords": {
+            "score": 1,
+            "max": 20,
+            "matchRate": 2,
+            "totalHits": 1,
+            "totalKeywords": 45,
+            "usedFullDesc": true,
+            "topMatches": [
+              "partner"
+            ]
+          },
+          "comp": {
+            "score": 12,
+            "max": 12
+          }
+        }
+      }
+    }
+  ],
   "topPicks": [
     {
       "title": "Senior Manager, Enterprise Customer Success",
