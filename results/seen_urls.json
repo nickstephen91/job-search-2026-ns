@@ -1,14 +1,6 @@
 {
-  "lastUpdated": "2026-04-13T12:06:51.717Z",
+  "lastUpdated": "2026-04-14T11:57:05.789Z",
   "entries": [
-    {
-      "url": "https://www.brex.com/careers/8457370002?gh_jid=8457370002",
-      "ts": 1774957859324
-    },
-    {
-      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
-      "ts": 1774957859324
-    },
     {
       "url": "https://www.brex.com/careers/8409276002?gh_jid=8409276002",
       "ts": 1775044427742
@@ -32,6 +24,10 @@
     {
       "url": "https://www.brex.com/careers/8389679002?gh_jid=8389679002",
       "ts": 1775822003666
+    },
+    {
+      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
+      "ts": 1776167825789
     }
   ]
 }
