@@ -1,44 +1,45 @@
 {
   "picks": [
     {
-      "title": "Director, Partner Sales - Enterprise",
-      "company": "Salesloft",
-      "location": "Remote",
+      "title": "Senior Manager, Small Business Partnerships",
+      "company": "Brex",
+      "location": "United States",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "3/11/2026",
-      "url": "https://www.salesloft.com/company/careers?gh_jid=7697870",
+      "posted": "4/11/2026",
+      "url": "https://www.brex.com/careers/8457349002?gh_jid=8457349002",
       "source": "Greenhouse",
       "verified": true,
-      "snippet": "Job Title: Director, Partner Sales - Enterprise&nbsp; Location: This is a fully remote opportunity and can be worked from any location in the United States. ABOUT THE COMPANY: Clari + Salesloft are building the next era of enterprise revenue — one where teams make confident decisions powered by AI and real signals. By combining our scale, insights, and AI innovation, we’re building the industry’s first Predictive Revenue System , enabling humans and AI to work together to make smarter decisions ",
-      "score": 25,
+      "snippet": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex’s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focu",
+      "score": 36,
       "tier": "👀 Worth a Look",
-      "industry": "General",
+      "industry": "Tech",
       "rank": {
-        "total": 25,
+        "total": 36,
         "breakdown": {
           "industry": {
-            "score": 0,
+            "score": 8,
             "max": 30
           },
           "title": {
-            "score": 20,
+            "score": 12,
             "max": 25
           },
           "keywords": {
-            "score": 2,
+            "score": 4,
             "max": 20,
-            "matchRate": 4,
-            "totalHits": 2,
+            "matchRate": 7,
+            "totalHits": 3,
             "totalKeywords": 45,
             "usedFullDesc": true,
             "topMatches": [
               "partner",
-              "director"
+              "partnership",
+              "partnerships"
             ]
           },
           "comp": {
-            "score": 3,
+            "score": 12,
             "max": 12
           }
         }
