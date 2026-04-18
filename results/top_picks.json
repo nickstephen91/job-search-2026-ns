@@ -1,28 +1,75 @@
 {
   "picks": [
     {
-      "title": "Senior Manager, Small Business Partnerships",
+      "title": "Partnerships Director",
+      "company": "Veriff",
+      "location": "Remote",
+      "workType": "Remote",
+      "salary": "Not Listed",
+      "posted": "4/14/2026",
+      "url": "https://www.veriff.com/careers/position/8436756002?gh_jid=8436756002",
+      "source": "Greenhouse",
+      "verified": true,
+      "snippet": "At Veriff, we verify identities at scale, helping businesses connect with honest people online. Our software verifies over 13,000+ government-issued documents from more than 230+ countries, and this is growing fast! These are millions of verified identities a year and countless people working behind the scenes to help make the lives of millions—and eventually billions—of people safer online. We are a force for good, and we want to be the standard for trust online. As a Partnership Director you w",
+      "score": 68,
+      "tier": "⭐ Strong Match",
+      "industry": "HR Tech/PEO",
+      "rank": {
+        "total": 68,
+        "breakdown": {
+          "industry": {
+            "score": 30,
+            "max": 30
+          },
+          "title": {
+            "score": 20,
+            "max": 25
+          },
+          "keywords": {
+            "score": 6,
+            "max": 20,
+            "matchRate": 11,
+            "totalHits": 5,
+            "totalKeywords": 45,
+            "usedFullDesc": true,
+            "topMatches": [
+              "partner",
+              "partnership",
+              "partnerships",
+              "peo",
+              "director"
+            ]
+          },
+          "comp": {
+            "score": 12,
+            "max": 12
+          }
+        }
+      }
+    },
+    {
+      "title": "People Business Partner Director, Engineering",
       "company": "Brex",
       "location": "United States",
       "workType": "Remote",
       "salary": "Not Listed",
-      "posted": "4/11/2026",
-      "url": "https://www.brex.com/careers/8457370002?gh_jid=8457370002",
+      "posted": "4/17/2026",
+      "url": "https://www.brex.com/careers/8512238002?gh_jid=8512238002",
       "source": "Greenhouse",
       "verified": true,
       "snippet": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex’s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focu",
-      "score": 36,
-      "tier": "👀 Worth a Look",
-      "industry": "Tech",
+      "score": 66,
+      "tier": "⭐ Strong Match",
+      "industry": "HR Tech/PEO",
       "rank": {
-        "total": 36,
+        "total": 66,
         "breakdown": {
           "industry": {
-            "score": 8,
+            "score": 30,
             "max": 30
           },
           "title": {
-            "score": 12,
+            "score": 20,
             "max": 25
           },
           "keywords": {
@@ -34,8 +81,8 @@
             "usedFullDesc": true,
             "topMatches": [
               "partner",
-              "partnership",
-              "partnerships"
+              "peo",
+              "director"
             ]
           },
           "comp": {
